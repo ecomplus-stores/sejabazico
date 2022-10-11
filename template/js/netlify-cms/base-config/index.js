@@ -10,11 +10,202 @@ import getWidgets from '@ecomplus/storefront-template/template/js/netlify-cms/ba
 //import getReceitas from './collections/receitas-posts'
 //import getGrids from './collections/grids'
 //import getMenuConfig from './collections/menu-config'
+const animations = [
+  "backInDown",
+  "backInLeft",
+  "backInRight",
+  "backInUp",
+  "bounceIn",
+  "bounceInDown",
+  "bounceInLeft",
+  "bounceInRight",
+  "bounceInUp",
+  "fadeIn",
+  "fadeInDown",
+  "fadeInDownBig",
+  "fadeInLeft",
+  "fadeInLeftBig",
+  "fadeInRight",
+  "fadeInRightBig",
+  "fadeInUp",
+  "fadeInUpBig",
+  "fadeInTopLeft",
+  "fadeInTopRight",
+  "fadeInBottomLeft",
+  "fadeInBottomRight",
+  "lightSpeedInRight",
+  "lightSpeedInLeft",
+  "lightSpeedOutRight",
+  "lightSpeedOutLeft",
+  "rotateIn",
+  "rotateInDownLeft",
+  "rotateInDownRight",
+  "rotateInUpLeft",
+  "rotateInUpRight",
+  "zoomIn",
+  "zoomInDown",
+  "zoomInLeft",
+  "zoomInRight",
+  "zoomInUp",
+  "slideInDown",
+  "slideInLeft",
+  "slideInRight",
+  "slideInUp"
+]
+
+const bannerFields = [
+  {
+    label: 'Imagem',
+    name: 'img',
+    widget: 'image'
+  },
+  {
+    label: 'Link',
+    required: false,
+    name: 'link',
+    widget: 'string'
+  },
+  {
+    label: 'Alt',
+    required: false,
+    name: 'alt',
+    widget: 'string'
+  },
+  {
+    label: 'Imagem para mobile',
+    required: false,
+    name: 'mobile_img',
+    widget: 'image'
+  },
+  {
+    label: 'Título',
+    required: false,
+    name: 'title',
+    widget: 'string'
+  },
+  {
+    label: 'Cor do título',
+    required: false,
+    name: 'title_color',
+    widget: 'color'
+  },
+  {
+    label: 'Descrição',
+    required: false,
+    name: 'description',
+    widget: 'string'
+  },
+  {
+    label: 'Cor da descrição',
+    required: false,
+    name: 'description_color',
+    widget: 'color'
+  },
+  {
+    label: 'Texto do botão',
+    required: false,
+    name: 'btn_text',
+    widget: 'string'
+  },
+  {
+    label: 'Cor do texto do botão',
+    required: false,
+    name: 'btn_text_color',
+    widget: 'color'
+  },
+  {
+    label: 'Fundo do botão',
+    required: false,
+    name: 'btn_background',
+    widget: 'color'
+  },
+  {
+    label: 'Posição do conteúdo',
+    required: true,
+    name: 'content_position',
+    widget: 'select',
+    options: ["top_left","top_center","top_right","center_left","center_center","center_right","bottom_left","bottom_center","bottom_right"]
+  },
+  {
+    label: 'Ordem de conteúdo',
+    required: true,
+    name: 'content_order',
+    widget: 'select',
+    options: ["before_image","inside_image","after_image"]
+  },
+  
+  {
+    label: 'Animação',
+    required: false,
+    name: 'animate',
+    widget: 'select',
+    options: animations
+  },
+]
+
 
 export default options => {
   //console.log('custom cms config')
   
   options.sections = getSections(options).concat([
+    {
+      label: '[ALPIX] - Banner responsivo',
+      name: 'apx_responsive-banner',
+      widget: 'object',
+      fields: bannerFields
+    },
+    {
+      label: '[ALPIX] - Grid de banners',
+      name: 'apx_banners-grid',
+      widget: 'object',
+      fields: [
+        {
+          label: 'Banners',
+          name: 'banners',
+          widget: 'list',
+          fields: bannerFields
+        }
+      ]
+    },
+    {
+      label: '[ALPIX] - Slider de banners',
+      name: 'apx_banner-slider',
+      widget: 'object',
+      fields: [
+        {
+          label: 'Slides',
+          name: 'slides',
+          widget: 'list',
+          fields: bannerFields.concat([
+            {
+              label: 'Data de início',
+              required: false,
+              name: 'start',
+              widget: 'datetime',
+              dateFormat: 'DD/MM/YYYY',
+              timeFormat: 'HH:mm'
+            },
+            {
+              label: 'Data de encerramento',
+              required: false,
+              name: 'end',
+              widget: 'datetime',
+              dateFormat: 'DD/MM/YYYY',
+              timeFormat: 'HH:mm'
+            }
+          ])
+        },
+        {
+          label: 'Slider autoplay',
+          name: 'autoplay',
+          hint: 'Exibição de cada slide em milisegundos, defina 0 para desabilitar autoplay',
+          min: 0,
+          step: 1000,
+          default: 9000,
+          widget: 'number'
+        }
+      ]
+    },
     {
       label: '[ALPIX] - Seção com Imagem',
       name: 'apx_section',
@@ -175,6 +366,13 @@ export default options => {
           widget: 'text'
         },
         {
+          label: 'Posição da descrição',
+          required: false,
+          name: 'list',
+          widget: 'select',
+          options: ["description_first","description_last"]
+        },        
+        {
           label: 'Perguntas',
           name: 'questions',
           widget: 'list',
@@ -203,7 +401,45 @@ export default options => {
       ]
     },
     {
-      label: '[ALPIX] - Lista de Produtos A',
+      label: '[ALPIX] - Newsletter',
+      name: 'apx_newsletter',
+      widget: 'object',
+      fields: [
+        {
+          label: 'Título',
+          required: false,
+          name: 'title',
+          widget: 'string'
+        },
+        {
+          label: 'Descrição',
+          required: false,
+          name: 'description',
+          widget: 'text'
+        },
+        {
+          label: 'Posição da descrição',
+          required: false,
+          name: 'list',
+          widget: 'select',
+          options: ["description_first","description_last"]
+        },        
+        {
+          label: 'Texto do botão',
+          required: false,
+          name: 'btn_text',
+          widget: 'text'
+        },  
+        {
+          label: 'Placeholder do campo',
+          required: false,
+          name: 'input_placeholder',
+          widget: 'text'
+        }  
+      ]
+    },
+    {
+      label: '[ALPIX] - Lista de Produtos',
       name: 'apx_productList_A',
       widget: 'object',
       fields: [
@@ -236,6 +472,55 @@ export default options => {
           widget: 'text'
         },
         {
+          label: 'Posição da descrição',
+          required: false,
+          name: 'list',
+          widget: 'select',
+          options: ["description_first","description_last"]
+        },
+        {
+          label: 'Produtos por linha no mobile',
+          required: true,
+          name: 'num_col_sm',
+          widget: 'select',
+          options: ["1","2"]
+        },
+        {
+          label: 'Carrossel Mobile?',
+          required: true,
+          name: 'carrossel_sm',
+          widget: 'select',
+          options: ["Sim","Não"]
+        },
+        {
+          label: 'Produtos por linha no desktop',
+          required: true,
+          name: 'num_col_md',
+          widget: 'select',
+          options: ["2","3","4","5"]
+        },
+        {
+          label: 'Carrossel Desktop?',
+          required: true,
+          name: 'carrossel_md',
+          widget: 'select',
+          options: ["Sim","Não"]
+        },
+        {
+          label: 'Exibir dots do carrossel?',
+          required: true,
+          name: 'carrossel_dots',
+          widget: 'select',
+          options: ["Sim","Não"]
+        },
+        {
+          label: 'Exibir setas do carrossel?',
+          required: true,
+          name: 'carrossel_arrows',
+          widget: 'select',
+          options: ["Sim","Não"]
+        },
+        {
           label: 'Texto do Botão',
           required: false,
           name: 'btn_text',
@@ -246,83 +531,6 @@ export default options => {
           required: false,
           name: 'btn_link',
           widget: 'string'
-        }
-      ]
-    },
-    {
-      label: '[ALPIX] - Lista de Produtos B',
-      name: 'apx_productList_B',
-      widget: 'object',
-      fields: [
-        {
-          label: 'Produtos',
-          name: 'products',
-          widget: 'list',
-          field: {
-            label: 'SKU do produto',
-            name: 'product_id',
-            widget: 'select',
-            options: options.state.routes
-              .filter(({ sku }) => typeof sku === 'string')
-              .map(({ _id, sku }) => ({
-                label: sku,
-                value: _id
-              }))
-          }
-        },
-        {
-          label: 'Título',
-          required: false,
-          name: 'title',
-          widget: 'string'
-        },
-        {
-          label: 'Descrição',
-          required: false,
-          name: 'description',
-          widget: 'text'
-        }
-        
-      ]
-    },
-    {
-      label: '[ALPIX] - Compre Junto',
-      name: 'apx_buyTogether',
-      widget: 'object',
-      fields: [
-        {
-          label: 'Produtos',
-          name: 'products',
-          widget: 'list',
-          field: {
-            label: 'SKU do produto',
-            name: 'product_id',
-            widget: 'select',
-            options: options.state.routes
-              .filter(({ sku }) => typeof sku === 'string')
-              .map(({ _id, sku }) => ({
-                label: sku,
-                value: _id
-              }))
-          }
-        },
-        {
-          label: 'Título',
-          required: false,
-          name: 'title',
-          widget: 'string'
-        },
-        {
-          label: 'Sub Título',
-          required: false,
-          name: 'subtitle',
-          widget: 'string'
-        },
-        {
-          label: 'Descrição',
-          required: false,
-          name: 'description',
-          widget: 'text'
         }
       ]
     },
