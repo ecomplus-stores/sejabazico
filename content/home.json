@@ -39,6 +39,25 @@
           "description": "Com outra descrição"
         }
       ]
+    },
+    {
+      "carrossel_sm": "Sim",
+      "products": [
+        "6346249e73321213f8a7df03",
+        "6346298d73321213f8a7e2c5",
+        "634629b473321213f8a7e2e9"
+      ],
+      "num_col_md": "4",
+      "btn_text": "Ver Todas",
+      "carrossel_arrows": "Sim",
+      "carrossel_dots": "Sim",
+      "num_col_sm": "2",
+      "title": "Seja Bázico",
+      "type": "apx_productList_A",
+      "description": "Uma descrição custinha",
+      "btn_link": "/bazicas",
+      "list": "description_last",
+      "carrossel_md": "Não"
     }
   ]
 }
