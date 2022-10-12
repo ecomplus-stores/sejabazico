@@ -35,29 +35,38 @@
                   "widget": "string"          
                 },
                 {
-                  "label": "Item do Dropdown",
-                  "name": "item",
-                  "widget": "object",
-                  "required":false,
+                  "label":"Itens do Dropdown",
+                  "name":"list",
+                  "widget":"list",
+                  "required":"false",
                   "fields": [
                     {
-                      "label": "Texto do Item",
-                      "name": "text",
-                      "widget": "string"          
-                    },
-                    {
-                      "label": "URL do Item",
-                      "name": "url",
-                      "widget": "string"          
-                    },
-                    {
-                      "label": "Imagem",
-                      "name": "image",
-                      "widget": "image",
-                      "required":false
-                    }           
+                      "label": "Item do Dropdown",
+                      "name": "item",
+                      "widget": "object",
+                      "required":false,
+                      "fields": [
+                        {
+                          "label": "Texto do Item",
+                          "name": "text",
+                          "widget": "string"          
+                        },
+                        {
+                          "label": "URL do Item",
+                          "name": "url",
+                          "widget": "string"          
+                        },
+                        {
+                          "label": "Imagem",
+                          "name": "image",
+                          "widget": "image",
+                          "required":false
+                        }           
+                      ]
+                    }  
                   ]
-                }         
+                }
+                       
               ]
             }
           ]
@@ -79,23 +88,31 @@
                   "widget": "string"          
                 },
                 {
-                  "label": "Item da Lista",
-                  "name": "item",
-                  "widget": "object",
-                  "required":false,
+                  "label":"Itens da Lista",
+                  "name":"list",
+                  "widget":"list",
+                  "required":"false",
                   "fields": [
                     {
-                      "label": "Texto do Item",
-                      "name": "text",
-                      "widget": "string"          
-                    },
-                    {
-                      "label": "URL do Item",
-                      "name": "url",
-                      "widget": "string"          
-                    }                         
+                      "label": "Item da Lista",
+                      "name": "item",
+                      "widget": "object",
+                      "required":false,
+                      "fields": [
+                        {
+                          "label": "Texto do Item",
+                          "name": "text",
+                          "widget": "string"          
+                        },
+                        {
+                          "label": "URL do Item",
+                          "name": "url",
+                          "widget": "string"          
+                        }                         
+                      ]
+                    } 
                   ]
-                }         
+                }        
               ]
             }
           ]
