@@ -132,8 +132,7 @@ const bannerFields = [
     name: 'content_order',
     widget: 'select',
     options: ["before_image","inside_image","after_image"]
-  },
-  
+  },  
   {
     label: 'Animação',
     required: false,

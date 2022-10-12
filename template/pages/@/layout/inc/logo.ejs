@@ -1,9 +1,11 @@
 <%
 // store logo object
-const logo = _.settings.logo
-  ? { url: _.settings.logo, alt: _.settings.name }
+const mysettings = _.cms('settings') || {}
+
+const logo = mysettings.logo
+  ? { url: mysettings.logo, alt: mysettings.name }
   : _.store.logo
-  
+  console.log(logo)
 if (logo && logo.url) {
   const { width, height } = _.tryImageSize(logo.url)
   %>
@@ -18,5 +20,5 @@ if (logo && logo.url) {
     <% } %>
   >
 <% } else { %>
-  <%= _.settings.name || _.store.name %>
+  <%= mysettings.name || _.store.name %>
 <% } %>
