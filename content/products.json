@@ -1,32 +1,20 @@
 {
   "sections": [
     {
-      "type": "breadcrumbs",
-      "enabled": true
-    },
-    {
-      "type": "product-block",
-      "enabled": true,
-      "size_guide": {
-        "image": "",
-        "title": ""
-      }
-    },
-    {
-      "type": "related-products",
-      "title": "Produtos relacionados"
-    },
-    {
-      "type": "recommended-products",
-      "title": "Quem comprou este produto, também comprou:"
+      "type": "custom-html",
+      "html": "<div class=\"apx-title\">\n  <h3>Nosso Diferencial</h3>\n  <small>Porque nem toda camiseta básica é igual</small>\n</div>\n\n<div class=\"apx-title\">\n  <h3>Porque a nossa é melhor?</h3>\n</div>"
     },
     {
       "type": "product-description",
       "enabled": true
     },
     {
-      "type": "product-specifications",
-      "enabled": true
+      "type": "recommended-products",
+      "title": "Talvez você goste"
+    },
+    {
+      "type": "related-products",
+      "title": "Produtos relacionados"
     }
   ]
 }
