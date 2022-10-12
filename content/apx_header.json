@@ -1,0 +1,38 @@
+{
+  "links": [
+    {
+      "title": "Roupas",
+      "url": "/roupas",
+      "list": [
+        {
+          "item": {
+            "title": "Bázica Gola C",
+            "url": "/bazica-gola-c"
+          }
+        },
+        {
+          "item": {
+            "title": "Bázica Gola V",
+            "url": "/bazica-gola-v"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Acessórios",
+      "url": "/acessorios"
+    },
+    {
+      "title": "Bazicash",
+      "url": "/bazicash"
+    },
+    {
+      "title": "Blog",
+      "url": "/blog"
+    },
+    {
+      "title": "Clube de Assinatura",
+      "url": "/clube-de-assinatura"
+    }
+  ]
+}
