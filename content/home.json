@@ -105,6 +105,14 @@
           }
         }
       ]
+    },
+    {
+      "type": "apx_newsletter",
+      "title": "Assine nossa Newsletter",
+      "description": "Não fique de fora dos lançamentos, reposições, novidades e receba conhecimentos bázicos que todo homem precisa saber!",
+      "list": "description_last",
+      "btn_text": "Assinar",
+      "input_placeholder": "seumelhoremail@email.com"
     }
   ]
 }
