@@ -1,0 +1,49 @@
+{
+  "links": [
+    {
+      "title": "Compre",
+      "list": [
+        {
+          "item": {
+            "title": "Bázicas",
+            "url": "/bazicas"
+          }
+        },
+        {
+          "item": {
+            "title": "Bázicas Lord",
+            "url": "/bazicas-vibe"
+          }
+        },
+        {
+          "item": {
+            "title": "Bázicas Vibe",
+            "url": "/bazicas-kids"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Institucional",
+      "list": [
+        {
+          "item": {
+            "title": "Indique e Ganhe",
+            "url": "/indique-e-ganhe"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Últimas do Blog",
+      "list": [
+        {
+          "item": {
+            "title": "O que é Branding?",
+            "url": "/o-que-e-branding"
+          }
+        }
+      ]
+    }
+  ]
+}
