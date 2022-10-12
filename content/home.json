@@ -60,6 +60,51 @@
       "btn_link": "/bazicas",
       "list": "description_last",
       "carrossel_md": "Não"
+    },
+    {
+      "type": "apx_banners-grid",
+      "banners": [
+        {
+          "description_color": "#000000",
+          "animate": "fadeIn",
+          "img": "/img/uploads/640x640.png",
+          "content_order": "after_image",
+          "content_position": "center_left",
+          "btn_text": "CTA Botão 1",
+          "btn_background": "#000000",
+          "btn_text_color": "#ffffff",
+          "title": "Título 1 ",
+          "link": "/",
+          "title_color": "#000000",
+          "description": "Um texto de descrição bem bacana"
+        }
+      ]
+    },
+    {
+      "type": "apx_faq",
+      "title": "Perguntas Frequentes",
+      "description": "O que normalmente querem saber",
+      "list": "description_first",
+      "questions": [
+        {
+          "question": {
+            "response": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.  Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.",
+            "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. "
+          }
+        },
+        {
+          "question": {
+            "title": "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci",
+            "response": "Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.  Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate"
+          }
+        },
+        {
+          "question": {
+            "title": "Phasellus ultrices nulla quis nibh",
+            "response": "Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi."
+          }
+        }
+      ]
     }
   ]
 }
