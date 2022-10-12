@@ -30,8 +30,8 @@
                   "widget": "string"          
                 },
                 {
-                  "label": "Link",
-                  "name": "title",
+                  "label": "URL do título",
+                  "name": "url",
                   "widget": "string"          
                 },
                 {
