@@ -48,7 +48,7 @@
                       "fields": [
                         {
                           "label": "Texto do Item",
-                          "name": "text",
+                          "name": "title",
                           "widget": "string"          
                         },
                         {
@@ -101,7 +101,7 @@
                       "fields": [
                         {
                           "label": "Texto do Item",
-                          "name": "text",
+                          "name": "title",
                           "widget": "string"          
                         },
                         {
