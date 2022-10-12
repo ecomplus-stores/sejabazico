@@ -3,45 +3,42 @@
   "meta_description": "",
   "sections": [
     {
-      "type": "banner-slider",
-      "autoplay": 9000,
-      "full_width": false,
+      "type": "apx_banner-slider",
+      "autoplay": 4000,
       "slides": [
         {
-          "img": "/img/uploads/rect89.webp",
-          "link": "/headset",
-          "alt": "Headset banner",
-          "start": "2020-04-11T05:54:06.750Z",
-          "end": "2020-12-31T03:00:00.000Z",
-          "mobile_img": "/img/uploads/headphone.webp"
+          "description_color": "#ff0000",
+          "animate": "fadeInUp",
+          "start": "",
+          "img": "/img/uploads/1920x650.png",
+          "mobile_img": "/img/uploads/768x1000.png",
+          "content_order": "inside_image",
+          "content_position": "top_left",
+          "btn_text": "Confira agora!",
+          "btn_background": "#000000",
+          "btn_text_color": "#ffffff",
+          "title": "Clube de Assinatura",
+          "end": "",
+          "title_color": "#ffffff",
+          "description": "Sua confiança sempre renovada"
         },
         {
-          "img": "/img/uploads/banner2.webp",
-          "alt": "Banner sample two",
+          "description_color": "#455cbc",
+          "animate": "backInDown",
           "start": "",
+          "img": "/img/uploads/1920x650.png",
+          "mobile_img": "/img/uploads/768x1000.png",
+          "content_order": "inside_image",
+          "content_position": "center_right",
+          "btn_text": "Adquira já!",
+          "btn_background": "#9c007a",
+          "btn_text_color": "#ffffff",
+          "title": "Um segundo título com outra cor",
           "end": "",
-          "mobile_img": "/img/uploads/passion.webp"
+          "title_color": "#a70000",
+          "description": "Com outra descrição"
         }
       ]
-    },
-    {
-      "type": "info-bar",
-      "enabled": true
-    },
-    {
-      "type": "collection-shelf",
-      "shuffle": true,
-      "collection_id": null,
-      "sort": "offers",
-      "title": "",
-      "headless": false,
-      "limit": 12,
-      "page": 1
-    },
-    {
-      "type": "page-title",
-      "title": "Loja demo da E-Com Plus",
-      "description": "Loja de demonstração e testes da plataforma E-Com Plus e Storefront. Todos os produtos, preços e informações são meramente ilustrativos."
     }
   ]
 }
