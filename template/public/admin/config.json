@@ -38,7 +38,7 @@
                   "label":"Itens do Dropdown",
                   "name":"list",
                   "widget":"list",
-                  "required":"false",
+                  "required":false,
                   "fields": [
                     {
                       "label": "Item do Dropdown",
@@ -91,7 +91,7 @@
                   "label":"Itens da Lista",
                   "name":"list",
                   "widget":"list",
-                  "required":"false",
+                  "required":false,
                   "fields": [
                     {
                       "label": "Item da Lista",
