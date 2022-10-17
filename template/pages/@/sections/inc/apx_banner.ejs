@@ -1,0 +1,91 @@
+<%
+if (opt.img) {
+  const { width, height } = _.tryImageSize(opt.img)
+  const sources = [{ src: opt.img }]
+  if (opt.mobile_img) {
+    sources[0].media = '(min-width: 576px)'
+    sources.push({
+      src: opt.mobile_img,
+      media: '(min-width: 100px)'
+    })
+  }
+  sources.forEach(source => {
+    if (source.src.endsWith('.webp')) {
+      source.type = 'image/webp'
+      sources.push({
+        src: source.src.replace('.webp', '.png'),
+        media: source.media,
+        type: 'image/png'
+      })
+    }
+  })
+  %>
+
+  <div class="banner apx_banner">
+    <a
+      href="<%= opt.link || 'javascript:;' %>"
+      aria-label="<%= opt.alt %>"
+    >
+      <picture
+        <% if (opt.sync_load) { %>
+          class="img-fluid"
+        <% } else { %>
+          class="lozad fade img-fluid"
+          data-iesrc="<%= opt.img.replace('.webp', '.png') %>"
+          data-alt="<%= opt.alt %>"
+        <% } %>
+        <% if (!opt.height_auto && width) { %>
+          data-width="<%= width %>"
+          data-height="<%= height %>"
+        <% } %>
+      >
+        <% sources.forEach(({ src, media, type }) => { %>
+          <source
+            srcset="<%= src %>"
+            media="<%- media %>"
+            <% if (type) { %>
+              type="<%- type %>"
+            <% } %>
+          >
+        <% }) %>
+        <% if (opt.sync_load) { %>
+          <img
+            src="<%= opt.img.replace('.webp', '.png') %>"
+            alt="<%= opt.alt %>"
+            <% if (width) { %>
+              width="<%= width %>"
+              height="<%= height %>"
+            <% } %>
+          >
+        <% } %>
+      </picture>      
+    </a>
+      <% if (opt.btn_text || opt.title || opt.description){ %>
+        <div class="apx_banner-content <%= opt.content_order %> <%= opt.content_position %> animate__animated animate__<%= opt.animate %> ">
+        <% if (opt.title) {%>
+          <h3 style="color:<%= opt.title_color %>;"><%- opt.title %></h3>
+        <% } %>    
+        <% if (opt.description) {%>
+          <p style="color:<%= opt.description_color %>;"><%- opt.description %></p>
+        <% } %> 
+        <% if (opt.btn_text) {%>
+          <% 
+          let style = "";
+          if(opt.btn_background){
+            style = style + 'background-color:' + opt.btn_background + ';';
+          }
+          if(opt.btn_text_color){
+            style = style + 'color:' + opt.btn_text_color + ';';
+          }
+          
+          %>
+          <a style="<%= style %>" href="<%= opt.link || 'javascript:;' %>"><%- opt.btn_text %></a>
+        <% } %>      
+        
+        </div>
+      <% } %>
+      
+  </div>
+  <%
+}
+%>

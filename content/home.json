@@ -63,20 +63,50 @@
     },
     {
       "type": "apx_banners-grid",
+      "container": "container-fluid",
+      "padding":"px-3",
       "banners": [
         {
           "description_color": "#000000",
-          "animate": "fadeIn",
+          "animate": "fadeInUp",
           "img": "/img/uploads/640x640.png",
           "content_order": "after_image",
           "content_position": "center_left",
           "btn_text": "CTA Botão 1",
           "btn_background": "#000000",
           "btn_text_color": "#ffffff",
-          "title": "Título 1 ",
+          "title": "fora do comum",
           "link": "/",
           "title_color": "#000000",
-          "description": "Um texto de descrição bem bacana"
+          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+        },
+        {
+          "description_color": "#000000",
+          "animate": "fadeInUp",
+          "img": "/img/uploads/640x640.png",
+          "content_order": "after_image",
+          "content_position": "center_left",
+          "btn_text": "CTA Botão 1",
+          "btn_background": "#000000",
+          "btn_text_color": "#ffffff",
+          "title": "fora do comum",
+          "link": "/",
+          "title_color": "#000000",
+          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+        },
+        {
+          "description_color": "#000000",
+          "animate": "fadeInUp",
+          "img": "/img/uploads/640x640.png",
+          "content_order": "after_image",
+          "content_position": "center_left",
+          "btn_text": "CTA Botão 1",
+          "btn_background": "#000000",
+          "btn_text_color": "#ffffff",
+          "title": "fora do comum",
+          "link": "/",
+          "title_color": "#000000",
+          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
         }
       ]
     },

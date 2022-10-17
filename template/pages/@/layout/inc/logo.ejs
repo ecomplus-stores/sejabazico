@@ -5,7 +5,6 @@ const mysettings = _.cms('settings') || {}
 const logo = mysettings.logo
   ? { url: mysettings.logo, alt: mysettings.name }
   : _.store.logo
-  console.log(logo)
 if (logo && logo.url) {
   const { width, height } = _.tryImageSize(logo.url)
   %>

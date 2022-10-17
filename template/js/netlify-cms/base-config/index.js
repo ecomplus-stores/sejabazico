@@ -159,6 +159,20 @@ export default options => {
       widget: 'object',
       fields: [
         {
+          label: 'Container',
+          required: true,
+          name: 'container',
+          widget: 'select',
+          options: ["container","container-fluid"]
+        },  
+        {
+          label: 'Espaçamento',
+          required: true,
+          name: 'padding',
+          widget: 'select',
+          options: ["px-0","px-1","px-2","px-3","px-4","px-5"]
+        },  
+        {
           label: 'Banners',
           name: 'banners',
           widget: 'list',
