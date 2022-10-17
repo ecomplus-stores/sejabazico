@@ -64,7 +64,7 @@
     {
       "type": "apx_banners-grid",
       "container": "container-fluid",
-      "padding":"px-3",
+      "padding": "px-3",
       "banners": [
         {
           "description_color": "#000000",
@@ -143,6 +143,13 @@
       "list": "description_last",
       "btn_text": "Assinar",
       "input_placeholder": "seumelhoremail@email.com"
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": true,
+      "limit": 12,
+      "page": 1,
+      "title": "SEJA BÁZICO"
     }
   ]
 }
