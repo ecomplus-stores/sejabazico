@@ -163,7 +163,7 @@ export default options => {
           required: true,
           name: 'container',
           widget: 'select',
-          options: ["container","container-fluid"]
+          options: ["container","container-fluid","container_90"]
         },  
         {
           label: 'Espaçamento',
@@ -407,12 +407,33 @@ export default options => {
           options: ["1","2"]
         },
         {
+          label: 'Container',
+          required: true,
+          name: 'container',
+          widget: 'select',
+          options: ["container","container-fluid","container_90"]
+        },  
+        {
+          label: 'Espaçamento',
+          required: true,
+          name: 'padding',
+          widget: 'select',
+          options: ["px-md-0","px-md-1","px-md-2","px-md-3","px-md-4","px-md-5"]
+        },  
+        {
+          label: 'Espaçamento Mobile',
+          required: true,
+          name: 'padding_sm',
+          widget: 'select',
+          options: ["px-0","px-1","px-2","px-3","px-4","px-5"]
+        },  
+        {
           label: 'Carrossel Mobile?',
           required: true,
           name: 'carrossel_sm',
           widget: 'select',
           options: ["Sim","Não"]
-        },
+        },        
         {
           label: 'Produtos por linha no desktop',
           required: true,
@@ -428,16 +449,30 @@ export default options => {
           options: ["Sim","Não"]
         },
         {
-          label: 'Exibir dots do carrossel?',
+          label: 'Exibir dots do carrossel desktop?',
           required: true,
-          name: 'carrossel_dots',
+          name: 'carrossel_dots_md',
           widget: 'select',
           options: ["Sim","Não"]
         },
         {
-          label: 'Exibir setas do carrossel?',
+          label: 'Exibir dots do carrossel mobile?',
           required: true,
-          name: 'carrossel_arrows',
+          name: 'carrossel_dots_sm',
+          widget: 'select',
+          options: ["Sim","Não"]
+        },
+        {
+          label: 'Exibir setas do carrossel desktop?',
+          required: true,
+          name: 'carrossel_arrows_md',
+          widget: 'select',
+          options: ["Sim","Não"]
+        },
+        {
+          label: 'Exibir setas do carrossel mobile?',
+          required: true,
+          name: 'carrossel_arrows_sm',
           widget: 'select',
           options: ["Sim","Não"]
         },

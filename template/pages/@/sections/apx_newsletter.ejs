@@ -1,0 +1,37 @@
+<section
+    class="apx_newsletter py-5"
+>
+        <div class="container">
+        <%
+            if(opt.title){
+                %>
+                    <div class="apx_section-title text-center">
+                    <%
+                    if(opt.list != "description_last"){
+                        %>
+                        <small class=""><%- opt.description %></small>
+                        <%
+                    }
+                    %>
+                        <h2 class="text-bold text-uppercase"><%- opt.title %></h2>
+                    <%
+                    if(opt.list == "description_last"){
+                        %>
+                        <small class=""><%- opt.description %></small>
+                        <%
+                    }
+                    %>
+                    </div>
+                <%
+            }
+        %>
+        <div class="row mx-0 justify-content-center mt-4">        
+            <div class="col-auto">
+                <form action="">
+                    <input type="email" placeholder="<%= opt.input_placeholder %>">
+                    <button>Assinar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

@@ -56,10 +56,35 @@
       "num_col_sm": "2",
       "title": "Seja Bázico",
       "type": "apx_productList_A",
-      "description": "Uma descrição custinha",
+      "description": "Uma descrição curtinha",
       "btn_link": "/bazicas",
       "list": "description_last",
-      "carrossel_md": "Não"
+      "carrossel_md": "Não",
+      "container": "container_90",
+      "padding": "px-0"
+    },
+    {
+      "carrossel_sm": "Sim",
+      "products": [
+        "6346249e73321213f8a7df03",
+        "6346298d73321213f8a7e2c5",
+        "634629b473321213f8a7e2e9",
+        "634629d473321213f8a7e305",
+        "634629a073321213f8a7e2d7"
+      ],
+      "num_col_md": "4",
+      "btn_text": "Ver Todas",
+      "carrossel_arrows_md": "Sim",
+      "carrossel_dots_md": "Sim",
+      "num_col_sm": "2",
+      "title": "Seja Bázico",
+      "type": "apx_productList_A",
+      "description": "Uma descrição curtinha",
+      "btn_link": "/bazicas",
+      "list": "description_last",
+      "carrossel_md": "Sim",
+      "container": "container_90",
+      "padding": "px-0"
     },
     {
       "type": "apx_banners-grid",
@@ -137,19 +162,61 @@
       ]
     },
     {
+      "type": "apx_banners-grid",
+      "container": "container-fluid",
+      "padding": "px-3",
+      "banners": [
+        {
+          "description_color": "#000000",
+          "animate": "fadeInUp",
+          "img": "/img/uploads/640x640.png",
+          "content_order": "after_image",
+          "content_position": "center_left",
+          "btn_text": "CTA Botão 1",
+          "btn_background": "#000000",
+          "btn_text_color": "#ffffff",
+          "title": "fora do comum",
+          "link": "/",
+          "title_color": "#000000",
+          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+        },
+        {
+          "description_color": "#000000",
+          "animate": "fadeInUp",
+          "img": "/img/uploads/640x640.png",
+          "content_order": "after_image",
+          "content_position": "center_left",
+          "btn_text": "CTA Botão 1",
+          "btn_background": "#000000",
+          "btn_text_color": "#ffffff",
+          "title": "fora do comum",
+          "link": "/",
+          "title_color": "#000000",
+          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+        },
+        {
+          "description_color": "#000000",
+          "animate": "fadeInUp",
+          "img": "/img/uploads/640x640.png",
+          "content_order": "after_image",
+          "content_position": "center_left",
+          "btn_text": "CTA Botão 1",
+          "btn_background": "#000000",
+          "btn_text_color": "#ffffff",
+          "title": "fora do comum",
+          "link": "/",
+          "title_color": "#000000",
+          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+        }
+      ]
+    },
+    {
       "type": "apx_newsletter",
       "title": "Assine nossa Newsletter",
       "description": "Não fique de fora dos lançamentos, reposições, novidades e receba conhecimentos bázicos que todo homem precisa saber!",
       "list": "description_last",
       "btn_text": "Assinar",
       "input_placeholder": "seumelhoremail@email.com"
-    },
-    {
-      "type": "collection-shelf",
-      "shuffle": true,
-      "limit": 12,
-      "page": 1,
-      "title": "SEJA BÁZICO"
-    }
+    }    
   ]
 }

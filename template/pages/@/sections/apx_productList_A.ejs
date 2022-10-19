@@ -1,0 +1,55 @@
+<% 
+    if (Array.isArray(opt.products) && opt.products.length) {
+        const search = new _.EcomSearch()
+        await search.setProductIds(opt.products).fetch(true)
+        const items = search.getItems().filter(item => _.ecomUtils.inStock(item))
+    %>
+  
+    <section
+      class="apx_product-list my-5"
+      data-num_col_sm="<%= opt.num_col_sm  %>"
+      data-carrossel_sm="<%= opt.carrossel_sm %>"
+      data-num_col_md="<%= opt.num_col_md %>"
+      data-carrossel_md="<%= opt.carrossel_md %>"
+      data-carrossel_dots_md="<%= opt.carrossel_dots_md %>"
+      data-carrossel_arrows_md="<%= opt.carrossel_arrows_md %>"
+      data-carrossel_dots_sm="<%= opt.carrossel_dots_sm %>"
+      data-carrossel_arrows_sm="<%= opt.carrossel_arrows_sm %>"
+     >
+     <div class="<%= opt.container %> <%= opt.padding_sm %> <%= opt.padding_md %>">
+        <%
+            if(opt.title){
+                %>
+                    <div class="apx_section-title text-center">
+                    <%
+                    if(opt.list != "description_last"){
+                        %>
+                        <small class="text-uppercase"><%- opt.description %></small>
+                        <%
+                    }
+                    %>
+                        <h2 class="text-bold text-uppercase"><%- opt.title %></h2>
+                    <%
+                    if(opt.list == "description_last"){
+                        %>
+                        <small class="text-uppercase"><%- opt.description %></small>
+                        <%
+                    }
+                    %>
+                    </div>
+                <%
+            }
+        %>
+        <div class="row list mx-0">        
+            <% for (let i = 0; i < items.length; i++) { %>
+              <div class="col-md-<%= 12 / opt.num_col_md  %> col-sm-<%= 12 / opt.num_col_sm  %> <%= opt.padding_md %> <%= opt.padding_sm %> my-4">
+                <%- await include('@/sections/inc/product-item', {
+                  _, opt: { item: items[i] }
+                }) %>
+              </div>
+            <% } %>          
+        </div>
+    </div>
+    </section>
+  <% } %>
+  

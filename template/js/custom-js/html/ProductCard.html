@@ -1,0 +1,134 @@
+<div
+  class="product-card"
+  :class="{
+    'product-card--inactive': body._id && !isActive,
+    'product-card--small': isSmall
+  }"
+  @mouseover="isHovered = true"
+  :data-product-id="body._id"
+  :data-sku="body.sku"
+  :data-product-full="JSON.stringify(body)"
+>
+  <transition :enter-active-class="transitionClass">
+    <section v-if="!isLoading">
+      <slot
+        name="discount-tag"
+        v-bind="{ discount }"
+      >
+        <span
+          v-if="isActive && discount > 0"
+          class="product-card__offer-stamp"
+        >
+          <i class="fas fa-arrow-down"></i> <b>{{ discount }}</b>%
+        </span>
+      </slot>
+
+      <slot name="body">
+        <div class="apx_fastBuyContainer">
+          <a-link
+            class="product-card__link"
+            :href="`/${body.slug}`"
+            :title="name"
+          >
+            <slot name="header"/>
+
+            <div class="product-card__pictures">
+              <template v-if="body.pictures && body.pictures.length">
+                <a-picture
+                  class="product-card__picture"
+                  v-for="(picture, index) in body.pictures.slice(0, 2).reverse()"
+                  v-if="body.pictures.length === 1 || index === 1 || isHovered"
+                  :key="index"
+                  :src="picture"
+                  :can-calc-height="false"
+                />
+              </template>
+              <a-picture
+                v-else
+                class="product-card__picture"
+              />
+            </div>
+          </a-link>
+          <div class="apx_fastBuy" 
+          :grid="JSON.stringify(body.variations)">
+            
+          </div>
+        </div>
+          <a-link
+          class="product-card__link"
+          :href="`/${body.slug}`"
+          :title="name"
+        >
+          <slot name="title">
+            <component
+              :is="headingTag"
+              class="product-card__name"
+            >
+              {{ name }}
+            </component>
+          </slot>
+        </a-link>
+      </slot>
+
+      <slot name="rating">
+        <div
+          v-once
+          class="product-card__rating"
+          :data-sku="body.sku"
+          v-html="ratingHtml"
+        ></div>
+      </slot>
+
+      <slot
+        name="unavailable"
+        v-if="!body.available || !body.visible"
+      >
+        <p class="badge badge-warning">
+          {{ i19unavailable }}
+        </p>
+      </slot>
+
+      <slot
+        name="out-of-stock"
+        v-else-if="!isInStock"
+      >
+        <p class="badge badge-dark">
+          {{ i19outOfStock }}
+        </p>
+      </slot>
+
+      <template v-else>
+        <slot name="prices">
+          <a-prices
+            class="product-card__prices"
+            :product="body"
+            :installments-option="installmentsOption"
+            :discount-option="discountOption"
+          />
+        </slot>
+
+        
+      </template>
+
+      <slot name="footer">
+        <div
+          v-if="footerHtml"
+          v-html="footerHtml"
+        ></div>
+      </slot>
+    </section>
+  </transition>
+
+  <template v-if="isLoading">
+    <slot/>
+    <div
+      v-if="error"
+      class="alert alert-warning small"
+      role="alert"
+    >
+      {{ error }}
+    </div>
+  </template>
+
+  <div ref="quickview"></div>
+</div>

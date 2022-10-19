@@ -7,6 +7,7 @@ if (Array.isArray(_.itemDataFields)) {
 itemDataFields.forEach(field => itemData[field] = opt.item[field])
 itemData.name = _.ecomUtils.name(opt.item)
 itemData.price = _.ecomUtils.price(opt.item)
+itemData.variationsGrids = _.ecomUtils.variationsGrids(opt.item, {}, true)
 
 const imgObj = _.ecomUtils.img(opt.item)
 if (imgObj) {
@@ -30,39 +31,40 @@ if (imgObj) {
       `ProductCard` should be rendered (hydrated) here:
       https://developers.e-com.plus/storefront/@ecomplus/storefront-components/docs/ProductCard.html
     -->
-    <a
-      href="/<%= itemData.slug %>"
-      class="product-card__link"
-      title="<%= itemData.name %>"
-    >
-      <!-- Custom code on product card top wrapped by link:
-      <span data-slot="header">
-      </span>
-      -->
+    
+      <a
+        href="/<%= itemData.slug %>"
+        class="product-card__link"
+        title="<%= itemData.name %>"
+      >
+        <!-- Custom code on product card top wrapped by link:
+        <span data-slot="header">
+        </span>
+        -->
 
-      <div class="product-card__pictures">
-        <!-- Picture(s) will be inserted and loaded dynamically within `ProductCard` -->
-        <% if (imgObj) { %>
-          <picture class="product-card__picture">
-            <img
-              data-src="<%= imgObj.url %>"
-              alt="<%= imgObj.alt %>"
-              class="lozad-delay fade"
-              <% if (imgObj.url.startsWith('https://ecoms1.com/')) { %>
-                crossorigin="anonymous"
-              <% } %>
-            >
-          </picture>
-        <% } %>
-      </div>
+        <div class="product-card__pictures">
+          <!-- Picture(s) will be inserted and loaded dynamically within `ProductCard` -->
+          <% if (imgObj) { %>
+            <picture class="product-card__picture">
+              <img
+                data-src="<%= imgObj.url %>"
+                alt="<%= imgObj.alt %>"
+                class="lozad-delay fade"
+                <% if (imgObj.url.startsWith('https://ecoms1.com/')) { %>
+                  crossorigin="anonymous"
+                <% } %>
+              >
+            </picture>
+          <% } %>
+        </div>
 
-      <div data-slot="title">
-        <h3 class="product-card__name">
-          <%= itemData.name %>
-        </h3>
-      </div>
-    </a>
-
+        <div data-slot="title">
+          <h3 class="product-card__name">
+            <%= itemData.name %>
+          </h3>
+        </div>
+      </a>
+      
     <div class="product-card__prices prices">
       <strong class="prices__value">
         <% if (opt.item.available && opt.item.visible && _.ecomUtils.inStock(opt.item)) { %>
