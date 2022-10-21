@@ -143,6 +143,58 @@
               "options": ["Esquerda","Direita"]
             }
           ]
+        },
+        {
+          "name": "apx_category",
+          "label": "Configurações de Categoria",
+          "file": "content/apx_category.json",
+          "editor": {
+            "preview": false
+          },
+          "fields": [
+            {
+              "label": "Produtos por linha no mobile",
+              "required": true,
+              "name": "num_col_sm",
+              "widget": "select",
+              "options": ["1","2"]
+            },
+            {
+              "label": "Produtos por linha no mobile",
+              "required": true,
+              "name": "num_col_sm",
+              "widget": "select",
+              "options": ["1","2"]
+            },
+            {
+              "label": "Container",
+              "required": true,
+              "name": "container",
+              "widget": "select",
+              "options": ["container","container-fluid","container_90"]
+            },  
+            {
+              "label": "Espaçamento",
+              "required": true,
+              "name": "padding",
+              "widget": "select",
+              "options": ["px-md-0","px-md-1","px-md-2","px-md-3","px-md-4","px-md-5"]
+            },  
+            {
+              "label": "Espaçamento Mobile",
+              "required": true,
+              "name": "padding_sm",
+              "widget": "select",
+              "options": ["px-0","px-1","px-2","px-3","px-4","px-5"]
+            },  
+            {
+              "label": "Produtos por linha no desktop",
+              "required": true,
+              "name": "num_col_md",
+              "widget": "select",
+              "options": ["2","3","4","5"]
+            }
+          ]
         }
       ]
     }

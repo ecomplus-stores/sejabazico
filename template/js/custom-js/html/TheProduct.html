@@ -128,23 +128,6 @@
           </slot>
 
           <template v-else>
-            <slot
-              name="variations"
-              v-if="hasVariations"
-            >
-              <product-variations
-                :product="body"
-                :selected-id.sync="selectedVariationId"
-                @select-option="handleGridOption"
-                :maxOptionsBtns="99"
-              />
-              <a-alert :can-show="hasClickedBuy && !selectedVariationId">
-                {{ i19selectVariationMsg }}
-              </a-alert>
-
-              <slot name="variations-info"/>
-            </slot>
-
             <slot name="prices">
               <p class="product__prices">
                 <a-prices
@@ -167,8 +150,27 @@
                   </span>
                 </slot>
               </p>
+            </slot> 
+
+            
+            <slot
+              name="variations"
+              v-if="hasVariations"
+            >
+              <product-variations
+                :product="body"
+                :selected-id.sync="selectedVariationId"
+                @select-option="handleGridOption"
+                :maxOptionsBtns="99"
+              />
+              <a-alert :can-show="hasClickedBuy && !selectedVariationId">
+                {{ i19selectVariationMsg }}
+              </a-alert>
+
+              <slot name="variations-info"/>
             </slot>
 
+            
             
 
             <slot
@@ -260,7 +262,7 @@
                   @click="ev => changeQntUn(body, 1,ev)"
                   ><i class="fas fa-chevron-up"></i></button>
                 </div>
-                <span @click="buy">
+                <span @click="buy" class="w-100">
                   <slot
                     name="buy"
                     v-bind="{ hasClickedBuy, isOnCart }"

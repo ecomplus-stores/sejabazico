@@ -213,20 +213,20 @@ export default {
         })
       }
     }
-    const glide = new Glide(this.$refs.glide, this.glideOptions)
-    glide.on('run', () => {
-      this.moveSlider(glide.index)
-    })
-    glide.mount()
-    this.glide = glide
+    // const glide = new Glide(this.$refs.glide, this.glideOptions)
+    // glide.on('run', () => {
+    //   this.moveSlider(glide.index)
+    // })
+    // glide.mount()
+    // this.glide = glide
   },
 
   beforeDestroy () {
-    if (this.glide) {
-      this.glide.destroy()
-    }
-    if (this.pswp) {
-      this.pswp.destroy()
-    }
+    // if (this.glide) {
+    //   this.glide.destroy()
+    // }
+    // if (this.pswp) {
+    //   this.pswp.destroy()
+    // }
   }
 }

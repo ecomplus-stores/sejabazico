@@ -8,14 +8,14 @@ const breadcrumbs = opt.breadcrumbs && opt.breadcrumbs.length
 
 if (Array.isArray(breadcrumbs) && breadcrumbs.length) {
   %>
-  <div class="container">
+  <div class="container bz_breadcrumb">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb my-2 my-sm-3<%= breadcrumbs.length < 2 ? ' d-none d-md-flex' : '' %>">
-        <li class="breadcrumb-item d-none d-md-block">
+        <!-- <li class="breadcrumb-item d-none d-md-block">
           <a href="/">
             <i class="i-home"></i>
           </a>
-        </li>
+        </li> -->
         <% breadcrumbs.forEach(({ name, link }, index) => { %>
           <% if (index < breadcrumbs.length - 1) { %>
             <li

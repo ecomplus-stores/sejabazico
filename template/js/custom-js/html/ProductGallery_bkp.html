@@ -1,0 +1,154 @@
+<section class="gallery">
+  <section class="gallery">
+  <div class="gallery__stage">
+    <div
+      class="glide"
+      ref="glide"
+    >
+      <div
+        class="glide__track"
+        data-glide-el="track"
+      >
+        <ul class="glide__slides">
+          <li
+            v-for="(picture, i) in localPictures"
+            class="glide__slide"
+            :key="'slide-' + i"
+          >
+            <div @click="openZoom(i)">
+              <slot v-if="i === 0 && !isSliderMoved">
+                <a-picture
+                  v-if="!elFirstPicture"
+                  class="gallery__big-image"
+                  :src="getImg(picture, null, 'big')"
+                />
+                <div
+                  v-else
+                  ref="firstPicture"
+                  class="gallery__big-image"
+                ></div>
+              </slot>
+
+              <a-picture
+                v-else
+                class="gallery__big-image"
+                :src="getImg(picture, null, 'big')"
+              />
+            </div>
+          </li>
+
+          <li
+            v-if="videoSrc"
+            class="glide__slide"
+            :key="'slide-' + localPictures.length"
+          >
+            <div
+              class="embed-responsive"
+              :class="`embed-responsive-${videoAspectRatio}`"
+            >
+              <iframe
+                class="embed-responsive-item"
+                :src="videoSrc"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div v-if="localPictures.length > 1" class="glide__bullets" data-glide-el="controls[nav]">        
+        <button 
+          v-for="(picture, i) in localPictures"
+          class="glide__bullet" 
+          v-bind:data-glide-dir="'=' + i">
+          
+        </button>        
+      </div>
+      <div v-if="localPictures.length > 1" class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25 6.66671L11.6667 20L25 33.3334" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>  
+        </button>
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 33.3333L28.3333 20L15 6.66663" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>  
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div
+    v-once
+    ref="pswp"
+    class="pswp"
+    tabindex="-1"
+    role="dialog"
+    aria-hidden="true"
+  >
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+
+      <div class="pswp__ui pswp__ui--hidden">
+        <div class="pswp__top-bar">
+          <div class="pswp__counter"></div>
+          <button
+            class="pswp__button pswp__button--close"
+            :title="`${i19close} (Esc)`"
+          ></button>
+          <button
+            class="pswp__button pswp__button--share"
+            :title="i19share"
+          ></button>
+          <button
+            class="pswp__button pswp__button--fs"
+            :title="i19fullscreen"
+          ></button>
+          <button
+            class="pswp__button pswp__button--zoom"
+            title="Zoom in/out"
+          ></button>
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div>
+
+        <button
+          class="pswp__button pswp__button--arrow--left"
+          :title="i19previous"
+        ></button>
+        <button
+          class="pswp__button pswp__button--arrow--right"
+          :title="i19next"
+        ></button>
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+
+        <button
+          v-if="canAddToCart"
+          type="button"
+          class="btn btn-success"
+          @click="buy"
+        >
+          <i class="fas fa-cart-arrow-down"></i>
+          <span class="d-none d-md-inline ml-1">
+            {{ i19addToCart }}
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

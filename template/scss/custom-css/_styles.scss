@@ -271,6 +271,9 @@ body{font-size:var(--body);color:#000}
 .product-card__buy{display:none}
 .product-card__prices .prices__value{font-size: 14px;}
 
+.product-card{
+    .prices__installments{display: none;}
+}
 .apx_section-title{
     h2{
         font-size:var(--section_title);
@@ -468,3 +471,169 @@ body{font-size:var(--body);color:#000}
         opacity: .3;
     }
 }
+
+.bz_gallery{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    .bz_gallery-item{
+        flex:0 0 calc(50% - 3px);
+        .product__picture{max-width: 100%!important;}
+        picture{
+            height: 100%!important;
+            width: 100%;
+            cursor: unset;
+            display: block;
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+@media(min-width:990px){
+    .bz_product-info-sticky{
+        position: sticky;
+        top: 3rem;
+    }
+}
+
+#product{
+    .bz_breadcrumb{
+        padding: 0!important;
+        margin: 0!important;
+        ol{
+            padding: 0!important;
+            margin: 0 0 1rem 0!important;
+        }
+        *{
+            font-size: 16px;
+            text-transform: uppercase;
+            font-family: 'Source Sans Pro';
+            letter-spacing: 0.1em;
+        }
+    }
+    
+    .breadcrumb-item:not(:first-child):before{
+        content: ">";
+    }
+
+    .product__name{
+        font-size:var(--section_title);
+        font-weight:700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .variations__grid{
+        .variations__grid-title{
+            font-size: var(--body);
+            letter-spacing: 0.1em;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .variations__option{
+            border: 1px solid #f2f2f2;
+            height: 40px;
+            min-width: 40px;
+            padding: .5rem;
+            font-size: var(--body);
+            font-weight: 400;
+            background: #fff;
+            border-radius: 0;
+            outline: none;
+            box-shadow: unset;
+
+        }
+        .variations__option--selected{
+            font-weight: 600;
+            color: #fff;
+            background: #000;
+        }
+    }
+
+    .product__buy{
+        display:flex;
+        gap: 1rem;
+        .apx_quantity_selector{
+            border: 1px solid #f2f2f2;
+            display: flex;
+            align-items: center;
+            padding: 0;
+            max-width: 150px;
+            button{
+                background: transparent;
+                border: 0;
+                height: 58px;
+                padding: 0 1rem;
+            }
+            input{
+                font-size: 18px;
+                font-weight: bold;
+                border: 0;
+                text-align: center;
+                width: 50px;
+                outline: none;
+            }
+        }
+
+        .btn-lg{
+             font-size: 18px;
+             letter-spacing: 0.1em;
+             font-weight: 700;
+             text-transform: uppercase;
+             line-height: 60px;
+             border-radius: 0;
+             padding: 0 1rem;
+             width: 100%;
+
+        }
+    }
+
+    .shipping-calculator{
+        
+        [for="shipping-calculator-zip"]{
+            white-space: nowrap;
+            font-size: var(--body);
+            letter-spacing: 0.1em;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        .form-group{
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin: 0;
+            background: #f8f8f8;
+        padding: 1rem;
+        }
+        input{border-radius: 0;max-width: unset;border: 1px solid #f2f2f2;}
+        button{
+            border-radius: 0;
+            background: #000;
+            color: #fff;
+            border: 0;
+        }
+    }
+    .product__prices{
+        margin: 2.5rem 0;
+        letter-spacing: 0.1em;
+        .prices--big{
+            strong{
+                font-size: 25px;
+                
+            }
+        }
+        .prices__installments{
+            margin-top: 1rem;
+            font-size: 16px;
+            font-weight: normal;
+            small{font-weight: normal;}
+            span{font-weight: normal;}
+        }
+    }
+}
+.w-100{width: 100%;}
