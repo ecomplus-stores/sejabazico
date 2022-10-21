@@ -195,6 +195,85 @@
               "options": ["2","3","4","5"]
             }
           ]
+        },
+        {
+          "name": "apx_seals",
+          "label": "Selos de Produto",
+          "file": "content/apx_seals.json",
+          "editor": {
+            "preview": false
+          },
+          "fields": [
+            {
+              "label":"Selos",
+              "name":"seals",
+              "widget":"list",
+              "required":false,
+              "fields": [
+                {
+                  "label": "Selo",
+                  "name": "item",
+                  "widget": "object",
+                  "required":false,
+                  "fields": [
+                    {
+                      "label": "Imagem ou Ícone",
+                      "name": "image",
+                      "widget": "image",
+                      "required":false
+                    },  
+                    {
+                      "label": "Texto do Item",
+                      "name": "title",
+                      "widget": "string"          
+                    },
+                    {
+                      "label":"Categorias",
+                      "name":"categories",
+                      "widget":"list",
+                      "required":false,
+                      "fields": [
+                        {
+                          "label": "Categoria",
+                          "name": "category",
+                          "widget": "object",
+                          "required":false,
+                          "fields": [
+                            {
+                              "label": "SLUG da Categoria",
+                              "name": "title",
+                              "widget": "string"          
+                            }                                                   
+                          ]
+                        } 
+                      ]
+                    },
+                    {
+                      "label":"Produtos",
+                      "name":"products",
+                      "widget":"list",
+                      "required":false,
+                      "fields": [
+                        {
+                          "label": "Produto",
+                          "name": "product",
+                          "widget": "object",
+                          "required":false,
+                          "fields": [
+                            {
+                              "label": "SKU do Produto",
+                              "name": "title",
+                              "widget": "string"          
+                            }                                                   
+                          ]
+                        } 
+                      ]
+                    }                               
+                  ]
+                } 
+              ]
+            }   
+          ]
         }
       ]
     }
