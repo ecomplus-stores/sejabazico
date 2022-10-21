@@ -228,6 +228,100 @@
                       "widget": "string"          
                     },
                     {
+                      "label": "Cor da Fonte",
+                      "name": "text_color",
+                      "widget": "color"          
+                    },
+                    {
+                      "label": "Cor da Borda",
+                      "name": "border_color",
+                      "widget": "color"          
+                    },
+                    {
+                      "label": "Cor do Fundo",
+                      "name": "bg_color",
+                      "widget": "color"          
+                    },
+                    {
+                      "label":"Categorias",
+                      "name":"categories",
+                      "widget":"list",
+                      "required":false,
+                      "fields": [
+                        {
+                          "label": "Categoria",
+                          "name": "category",
+                          "widget": "object",
+                          "required":false,
+                          "fields": [
+                            {
+                              "label": "SLUG da Categoria",
+                              "name": "title",
+                              "widget": "string"          
+                            }                                                   
+                          ]
+                        } 
+                      ]
+                    },
+                    {
+                      "label":"Produtos",
+                      "name":"products",
+                      "widget":"list",
+                      "required":false,
+                      "fields": [
+                        {
+                          "label": "Produto",
+                          "name": "product",
+                          "widget": "object",
+                          "required":false,
+                          "fields": [
+                            {
+                              "label": "SKU do Produto",
+                              "name": "title",
+                              "widget": "string"          
+                            }                                                   
+                          ]
+                        } 
+                      ]
+                    }                               
+                  ]
+                } 
+              ]
+            }   
+          ]
+        },
+        {
+          "name": "apx_props",
+          "label": "Propriedades de Produto",
+          "file": "content/apx_pros.json",
+          "editor": {
+            "preview": false
+          },
+          "fields": [
+            {
+              "label":"Propriedades",
+              "name":"props",
+              "widget":"list",
+              "required":false,
+              "fields": [
+                {
+                  "label": "Propriedade",
+                  "name": "item",
+                  "widget": "object",
+                  "required":false,
+                  "fields": [
+                    {
+                      "label": "Imagem ou Ícone",
+                      "name": "image",
+                      "widget": "image",
+                      "required":false
+                    },  
+                    {
+                      "label": "Texto do Item",
+                      "name": "title",
+                      "widget": "string"          
+                    },
+                    {
                       "label":"Categorias",
                       "name":"categories",
                       "widget":"list",
