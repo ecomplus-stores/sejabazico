@@ -1,0 +1,56 @@
+{
+  "props": [
+    {
+      "item": {
+        "image": "/img/uploads/image-10.png",
+        "title": "Algodão Egípcio",
+        "categories": [
+          {
+            "category": {
+              "title": "roupas"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "item": {
+        "image": "/img/uploads/image-9-3-.png",
+        "title": "Não Encolhe",
+        "categories": [
+          {
+            "category": {
+              "title": "roupas"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "item": {
+        "image": "/img/uploads/image-11.png",
+        "title": "Caimento Impecável",
+        "categories": [
+          {
+            "category": {
+              "title": "roupas"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "item": {
+        "image": "/img/uploads/image-8.png",
+        "title": "Não Desbota",
+        "categories": [
+          {
+            "category": {
+              "title": "Roupas"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
