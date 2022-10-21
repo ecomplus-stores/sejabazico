@@ -153,11 +153,11 @@
           },
           "fields": [
             {
-              "label": "Produtos por linha no mobile",
+              "label": "Produtos por linha no desktop",
               "required": true,
-              "name": "num_col_sm",
+              "name": "num_col_md",
               "widget": "select",
-              "options": ["1","2"]
+              "options": ["2","3","4","5"]
             },
             {
               "label": "Produtos por linha no mobile",
@@ -166,13 +166,6 @@
               "widget": "select",
               "options": ["1","2"]
             },
-            {
-              "label": "Container",
-              "required": true,
-              "name": "container",
-              "widget": "select",
-              "options": ["container","container-fluid","container_90"]
-            },  
             {
               "label": "Espaçamento",
               "required": true,
@@ -188,11 +181,11 @@
               "options": ["px-0","px-1","px-2","px-3","px-4","px-5"]
             },  
             {
-              "label": "Produtos por linha no desktop",
+              "label": "Container",
               "required": true,
-              "name": "num_col_md",
+              "name": "container",
               "widget": "select",
-              "options": ["2","3","4","5"]
+              "options": ["container","container-fluid","container_90"]
             }
           ]
         },
@@ -293,7 +286,7 @@
         {
           "name": "apx_props",
           "label": "Propriedades de Produto",
-          "file": "content/apx_pros.json",
+          "file": "content/apx_props.json",
           "editor": {
             "preview": false
           },
