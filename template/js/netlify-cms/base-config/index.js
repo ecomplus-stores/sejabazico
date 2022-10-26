@@ -144,8 +144,6 @@ const bannerFields = [
 
 
 export default options => {
-  //console.log('custom cms config')
-  
   options.sections = getSections(options).concat([
     {
       label: '[ALPIX] - Banner responsivo',

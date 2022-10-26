@@ -47,15 +47,12 @@ $('.apx_product-list').each(function(){
 });
 
 window.populateOptions = function(_id){
-    console.log(_id);
     $('[data-product-id='+ _id +']').each(function(){
         let me = $(this).closest('.product-item');
         let fb = me.find('.apx_fastBuy:not(.loaded)');
         
         let data = JSON.parse(me.attr('data-product'));
-        //console.log(data);
         let grid = data.variationsGrids;
-        //console.log(grid);
         if(grid){
             fb.append('<div class="apx_fastBuy-title text-uppercase text-bold">Compra Rápida</div>')
             $.each(grid,function(k,item){
@@ -66,7 +63,6 @@ window.populateOptions = function(_id){
                 fb.append(block)  
             })
         }    
-        
         fb.addClass('loaded');
     });
 }
@@ -107,20 +103,9 @@ $('body').on('click','.apx_fastBuy button', function(){
                 }
                 
                 if(q){
-                    console.log([product, q._id, 1, true]);
-                    //product._id = q._id;
-
                     ecomCart.addProduct(product, q._id, 1, true)
-                    //console.log(product);
-                    //ecomCart.addProduct(product)
                 }
-
-                
             }
-
-            
-            
-
         }else{
             $(this).closest('.apx_fastBuy').find('[key]').removeAttr('option');
             $(this).closest('[key]').attr('option',$(this).attr('option'));
@@ -133,7 +118,6 @@ $('body').on('click','.apx_fastBuy button', function(){
 
             let q = grid.filter(el => el.specifications[key][0].text == current_opt);
             $.each(q, function(i,item){
-                console.log(item);
                 $.each(item.specifications, function(i_,item_){
                     if(fb.find('[key="'+ i_ +'"]').length > 0){
                         fb.find('[key="'+ i_ +'"] button[option="'+ item_[0].text +'"]').removeClass('disabled').addClass('available');
@@ -142,9 +126,11 @@ $('body').on('click','.apx_fastBuy button', function(){
             })
         }        
     }
-    
-    
-})
+});
+
+if($('#page-products').length > 0 && window.innerWidth > 990){
+    $('.page--products > .sections > section, .page--products > .sections > div:not(#product-block)').insertAfter('#product-gallery');
+}
 
 
 

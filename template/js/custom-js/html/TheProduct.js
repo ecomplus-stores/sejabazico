@@ -305,11 +305,7 @@ import {
       changeQntUn (item, qntDiff, ev) {
         const { body } = this
         let input = ev.target.closest('.apx_quantity_selector').querySelector('input');
-        //console.log(input.querySelector('input').value = 3);
-        //console.log(input);
         let newQnt = parseInt(input.value) + parseInt(qntDiff);
-        // console.log(newQnt)
-        //console.log(newQnt)
         if (newQnt > 0) {
           if (body.min_quantity > newQnt) {
             newQnt = body.min_quantity
