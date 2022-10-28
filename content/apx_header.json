@@ -7,13 +7,15 @@
         {
           "item": {
             "title": "Bázica Gola C",
-            "url": "/bazica-gola-c"
+            "url": "/bazica-gola-c",
+            "image": "/img/uploads/rectangle-49.png"
           }
         },
         {
           "item": {
             "title": "Bázica Gola V",
-            "url": "/bazica-gola-v"
+            "url": "/bazica-gola-v",
+            "image": "/img/uploads/206x295.png"
           }
         }
       ]
