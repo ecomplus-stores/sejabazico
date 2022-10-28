@@ -1,7 +1,7 @@
 // Add your custom CSS here.
 :root{
     --menu_lv1: 13px;
-    --menu_lv2: 13px;
+    --menu_lv2: 12px;
     --bn_btn-text: 16px;
     --bn_title: 35px;
     --bn_description: 16px;
@@ -29,19 +29,60 @@ body{font-size:var(--body);color:#000}
     list-style: none;
     display: flex;
     gap: 2rem;
-    margin:0;
-    padding:0;
+    padding: 0;
+    margin: 0;
+    
 }
+#bz-menu .level_1 > li{
+    margin:-1rem;
+    padding:1rem;
+    .level_2{
+        background: #fff;
+        box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+        left: -1px;
+        min-width: 300px;
+        padding: 3rem;
+        position: absolute;
+        top: calc(100% + 15px);
+        opacity: 0;
+        margin-top: 2rem;
+        transition: all .2s;
+        pointer-events: none;
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            li{
+                a{
+                    font-size:var(--menu_lv2);
+                    text-transform: uppercase;
+                    letter-spacing:1px;
+                    
+                }
+                a:hover{
+                    font-weight:bold;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+#bz-menu .level_1 > li:hover{
+    .level_2{
+        margin-top: 0;
+        opacity: 1;
+        pointer-events: all;
+    }
+}
+#bz-menu .level_1 > li:first-child > a{font-weight:bold}
 #bz-menu .level_1 > li > a{
     font-size:var(--menu_lv1);
     text-transform: uppercase;
     text-decoration:none;
-}
-#bz-menu .level_1 > li > .level_2{
-    display:none;
-}
-#bz-menu .level_1 > li > .level_2 a{
-    font-size:var(--menu_lv2)
+    letter-spacing: 1px;
 }
 
 #bz-logo img{
@@ -302,13 +343,42 @@ body{font-size:var(--body);color:#000}
                 border:0;
                 padding:0;
                 background:transparent;
+                svg{
+                    transition: all .5s;
+                }
             }
             border: 1px solid #F8F8F8;
         }
         .content{
             font-family: "Source Sans Pro";   
             letter-spacing: 0.05em;         
-            display:none;
+            height:0;
+            max-height:0;
+            overflow: hidden;
+            transition: padding .5s, max-height .5s;
+            background:#f8f8f8;
+            padding: 0rem;
+            margin-top: -.5rem;
+            box-sizing: border-box;
+        }
+    }
+    .apx_faq-item.visible{
+        .hat{
+            button{
+                border:0;
+                padding:0;
+                background:transparent;
+                svg{
+                    transform: rotate(315deg);
+                }
+            }            
+        }
+        .content{
+            transition: padding .5s, max-height .5s;
+            max-height:180px;
+            overflow-y: auto;
+            height:auto;
+            padding: 2rem;
         }
     }
 }
@@ -775,3 +845,4 @@ border-radius: var(--borderRadius)!important;
 }
 
 .category-retail .retail-grid{margin-top:1rem!important}
+

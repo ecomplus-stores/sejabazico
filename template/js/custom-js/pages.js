@@ -132,6 +132,9 @@ if($('#page-products').length > 0 && window.innerWidth > 990){
     $('.page--products > .sections > section, .page--products > .sections > div:not(#product-block)').insertAfter('#product-gallery');
 }
 
+$('.apx_faq button').click(function(){
+    $(this).closest('.apx_faq-item').toggleClass('visible')
+})
 
 
 
