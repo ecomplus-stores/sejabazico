@@ -134,7 +134,28 @@ if($('#page-products').length > 0 && window.innerWidth > 990){
 
 $('.apx_faq button').click(function(){
     $(this).closest('.apx_faq-item').toggleClass('visible')
-})
+});
+
+$('.level_1 > li > a').hover(function(){
+    let img = $(this).attr('data-image');
+    let url = $(this).attr('href');
+    if(img != "empty"){
+       let bn = $(this).closest('li').find('.level_2').find('.bz_dropbanner').find('img');
+       let original = bn.attr('data-original');
+       bn.attr('src',img);       
+    }
+});
+
+$('.level_2 a').hover(function(){
+    let img = $(this).attr('data-image');
+    let url = $(this).attr('href');
+    if(img != "empty"){
+        console.log('yee')
+       let bn = $(this).closest('.level_2').find('.bz_dropbanner').find('img');
+       let original = bn.attr('data-original');
+       bn.attr('src',img);       
+    }
+});
 
 
 

@@ -30,17 +30,60 @@ let marketingStripeStyle = ''
 <header class="header" id="header">
   <div class="container-fluid">
     <div class="row align-items-center">
+      <div class="col-md col d-block d-md-none" id="bz-mobile-functions">
+        <div class="d-flex">
+          <button type="button" onclick="$('#bz-menu').toggleClass('active')">            
+            <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1H17M1 6H17M1 11H17" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>  
+          </button>
+          <button
+            class="d-lg-none btn btn-lg"
+            id="mobile-search-btn"
+            type="button"
+            data-toggle="collapse"
+            data-target="#search-bar"
+            aria-expanded="true"
+            aria-controls="search-bar"
+            aria-controls="search-bar"
+            title="<%= _.dictionary('searchProducts') %>"
+          >
+            <img src="/assets/Search-Outline.svg"/>
+          </button>
+        </div>
+      </div>
       <div class="col-md" id="bz-menu">
-        <div class="d-block d-md-none">
-          <button type="button"></button>
+        <div class="d-flex justify-content-between align-items-center d-md-none bz-menu-header">
+          <span>            
+            <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="8.5" x2="29" y2="8.5" stroke="black" stroke-width="3"/>
+              <line y1="19.5" x2="29" y2="19.5" stroke="black" stroke-width="3"/>
+              <path d="M21 0H25L7.5 27.5H4L21 0Z" fill="black"/>
+            </svg>  
+          </span>
+          <button type="button" onclick="$('#bz-menu').toggleClass('active')">            
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 1L1 15M1.00001 1L15 15" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>  
+          </button>
         </div>
         <% if (apx_header.links) { %>
           <ul class="level_1">
-            <% apx_header.links.forEach(({ url, title, list })=> { %>
-              <li>
-                <a href="<%= url %>">
+            <% apx_header.links.forEach(({ url, title, image, list })=> { %>
+              <li class="<%= list ? 'dropdown' : ''%>">
+                
+                <a href="<%= url %>" data-image="<%= image ? image : 'empty' %>">
                   <%= title %>
                 </a>
+                <% if (list) { %>
+                  <button type="button" onclick="$(this).closest('li').toggleClass('open')">                    
+                      <svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <line x1="0.353553" y1="0.646447" x2="3.35355" y2="3.64645" stroke="black"/>
+                      <line y1="-0.5" x2="4.24264" y2="-0.5" transform="matrix(-0.707107 0.707107 0.707107 0.707107 6 1)" stroke="black"/>
+                      </svg>  
+                  </button>
+                <% } %>
+                
                 <% if (list) { %>
                   <div class="level_2">
                     <ul class="">
@@ -55,6 +98,15 @@ let marketingStripeStyle = ''
                         </li>
                       <% }) %>
                     </ul>
+                    <% if(image || list.find(el => el.image)){ %>
+                    <div class="bz_dropbanner">
+                      <% if (image){ %>
+                      <img src="<%= image %>" data-original="<%= image %>"/>
+                      <% } %>
+                    </div>
+                    <% } %>
+                    
+                    
                   </div>
                 <% } %>
               </li>
@@ -67,7 +119,7 @@ let marketingStripeStyle = ''
           <%- await include('@/layout/inc/logo', { _ }) %>
         </a>
       </div>
-      <div class="col-md" id="bz-functions">
+      <div class="col-md col" id="bz-functions">
        
         <div
           class="d-none d-lg-block collapse show"
@@ -122,19 +174,7 @@ let marketingStripeStyle = ''
           role="group"
           aria-label="<%= _.dictionary('myAccount') %>"
         >
-          <button
-            class="d-lg-none btn btn-lg"
-            id="mobile-search-btn"
-            type="button"
-            data-toggle="collapse"
-            data-target="#search-bar"
-            aria-expanded="true"
-            aria-controls="search-bar"
-            aria-controls="search-bar"
-            title="<%= _.dictionary('searchProducts') %>"
-          >
-            <img src="/assets/Search-Outline.svg"/>
-          </button>
+          
 
           <a
             id="user-button"

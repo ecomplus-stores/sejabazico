@@ -34,8 +34,13 @@ body{font-size:var(--body);color:#000}
     
 }
 #bz-menu .level_1 > li{
-    margin:-1rem;
-    padding:1rem;
+    margin: 0 -19px;
+    padding: 19px;
+    button{
+        border: 0;
+        background: transparent;
+        padding: 0;
+    }
     .level_2{
         background: #fff;
         box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
@@ -43,11 +48,13 @@ body{font-size:var(--body);color:#000}
         min-width: 300px;
         padding: 3rem;
         position: absolute;
-        top: calc(100% + 15px);
+        top: 100%;
         opacity: 0;
         margin-top: 2rem;
         transition: all .2s;
         pointer-events: none;
+        display: flex;
+        gap: 3rem;
         ul{
             list-style: none;
             padding: 0;
@@ -60,12 +67,14 @@ body{font-size:var(--body);color:#000}
                     font-size:var(--menu_lv2);
                     text-transform: uppercase;
                     letter-spacing:1px;
+                    white-space: nowrap;
                     
                 }
                 a:hover{
-                    font-weight:bold;
+                    text-shadow:0 0 1px black;
                     text-decoration: none;
                 }
+                
             }
         }
     }
@@ -93,7 +102,13 @@ body{font-size:var(--body);color:#000}
     display:flex;
     align-items: center;
     justify-content: flex-end;
+    
+    a,
+    button{display: flex;}
 }
+
+#bz-functions button img,
+#bz-functions .header__buttons{display: flex;align-items: center;}
 #bz-functions button img,
 #bz-functions a.btn img{
     height:24px;
@@ -126,11 +141,12 @@ body{font-size:var(--body);color:#000}
 .justify-content-center{justify-content: center;}
 
 #bz-functions #cart-count{
+    border-radius: 100%;
     font-size: 10px;
     font-weight: 300;
-    top: 10px;
     right: 3px;
-    border-radius: 100%;
+    top: 3px;
+    width: 15px;
 }
 
 .top-bar{}
@@ -846,3 +862,108 @@ border-radius: var(--borderRadius)!important;
 
 .category-retail .retail-grid{margin-top:1rem!important}
 
+
+.bz-menu-header{
+    border-bottom: 1px solid #f2f2f2;
+    margin: 0 -1rem .5rem -1rem;
+    padding: 1rem 1.2rem;
+    button{
+        border: 0;
+        background: unset;
+        padding: 0;
+    }
+}
+#bz-mobile-functions{
+    div{
+        align-items: center;
+        button{
+            margin-right: var(--spacer-1);
+            padding: var(--spacer-2);
+            display: flex;
+            align-items: center;
+            border: 0;
+            background: transparent;
+            svg,
+            img{
+                max-height:24px;
+                max-width: 24px;
+            }
+        }
+    }
+}
+@media(max-width:990px){
+    #header{padding: 4px 0;}
+    #bz-logo img{height: 21px;margin-top: -4px;}
+    #bz-menu.active{
+        right: 0;
+        opacity: 1;
+    }
+    #bz-menu{
+        transition: right .5s, opacity .5s;
+        position: fixed;
+        z-index: 2;
+        background: #fff;
+        width: 100vw;
+        top: 0;
+        right: 100%;
+        opacity: 0;
+        height: auto;
+        max-height: 90vh;
+        .level_1{
+            flex-direction: column;
+            gap: 2rem;
+            max-height: calc(90vh - 70px);
+            overflow-x: visible;
+            overflow-y: scroll;
+            padding: 1rem 1rem 2rem 2rem;
+            margin: 0 -1rem;
+            li{
+                padding:0;
+                margin: 0;
+                a{
+                    font-size:16px;
+                   
+                }
+            }
+            .dropdown{
+                .level_2{
+                    position: relative;
+                    box-shadow: unset;
+                    background: #f8f8f8;
+                    margin: 1.5rem -1rem -.5rem -2rem!important;
+                    width: 100vw!important;
+                    max-width: 100vw!important;
+                    padding: 1rem 2rem;
+                    display:none;
+                }
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                button{
+                    width: 24px;
+                    height: 24px;
+                    svg{width: 10px;height: auto;transition: all .5s;}
+                }
+                .level_2{
+                    width: 100%;
+                }
+                .bz_dropbanner{display: none;}
+            }
+            .dropdown.open{
+                .level_2{
+                    display:block
+                }
+                button{
+                    svg{
+                        transform: rotate(270deg);
+                    }
+                }
+            }
+        }
+    }
+    .top-bar *{
+        line-height: 34px;
+        font-size: 12px;
+    }
+}
