@@ -150,7 +150,6 @@ $('.level_2 a').hover(function(){
     let img = $(this).attr('data-image');
     let url = $(this).attr('href');
     if(img != "empty"){
-        console.log('yee')
        let bn = $(this).closest('.level_2').find('.bz_dropbanner').find('img');
        let original = bn.attr('data-original');
        bn.attr('src',img);       

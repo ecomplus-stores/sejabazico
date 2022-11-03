@@ -26,12 +26,12 @@ const apx_props = _.cms('apx_props') || {}
           <div class="__prices"></div>
           <ul id="apx_seals">
             <% apx_seals.seals.forEach(({ item })=> {
-              
+                
                 let flag = false
-                let categories = item.categories
-                let products = item.products
+                let categories = item.categories 
+                let products = item.products 
 
-                if(categories){
+                if(categories && _.state.categories){
                   categories.forEach(({ category }) => {
                     if(_.state.categories.find(el => el.slug == category.title.trim().toLowerCase() )){
                       flag = true
@@ -96,7 +96,7 @@ const apx_props = _.cms('apx_props') || {}
                   let categories = item.categories
                   let products = item.products
 
-                  if(categories){
+                  if(categories && _.state.categories){
                     categories.forEach(({ category }) => {
                       if(_.state.categories.find(el => el.slug == category.title.trim().toLowerCase() )){
                         flag = true
@@ -235,7 +235,7 @@ const apx_props = _.cms('apx_props') || {}
                   let categories = item.categories
                   let products = item.products
 
-                  if(categories){
+                  if(categories && _.state.categories){
                     categories.forEach(({ category }) => {
                       if(_.state.categories.find(el => el.slug == category.title.trim().toLowerCase() )){
                         flag = true
