@@ -233,6 +233,10 @@ import {
               storefront.context.body = this.body
             }
             this.hasLoadError = false
+            
+            $('.isMobile #page-products #product-actions .product__prices').appendTo('#bz_product_mobile .__prices')
+            
+          
           })
           .catch(err => {
             console.error(err)

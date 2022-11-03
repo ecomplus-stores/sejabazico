@@ -157,5 +157,11 @@ $('.level_2 a').hover(function(){
     }
 });
 
+if(window.innerWidth < 990){
+    $('html').addClass('isMobile');
+} 
+
+$('.isMobile #page-products .bz_breadcrumb').prependTo('#bz_product_mobile')
+
 
 

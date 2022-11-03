@@ -213,6 +213,17 @@ export default {
         })
       }
     }
+
+    $('.isMobile #page-products .bz_gallery').slick({
+        centerMode:true,
+        arrows:false,
+        dots:true,
+        infinite:false,
+        autoplay:false,
+        slidesToShow: 1,
+        lazyLoad:true
+    });
+    //$('.isMobile #page-products .bz_gallery .picture').append('<img style=""/>')
     // const glide = new Glide(this.$refs.glide, this.glideOptions)
     // glide.on('run', () => {
     //   this.moveSlider(glide.index)
