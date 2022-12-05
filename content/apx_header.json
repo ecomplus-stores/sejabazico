@@ -69,15 +69,15 @@
     },
     {
       "title": "Bazicash",
-      "url": "/bazicash"
+      "url": "/pages/o-que-e-bazicash"
     },
     {
       "title": "Blog",
-      "url": "/blog"
+      "url": "https://blog.sejabazico.com.br/"
     },
     {
       "title": "Clube de Assinatura",
-      "url": "/clube-de-assinatura"
+      "url": "https://assinatura.sejabazico.com.br/"
     }
   ]
 }
