@@ -5,20 +5,56 @@
       "list": [
         {
           "item": {
-            "title": "Bázicas",
-            "url": "/bazicas"
+            "title": "Bázica Gola C",
+            "url": "/bazica-gola-c"
           }
         },
         {
           "item": {
-            "title": "Bázicas Lord",
-            "url": "/bazicas-vibe"
+            "title": "Bázica Gola V",
+            "url": "/bazica-gola-v"
           }
         },
         {
           "item": {
-            "title": "Bázicas Vibe",
+            "title": "Bázicas Kids",
             "url": "/bazicas-kids"
+          }
+        },
+        {
+          "item": {
+            "title": "Bázica Lord",
+            "url": "/bazica-lord"
+          }
+        },
+        {
+          "item": {
+            "title": "Bázica Polo",
+            "url": "/bazica-polo"
+          }
+        },
+        {
+          "item": {
+            "title": "Bázica Vibe",
+            "url": "/bazica-vibe"
+          }
+        },
+        {
+          "item": {
+            "title": "Bázica Long",
+            "url": "/bazica-long"
+          }
+        },
+        {
+          "item": {
+            "title": "Cuecas",
+            "url": "/cuecas"
+          }
+        },
+        {
+          "item": {
+            "title": "TOP 10",
+            "url": "/top-10"
           }
         }
       ]
@@ -28,8 +64,44 @@
       "list": [
         {
           "item": {
+            "title": "Fale Conosco",
+            "url": "/pages/contato"
+          }
+        },
+        {
+          "item": {
             "title": "Indique e Ganhe",
-            "url": "/indique-e-ganhe"
+            "url": "/pages/indique-e-ganhe"
+          }
+        },
+        {
+          "item": {
+            "url": "/pages/o-que-e-bazicash",
+            "title": "O que é Bazicash?"
+          }
+        },
+        {
+          "item": {
+            "title": "Política de Envio",
+            "url": "/pages/politica-de-envio"
+          }
+        },
+        {
+          "item": {
+            "title": "Política de Privacidade",
+            "url": "/pages/politica-de-privacidade"
+          }
+        },
+        {
+          "item": {
+            "title": "Por que comprar na Bázico?",
+            "url": "/pages/por-que-comprar-na-bazico"
+          }
+        },
+        {
+          "item": {
+            "title": "Trocas e Devoluções",
+            "url": "/pages/trocas-e-devolucoes"
           }
         }
       ]
@@ -39,8 +111,32 @@
       "list": [
         {
           "item": {
-            "title": "O que é Branding?",
-            "url": "/o-que-e-branding"
+            "title": "Conheça a tendência entre os CEOs: Uniforme pessoal e suas vantagens",
+            "url": "https://blog.sejabazico.com.br/empreendedorismo/conheca-a-tendencia-entre-os-ceos-uniforme-pessoal-e-suas-vantagens/"
+          }
+        },
+        {
+          "item": {
+            "title": "Viagem: aprenda 6 dicas para arrumar a mala com mais eficiência",
+            "url": "https://blog.sejabazico.com.br/viagem/viagem-aprenda-6-dicas-para-arrumar-a-mala-com-mais-eficiencia/"
+          }
+        },
+        {
+          "item": {
+            "title": "Como escolher a Camiseta Básica Masculina Ideal",
+            "url": "https://blog.sejabazico.com.br/minimalismo/como-escolher-a-camiseta-basica-masculina-ideal/"
+          }
+        },
+        {
+          "item": {
+            "title": "Hack de Produtividade: Conheça a técnica Pomodoro",
+            "url": "https://blog.sejabazico.com.br/dicas/hack-de-produtividade-conheca-a-tecnica-pomodoro/"
+          }
+        },
+        {
+          "item": {
+            "title": "Título: 7 Estilos Universais Masculinos: Descubra o Seu",
+            "url": "https://blog.sejabazico.com.br/estilo/titulo-7-estilos-universais-masculinos-descubra-o-seu/"
           }
         }
       ]
