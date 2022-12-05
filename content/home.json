@@ -30,7 +30,7 @@
           "mobile_img": "/img/uploads/fretes-mobile.png",
           "content_order": "inside_image",
           "content_position": "center_right",
-          "btn_text": "Adquira já!",
+          "btn_text": "",
           "btn_background": "#000000",
           "btn_text_color": "#ffffff",
           "title": "",
@@ -41,7 +41,7 @@
         {
           "description_color": "#ffffff",
           "animate": "fadeIn",
-          "start": "2022-12-05T15:01:26.997Z",
+          "start": "",
           "img": "/img/uploads/kidsdesktop.png",
           "mobile_img": "/img/uploads/kidsmobile.png",
           "content_order": "inside_image",
@@ -51,7 +51,7 @@
           "btn_background": "#000000",
           "btn_text_color": "#ffffff",
           "title": "Bázica Kids",
-          "end": "2022-12-05T15:01:27.016Z",
+          "end": "",
           "title_color": "#ffffff",
           "description": "A armadura de um mini herói"
         }
@@ -112,7 +112,7 @@
           "btn_text": "Ver Detalhes",
           "btn_background": "#000000",
           "btn_text_color": "#ffffff",
-          "title": "fora do comum",
+          "title": "A melhor Polo",
           "link": "/",
           "title_color": "#000000",
           "description": "A melhor versão da clássica gola polo. Feita em algodão egípcio, não encolhe, não desbota e possui um caimento impecável que se molda ao seu corpo."
@@ -141,20 +141,58 @@
       "questions": [
         {
           "question": {
-            "response": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.  Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.",
-            "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. "
+            "title": "Como tirar dúvidas sobre o tamanho da minha Bázica?",
+            "response": "Basta usar o nosso provador virtual, ele vai te indicar o tamanho perfeito para o seu corpo!<br>Caso ainda fique com dúvidas, você pode solicitar uma análise personalizada pelo nosso WhatsApp!"
+            
           }
         },
         {
           "question": {
-            "title": "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci",
-            "response": "Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.  Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate"
+            "title": "Qual a composição das Bázicas?",
+            "response": "Nossas Bázicas são feitas com uma das matérias primas mais nobres do mundo, que é o algodão egípcio! Além disso, possuem um pequeno teor de elastano, que confere mais mobilidade as nossas peças.<br>Importante ressaltar que nossas camisetas não desbotam, não encolhem e não esticam!"
+            
           }
         },
         {
           "question": {
-            "title": "Phasellus ultrices nulla quis nibh",
-            "response": "Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi."
+            "title": "Posso trocar se a camisa não ficar boa?",
+            "response": "Com certeza! Sem complicações, super rápido e sem custo na primeira troca!<br>Queremos você 100% satisfeito! Basta solicitar a troca pelo nosso e-mail (suporte@sejabazico.com.br) ou WhatsApp!"
+            
+          }
+        },
+        {
+          "question": {
+            "title": "Quais são as formas de pagamento?",
+            "response": "Nós aceitamos PIX e cartões de crédito em até 5x sem juros!"
+            
+          }
+        },
+        {
+          "question": {
+            "title": "Qual o valor do frete?",
+            "response": "Temos frete grátis para compras acima de R$199,00 para todo Brasil! (Com exceção dos estados da região Norte).<br>Para compras abaixo desse valor você pode consultar inserindo o seu CEP na hora finalizar sua compra!"
+            
+          }
+        },
+        {
+          "question": {
+            "title": "Qual a diferença entre a Air e a Powerful?",
+            "response": "Todas as nossas Bázicas são compostas por algodão egípcio e elastano.<br>A diferença é que a Air possui 7% de elastano, então passa uma sensação de leveza, parece que você não está usando nada! E a powerful, por possuir 10% de elastano, é mais encorpada, então ela abraça e modela mais o seu corpo!"
+            
+          }
+        },
+        {
+          "question": {
+            "title": "O que é Bazicash?",
+            "response": "É o modelo de cashback da Bázico! Em todas as suas compras você acumula Bazicash, que são pontos que funcionam como uma moeda virtual.<br>Juntando Bazicash você consegue trocar por descontos, produtos exclusivos e Bázicas em nosso site!<br> Para te situar melhor, com 999 Bazicash você consegue trocar por uma Bázica!"
+            
+          }
+        },
+        {
+          "question": {
+            "title": "Como faço para consultar meu saldo de Bazicash?",
+            "response": "No canto direito do site tem um botão com uma moeda dourada, ao clicar nele vai aparecer um campo para inserir o seu CPF; você pode consultar quantos pontos você tem a resgatar os prêmios disponíveis: descontos, produtos exclusivos e Bázicas"
+            
           }
         }
       ]

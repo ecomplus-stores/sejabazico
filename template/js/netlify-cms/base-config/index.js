@@ -120,6 +120,22 @@ const bannerFields = [
     widget: 'color'
   },
   {
+    label: 'Cor da Máscara',
+    required: false,
+    name: 'mask_color',
+    widget: 'color'
+  },
+  {
+    label: 'Transparência da Máscara',
+    name: 'mask_opacity',
+    hint: 'De 0.0 até 1.0. 0 é transparente e 1 é totalmente opaco.',
+    min: 0.0,
+    max:1.0,
+    step: 0.1,
+    default: .5,
+    widget: 'number'
+  },
+  {
     label: 'Posição do conteúdo',
     required: true,
     name: 'content_position',
