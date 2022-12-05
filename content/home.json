@@ -7,13 +7,13 @@
       "autoplay": 4000,
       "slides": [
         {
-          "description_color": "#ff0000",
+          "description_color": "#ffffff",
           "animate": "fadeInUp",
           "start": "",
-          "img": "/img/uploads/1920x650.png",
-          "mobile_img": "/img/uploads/768x1000.png",
+          "img": "/img/uploads/clube-desktop.png",
+          "mobile_img": "/img/uploads/clube-mobile.png",
           "content_order": "inside_image",
-          "content_position": "top_left",
+          "content_position": "center_center",
           "btn_text": "Confira agora!",
           "btn_background": "#000000",
           "btn_text_color": "#ffffff",
@@ -23,20 +23,37 @@
           "description": "Sua confiança sempre renovada"
         },
         {
-          "description_color": "#455cbc",
+          "description_color": "#ffffff",
           "animate": "backInDown",
           "start": "",
-          "img": "/img/uploads/1920x650.png",
-          "mobile_img": "/img/uploads/768x1000.png",
+          "img": "/img/uploads/fretes-desktop.png",
+          "mobile_img": "/img/uploads/fretes-mobile.png",
           "content_order": "inside_image",
           "content_position": "center_right",
           "btn_text": "Adquira já!",
-          "btn_background": "#9c007a",
+          "btn_background": "#000000",
           "btn_text_color": "#ffffff",
-          "title": "Um segundo título com outra cor",
+          "title": "",
           "end": "",
-          "title_color": "#a70000",
-          "description": "Com outra descrição"
+          "title_color": "#ffffff",
+          "description": ""
+        },
+        {
+          "description_color": "#ffffff",
+          "animate": "fadeIn",
+          "start": "2022-12-05T15:01:26.997Z",
+          "img": "/img/uploads/kidsdesktop.png",
+          "mobile_img": "/img/uploads/kidsmobile.png",
+          "content_order": "inside_image",
+          "alt": "",
+          "content_position": "center_center",
+          "btn_text": "Comprar agora",
+          "btn_background": "#000000",
+          "btn_text_color": "#ffffff",
+          "title": "Bázica Kids",
+          "end": "2022-12-05T15:01:27.016Z",
+          "title_color": "#ffffff",
+          "description": "A armadura de um mini herói"
         }
       ]
     },
@@ -52,12 +69,13 @@
       ],
       "carrossel_dots_md": "Sim",
       "carrossel_arrows_md": "Sim",
+      "padding_md": "px-md-1",
       "carrossel_dots_sm": "Sim",
       "carrossel_arrows_sm": "Não",
       "padding_sm": "px-0",
       "num_col_md": "4",
       "btn_text": "Ver Todas",
-      "padding_md": "px-md-1",
+      "padding": "px-md-0",
       "num_col_sm": "2",
       "title": "Seja Bázico",
       "type": "apx_productList_A",
@@ -74,44 +92,44 @@
         {
           "description_color": "#000000",
           "animate": "fadeInUp",
-          "img": "/img/uploads/640x640.png",
+          "img": "/img/uploads/mini-banner-cueca.jpg",
           "content_order": "after_image",
           "content_position": "center_left",
-          "btn_text": "CTA Botão 1",
+          "btn_text": "Experimente",
           "btn_background": "#000000",
           "btn_text_color": "#ffffff",
-          "title": "fora do comum",
+          "title": "Sua cueca Bázica",
           "link": "/",
           "title_color": "#000000",
-          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+          "description": "A Bázica que você realmente precisa. Com um molde anatômico, um tecido cheio de tecnologia que entrega um contato sedoso e confortável, anti suor, anti peeling (sem bolinhas) e anti odor. Use a melhor para dar o <b>seu melhor</b>."
         },
         {
           "description_color": "#000000",
           "animate": "fadeInUp",
-          "img": "/img/uploads/640x640.png",
+          "img": "/img/uploads/mini-banner-polo.jpg",
           "content_order": "after_image",
           "content_position": "center_left",
-          "btn_text": "CTA Botão 1",
+          "btn_text": "Ver Detalhes",
           "btn_background": "#000000",
           "btn_text_color": "#ffffff",
           "title": "fora do comum",
           "link": "/",
           "title_color": "#000000",
-          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+          "description": "A melhor versão da clássica gola polo. Feita em algodão egípcio, não encolhe, não desbota e possui um caimento impecável que se molda ao seu corpo."
         },
         {
           "description_color": "#000000",
           "animate": "fadeInUp",
-          "img": "/img/uploads/640x640.png",
+          "img": "/img/uploads/mini-banner-vibe.jpg",
           "content_order": "after_image",
           "content_position": "center_left",
-          "btn_text": "CTA Botão 1",
+          "btn_text": "Conferir",
           "btn_background": "#000000",
           "btn_text_color": "#ffffff",
-          "title": "fora do comum",
+          "title": "Uma nova Vibe!",
           "link": "/",
           "title_color": "#000000",
-          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+          "description": "Unimos os pontos que faltam em todas as camisas sociais e fizemos a melhor camisa de todas! Com um tecido de toque frio que da uma sensação extremamente leve, parece que você está sem nada! Uma peça que agrega charme, durabilidade, mobilidade e sofisticação."
         }
       ]
     },
@@ -138,55 +156,6 @@
             "title": "Phasellus ultrices nulla quis nibh",
             "response": "Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi."
           }
-        }
-      ]
-    },
-    {
-      "type": "apx_banners-grid",
-      "container": "container-fluid",
-      "padding": "px-3",
-      "banners": [
-        {
-          "description_color": "#000000",
-          "animate": "fadeInUp",
-          "img": "/img/uploads/640x640.png",
-          "content_order": "after_image",
-          "content_position": "center_left",
-          "btn_text": "CTA Botão 1",
-          "btn_background": "#000000",
-          "btn_text_color": "#ffffff",
-          "title": "fora do comum",
-          "link": "/",
-          "title_color": "#000000",
-          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
-        },
-        {
-          "description_color": "#000000",
-          "animate": "fadeInUp",
-          "img": "/img/uploads/640x640.png",
-          "content_order": "after_image",
-          "content_position": "center_left",
-          "btn_text": "CTA Botão 1",
-          "btn_background": "#000000",
-          "btn_text_color": "#ffffff",
-          "title": "fora do comum",
-          "link": "/",
-          "title_color": "#000000",
-          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
-        },
-        {
-          "description_color": "#000000",
-          "animate": "fadeInUp",
-          "img": "/img/uploads/640x640.png",
-          "content_order": "after_image",
-          "content_position": "center_left",
-          "btn_text": "CTA Botão 1",
-          "btn_background": "#000000",
-          "btn_text_color": "#ffffff",
-          "title": "fora do comum",
-          "link": "/",
-          "title_color": "#000000",
-          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
         }
       ]
     },
