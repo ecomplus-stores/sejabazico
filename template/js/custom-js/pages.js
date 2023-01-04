@@ -77,7 +77,33 @@ $('body').on('click','.apx_fastBuy button', function(){
     $(this).closest('[key]').attr('option',$(this).attr('option'));
 
     if(fb.find('[key]').length == 1){
+        if($(this).closest('[key]').is(':last-child')){
+            let addToCart = fb.find('.apx_fastBuy-options[option]').length == fb.find('[key]').length ? true : false;
 
+            if(addToCart){
+                let options = fb.find('.apx_fastBuy-options[option]').map(function(i){
+                    return {
+                        key : $(this).attr('key'),
+                        value : $(this).attr('option')
+                    }
+                });
+                
+                let grid = JSON.parse($(this).closest('.apx_fastBuy').attr('grid'));
+                let q;
+                
+                
+                if(options.length == 1){
+                    q = grid.find(el => el.specifications[options[0].key][0].text == options[0].value);
+                }
+                if(options.length == 2){
+                    q = grid.find(el => el.specifications[options[0].key][0].text == options[0].value && el.specifications[options[1].key][0].text == options[1].value);
+                }
+                
+                if(q){
+                    ecomCart.addProduct(product, q._id, 1, true)
+                }
+            }
+        }
     }
     if(fb.find('[key]').length == 2){
         if($(this).closest('[key]').is(':last-child')){
