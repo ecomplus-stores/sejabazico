@@ -387,9 +387,9 @@ export default options => {
             name: 'product_id',
             widget: 'select',
             options: options.state.routes
-              .filter(({ slug }) => typeof slug === 'string')
-              .map(({ _id, slug }) => ({
-                label: slug,
+              .filter(({ sku }) => typeof sku === 'string')
+              .map(({ _id, sku }) => ({
+                label: sku,
                 value: _id
               }))
           }
