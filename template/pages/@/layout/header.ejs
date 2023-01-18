@@ -211,6 +211,7 @@ let marketingStripeStyle = ''
     </div>
   </div>    
 </header>
+<!--
 <div class="top-bar">
   <% if (header.marketing_stripe) { %>
     <% if (header.marketing_stripe.text) { %>
@@ -229,4 +230,47 @@ let marketingStripeStyle = ''
       <% } %>
     <% } %>
   <% } %>
+</div>
+-->
+<div class="top-bar">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <div
+          class="glide"
+          data-wait-mutation="false"
+          data-autoplay="4000"
+          data-per-view="1"
+          data-per-view-md="1"
+          data-per-view-sm="1"
+        >
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+          <% if (apx_header.stripe_slider) { %>
+            <% apx_header.stripe_slider.forEach(({ text, url })=> { %>
+              <li class="glide__slide">
+              <% if (text) { %>
+                <% if (url) { %>
+                  <a
+                    class="top-bar__countdown"
+                    style="<%= marketingStripeStyle %>"
+                    href="<%= url %>"
+                  >
+                    <%- text %>
+                  </a>
+                <% } else { %>
+                  <div class="top-bar__countdown" style="<%= marketingStripeStyle %>">
+                    <%- text %>
+                  </div>
+                <% } %>
+              <% } %>
+              </li>
+            <% }) %>
+          <% } %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </div>

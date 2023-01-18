@@ -1,7 +1,392 @@
 {
   "hosting": {
     "redirects": [
-    ],
+      {
+          "source": "/porta-cartao-moonlight",
+          "destination": "/porta_cartao_moonlight",
+          "type": 301
+      },
+      {
+          "source": "/porta-cartao-green-garden",
+          "destination": "/porta_cartao_green_garden",
+          "type": 301
+      },
+      {
+          "source": "/bazica-gola-v-nude",
+          "destination": "/bazica-gola-v-nude",
+          "type": 301
+      },
+      {
+          "source": "/bazica-long-pink-high",
+          "destination": "/bazica-long-pink-high",
+          "type": 301
+      },
+      {
+          "source": "/bazica-gola-v-branca",
+          "destination": "/bazica-gola-v-branca",
+          "type": 301
+      },
+      {
+          "source": "/bazica-ocean-long",
+          "destination": "/bazica_ocean_long",
+          "type": 301
+      },
+      {
+          "source": "/bazica-gola-v-verde-militar",
+          "destination": "/bazica_gola_v_verde_militar",
+          "type": 301
+      },
+      {
+          "source": "/bazica-long-salmon",
+          "destination": "/bazica_long_salmon",
+          "type": 301
+      },
+      {
+          "source": "/bazica-gola-v-lilac",
+          "destination": "/bazica-gola-v-lilac",
+          "type": 301
+      },
+      {
+          "source": "/bazica-polo-preta",
+          "destination": "/bazica_polo_preta",
+          "type": 301
+      },
+      {
+          "source": "/bazica-toffee",
+          "destination": "/bazica_toffee",
+          "type": 301
+      },
+      {
+          "source": "/short-bazico-bege",
+          "destination": "/short_bazico_bege",
+          "type": 301
+      },
+      {
+          "source": "/porta-cartao-caramelo",
+          "destination": "/porta_cartao_caramelo",
+          "type": 301
+      },
+      {
+          "source": "/bazica-bordo",
+          "destination": "/bazica_bordo",
+          "type": 301
+      },
+      {
+          "source": "/bazica-salmon",
+          "destination": "/bazica_salmon",
+          "type": 301
+      },
+      {
+          "source": "/bazica-off-white-gola-v",
+          "destination": "/bazica_off_white_gola_v",
+          "type": 301
+      },
+      {
+          "source": "/bazica-long-roze",
+          "destination": "/bazica_long_roze",
+          "type": 301
+      },
+      {
+          "source": "/bazica-toffee-long",
+          "destination": "/bazica_toffee_long",
+          "type": 301
+      },
+      {
+          "source": "/bazica-berry-gola-v",
+          "destination": "/bazica_berry_gola_v",
+          "type": 301
+      },
+      {
+          "source": "/bazica-polo-branca",
+          "destination": "/bazica_polo_branca",
+          "type": 301
+      },
+      {
+          "source": "/bazica-kids-branca",
+          "destination": "/bazica_kids_branca",
+          "type": 301
+      },
+      {
+          "source": "/bazica-cinza-escuro",
+          "destination": "/bazica_cinza_escuro",
+          "type": 301
+      },
+      {
+          "source": "/bazica-gola-v-bordo",
+          "destination": "/bazica_gola_v_bordo",
+          "type": 301
+      },
+      {
+          "source": "/bazica-gola-v-pink",
+          "destination": "/bazica_gola_v_pink",
+          "type": 301
+      },
+      {
+          "source": "/bazica-kids-preta",
+          "destination": "/bazica_kids_preta",
+          "type": 301
+      },
+      {
+          "source": "/bazica-long-grafite",
+          "destination": "/bazica_long_grafite",
+          "type": 301
+      },
+      {
+          "source": "/short-bazico-preto",
+          "destination": "/short_bazico_preto",
+          "type": 301
+      },
+      {
+          "source": "/bazica-gola-v-verde-bali",
+          "destination": "/bazica_gola_v_verde_bali",
+          "type": 301
+      },
+      {
+          "source": "/bazica-gola-v-azul-marinho",
+          "destination": "/bazica_gola_v_azul_marinho",
+          "type": 301
+      },
+      {
+          "source": "/bazica-vinho",
+          "destination": "/bazica_vinho",
+          "type": 301
+      },
+      {
+          "source": "/bazica-vinho-gola-v",
+          "destination": "/bazica_vinho_gola_v",
+          "type": 301
+      },
+      {
+          "source": "/bazica-gola-v-areia",
+          "destination": "/bazica_gola_v_areia",
+          "type": 301
+      },
+      {
+          "source": "/porta-cartao-preto",
+          "destination": "/porta_cartao_preto",
+          "type": 301
+      },
+      {
+          "source": "/bazica-toffee-gola-v",
+          "destination": "/bazica_toffee_gola_v",
+          "type": 301
+      },
+      {
+          "source": "/bazica-pink",
+          "destination": "/bazica_pink",
+          "type": 301
+      },
+      {
+          "source": "/bazica-gola-v-azul-escuro",
+          "destination": "/bazica_gola_v_azul_escuro",
+          "type": 301
+      },
+      {
+          "source": "/bazica-roze",
+          "destination": "/bazica_roze",
+          "type": 301
+      },
+      {
+          "source": "/bazica-azul-escuro",
+          "destination": "/bazica_azul_escuro",
+          "type": 301
+      },
+      {
+          "source": "/bazica-gola-v-red",
+          "destination": "/bazica_gola_v_red",
+          "type": 301
+      },
+      {
+          "source": "/bazica-vibe-areia",
+          "destination": "/bazica_vibe_areia",
+          "type": 301
+      },
+      {
+          "source": "/bazica-lord-midnight",
+          "destination": "/bazica_lord_midnight",
+          "type": 301
+      },
+      {
+          "source": "/bazica-gola-v-preta",
+          "destination": "/bazica_gola_v_preta",
+          "type": 301
+      },
+      {
+          "source": "/bazica-long-azul-escuro",
+          "destination": "/bazica_long_azul_escuro",
+          "type": 301
+      },
+      {
+          "source": "/bazica-vibe-rose",
+          "destination": "/bazica_vibe_rose",
+          "type": 301
+      },
+      {
+          "source": "/bazica-long-lavanda",
+          "destination": "/bazica_long_lavanda",
+          "type": 301
+      },
+      {
+          "source": "/bazica-long-preta",
+          "destination": "/bazica_long_preta",
+          "type": 301
+      },
+      {
+          "source": "/bazica-long-azul-marinho",
+          "destination": "/bazica_long_azul_marinho",
+          "type": 301
+      },
+      {
+          "source": "/bazica-kids-azul-escuro",
+          "destination": "/bazica_kids_azul_escuro",
+          "type": 301
+      },
+      {
+          "source": "/bazica-long-verde-bali",
+          "destination": "/bazica_long_verde_bali",
+          "type": 301
+      },
+      {
+          "source": "/bazica-verde-militar",
+          "destination": "/bazica_verde_militar",
+          "type": 301
+      },
+      {
+          "source": "/bazica-verde-bali",
+          "destination": "/bazica_verde_bali",
+          "type": 301
+      },
+      {
+          "source": "/bazica-branca",
+          "destination": "/bazica_branca",
+          "type": 301
+      },
+      {
+          "source": "/bazica-gola-v-salmon",
+          "destination": "/bazica_gola_v_salmon",
+          "type": 301
+      },
+      {
+          "source": "/bazica-lord-vinho",
+          "destination": "/bazica_lord_vinho",
+          "type": 301
+      },
+      {
+          "source": "/bazica-lord-branca",
+          "destination": "/bazica_lord_branca",
+          "type": 301
+      },
+      {
+          "source": "/bazica-long-verde-militar",
+          "destination": "/bazica_long_verde_militar",
+          "type": 301
+      },
+      {
+          "source": "/bazica-off-white",
+          "destination": "/bazica_off_white",
+          "type": 301
+      },
+      {
+          "source": "/bazica-areia",
+          "destination": "/bazica_areia",
+          "type": 301
+      },
+      {
+          "source": "/bazica-lord-preta",
+          "destination": "/bazica_lord_preta",
+          "type": 301
+      },
+      {
+          "source": "/bazica-vibe-black",
+          "destination": "/bazica_vibe_black",
+          "type": 301
+      },
+      {
+          "source": "/bazica-off-white-long",
+          "destination": "/bazica_off_white_long",
+          "type": 301
+      },
+      {
+          "source": "/bazica-kids-verde-militar",
+          "destination": "/bazica_kids_verde_militar",
+          "type": 301
+      },
+      {
+          "source": "/bazica-long-branca",
+          "destination": "/bazica_long_branca",
+          "type": 301
+      },
+      {
+          "source": "/bazica-grafite",
+          "destination": "/bazica_grafite",
+          "type": 301
+      },
+      {
+          "source": "/bazica-ocean",
+          "destination": "/bazica_ocean",
+          "type": 301
+      },
+      {
+          "source": "/bazica-ocean-gola-v",
+          "destination": "/bazica_ocean_gola_v",
+          "type": 301
+      },
+      {
+          "source": "/bazica-berry-long",
+          "destination": "/bazica_berry_long",
+          "type": 301
+      },
+      {
+          "source": "/bazica-berry",
+          "destination": "/bazica_berry",
+          "type": 301
+      },
+      {
+          "source": "/bazica-long-vinho",
+          "destination": "/bazica_long_vinho",
+          "type": 301
+      },
+      {
+          "source": "/bazica-gola-v-cinza-escuro",
+          "destination": "/bazica_gola_v_cinza_escuro",
+          "type": 301
+      },
+      {
+          "source": "/bazica-lavanda",
+          "destination": "/bazica_lavanda",
+          "type": 301
+      },
+      {
+          "source": "/cueca-bazica",
+          "destination": "/cueca_bazica",
+          "type": 301
+      },
+      {
+          "source": "/bazica-long-bordo",
+          "destination": "/bazica_long_bordo",
+          "type": 301
+      },
+      {
+          "source": "/bazica-preta",
+          "destination": "/bazica_preta",
+          "type": 301
+      },
+      {
+          "source": "/bazica-long-areia",
+          "destination": "/bazica_long_areia",
+          "type": 301
+      },
+      {
+          "source": "/bazica-gola-v-grafite",
+          "destination": "/bazica_gola_v_grafite",
+          "type": 301
+      },
+      {
+          "source": "/bazica-vibe-pacific",
+          "destination": "/bazica_vibe_pacific",
+          "type": 301
+      }
+  ],
     "public": "dist",
     "ignore": [
       "firebase.json",

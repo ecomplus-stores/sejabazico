@@ -1,4 +1,14 @@
 {
+  "stripe_slider" : [
+    {
+      "text" : "Sua primeira Bázica? Use o código: <b>PRIMEIRACOMPRA</b>",
+      "url" : ""
+    },
+    {
+      "text" : "<u>Frete grátis</u> e em até 24hrs para Aracaju!",
+      "url" : ""
+    }
+  ],
   "links": [
     {
       "title": "Roupas",

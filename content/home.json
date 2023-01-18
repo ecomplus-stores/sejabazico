@@ -20,7 +20,10 @@
           "title": "Clube de Assinatura",
           "end": "",
           "title_color": "#ffffff",
-          "description": "Sua confiança sempre renovada"
+          "description": "Sua confiança sempre renovada",
+          "mask_color": "#000000",
+          "mask_opacity": 1
+
         },
         {
           "description_color": "#ffffff",
@@ -36,7 +39,9 @@
           "title": "",
           "end": "",
           "title_color": "#ffffff",
-          "description": ""
+          "description": "",
+          "mask_color": "#000000",
+          "mask_opacity": 0
         },
         {
           "description_color": "#ffffff",
@@ -53,7 +58,9 @@
           "title": "Bázica Kids",
           "end": "",
           "title_color": "#ffffff",
-          "description": "A armadura de um mini herói"
+          "description": "A armadura de um mini herói",
+          "mask_color": "#000000",
+          "mask_opacity": 5
         }
       ]
     },
@@ -74,7 +81,7 @@
       "padding_md": "px-md-1",
       "carrossel_dots_sm": "Sim",
       "carrossel_arrows_sm": "Não",
-      "padding_sm": "px-0",
+      "padding_sm": "px-1",
       "num_col_md": "4",
       "btn_text": "Ver Todas",
       "padding": "px-md-0",

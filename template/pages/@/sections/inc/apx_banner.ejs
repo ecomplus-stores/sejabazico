@@ -58,7 +58,14 @@ if (opt.img) {
             <% } %>
           >
         <% } %>
-      </picture>      
+      </picture>   
+        <% if (opt.mask_opacity && opt.mask_color){ %>
+        <span
+          style="--mask_opacity:<%= opt.mask_opacity %>; --mask_color: <%= opt.mask_color %>;"
+          class="has_mask">
+        </span>
+        <% } %>   
+        
     </a>
       <% if (opt.btn_text || opt.title || opt.description){ %>
         <div class="apx_banner-content <%= opt.content_order %> <%= opt.content_position %> animate__animated animate__<%= opt.animate %> ">

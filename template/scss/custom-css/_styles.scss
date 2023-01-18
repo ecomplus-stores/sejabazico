@@ -3,9 +3,11 @@
     --menu_lv1: 13px;
     --menu_lv2: 12px;
     --bn_btn-text: 16px;
-    --bn_title: 35px;
+    // --bn_title: 35px;
+    --bn_title: 28px;
     --bn_description: 16px;
-    --section_title:39px;
+    // --section_title:39px;
+    --section_title:32px;
     --section_subtitle:16px;
     --body:16px;
     --banner_spacer: 2rem;
@@ -150,7 +152,7 @@ body{font-size:var(--body);color:#000}
     width: 15px;
 }
 
-.top-bar{}
+.top-bar{background:#000;}
 .top-bar *{
     font-size:13px;
     line-height:50px;
@@ -605,8 +607,10 @@ html:not(.isMobile) .bz_gallery{
             display: block;
 
             img{
-                width: 100%;
+                min-width: 100%;
                 height: auto;
+                min-height:100%;
+                object-fit: cover;
             }
         }
     }
@@ -1354,4 +1358,55 @@ body #storefront-app>div>h1{
     content: "Carrinho";
     font-family: 'Montserrat';
     font-weight: 600;
+}
+
+.has_mask{
+    background-color:var(--mask_color);
+    opacity:calc(var(--mask_opacity) / 10);
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+.page-products .product__payment {display:none}
+
+@media(min-width:990px){
+    .product--side{flex:0 0 600px;min-width:600px;}
+    #fmais-loyalty__bottom__open__btn{bottom:15%!important;top:auto;}
+}
+
+.product--side .shipping-calculator{
+    .shipping-calculator__services{
+        width:100%;
+        max-width:unset;
+        max-height: 200px;
+        overflow-y: scroll;
+        border-bottom:1px solid #dfdfdf;
+        span{
+            
+            .list-group{
+                width:100%;
+                .list-group-item{
+                    font-size:12px;
+                    .shipping-calculator__option{
+                        .shipping-line{
+                            strong{
+
+                            }
+                            span{}
+                        }
+                        small{}
+                    }
+                }
+            }
+        }
+    }
+}
+
+#product-actions .prices__value + span *,
+#bz_product_mobile .prices__value + span *{
+    font-size: 90%;
+    letter-spacing: 0;
 }

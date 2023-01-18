@@ -282,7 +282,7 @@
               </div>
               <p
                 class="product__short-stock"
-                v-if="isLowQuantity"
+                v-if="isLowQuantity && 1 != 1"
               >
                 <i class="fas fa-forward mr-1"></i>
                 {{ i19only }}
@@ -291,7 +291,7 @@
               </p>
             </template>
 
-            <transition enter-active-class="animated fadeInUp">
+            <transition enter-active-class="animated fadeInUp" v-if="1 != 1">
               <slot
                 name="payment-gateways"
                 v-bind="{ paymentOptions }"

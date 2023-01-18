@@ -128,11 +128,10 @@ const bannerFields = [
   {
     label: 'Transparência da Máscara',
     name: 'mask_opacity',
-    hint: 'De 0.0 até 1.0. 0 é transparente e 1 é totalmente opaco.',
-    min: 0.0,
-    max:1.0,
-    step: 0.1,
-    default: .5,
+    hint: 'De 0 até 10. 0 é transparente e 10 é totalmente opaco.',
+    min: 0,
+    max:10,
+    default:5,    
     widget: 'number'
   },
   {
@@ -440,7 +439,7 @@ export default options => {
           name: 'padding_sm',
           widget: 'select',
           options: ["px-0","px-1","px-2","px-3","px-4","px-5"]
-        },  
+        },          
         {
           label: 'Carrossel Mobile?',
           required: true,
