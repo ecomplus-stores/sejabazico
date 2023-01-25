@@ -187,6 +187,8 @@ if(window.innerWidth < 990){
 } 
 
 $('.isMobile #page-products .bz_breadcrumb').prependTo('#bz_product_mobile');
+$('.isMobile header#header #search-bar').prependTo('#search-bar-mobile');
+$('#search-bar-mobile .header__search-btn').html('Buscar');
 
 $('.header__search-input').keyup(function(){
     $('body .search__input').val($(this).val())[0].dispatchEvent(new Event('input'));

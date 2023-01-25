@@ -1485,3 +1485,31 @@ body #storefront-app>div>h1{
 #header #instant-search .search-engine__info{display:none}
 #header #instant-search .search-engine__retail{padding:0}
 #header #instant-search .search__body{padding:1rem 0 0 0}
+
+#search-bar-mobile{
+    margin-bottom: -4px;
+    margin-top: 4px;
+    background:#f2f2f2;
+    form.header__search{
+        background:#f2f2f2;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:10px;
+        input{
+            font-size:12px;background:transparent;
+            height: 30px;
+            margin: 0;
+            padding: 0;
+        }
+        button{
+            background:#000;color:#fff;font-size:12px;font-weight:600;
+            position:relative;
+            top:auto;
+            bottom:auto;
+            left: auto;
+            right: auto;
+            margin:0!important
+        }
+    }
+}

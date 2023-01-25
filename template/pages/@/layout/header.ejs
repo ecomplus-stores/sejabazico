@@ -121,7 +121,7 @@ let marketingStripeStyle = ''
       <div class="col-md col" id="bz-functions">
        
         <div
-          class="d-none d-lg-block collapse show"
+          class="collapse show"
           id="search-bar"
         >
           <form
@@ -132,7 +132,7 @@ let marketingStripeStyle = ''
             autocomplete="off"
           >
             <input
-              type="search"
+              type="text"
               name="term"
               placeholder="<%= _.dictionary('searchProducts') %>"
               aria-label="<%= _.dictionary('searchProducts') %>"
@@ -212,6 +212,9 @@ let marketingStripeStyle = ''
       -->
     </div>
   </div>    
+  <div id="search-bar-mobile" class="d-block d-lg-none">
+    
+  </div>
 </header>
 <!--
 <div class="top-bar">
