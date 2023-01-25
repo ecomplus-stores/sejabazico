@@ -19,11 +19,12 @@ if (imgObj) {
 
 %>
 
-<article class="product-item" data-product="<%= JSON.stringify(itemData) %>">
+<!-- <article class="product-item" > -->
   <div
     class="product-card"
     data-product-id="<%= itemData._id %>"
     data-sku="<%= itemData.sku %>"
+    data-product="<%= JSON.stringify(itemData) %>"
     <% if (!opt.static) { %>
       data-to-render="true"
     <% } %>
@@ -95,4 +96,4 @@ if (imgObj) {
   <%- await include('@/helpers/widgets-append', {
     _, opt, field: 'productItemAppend'
   }) %>
-</article>
+<!-- </article> -->

@@ -47,10 +47,9 @@ $('.apx_product-list').each(function(){
 });
 
 window.populateOptions = function(_id){
-    $('[data-product-id='+ _id +']').each(function(){
-        let me = $(this).closest('.product-item');
+    $('#content .product-card[data-product-id='+ _id +']').each(function(){
+        let me = $(this);
         let fb = me.find('.apx_fastBuy:not(.loaded)');
-        
         let data = JSON.parse(me.attr('data-product'));
         let grid = data.variationsGrids;
         if(grid){

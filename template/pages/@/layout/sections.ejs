@@ -1,4 +1,7 @@
-<article id="content" class="page page--<%= _.pageName %>">
+<% 
+const apx_category = _.cms('apx_category') || {}
+%>
+<article id="content" class="page page--<%= _.pageName %>" data-container="<%= JSON.stringify(apx_category) %>">
   <div class="sections pb-1 pb-sm-2 pb-lg-4">
     <%
     // load page sections and render each one

@@ -1427,7 +1427,7 @@ body #storefront-app>div>h1{
   border-top: 4px solid var(--apx_azul);
   margin-top: 0;
 }
-#instant-search .apx_fastBuyContainer > div{display:none!important}
+#header #instant-search .apx_fastBuyContainer > div{display:none!important}
 #header .search__history .fas,
 #header .search__count{color:#fff;}
 #header .search__history{text-align:right}
@@ -1511,5 +1511,38 @@ body #storefront-app>div>h1{
             right: auto;
             margin:0!important
         }
+    }
+}
+
+
+.page .search-engine__retail{
+    padding:0 15px;
+}
+.page .search-engine__nav{    
+    padding: 1rem 0!important;
+    background: transparent;
+    border-top: 1px solid #F2F2F2;
+}
+.page .search-engine__nav *{color:#000;font-size:16px;}
+.page .search-engine__nav .search-engine__toggles button{
+    background:transparent;
+    border:1px solid #f2f2f2;
+    color:#000
+}
+.page .search-engine__nav .search-engine__toggles button:hover{
+    background:#f2f2f2
+}
+
+.search-engine__filter{
+    h5{font-size:16px;font-weight:600;}
+    .custom-control-input{
+
+    }
+    button.text-truncate{font-weight:600;font-size:16px;}
+    .custom-control-label{
+        font-size: 14px;
+        line-height: 30px;
+        display: inline-block;
+        vertical-align: middle;
     }
 }

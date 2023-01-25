@@ -123,6 +123,13 @@ import {
         delete this.body.body_text
         delete this.body.inventory_records
         delete this.body.price_change_records
+        this.body.itemData = {
+          _id : this.body._id,
+          sku : this.body.sku,
+          slug : this.body.slug,
+          quantity : this.body.quantity,
+          variationsGrids : ecomUtils.variationsGrids(this.body,{},true)
+        }
       },
   
       fetchItem () {
@@ -196,6 +203,7 @@ import {
       if (!this.isLoaded) {
         this.fetchItem()
       }
+      window.populateOptions(this.body._id)
       
     },
     mounted () {
