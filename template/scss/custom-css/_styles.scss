@@ -662,7 +662,7 @@ html:not(.isMobile) .bz_gallery{
             height: 40px;
             min-width: 40px;
             padding: .5rem;
-            font-size: var(--body);
+            font-size: calc(var(--body) * .9);
             font-weight: 400;
             background: #fff;
             border-radius: 0;
@@ -672,8 +672,8 @@ html:not(.isMobile) .bz_gallery{
         }
         .variations__option--selected{
             font-weight: 600;
-            color: #fff;
-            background: #000;
+            color: #000;
+            background: #f2f2f2;
         }
     }
 
