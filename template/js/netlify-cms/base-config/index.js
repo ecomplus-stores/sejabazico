@@ -518,7 +518,7 @@ export default options => {
           label: 'Gatilho - URL da Categoria (SLUG)',
           required: false,
           name: 'slug',
-          widget: 'text'
+          widget: 'string'
         },
         {
           label: 'Lista de Conteúdo',
@@ -535,12 +535,14 @@ export default options => {
                 {
                   label: 'Título',
                   name: 'title',
-                  widget: 'string'          
+                  widget: 'string',
+                  required:false,
                 },
                 {
                   label: 'Subtítulo',
                   name: 'subtitle',
-                  widget: 'string'          
+                  widget: 'string',
+                  required:false,          
                 },
                 {
                   label: 'Posicionamento da Imagem',
@@ -562,7 +564,8 @@ export default options => {
                 {
                   label: 'Imagem',
                   name: 'image',
-                  widget: 'image'          
+                  widget: 'image',
+                  required:false,          
                 },                
               ]
             },          
