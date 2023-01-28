@@ -5,10 +5,6 @@
       "enabled": true
     },
     {
-      "type": "custom-html",
-      "html": "<div class=\"apx-title\">\n  <h3>Nosso Diferencial</h3>\n  <small>Porque nem toda camiseta básica é igual</small>\n</div>\n\n<div class=\"apx-title\">\n  <h3>Porque a nossa é melhor?</h3>\n</div>"
-    },
-    {
       "type": "apx_blockPerCategory",
       "title": "Descrição Geral",
       "slug": "",
