@@ -544,12 +544,14 @@ export default options => {
                 },
                 {
                   label: 'Posicionamento da Imagem',
+                  name:"image_position",
                   widget: 'select',
                   options: ["first","last"]        
                 },
                 {
                   label: 'Alinhamento do Texto',
                   widget: 'select',
+                  name:"text_align",
                   options: ["left","right","justify","center"]        
                 },
                 {
