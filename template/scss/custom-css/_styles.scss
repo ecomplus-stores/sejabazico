@@ -1546,3 +1546,7 @@ body #storefront-app>div>h1{
         vertical-align: middle;
     }
 }
+
+@media(min-width:990px){
+    .search-engine__aside-open{display:none}
+}

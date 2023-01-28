@@ -504,6 +504,71 @@ export default options => {
       ]
     },
     {
+      label: '[ALPIX] - HTML por Categoria',
+      name: 'apx_blockPerCategory',
+      widget: 'object',
+      fields: [
+        {
+          label: 'Título (Apenas identificação)',
+          required: false,
+          name: 'title',
+          widget: 'string'
+        },
+        {
+          label: 'Gatilho - URL da Categoria (SLUG)',
+          required: false,
+          name: 'slug',
+          widget: 'text'
+        },
+        {
+          label: 'Lista de Conteúdo',
+          name: 'list',
+          widget: 'list',
+          required:false,
+          fields: [
+            {
+              label: 'Conteúdo',
+              name: 'content',
+              widget: 'object',
+              required:false,
+              fields: [
+                {
+                  label: 'Título',
+                  name: 'title',
+                  widget: 'string'          
+                },
+                {
+                  label: 'Subtítulo',
+                  name: 'subtitle',
+                  widget: 'string'          
+                },
+                {
+                  label: 'Posicionamento da Imagem',
+                  widget: 'select',
+                  options: ["first","last"]        
+                },
+                {
+                  label: 'Alinhamento do Texto',
+                  widget: 'select',
+                  options: ["left","right","justify","center"]        
+                },
+                {
+                  label: 'Texto',
+                  name: 'body',
+                  widget: 'markdown'          
+                },
+                {
+                  label: 'Imagem',
+                  name: 'image',
+                  widget: 'image'          
+                },                
+              ]
+            },          
+          ]
+        },        
+      ]
+    },
+    {
       label: '[ALPIX] - Feed Instagram',
       name: 'apx_instafeed',
       widget: 'object',
