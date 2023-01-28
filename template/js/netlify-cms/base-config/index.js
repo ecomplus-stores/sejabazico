@@ -504,7 +504,7 @@ export default options => {
       ]
     },
     {
-      label: '[ALPIX] - HTML por Categoria',
+      label: '[ALPIX] - HTML por Categoria (Apenas para Produto)',
       name: 'apx_blockPerCategory',
       widget: 'object',
       fields: [
