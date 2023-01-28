@@ -1,0 +1,42 @@
+<%      
+    if(opt.slug == ""){
+        for (let i = 0; i < opt.list.length; i++) { 
+%>
+        <section
+            class="apx_blockPerCategory mt-md-4 mb-md-4 pt-md-5 pb-md-3  px-md-5 px-3"
+       >
+            <div class="container">
+            <%
+                if(opt.list[i].content.title){
+                    %>
+                        <div class="apx_section-title text-center mb-5">
+                        
+                            
+                            <h2 class="text-bold text-uppercase"><%- opt.list[i].content.title %></h2>
+                            <% if(opt.list[i].content.subtitle){ %>
+                            <small class="text-uppercase"><%- opt.list[i].content.subtitle %></small>                        
+                            <% } %>
+                        
+                        </div>
+                    <%
+                }
+            %>
+            <div class="row d-flex justify-content-center align-items-center order_<%= opt.list[i].content.image_position %>">      
+                <% if(opt.list[i].content.image){ %>
+                    <div class="col-auto">
+                    <img
+                        src="<%= opt.list[i].content.image.replace('.webp', '.png') %>"
+                    >
+                    </div>
+                <% } %>
+                <% if(opt.list[i].content.body){ %>
+                    <div class="col">
+                    <div class="html-body html-clearfix text_<%= opt.list[i].content.text_align %>">
+                        <%- _.md.render(opt.list[i].content.body) %>
+                    </div>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+      </section>
+    <% } } %>      
