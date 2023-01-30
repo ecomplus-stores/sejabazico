@@ -11,12 +11,23 @@
   <main role="main" id="main">
     <%- await include('@/layout/header') %>
 
-    <div class="container py-5">
-      <article id="fallback-404">
+    
+    <div class="container py-5 ">
+      <h3 class=" mt-5">
+        Página não encontrada
+      </h3>
+      <p class="mt-4 mb-4">A página que você tentou acessar não foi encontrada. Por favor verifique o endereço acessado e tente novamente.</p>
+      <div class="row justify-content-start align-items-center mb-5">
+        <div class="col-auto">
+          <a href="/" class="btn btn-primary">Ir para a página inicial</a>
+        </div>        
+      </div>
+      
+<!--      <article id="fallback-404">
         <span class="text-muted">
           404 - Not found
         </span>
-      </article>
+      </article>-->
     </div>
 
     <%- await include('@/layout/footer') %>
