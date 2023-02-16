@@ -89,6 +89,43 @@ const apx_props = _.cms('apx_props') || {}
             <h1 class="product__name d-md-block d-none">
               <%= _.ecomUtils.name(_.state) %>
             </h1>
+            <ul id="apx_props">
+              <% apx_props.props.forEach(({ item })=> {
+                
+                  let flag = false
+                  let categories = item.categories
+                  let products = item.products
+
+                  if(categories && _.state.categories){
+                    categories.forEach(({ category }) => {
+                      if(_.state.categories.find(el => el.slug == category.title.trim().toLowerCase() )){
+                        flag = true
+                        
+                      }
+                    })
+                  }
+
+                  if(products){
+                    products.forEach(({ product }) => {
+                      if(_.state.sku.trim().toLowerCase() == product.title.trim().toLowerCase()){
+                        flag = true
+                      }
+                    })
+                  }
+
+                  if(flag){
+                %>
+                    <li>
+                    <% if (item.image) {%>
+                      <img src="<%=  item.image %>" alt="<%=  item.title %>"/>
+                    <% } %>
+                    <%- item.title %>      
+                    </li>
+                <% 
+                  }
+              }) 
+            %>
+              </ul>
             <ul id="apx_seals" class=" d-md-flex d-none">
               <% apx_seals.seals.forEach(({ item })=> {
                 
@@ -228,43 +265,7 @@ const apx_props = _.cms('apx_props') || {}
                 </div>                
               </div>
             </div>
-            <ul id="apx_props">
-              <% apx_props.props.forEach(({ item })=> {
-                
-                  let flag = false
-                  let categories = item.categories
-                  let products = item.products
-
-                  if(categories && _.state.categories){
-                    categories.forEach(({ category }) => {
-                      if(_.state.categories.find(el => el.slug == category.title.trim().toLowerCase() )){
-                        flag = true
-                        
-                      }
-                    })
-                  }
-
-                  if(products){
-                    products.forEach(({ product }) => {
-                      if(_.state.sku.trim().toLowerCase() == product.title.trim().toLowerCase()){
-                        flag = true
-                      }
-                    })
-                  }
-
-                  if(flag){
-                %>
-                    <li>
-                    <% if (item.image) {%>
-                      <img src="<%=  item.image %>" alt="<%=  item.title %>"/>
-                    <% } %>
-                    <%- item.title %>      
-                    </li>
-                <% 
-                  }
-              }) 
-            %>
-              </ul>
+            
             <% if (_.state.short_description) { %>
               <p class="product__info mt-3 lead">
                 <%= _.state.short_description %>

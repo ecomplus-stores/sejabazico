@@ -1580,3 +1580,9 @@ body #storefront-app>div>h1{
         padding:0;
     }   
 }
+
+.discount-applier__intro{font-size:0}
+.discount-applier__intro:after{
+    content:"Possui um código?";
+    font-size: 1rem;
+}

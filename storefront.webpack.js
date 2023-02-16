@@ -13,6 +13,8 @@ module.exports = () => ({
       './js/TheProduct.js': path.resolve(__dirname, 'template/js/custom-js/html/TheProduct.js'),   
       './html/SearchEngine.html': path.resolve(__dirname, 'template/js/custom-js/html/SearchEngine.html'),   
       './js/SearchEngine.js': path.resolve(__dirname, 'template/js/custom-js/html/SearchEngine.js'),   
+      './html/APrices.html': path.resolve(__dirname, 'template/js/custom-js/html/APrices.html'),   
+      './html/CartItem.html': path.resolve(__dirname, 'template/js/custom-js/html/CartItem.html'),   
     }
   }
 })
