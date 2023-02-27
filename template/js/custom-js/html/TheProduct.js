@@ -452,5 +452,14 @@ import {
       } else {
         this.fetchProduct()
       }
+      
+    },
+    mounted() {
+      setTimeout(() => {
+      $('.variations > div:nth-child(1) button:not(.disabled)').first().click();
+        setTimeout(() => {
+            $('.variations > div:nth-child(2) button:not(.disabled)').first().click();
+        }, "200")
+     }, "200")
     }
   }
