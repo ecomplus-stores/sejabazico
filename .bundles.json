@@ -13,14 +13,14 @@
     "app-confirmation": "chunk.fa683f73bb0f132f3778.js",
     "app-order": "chunk.96467a16fca1485aeef2.js",
     "checkout": [
-      "checkout.31b38df3af81ad0c70f4.js",
-      "checkout.31b38df3af81ad0c70f4.js.map"
+      "checkout.f6a233f1abd825421c5b.js",
+      "checkout.f6a233f1abd825421c5b.js.map"
     ],
     "storefront": [
       "storefront.b2fafaec092724611e47.css",
-      "storefront.72581131ce10eba93c44.js",
+      "storefront.89b8f0c2df1ca7da1356.js",
       "storefront.b2fafaec092724611e47.css.map",
-      "storefront.72581131ce10eba93c44.js.map"
+      "storefront.89b8f0c2df1ca7da1356.js.map"
     ],
     "vendors~app-account": "chunk.b12c52e1f106f5062c12.js",
     "vendors~app-cart": "chunk.6f5589cb487deb1d6214.js",
