@@ -1581,8 +1581,26 @@ body #storefront-app>div>h1{
     }   
 }
 
-.discount-applier__intro{font-size:0}
+.discount-applier__coupon-btn{line-height: initial;
+    padding: 0.8rem 0;}
+.discount-applier__coupon-btn,
+.discount-applier__intro{font-size:0;line-height:0}
 .discount-applier__intro:after{
     content:"Possui um código?";
     font-size: 1rem;
 }
+.discount-applier__coupon-btn i{font-size:1rem}
+.discount-applier__coupon-btn:after{
+    content:"Adicionar código";
+    font-size: 1rem; 
+}
+.bcash_icon{
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    background-size: contain;
+    border: 2px solid #000;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.bazicash_amount{font-size:16px;}
