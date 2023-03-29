@@ -40,6 +40,7 @@
     "mastercard": true,
     "citibank": false,
     "mais": false,
+    "pix": true,
     "itau": true
   },
   "credits": "BÁZICO Comercio e Moda LTDA - CNPJ: 47.058.882/0001-00 © Todos os direitos reservados. 2022"
