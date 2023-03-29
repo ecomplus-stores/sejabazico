@@ -1,12 +1,8 @@
 {
-  "stripe_slider" : [
+  "stripe_slider": [
     {
-      "text" : "Sua primeira Bázica? Use o código: <b>PRIMEIRACOMPRA</b>",
-      "url" : ""
-    },
-    {
-      "text" : "<u>Frete grátis</u> e em até 24hrs para Aracaju!",
-      "url" : ""
+      "text": "Sua primeira Bázica? Use o código: <b>PRIMEIRACOMPRA</b>",
+      "url": "sejabazico.com.br"
     }
   ],
   "links": [
@@ -86,8 +82,8 @@
       "url": "https://blog.sejabazico.com.br/"
     },
     {
-      "title": "Clube de Assinatura",
-      "url": "https://assinatura.sejabazico.com.br/"
+      "title": "BaziPass",
+      "url": "https://landing.sejabazico.com.br/bazipass-assinatura/"
     }
   ]
 }
