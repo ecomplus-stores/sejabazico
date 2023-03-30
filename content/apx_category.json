@@ -3,6 +3,6 @@
   "num_col_sm": "2",
   "padding_md": "px-md-1",
   "padding_sm": "px-1",
-  "container": "container_90"
-  
+  "container": "container_90",
+  "padding": "px-md-3"
 }
