@@ -70,6 +70,12 @@
             "title": "<b>TOP 10</b>",
             "url": "/top-10"
           }
+        },
+        {
+          "item": {
+            "url": "/bazica-vicentti",
+            "title": "Bázica Vicentti"
+          }
         }
       ]
     },
