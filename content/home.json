@@ -14,16 +14,15 @@
           "mobile_img": "/img/uploads/clube-mobile.png",
           "content_order": "inside_image",
           "content_position": "center_center",
+          "mask_color": "#000000",
           "btn_text": "Confira agora!",
           "btn_background": "#000000",
           "btn_text_color": "#ffffff",
+          "mask_opacity": 1,
           "title": "Clube de Assinatura",
           "end": "",
           "title_color": "#ffffff",
-          "description": "Sua confiança sempre renovada",
-          "mask_color": "#000000",
-          "mask_opacity": 1
-
+          "description": "Sua confiança sempre renovada"
         },
         {
           "description_color": "#ffffff",
@@ -33,15 +32,15 @@
           "mobile_img": "/img/uploads/fretes-mobile.png",
           "content_order": "inside_image",
           "content_position": "center_right",
+          "mask_color": "#000000",
           "btn_text": "",
           "btn_background": "#000000",
           "btn_text_color": "#ffffff",
+          "mask_opacity": 0,
           "title": "",
           "end": "",
           "title_color": "#ffffff",
-          "description": "",
-          "mask_color": "#000000",
-          "mask_opacity": 0
+          "description": ""
         },
         {
           "description_color": "#ffffff",
@@ -52,21 +51,21 @@
           "content_order": "inside_image",
           "alt": "",
           "content_position": "center_center",
+          "mask_color": "#000000",
           "btn_text": "Comprar agora",
           "btn_background": "#000000",
           "btn_text_color": "#ffffff",
+          "mask_opacity": 5,
           "title": "Bázica Kids",
           "end": "",
           "title_color": "#ffffff",
-          "description": "A armadura de um mini herói",
-          "mask_color": "#000000",
-          "mask_opacity": 5
+          "description": "A armadura de um mini herói"
         }
       ]
     },
     {
       "carrossel_sm": "Sim",
-      "container": "container_90",
+      "container": "container-fluid",
       "products": [
         "636eac9673321213f8d6f745",
         "636eac9773321213f8d6f74b",
@@ -84,63 +83,14 @@
       "padding_sm": "px-1",
       "num_col_md": "4",
       "btn_text": "Ver Todas",
-      "padding": "px-md-0",
+      "padding": "px-md-1",
       "num_col_sm": "2",
-      "title": "Seja Bázico",
+      "title": "Sua nova camisa preferida!",
       "type": "apx_productList_A",
-      "description": "Uma descrição curtinha",
+      "description": "Esqueça para sempre as básicas descartáveis",
       "btn_link": "/bazicas",
       "list": "description_last",
       "carrossel_md": "Sim"
-    },
-    {
-      "type": "apx_banners-grid",
-      "container": "container-fluid",
-      "padding": "px-3",
-      "banners": [
-        {
-          "description_color": "#000000",
-          "animate": "fadeInUp",
-          "img": "/img/uploads/mini-banner-cueca.jpg",
-          "content_order": "after_image",
-          "content_position": "center_left",
-          "btn_text": "Experimente",
-          "btn_background": "#000000",
-          "btn_text_color": "#ffffff",
-          "title": "Sua cueca Bázica",
-          "link": "/",
-          "title_color": "#000000",
-          "description": "A Bázica que você realmente precisa. Com um molde anatômico, um tecido cheio de tecnologia que entrega um contato sedoso e confortável, anti suor, anti peeling (sem bolinhas) e anti odor. Use a melhor para dar o <b>seu melhor</b>."
-        },
-        {
-          "description_color": "#000000",
-          "animate": "fadeInUp",
-          "img": "/img/uploads/mini-banner-polo.jpg",
-          "content_order": "after_image",
-          "content_position": "center_left",
-          "btn_text": "Ver Detalhes",
-          "btn_background": "#000000",
-          "btn_text_color": "#ffffff",
-          "title": "A melhor Polo",
-          "link": "/",
-          "title_color": "#000000",
-          "description": "A melhor versão da clássica gola polo. Feita em algodão egípcio, não encolhe, não desbota e possui um caimento impecável que se molda ao seu corpo."
-        },
-        {
-          "description_color": "#000000",
-          "animate": "fadeInUp",
-          "img": "/img/uploads/mini-banner-vibe.jpg",
-          "content_order": "after_image",
-          "content_position": "center_left",
-          "btn_text": "Conferir",
-          "btn_background": "#000000",
-          "btn_text_color": "#ffffff",
-          "title": "Uma nova Vibe!",
-          "link": "/",
-          "title_color": "#000000",
-          "description": "Unimos os pontos que faltam em todas as camisas sociais e fizemos a melhor camisa de todas! Com um tecido de toque frio que da uma sensação extremamente leve, parece que você está sem nada! Uma peça que agrega charme, durabilidade, mobilidade e sofisticação."
-        }
-      ]
     },
     {
       "type": "apx_faq",
