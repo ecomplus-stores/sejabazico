@@ -110,6 +110,21 @@
           "link": "https://landing.sejabazico.com.br/bazipass-assinatura/",
           "title_color": "#232323",
           "description": "Compra mais de cinco Bázicas por ano? O BaziPass é perfeito para você e15% de desconto, bazicash dobrado e privilegio nos lançamentos são alguns dos privilégios do BaziPass"
+        },
+        {
+          "description_color": "#232323",
+          "animate": "bounceInUp",
+          "img": "/img/uploads/grid-banner-650x650-quem-somos-nos.jpg",
+          "content_order": "after_image",
+          "alt": "time-da-bazico",
+          "content_position": "center_right",
+          "btn_text": "Prazer, Bázico!",
+          "btn_background": "#232323",
+          "btn_text_color": "#ffffff",
+          "mask_opacity": 0,
+          "title": "Prazer, Bázico!",
+          "title_color": "#232323",
+          "description": "Conheça um pouco da futura maior marca"
         }
       ],
       "padding": "px-3",
