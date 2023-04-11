@@ -131,7 +131,10 @@
           "img": "/img/uploads/grid-banner-650x650-vicentti.jpg",
           "content_position": "center_right",
           "content_order": "before_image",
-          "animate": "bounceInUp"
+          "animate": "bounceInUp",
+          "link": "/bazica-vicentti",
+          "alt": "a-camisa-perfeita-para-a-praia",
+          "title": "Bázica Vicentti"
         }
       ],
       "padding": "px-3",
