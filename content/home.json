@@ -113,7 +113,7 @@
         }
       ],
       "padding": "px-3",
-      "container": "container_90"
+      "container": "container-fluid"
     },
     {
       "type": "apx_faq",
