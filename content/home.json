@@ -127,14 +127,19 @@
           "description": "Bem-vindo à Bázico, a marca de moda básica masculina que está construindo relações através de experiências únicas! Com produtos de qualidade, confiança e estilo, estamos aqui para oferecer a melhor camisa do seu guarda-roupa. Somos mais do que apenas uma marca de moda, somos uma comunidade de homens confiantes. Conheça aqui mais sobre nossa história.!"
         },
         {
-          "mask_opacity": 5,
-          "img": "/img/uploads/grid-banner-650x650-vicentti.jpg",
-          "content_position": "center_right",
-          "content_order": "before_image",
+          "description_color": "#232323",
           "animate": "bounceInUp",
-          "link": "/bazica-vicentti",
+          "img": "/img/uploads/grid-banner-650x650-vicentti.jpg",
+          "content_order": "before_image",
           "alt": "a-camisa-perfeita-para-a-praia",
-          "title": "Bázica Vicentti"
+          "content_position": "center_right",
+          "btn_text": "Conheça mais",
+          "btn_background": "#232323",
+          "btn_text_color": "#ffffff",
+          "mask_opacity": 0,
+          "title": "Bázica Vicentti",
+          "link": "/bazica-vicentti",
+          "title_color": "#232323"
         }
       ],
       "padding": "px-3",
