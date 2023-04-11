@@ -93,6 +93,29 @@
       "carrossel_md": "Sim"
     },
     {
+      "type": "apx_banners-grid",
+      "banners": [
+        {
+          "description_color": "#232323",
+          "animate": "fadeInTopRight",
+          "img": "/img/uploads/grid-banner-650x650-bazipass.jpg",
+          "content_order": "after_image",
+          "alt": "bazipass-o-programa-de-privilegios-da-bazico",
+          "content_position": "center_right",
+          "btn_text": "Seja um membro VIP!",
+          "btn_background": "#232323",
+          "btn_text_color": "#ffffff",
+          "mask_opacity": 0,
+          "title": "BaziPass",
+          "link": "https://landing.sejabazico.com.br/bazipass-assinatura/",
+          "title_color": "#232323",
+          "description": "Compra mais de cinco Bázicas por ano? O BaziPass é perfeito para você e15% de desconto, bazicash dobrado e privilegio nos lançamentos são alguns dos privilégios do BaziPass"
+        }
+      ],
+      "padding": "px-3",
+      "container": "container_90"
+    },
+    {
       "type": "apx_faq",
       "title": "Perguntas Frequentes",
       "description": "O que normalmente querem saber",
