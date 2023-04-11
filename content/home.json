@@ -101,7 +101,7 @@
           "img": "/img/uploads/grid-banner-650x650-bazipass.jpg",
           "content_order": "after_image",
           "alt": "bazipass-o-programa-de-privilegios-da-bazico",
-          "content_position": "center_right",
+          "content_position": "center_left",
           "btn_text": "Seja um membro VIP!",
           "btn_background": "#232323",
           "btn_text_color": "#ffffff",
@@ -113,18 +113,18 @@
         },
         {
           "description_color": "#232323",
-          "animate": "bounceInUp",
+          "animate": "zoomInUp",
           "img": "/img/uploads/grid-banner-650x650-quem-somos-nos.jpg",
-          "content_order": "after_image",
+          "content_order": "before_image",
           "alt": "time-da-bazico",
-          "content_position": "center_right",
+          "content_position": "center_left",
           "btn_text": "Saiba mais",
           "btn_background": "#232323",
           "btn_text_color": "#ffffff",
           "mask_opacity": 0,
           "title": "Prazer, Bázico!",
           "title_color": "#232323",
-          "description": "Conheça um pouco da futura maior marca"
+          "description": "Bem-vindo à Bázico, a marca de moda básica masculina que está construindo relações através de experiências únicas! Com produtos de qualidade, confiança e estilo, estamos aqui para oferecer a melhor camisa do seu guarda-roupa. Somos mais do que apenas uma marca de moda, somos uma comunidade de homens confiantes. Valorize seu tempo e venha conhecer sua nova camisa preferida na Bázico!"
         }
       ],
       "padding": "px-3",
