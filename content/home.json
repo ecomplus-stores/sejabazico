@@ -115,7 +115,7 @@
           "description_color": "#232323",
           "animate": "zoomInUp",
           "img": "/img/uploads/grid-banner-650x650-quem-somos-nos.jpg",
-          "content_order": "before_image",
+          "content_order": "after_image",
           "alt": "time-da-bazico",
           "content_position": "center_left",
           "btn_text": "Saiba mais",
