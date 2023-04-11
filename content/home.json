@@ -125,6 +125,13 @@
           "title": "Prazer, Bázico!",
           "title_color": "#232323",
           "description": "Bem-vindo à Bázico, a marca de moda básica masculina que está construindo relações através de experiências únicas! Com produtos de qualidade, confiança e estilo, estamos aqui para oferecer a melhor camisa do seu guarda-roupa. Somos mais do que apenas uma marca de moda, somos uma comunidade de homens confiantes. Conheça aqui mais sobre nossa história.!"
+        },
+        {
+          "mask_opacity": 5,
+          "img": "/img/uploads/grid-banner-650x650-vicentti.jpg",
+          "content_position": "center_right",
+          "content_order": "before_image",
+          "animate": "bounceInUp"
         }
       ],
       "padding": "px-3",
