@@ -99,7 +99,7 @@
           "description_color": "#232323",
           "animate": "fadeInTopRight",
           "img": "/img/uploads/grid-banner-650x650-bazipass.jpg",
-          "content_order": "after_image",
+          "content_order": "before_image",
           "alt": "bazipass-o-programa-de-privilegios-da-bazico",
           "content_position": "center_left",
           "btn_text": "Seja um membro VIP!",
