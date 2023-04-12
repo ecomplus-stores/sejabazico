@@ -143,6 +143,32 @@
         "title": "Algodão Pima",
         "image": "/img/uploads/propriedade-dos-produtos-lord-algodao-pima.png"
       }
+    },
+    {
+      "item": {
+        "categories": [
+          {
+            "category": {
+              "title": "bazica-lord"
+            }
+          }
+        ],
+        "title": "Extremamente confortável",
+        "image": "/img/uploads/propriedade-dos-produtos-lord-duravel.png"
+      }
+    },
+    {
+      "item": {
+        "title": "Durável",
+        "categories": [
+          {
+            "category": {
+              "title": "bazica-lord"
+            }
+          }
+        ],
+        "image": "/img/uploads/propriedade-dos-produtos-lord-extremamente-confortavel.png"
+      }
     }
   ]
 }
