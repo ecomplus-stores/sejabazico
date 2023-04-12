@@ -65,6 +65,19 @@
           }
         ]
       }
+    },
+    {
+      "item": {
+        "image": "/img/uploads/propriedade-dos-produtos-cueca-anti-peeling.png",
+        "title": "Anti-peeling",
+        "categories": [
+          {
+            "category": {
+              "title": "cuecas"
+            }
+          }
+        ]
+      }
     }
   ]
 }
