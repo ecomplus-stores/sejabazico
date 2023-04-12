@@ -117,6 +117,19 @@
           }
         ]
       }
+    },
+    {
+      "item": {
+        "title": "Gola Lord",
+        "image": "/img/uploads/propriedade-dos-produtos-lord-gola.png",
+        "categories": [
+          {
+            "category": {
+              "title": "bazica-lord"
+            }
+          }
+        ]
+      }
     }
   ]
 }
