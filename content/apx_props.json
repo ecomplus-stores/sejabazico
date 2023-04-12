@@ -235,6 +235,19 @@
           }
         ]
       }
+    },
+    {
+      "item": {
+        "title": "Exclusivo Bazicash",
+        "categories": [
+          {
+            "category": {
+              "title": "produtos-exclusivos"
+            }
+          }
+        ],
+        "image": "/img/uploads/propriedade-dos-produtos-produto-exclusivo-somente-bazicash.png"
+      }
     }
   ]
 }
