@@ -23,7 +23,8 @@
               "title": "bazicas"
             }
           }
-        ]
+        ],
+        "products": []
       }
     },
     {
@@ -47,6 +48,19 @@
           {
             "category": {
               "title": "bazicas"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "item": {
+        "image": "/img/uploads/propriedade-dos-produtos-cueca-anti-odor.png",
+        "title": "anti odor",
+        "categories": [
+          {
+            "category": {
+              "title": "cuecas"
             }
           }
         ]
