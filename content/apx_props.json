@@ -104,6 +104,19 @@
           }
         ]
       }
+    },
+    {
+      "item": {
+        "image": "/img/uploads/propriedade-dos-produtos-cueca-sedosa.png",
+        "title": "Sedosa",
+        "categories": [
+          {
+            "category": {
+              "title": "cuecas"
+            }
+          }
+        ]
+      }
     }
   ]
 }
