@@ -91,6 +91,19 @@
           }
         ]
       }
+    },
+    {
+      "item": {
+        "image": "/img/uploads/propriedade-dos-produtos-cueca-molde-anatomico.png",
+        "title": "Molde anatômico",
+        "categories": [
+          {
+            "category": {
+              "title": "cuecas"
+            }
+          }
+        ]
+      }
     }
   ]
 }
