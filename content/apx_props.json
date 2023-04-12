@@ -130,6 +130,19 @@
           }
         ]
       }
+    },
+    {
+      "item": {
+        "categories": [
+          {
+            "category": {
+              "title": "bazica-lord"
+            }
+          }
+        ],
+        "title": "Algodão Pima",
+        "image": "/img/uploads/propriedade-dos-produtos-lord-algodao-pima.png"
+      }
     }
   ]
 }
