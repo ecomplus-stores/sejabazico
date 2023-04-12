@@ -148,6 +148,15 @@
       "container": "container-fluid"
     },
     {
+      "type": "apx_instafeed",
+      "quantity_mobile": "4",
+      "grid_desktop": "4",
+      "quantity_desktop": "4",
+      "grid_mobile": "3",
+      "title": "nossa galera",
+      "instantTokens": "https://www.instagram.com/sejabazico/tagged/?next=%2F"
+    },
+    {
       "type": "apx_faq",
       "title": "Perguntas Frequentes",
       "description": "O que normalmente querem saber",
@@ -202,15 +211,6 @@
           }
         }
       ]
-    },
-    {
-      "type": "apx_instafeed",
-      "quantity_mobile": "4",
-      "grid_desktop": "4",
-      "quantity_desktop": "4",
-      "grid_mobile": "3",
-      "title": "nossa galera",
-      "instantTokens": "https://www.instagram.com/sejabazico/tagged/?next=%2F"
     },
     {
       "type": "apx_newsletter",
