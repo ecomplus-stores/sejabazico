@@ -209,6 +209,19 @@
         "products": [],
         "image": "/img/uploads/propriedade-dos-produtos-lord-duravel.png"
       }
+    },
+    {
+      "item": {
+        "image": "/img/uploads/propriedade-dos-produtos-lord-extremamente-confortavel.png",
+        "title": "Durável",
+        "categories": [
+          {
+            "category": {
+              "title": " bazica-polo"
+            }
+          }
+        ]
+      }
     }
   ]
 }
