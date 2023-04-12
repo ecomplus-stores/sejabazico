@@ -261,6 +261,45 @@
         ],
         "image": "/img/uploads/propriedade-dos-produtos-produto-exclusivo-exclusivo-bazicash.png"
       }
+    },
+    {
+      "item": {
+        "title": "Gola Firme",
+        "categories": [
+          {
+            "category": {
+              "title": "bazica-vibe"
+            }
+          }
+        ],
+        "image": "/img/uploads/propriedade-dos-produtos-vibe-gola-firme.png"
+      }
+    },
+    {
+      "item": {
+        "title": "Leve",
+        "categories": [
+          {
+            "category": {
+              "title": "bazica-vibe"
+            }
+          }
+        ],
+        "image": "/img/uploads/propriedade-dos-produtos-vibe-leve.png"
+      }
+    },
+    {
+      "item": {
+        "title": "Toque Frio",
+        "categories": [
+          {
+            "category": {
+              "title": "bazica-vibe"
+            }
+          }
+        ],
+        "image": "/img/uploads/propriedade-dos-produtos-vibe-toque-frio.png"
+      }
     }
   ]
 }
