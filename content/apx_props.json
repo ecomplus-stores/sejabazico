@@ -78,6 +78,19 @@
           }
         ]
       }
+    },
+    {
+      "item": {
+        "title": "anti-suor",
+        "image": "/img/uploads/propriedade-dos-produtos-cueca-anti-suor.png",
+        "categories": [
+          {
+            "category": {
+              "title": "cuecas"
+            }
+          }
+        ]
+      }
     }
   ]
 }
