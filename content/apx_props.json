@@ -300,6 +300,19 @@
         ],
         "image": "/img/uploads/propriedade-dos-produtos-vibe-toque-frio.png"
       }
+    },
+    {
+      "item": {
+        "title": "Mobilidade",
+        "categories": [
+          {
+            "category": {
+              "title": "bazica-vibe"
+            }
+          }
+        ],
+        "image": "/img/uploads/propriedade-dos-produtos-vibe-mobilidade.png"
+      }
     }
   ]
 }
