@@ -204,6 +204,14 @@
       ]
     },
     {
+      "type": "apx_instafeed",
+      "quantity_mobile": "4",
+      "grid_desktop": "4",
+      "quantity_desktop": "4",
+      "grid_mobile": "3",
+      "title": "confira no instagram"
+    },
+    {
       "type": "apx_newsletter",
       "title": "Assine nossa Newsletter",
       "description": "Não fique de fora dos lançamentos, reposições, novidades e receba conhecimentos bázicos que todo homem precisa saber!",
