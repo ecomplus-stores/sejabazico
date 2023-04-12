@@ -169,6 +169,46 @@
         ],
         "image": "/img/uploads/propriedade-dos-produtos-lord-extremamente-confortavel.png"
       }
+    },
+    {
+      "item": {
+        "title": "Gola Polo",
+        "categories": [
+          {
+            "category": {
+              "title": " bazica-polo"
+            }
+          }
+        ],
+        "image": "/img/uploads/propriedade-dos-produtos-polo-gola.png"
+      }
+    },
+    {
+      "item": {
+        "title": "Algodão Pima",
+        "categories": [
+          {
+            "category": {
+              "title": " bazica-polo"
+            }
+          }
+        ],
+        "image": "/img/uploads/propriedade-dos-produtos-lord-algodao-pima.png"
+      }
+    },
+    {
+      "item": {
+        "title": "Extremamente Confortável",
+        "categories": [
+          {
+            "category": {
+              "title": " bazica-polo"
+            }
+          }
+        ],
+        "products": [],
+        "image": "/img/uploads/propriedade-dos-produtos-lord-duravel.png"
+      }
     }
   ]
 }
