@@ -290,6 +290,19 @@
     },
     {
       "item": {
+        "title": "Mobilidade",
+        "categories": [
+          {
+            "category": {
+              "title": "bazica-vibe"
+            }
+          }
+        ],
+        "image": "/img/uploads/propriedade-dos-produtos-vibe-mobilidade.png"
+      }
+    },
+    {
+      "item": {
         "title": "Toque Frio",
         "categories": [
           {
@@ -303,15 +316,53 @@
     },
     {
       "item": {
+        "title": "Aspecto de Linho",
+        "categories": [
+          {
+            "category": {
+              "title": "bazica-vicentti"
+            }
+          }
+        ],
+        "image": "/img/uploads/propriedade-dos-produtos-vicentti-viscolinho.jpg"
+      }
+    },
+    {
+      "item": {
+        "title": "Gola Firme",
+        "categories": [
+          {
+            "category": {
+              "title": "bazica-vicentti"
+            }
+          }
+        ],
+        "image": "/img/uploads/propriedade-dos-produtos-vibe-gola-firme.png"
+      }
+    },
+    {
+      "item": {
+        "title": "Leve",
+        "categories": [
+          {
+            "category": {
+              "title": "bazica-vicentti"
+            }
+          }
+        ],
+        "image": "/img/uploads/propriedade-dos-produtos-vibe-leve.png"
+      }
+    },
+    {
+      "item": {
         "title": "Mobilidade",
         "categories": [
           {
             "category": {
-              "title": "bazica-vibe"
+              "title": "bazica-vicentti"
             }
           }
-        ],
-        "image": "/img/uploads/propriedade-dos-produtos-vibe-mobilidade.png"
+        ]
       }
     }
   ]
