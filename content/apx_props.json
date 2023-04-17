@@ -225,45 +225,6 @@
     },
     {
       "item": {
-        "title": "Apenas bazicashs permitidos.",
-        "image": "/img/uploads/propriedade-dos-produtos-produto-bazicash-somente-bazicash1.png",
-        "categories": [
-          {
-            "category": {
-              "title": "produtos-exclusivos"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "item": {
-        "title": "Exclusivo Bazicash",
-        "categories": [
-          {
-            "category": {
-              "title": "produtos-exclusivos"
-            }
-          }
-        ],
-        "image": "/img/uploads/propriedade-dos-produtos-produto-exclusivo-somente-bazicash.png"
-      }
-    },
-    {
-      "item": {
-        "title": "Sem dinheiro, bazicashs somente.",
-        "categories": [
-          {
-            "category": {
-              "title": "produtos-exclusivos"
-            }
-          }
-        ],
-        "image": "/img/uploads/propriedade-dos-produtos-produto-exclusivo-exclusivo-bazicash.png"
-      }
-    },
-    {
-      "item": {
         "title": "Gola Firme",
         "categories": [
           {
