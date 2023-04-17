@@ -32,10 +32,6 @@
       ]
     },
     {
-      "type": "product-description",
-      "enabled": false
-    },
-    {
       "type": "recommended-products",
       "title": "Talvez você goste"
     },
