@@ -13,7 +13,8 @@
           "img": "/img/uploads/frete-desktop-.png",
           "mobile_img": "/img/uploads/frete-mobile-.png",
           "content_position": "top_center",
-          "content_order": "before_image"
+          "content_order": "before_image",
+          "animate": "slideInUp"
         }
       ]
     },
