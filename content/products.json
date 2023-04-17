@@ -33,7 +33,7 @@
     },
     {
       "type": "product-description",
-      "enabled": true
+      "enabled": false
     },
     {
       "type": "recommended-products",
