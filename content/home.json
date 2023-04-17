@@ -15,6 +15,17 @@
           "content_position": "top_center",
           "content_order": "before_image",
           "animate": "slideInUp"
+        },
+        {
+          "animate": "slideInUp",
+          "start": "2023-04-17T00:41:34.356Z",
+          "img": "/img/uploads/banners-site-novobazipass-desktop-.jpg",
+          "mobile_img": "/img/uploads/bazipass-mobile-.png",
+          "content_order": "inside_image",
+          "content_position": "top_center",
+          "mask_opacity": 5,
+          "link": "https://landing.sejabazico.com.br/bazipass-assinatura/",
+          "end": "2030-03-01T00:41:34.386Z"
         }
       ]
     },
