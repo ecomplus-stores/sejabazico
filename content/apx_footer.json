@@ -103,6 +103,12 @@
             "title": "Trocas e Devoluções",
             "url": "/pages/trocas-e-devolucoes"
           }
+        },
+        {
+          "item": {
+            "title": "Quem somos nós",
+            "url": "/pages/quem-somos-nos"
+          }
         }
       ]
     },
