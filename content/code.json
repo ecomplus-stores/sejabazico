@@ -1,5 +1,5 @@
 {
-  "css": "",
+  "css": ".search-engine__filter--label {\n   display: none !important;\n}",
   "html_head": "",
   "html_body": ""
 }
