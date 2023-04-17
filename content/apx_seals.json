@@ -16,22 +16,6 @@
         ],
         "products": []
       }
-    },
-    {
-      "item": {
-        "title": "Exclusivo BaziPass",
-        "text_color": "#ffffff",
-        "border_color": "#f2d2b4",
-        "bg_color": "#24174a",
-        "categories": [
-          {
-            "category": {
-              "title": "bazica-gola-c"
-            }
-          }
-        ],
-        "products": []
-      }
     }
   ]
 }
