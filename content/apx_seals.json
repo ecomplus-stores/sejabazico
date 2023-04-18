@@ -22,15 +22,16 @@
         "title": "999 Bazicashs",
         "image": "/img/uploads/image-6.png",
         "text_color": "#ffffff",
+        "border_color": "#232323",
         "bg_color": "#232323",
+        "products": [],
         "categories": [
           {
             "category": {
               "title": "bazicas"
             }
           }
-        ],
-        "border_color": "#232323"
+        ]
       }
     }
   ]
