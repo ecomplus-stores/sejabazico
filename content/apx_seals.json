@@ -16,6 +16,22 @@
         ],
         "products": []
       }
+    },
+    {
+      "item": {
+        "title": "9999 Bazicashs",
+        "image": "/img/uploads/image-6.png",
+        "text_color": "#ffffff",
+        "bg_color": "#232323",
+        "categories": [
+          {
+            "category": {
+              "title": "bazicas"
+            }
+          }
+        ],
+        "border_color": "#232323"
+      }
     }
   ]
 }
