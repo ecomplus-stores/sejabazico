@@ -7,14 +7,15 @@
       "autoplay": 4000,
       "slides": [
         {
-          "mask_opacity": 0,
+          "animate": "slideInUp",
           "start": "2023-04-16T23:42:23.093Z",
-          "end": "2024-12-21T23:42:23.105Z",
           "img": "/img/uploads/frete-desktop-.png",
           "mobile_img": "/img/uploads/frete-mobile-.png",
-          "content_position": "top_center",
           "content_order": "inside_image",
-          "animate": "slideInUp"
+          "alt": "frete-gratis",
+          "content_position": "top_center",
+          "mask_opacity": 0,
+          "end": "2024-12-21T23:42:23.105Z"
         },
         {
           "animate": "slideInUp",
