@@ -49,6 +49,22 @@
         ],
         "image": "/img/uploads/bazicash-outline.png"
       }
+    },
+    {
+      "item": {
+        "title": "2.300 Bazicashs",
+        "text_color": "#232323",
+        "border_color": "#232323",
+        "bg_color": "#ffffff",
+        "categories": [
+          {
+            "category": {
+              "title": "bazica-vicentti"
+            }
+          }
+        ],
+        "image": "/img/uploads/moeda-bazicash2.png"
+      }
     }
   ]
 }
