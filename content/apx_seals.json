@@ -97,6 +97,22 @@
         ],
         "image": "/img/uploads/moeda-bazicash2.png"
       }
+    },
+    {
+      "item": {
+        "image": "/img/uploads/propriedade-dos-produtos-produto-exclusivo-somente-bazicash.png",
+        "title": "Exclusivo Bazicash",
+        "text_color": "#232323",
+        "border_color": "#232323",
+        "bg_color": "#ffffff",
+        "categories": [
+          {
+            "category": {
+              "title": "produtos-exclusivos"
+            }
+          }
+        ]
+      }
     }
   ]
 }
