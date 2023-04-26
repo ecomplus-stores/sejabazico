@@ -65,6 +65,38 @@
         ],
         "image": "/img/uploads/moeda-bazicash2.png"
       }
+    },
+    {
+      "item": {
+        "title": "1.999 Bazicashs",
+        "text_color": "#232323",
+        "bg_color": "#ffffff",
+        "border_color": "#232323",
+        "categories": [
+          {
+            "category": {
+              "title": " bazica-vibe"
+            }
+          }
+        ],
+        "image": "/img/uploads/moeda-bazicash2.png"
+      }
+    },
+    {
+      "item": {
+        "title": "2.060 Bazicashs",
+        "text_color": "#232323",
+        "border_color": "#232323",
+        "bg_color": "#ffffff",
+        "categories": [
+          {
+            "category": {
+              "title": "bazica-lord"
+            }
+          }
+        ],
+        "image": "/img/uploads/moeda-bazicash2.png"
+      }
     }
   ]
 }
