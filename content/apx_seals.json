@@ -33,6 +33,22 @@
           }
         ]
       }
+    },
+    {
+      "item": {
+        "title": "500 Bazicashs",
+        "text_color": "#232323",
+        "border_color": "#232323",
+        "bg_color": "#ffffff",
+        "categories": [
+          {
+            "category": {
+              "title": "cuecas"
+            }
+          }
+        ],
+        "image": "/img/uploads/bazicash-outline.png"
+      }
     }
   ]
 }
