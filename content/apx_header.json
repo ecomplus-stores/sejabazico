@@ -17,12 +17,6 @@
       "list": [
         {
           "item": {
-            "title": "TOP 10",
-            "url": "/top-10"
-          }
-        },
-        {
-          "item": {
             "title": "Bázica Gola C",
             "url": "/bazica-gola-c",
             "image": ""
