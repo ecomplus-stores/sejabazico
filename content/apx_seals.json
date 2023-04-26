@@ -2,11 +2,11 @@
   "seals": [
     {
       "item": {
-        "image": "/img/uploads/image-6.png",
+        "image": "/img/uploads/moeda-bazicash2.png",
         "title": "1.300 Bazicashs",
-        "text_color": "#ffffff",
-        "border_color": "#000000",
-        "bg_color": "#000000",
+        "text_color": "#232323",
+        "border_color": "#232323",
+        "bg_color": "#ffffff",
         "categories": [
           {
             "category": {
