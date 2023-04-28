@@ -117,6 +117,16 @@
           "content_position": "top_center",
           "content_order": "inside_image",
           "animate": "slideInUp"
+        },
+        {
+          "mask_opacity": 0,
+          "start": "2023-04-28T18:24:52.187Z",
+          "end": "2024-01-06T18:24:52.442Z",
+          "img": "/img/uploads/vicentti.png",
+          "alt": "bazica_vicentti",
+          "content_position": "top_center",
+          "content_order": "inside_image",
+          "animate": "slideInUp"
         }
       ]
     },
