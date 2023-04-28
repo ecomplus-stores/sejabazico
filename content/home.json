@@ -4,7 +4,7 @@
   "sections": [
     {
       "type": "apx_banner-slider",
-      "autoplay": 4000,
+      "autoplay": 0,
       "slides": [
         {
           "animate": "slideInUp",
@@ -36,6 +36,17 @@
           "content_position": "center_right",
           "content_order": "inside_image",
           "animate": "slideInUp"
+        },
+        {
+          "animate": "slideInUp",
+          "start": "2023-04-28T12:29:10.499Z",
+          "img": "/img/uploads/produto-exclusivo.png",
+          "content_order": "inside_image",
+          "alt": "produto_exclusivo",
+          "content_position": "top_center",
+          "mask_opacity": 0,
+          "title": "",
+          "end": "2026-11-06T12:29:10.537Z"
         }
       ]
     },
