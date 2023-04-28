@@ -77,6 +77,16 @@
           "content_position": "top_center",
           "content_order": "inside_image",
           "animate": "slideInUp"
+        },
+        {
+          "mask_opacity": 1,
+          "start": "2023-04-28T18:09:04.627Z",
+          "end": "2024-04-06T18:09:04.751Z",
+          "img": "/img/uploads/long.png",
+          "alt": "bazica_long",
+          "content_position": "top_center",
+          "content_order": "inside_image",
+          "animate": "slideInUp"
         }
       ]
     },
