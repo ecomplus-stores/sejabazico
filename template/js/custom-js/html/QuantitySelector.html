@@ -102,7 +102,7 @@
                   :prop-value="prop.value"
                   :prop-key="opt"
                   :out-of-stock="availableParameters && availableParameters[opt] && availableParameters[opt].find(el => el.text == prop.text) ? true : false"
-                  @click="selectedProp({[`${opt}`]:prop})"
+                  @click="selectedProp({[`${opt}`]:prop}, (availableParameters && availableParameters[opt] && availableParameters[opt][0].value == prop.value ? false : true))"
                   
                   >                    
                   {{prop.text}}

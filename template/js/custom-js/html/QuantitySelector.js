@@ -127,7 +127,11 @@ import {
             this.availableParameters = []
             
         },
-        selectedProp(prop){
+        selectedProp(prop, isDenied){
+            console.log(isDenied)
+            if(isDenied){
+              this.selectedOption = []
+            }
             let key = Object.keys(prop)[0].trim()
 
             this.selectedOption[key] = prop[key]
@@ -148,19 +152,33 @@ import {
             
             let readyToBuy = false
             let options = []
-            console.log(this.selectedOption)
-            if($('.variations__option--selected').length == Object.keys(this.kitParameters).length + 1){
-              $('.variations__option--selected[prop-value]').each(function(){
-                let prop = $(this).attr('prop-value')
-                let index = $(this).attr('prop-key')
-                options.push({key: index, value : prop})
-                if(kitParameters[`${index}`].find(el => el.value == prop)){
-                  readyToBuy = true
-                }else{
-                  readyToBuy = false
-                  return false
+            //console.log(this.selectedOption)
+            //console.log($('.variations__option--selected').length)
+            //console.log(Object.keys(this.kitParameters))
+            //console.log(Object.keys(this.selectedOption))
+
+            //selectedOptions.shift()
+            //console.log(this.selectedOption)
+            if(Object.keys(this.selectedOption).length == Object.keys(this.kitParameters).length + 1){
+              for(let option in this.selectedOption){
+                if(option != 0){
+                  let prop = this.selectedOption[option].value
+                  let index = option
+                  console.log('xxx')
+                  console.log(index)
+                  console.log(prop)
+
+                  options.push({key: index, value : prop})
+                  
+                  if(kitParameters[`${index}`].find(el => el.value == prop)){
+                    readyToBuy = true
+                  }else{
+                    readyToBuy = false
+                    return false
+                  }
                 }
-              })
+              }
+              console.log(readyToBuy)
             }
 
             if(readyToBuy){
