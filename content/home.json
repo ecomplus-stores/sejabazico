@@ -107,6 +107,16 @@
           "content_position": "top_center",
           "content_order": "inside_image",
           "animate": "slideInUp"
+        },
+        {
+          "mask_opacity": 5,
+          "start": "2023-04-28T18:19:41.780Z",
+          "end": "2024-03-02T18:19:41.849Z",
+          "img": "/img/uploads/vibe.png",
+          "alt": "bazica_vibe",
+          "content_position": "top_center",
+          "content_order": "inside_image",
+          "animate": "slideInUp"
         }
       ]
     },
