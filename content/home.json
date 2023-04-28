@@ -97,6 +97,16 @@
           "content_position": "top_center",
           "content_order": "inside_image",
           "animate": "slideInUp"
+        },
+        {
+          "mask_opacity": 5,
+          "start": "2023-04-28T18:17:32.387Z",
+          "end": "2024-04-05T18:17:32.467Z",
+          "img": "/img/uploads/polo.png",
+          "alt": "bazica-polo",
+          "content_position": "top_center",
+          "content_order": "inside_image",
+          "animate": "slideInUp"
         }
       ]
     },
