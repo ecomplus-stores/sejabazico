@@ -47,6 +47,16 @@
           "mask_opacity": 0,
           "title": "",
           "end": "2026-11-06T12:29:10.537Z"
+        },
+        {
+          "mask_opacity": 0,
+          "start": "2023-04-28T17:41:44.274Z",
+          "end": "2024-03-12T17:41:44.380Z",
+          "img": "/img/uploads/gola-c.png",
+          "alt": "gola_c",
+          "content_position": "top_center",
+          "animate": "slideInUp",
+          "content_order": "inside_image"
         }
       ]
     },
