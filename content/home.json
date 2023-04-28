@@ -87,6 +87,16 @@
           "content_position": "top_center",
           "content_order": "inside_image",
           "animate": "slideInUp"
+        },
+        {
+          "mask_opacity": 5,
+          "start": "2023-04-28T18:14:49.778Z",
+          "end": "2024-02-03T18:14:50.045Z",
+          "img": "/img/uploads/lord.png",
+          "alt": "bazica_lord",
+          "content_position": "top_center",
+          "content_order": "inside_image",
+          "animate": "slideInUp"
         }
       ]
     },
