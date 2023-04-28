@@ -16,7 +16,10 @@ module.exports = () => ({
       './html/APrices.html': path.resolve(__dirname, 'template/js/custom-js/html/APrices.html'),   
       './html/CartItem.html': path.resolve(__dirname, 'template/js/custom-js/html/CartItem.html'),   
       './html/TheCart.html': path.resolve(__dirname, 'template/js/custom-js/html/TheCart.html'),   
-      './html/EcSummary.html': path.resolve(__dirname, 'template/js/custom-js/html/EcSummary.html'),   
+      './html/EcSummary.html': path.resolve(__dirname, 'template/js/custom-js/html/EcSummary.html'),  
+      './html/QuantitySelector.html': path.resolve(__dirname, 'template/js/custom-js/html/QuantitySelector.html'),   
+      './js/QuantitySelector.js': path.resolve(__dirname, 'template/js/custom-js/html/QuantitySelector.js'),   
+      './html/CartQuickview.html': path.resolve(__dirname, 'template/js/custom-js/html/CartQuickview.html'),   
     }
   }
 })

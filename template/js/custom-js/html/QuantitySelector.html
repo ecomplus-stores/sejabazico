@@ -1,0 +1,150 @@
+<div class="quantity-selector apx_kit">
+    <div class="w-100">
+      <div class="variations__grid w-100" id="product_kit_choosen">
+        <div class="d-flex">
+            <div class="variations__grid-title">
+                Escolha uma opção
+            </div>
+            <span class="variations__value variations__value"
+            v-if="selectedOption['product']">            
+            </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="quantity-selector__item w-auto apx_kit_item variations__grid"
+      v-for="uniqueItem in kitUniqueItens"
+    >
+        <div class="row mx-0  " >
+            <div class="col-auto px-0 variations__option">
+                <button 
+                :options="JSON.stringify(items.filter(el => el.product_id == uniqueItem.product_id))"
+                :title="uniqueItem.name.split('/')[0].trim()"
+                @click="setKitProductOption(items.filter(el => el.product_id == uniqueItem.product_id))"
+                onclick="$('.apx_kit_item').removeClass('variations__option--selected');$(this).closest('.apx_kit_item').addClass('variations__option--selected');"
+                >
+                  {{uniqueItem.name.split('/')[0].trim()}}
+                  <!--<img loading="lazy" :src="uniqueItem.picture.normal.url" class="w-100" onclick="$(this).closest('.quantity-selector__item').toggleClass('active')"/>-->
+                </button>
+            </div>
+            <div class="col-9 apx_kit_variant_grid d-none">
+                <div
+                    class="quantity-selector__item apx_kit_variant"
+                    v-for="item in items.filter(el => el.product_id == uniqueItem.product_id)"
+                    >
+                    <span class="quantity-selector__label" v-if="item.max_quantity >= max">
+                        <slot v-bind="{ item }">
+                        <!-- <a-link
+                            v-if="item.slug"
+                            target="_blank"
+                            :href="`/${item.slug}`"
+                            :title="item.name"
+                        >
+                            {{ item.name }} 
+                        </a-link> -->
+                        <span v-for="txt in item.name.replace(item.name.split('/')[0] + '/','').split('/')" class="apx_kit_variant_label">
+                            {{txt.replace('(Bem encorpada)','').replace('(Super leve)','').trim()}}
+                        </span>
+                            
+                        </slot>
+                    </span>
+                    <div class="row quantity-selector__btn-container">            
+                        <button
+                        class="btn btn-sm btn-link col-sm-3"
+                        type="button"
+                        @click="changeQnt(item, -1)"
+                        :disabled="item.min_quantity >= selectedQnts[item._id]"
+                        >
+                        <i class="i-chevron-down"></i>
+                        </button>
+                        <input
+                        type="tel"
+                        class="form-control quantity-selector__input col-sm-6"
+                        @change="ev => changeQnt(item, null, ev)"
+                        @keyup.up="changeQnt(item, 1)"
+                        @keyup.down="changeQnt(item, -1)"
+                        :value="selectedQnts[item._id]"
+                        :disabled="!checkInStock(item)"
+                        :props="JSON.stringify(item.specifications)"
+                        :readonly="item.min_quantity && item.min_quantity === item.max_quantity"
+                        >
+                        <button
+                        class="btn btn-sm btn-link col-sm-3"
+                        type="button"
+                        @click="changeQnt(item, 1)"
+                        :disabled="item.max_quantity <= selectedQnts[item._id]"
+                        >
+                        <i class="i-chevron-up"></i>
+                        </button>
+                    </div>
+                
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="apx_kit-options" :class="(selectedOption.length > 0 ? 'status-ready' : '') + ' w-100 mt-2'" v-if="kitParameters">
+      <div v-for="opt in Object.keys(kitParameters)" class="variations__grid w-100">
+          <div class="mb-2 d-flex align-items-center">
+          <div class="variations__grid-title">
+              {{opt.replace('size','Tamanho').replace('tecido','Tecido')}}
+          </div>
+          <span class="variations__value variations__value"
+          v-if="selectedOption[opt]"
+          >
+              {{selectedOption[opt].text}}
+          </span>
+          </div>
+          <div :class="'variations__grid variations__grid--'+opt + ' ' + (selectedOption && selectedOption[opt] ? 'selected' : '' )">
+              <button 
+                  v-for="prop in kitParameters[opt]"
+                  :class="'status-' + (availableParameters && availableParameters[opt] && availableParameters[opt][0].value == prop.value ? 'ok' : 'denied') +  ' variations__option btn btn-light  variations__option--' + prop.text + ' ' + (selectedOption && selectedOption[opt] && selectedOption[opt].value == prop.value ? 'variations__option--selected' : '' )"
+                  :prop-value="prop.value"
+                  :prop-key="opt"
+                  :out-of-stock="availableParameters && availableParameters[opt] && availableParameters[opt].find(el => el.text == prop.text) ? true : false"
+                  @click="selectedProp({[`${opt}`]:prop})"
+                  
+                  >                    
+                  {{prop.text}}
+                </button>
+          </div>
+      </div>
+      
+  </div>
+      
+  
+    <a-alert :can-show="hasMinAlert">
+      {{ i19minQuantity }}:
+      <strong>{{ min }}</strong>
+    </a-alert>
+  
+    <a-alert
+      :can-show="hasMaxAlert"
+      :variant="alertVariant"
+    >
+      {{ i19maxQuantity }}:
+      <strong>{{ max }}</strong>
+    </a-alert>
+  
+    <div
+      v-if="hasBuyButton"
+      class="quantity-selector__buy product__buy"
+    >
+      <slot
+        name="buy"
+        v-bind="{ selectedQnts, buy }"
+      >
+        <button
+          type="button"
+          class="btn btn-lg btn-primary my-3"
+          :disabled="!readyToBuy"
+          @click="buy"
+        >
+          <slot name="buy-button-content">
+            <i class="i-shopping-bag mr-1"></i>
+            {{ strBuy }}
+          </slot>
+        </button>
+      </slot>
+    </div>
+</div>

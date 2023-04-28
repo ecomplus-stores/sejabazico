@@ -89,8 +89,7 @@ const apx_props = _.cms('apx_props') || {}
             <h1 class="product__name d-md-block d-none">
               <%= _.ecomUtils.name(_.state) %>
             </h1>
-            <ul id="apx_props">
-              <% apx_props.props.forEach(({ item })=> {
+            <ul id="apx_props"><% apx_props.props.forEach(({ item })=> {
                 
                   let flag = false
                   let categories = item.categories
@@ -124,10 +123,8 @@ const apx_props = _.cms('apx_props') || {}
                 <% 
                   }
               }) 
-            %>
-              </ul>
-            <ul id="apx_seals" class=" d-md-flex d-none">
-              <% apx_seals.seals.forEach(({ item })=> {
+            %></ul>
+            <ul id="apx_seals" class=" d-md-flex d-none"><% apx_seals.seals.forEach(({ item })=> {
                 
                   let flag = false
                   let categories = item.categories
@@ -165,8 +162,7 @@ const apx_props = _.cms('apx_props') || {}
                 <% 
                   }
               }) 
-            %>
-              </ul>
+            %></ul>
 
             <!-- <p class="product__sku">
               COD: <%= _.state.sku %>
@@ -248,7 +244,7 @@ const apx_props = _.cms('apx_props') || {}
                     >
                       <div data-slot="buy-button-content">
                         <% if (_.state.kit_composition && _.state.kit_composition.length) { %>
-                          <%= _.dictionary('buyKit') %>
+                          Adicionar Kit ao Carrinho
                         <% } else { %> 
                           <!-- <% let buyText %>
                           <% if (Array.isArray(_.widgets)) { %>

@@ -203,15 +203,16 @@
               </div>
             </slot>
 
+            
             <div
               v-if="isKit"
               class="product__kit"
             >
-            <!-- <label class="kit__title">Selecione os itens do kit</label> -->
+            <label class="kit__title">Selecione os itens do kit</label>
               <slot
                 name="kit"
                 v-bind="{ kitItems }"
-              >                   
+              >                
                 <quantity-selector
                   v-if="kitItems.length"
                   :items="kitItems"
