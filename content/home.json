@@ -4,7 +4,7 @@
   "sections": [
     {
       "type": "apx_banner-slider",
-      "autoplay": 1000,
+      "autoplay": 0,
       "slides": [
         {
           "animate": "slideInUp",
@@ -64,6 +64,16 @@
           "end": "2024-05-04T17:54:14.690Z",
           "img": "/img/uploads/gola-v.png",
           "alt": "gola_v",
+          "content_position": "top_center",
+          "content_order": "inside_image",
+          "animate": "slideInUp"
+        },
+        {
+          "mask_opacity": 0,
+          "start": "2023-04-28T17:59:49.542Z",
+          "end": "2024-03-02T17:59:49.742Z",
+          "img": "/img/uploads/kids.png",
+          "alt": "bazica_kids",
           "content_position": "top_center",
           "content_order": "inside_image",
           "animate": "slideInUp"
