@@ -4,7 +4,7 @@
   "sections": [
     {
       "type": "apx_banner-slider",
-      "autoplay": 0,
+      "autoplay": 3000,
       "slides": [
         {
           "animate": "slideInUp",
@@ -29,13 +29,13 @@
           "end": "2030-03-01T00:41:34.386Z"
         },
         {
-          "mask_opacity": 5,
-          "start": "2024-06-06T01:34:16.208Z",
-          "end": "2030-12-22T01:34:16.244Z",
-          "img": "file:///H:/Meu%20Drive/2.%20Marca/2.4%20Site/2.4.2%20-%20Banners/Banner%20Slider/Site%20novo/TOP10HMR.webp",
-          "content_position": "center_right",
-          "content_order": "inside_image",
-          "animate": "slideInUp"
+          "mask_opacity": 0,
+          "start": "2023-05-02T04:23:42.548Z",
+          "end": "2023-05-10T04:23:42.677Z",
+          "img": "/img/uploads/prancheta-1.png",
+          "mobile_img": "/img/uploads/prancheta-1-copiar.png",
+          "content_position": "center_center",
+          "content_order": "inside_image"
         }
       ]
     },
