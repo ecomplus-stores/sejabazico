@@ -2,5 +2,12 @@
   "title": "⠀⠀⠀⠀⠀⠀⠀⠀",
   "meta_title": "",
   "meta_description": "",
-  "body": "![](/img/uploads/pagina-bazicash-desktop-.png)"
+  "body": "![]()",
+  "sections": [
+    {
+      "type": "responsive-banner",
+      "img": "/img/uploads/pagina-bazicash-desktop-.png",
+      "mobile_img": "/img/uploads/pagina-bazicash.jpg"
+    }
+  ]
 }
