@@ -515,7 +515,7 @@ export default options => {
           widget: 'string'
         },
         {
-          label: 'Gatilho - URL da Categoria (SLUG)',
+          label: 'Gatilho - Nome da Categoria (Case Sensisitive)',
           required: false,
           name: 'slug',
           widget: 'string'
