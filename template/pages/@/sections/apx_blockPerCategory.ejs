@@ -1,5 +1,5 @@
 <%      
-if(opt.slug == "" || categories.includes(opt.slug)){        
+if(opt.slug == "" || categories.find(el => el.name == opt.slug)){        
         for (let i = 0; i < opt.list.length; i++) { 
 %>
         <section

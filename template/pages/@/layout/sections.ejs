@@ -6,7 +6,7 @@ const apx_category = _.cms('apx_category') || {}
     <%
     let categories = false
     try{
-      categories = _.ecomUtils.categoriesList(_.state)
+      categories = _.state.categories
     }catch(e){
       console.log(e)
     }
