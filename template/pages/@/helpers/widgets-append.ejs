@@ -1,8 +1,10 @@
 <%
+
 for (let i = 0; i < _.widgets.length; i++) {
   const { pkg, options } = _.widgets[i]
   const partialSrc = _.widgets[i][field]
   if (partialSrc) {
+    //console.log(pkg)
     try {
       %> <%- await include(`${pkg}/${partialSrc}`, { _, opt, options }) %> <%
     } catch (err) {

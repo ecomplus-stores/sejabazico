@@ -4,14 +4,21 @@ const apx_category = _.cms('apx_category') || {}
 <article id="content" class="page page--<%= _.pageName %>" data-container="<%= JSON.stringify(apx_category) %>">
   <div class="sections pb-1 pb-sm-2 pb-lg-4">
     <%
+    let categories = false
+    try{
+      categories = _.ecomUtils.categoriesList(_.state)
+    }catch(e){
+      console.log(e)
+    }
     // load page sections and render each one
     const { sections } = _.state
     if (Array.isArray(sections)) {
       for (let i = 0; i < sections.length; i++) {
         const opt = sections[i]
         if (opt && opt.enabled !== false) {
-          %>
-          <%- await include(`@/sections/${opt.type}`, { _, opt }) %>
+          //console.log(opt.type)
+          %>          
+          <%- await include(`@/sections/${opt.type}`, { _, opt , categories}) %>
           <%
         }
       }
