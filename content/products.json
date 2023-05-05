@@ -4,10 +4,10 @@
       "type": "product-block",
       "enabled": true
     },
-        {
+    {
       "type": "apx_blockPerCategory",
       "title": "Descrição Geral",
-      "slug": "",
+      "slug": "bazicas",
       "list": [
         {
           "content": {
