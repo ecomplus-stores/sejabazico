@@ -223,6 +223,15 @@ export default {
         slidesToShow: 1,
         lazyLoad:true
     });
+
+    $('.isMobile #page-products .bz_gallery-item').each(function(){
+        let size = $(this).innerWidth() * 1.47
+        let src = $(this).find('picture').attr('data-iesrc')
+        $(this).css('height', size + 'px')
+        //$(this).find('picture').css('height',size + 'px')
+        $(this).find('picture').css('background-image', 'url('+ src +')')        
+        //$(this).find('img').css('opacity',0)
+    })
     //$('.isMobile #page-products .bz_gallery .picture').append('<img style=""/>')
     // const glide = new Glide(this.$refs.glide, this.glideOptions)
     // glide.on('run', () => {

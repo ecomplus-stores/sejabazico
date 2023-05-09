@@ -207,7 +207,3 @@ $('body').click(function(e){
         $('#instant-search .search__status .close').click();
     }
 });
-
-
-
-

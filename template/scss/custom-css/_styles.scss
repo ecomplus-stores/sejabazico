@@ -1087,15 +1087,21 @@ border-radius: var(--borderRadius)!important;
         margin-left: -1rem;
         margin-right: -1rem;
         .bz_gallery-item{
+            margin: 0 2.5px 10px 2.5px; 
             picture{
                 padding: 0 2.5px;
-                height: fit-content!important;
+                // height: fit-content!important;
+                height:100%!important;
                 position: relative;
-
+                background-size:cover;
+                background-position: center center;
                 img{
-                    height: fit-content!important;
-                    position: relative;
+                    opacity:0
                 }
+                // img{
+                //     height: fit-content!important;
+                //     position: relative;
+                // }
             }
         }
     }
