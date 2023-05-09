@@ -7,6 +7,18 @@
       "autoplay": 3000,
       "slides": [
         {
+          "animate": "backInUp",
+          "start": "2023-05-11T11:00:39.563Z",
+          "img": "/img/uploads/oferta-compre3leve4desktop.jpg",
+          "mobile_img": "/img/uploads/oferta-compre3leve4mobile.jpg",
+          "content_order": "inside_image",
+          "alt": "compre3leve4 oferta",
+          "content_position": "top_center",
+          "mask_opacity": 0,
+          "link": "https://www.sejabazico.com.br/bazicas",
+          "end": "2023-05-21T02:59:39.600Z"
+        },
+        {
           "mask_opacity": 0,
           "start": "2023-05-02T04:23:42.548Z",
           "end": "2023-05-10T04:23:42.677Z",
