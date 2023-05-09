@@ -13,10 +13,36 @@ const apx_category = _.cms('apx_category') || {}
     // load page sections and render each one
     const { sections } = _.state
     if (Array.isArray(sections)) {
-      for (let i = 0; i < sections.length; i++) {
-        const opt = sections[i]
+      
+      //const breadcrumbs = opt.breadcrumbs && opt.breadcrumbs.length
+      //? opt.breadcrumbs
+      //: _.breadcrumbs || (_.state.title && [{
+//        name: _.state.title,
+        //link: _.route.path
+      //}])
+
+      //console.log(categories)
+      let sessionsWithSlug = []
+      for(i in categories){
+        //console.log(categories[i].name)
+        let sectionsPerCategory = sections.find(el => el.slug == categories[i].name)
+        
+        if(sectionsPerCategory){
+          sessionsWithSlug = [...sessionsWithSlug, sectionsPerCategory]  
+        }
+      }
+      //let sectionsPerCategory = sections.find(el => !el.hasOwnProperty('slug'))
+
+      //console.log('sessionsWithSlug',sessionsWithSlug)
+
+      let sectionsFinal = [...sections.filter(el => el.type != "apx_blockPerCategory")]
+      
+      if(sessionsWithSlug){
+        sectionsFinal = [...sectionsFinal,...sessionsWithSlug]
+      }
+      for (let i = 0; i < sectionsFinal.length; i++) {
+        const opt = sectionsFinal[i]
         if (opt && opt.enabled !== false) {
-          //console.log(opt.type)
           %>          
           <%- await include(`@/sections/${opt.type}`, { _, opt , categories}) %>
           <%
