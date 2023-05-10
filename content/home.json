@@ -48,6 +48,17 @@
           "mask_opacity": 5,
           "link": "https://landing.sejabazico.com.br/bazipass-assinatura/",
           "end": "2030-03-01T00:41:34.386Z"
+        },
+        {
+          "animate": "backInUp",
+          "start": "2023-05-10T21:16:43.010Z",
+          "img": "/img/uploads/resposicao-e-novas-coresdesktop.jpg",
+          "mobile_img": "/img/uploads/resposicao-e-novas-coresmobile.jpg",
+          "content_order": "inside_image",
+          "content_position": "center_left",
+          "mask_opacity": 5,
+          "link": "H:\\Meu Drive\\2. Marca\\2.4 Site\\2.4.2 - Banners\\Banner Slider\\E-plus\\Fullbanner\\Aniversário 3 Anos\\Reposição  novas cores",
+          "end": "2023-05-10T21:16:43.041Z"
         }
       ]
     },
