@@ -18,6 +18,21 @@
     },
     {
       "item": {
+        "title": "Pré-venda",
+        "text_color": "#232323",
+        "border_color": "#232323",
+        "bg_color": "#ffffff",
+        "categories": [
+          {
+            "category": {
+              "title": "/pre-venda"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "item": {
         "image": "/img/uploads/moeda-bazicash2.png",
         "title": "1.300 Bazicashs",
         "text_color": "#232323",
