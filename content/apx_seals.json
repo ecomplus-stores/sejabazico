@@ -33,6 +33,22 @@
     },
     {
       "item": {
+        "title": "Envio até 17/05",
+        "text_color": "#232323",
+        "border_color": "#232323",
+        "bg_color": "#ffffff",
+        "categories": [
+          {
+            "category": {
+              "title": "pre-venda"
+            }
+          }
+        ],
+        "image": "/img/uploads/untitled-1.jpg"
+      }
+    },
+    {
+      "item": {
         "image": "/img/uploads/moeda-bazicash2.png",
         "title": "1.300 Bazicashs",
         "text_color": "#232323",
@@ -127,22 +143,6 @@
           }
         ],
         "image": "/img/uploads/moeda-bazicash2.png"
-      }
-    },
-    {
-      "item": {
-        "title": "Envio até 17/05",
-        "text_color": "#232323",
-        "border_color": "#232323",
-        "bg_color": "#ffffff",
-        "categories": [
-          {
-            "category": {
-              "title": "pre-venda"
-            }
-          }
-        ],
-        "image": "/img/uploads/untitled-1.jpg"
       }
     }
   ]
