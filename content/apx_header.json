@@ -1,16 +1,16 @@
 {
   "stripe_slider": [
     {
-      "text": "🎁 aniversário 3 anos | save the date 11.05 🎁",
+      "text": " Compre 3 e leve 4 até o dia 20/05! 🔥",
+      "url": "/roupas"
+    },
+    {
+      "text": "3 anos da Bázico e 10 dias de oferta 🖤",
       "url": "/"
     },
     {
-      "text": "Sua primeira Bázica? Use o código: <b>PRIMEIRACOMPRA</b>",
-      "url": "/"
-    },
-    {
-      "text": "<u>Frete grátis</u> e em até 24hrs para Aracaju!",
-      "url": "/"
+      "text": "Conheça as novas cores, já estão nas últimas unidades!",
+      "url": "/novidades"
     }
   ],
   "links": [
