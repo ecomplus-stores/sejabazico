@@ -19,6 +19,17 @@
           "end": "2023-05-21T02:59:39.600Z"
         },
         {
+          "animate": "backInUp",
+          "start": "2023-05-11T12:00:43.010Z",
+          "img": "/img/uploads/resposicao-e-novas-coresdesktop.jpg",
+          "mobile_img": "/img/uploads/resposicao-e-novas-coresmobile.jpg",
+          "content_order": "inside_image",
+          "content_position": "center_left",
+          "mask_opacity": 5,
+          "link": "https://www.sejabazico.com.br/novidades",
+          "end": "2023-05-21T02:59:43.041Z"
+        },
+        {
           "animate": "slideInUp",
           "start": "2023-04-16T23:42:23.093Z",
           "img": "/img/uploads/frete-desktop-.png",
@@ -39,17 +50,6 @@
           "mask_opacity": 5,
           "link": "https://landing.sejabazico.com.br/bazipass-assinatura/",
           "end": "2030-03-01T00:41:34.386Z"
-        },
-        {
-          "animate": "backInUp",
-          "start": "2023-05-11T12:00:43.010Z",
-          "img": "/img/uploads/resposicao-e-novas-coresdesktop.jpg",
-          "mobile_img": "/img/uploads/resposicao-e-novas-coresmobile.jpg",
-          "content_order": "inside_image",
-          "content_position": "center_left",
-          "mask_opacity": 5,
-          "link": "https://www.sejabazico.com.br/novidades",
-          "end": "2023-05-21T02:59:43.041Z"
         }
       ]
     },
