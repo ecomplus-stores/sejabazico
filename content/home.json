@@ -19,15 +19,6 @@
           "end": "2023-05-21T02:59:39.600Z"
         },
         {
-          "mask_opacity": 0,
-          "start": "2023-05-02T04:23:42.548Z",
-          "end": "2023-05-11T11:57:42.677Z",
-          "img": "/img/uploads/prancheta-1.png",
-          "mobile_img": "/img/uploads/prancheta-1-copiar.png",
-          "content_position": "center_center",
-          "content_order": "inside_image"
-        },
-        {
           "animate": "slideInUp",
           "start": "2023-04-16T23:42:23.093Z",
           "img": "/img/uploads/frete-desktop-.png",
