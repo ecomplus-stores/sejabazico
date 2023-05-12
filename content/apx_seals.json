@@ -144,6 +144,34 @@
         ],
         "image": "/img/uploads/moeda-bazicash2.png"
       }
+    },
+    {
+      "item": {
+        "title": "Lançamento",
+        "text_color": "#232323",
+        "border_color": "#232323",
+        "bg_color": "#ffffff",
+        "products": [
+          {
+            "product": {
+              "title": "BZGCLE"
+            }
+          },
+          {
+            "product": {
+              "title": "BZGCAP"
+            }
+          }
+        ],
+        "categories": [
+          {
+            "category": {
+              "title": "oversized"
+            }
+          }
+        ],
+        "image": "/img/uploads/asset-14.png"
+      }
     }
   ]
 }
