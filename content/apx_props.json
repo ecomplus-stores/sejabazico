@@ -326,6 +326,19 @@
         ],
         "image": "/img/uploads/propriedade-dos-produtos-vibe-mobilidade.png"
       }
+    },
+    {
+      "item": {
+        "title": "100% Algodão Egípcio",
+        "categories": [
+          {
+            "category": {
+              "title": "/oversized"
+            }
+          }
+        ],
+        "image": "/img/uploads/100-algodao-egipcio.png"
+      }
     }
   ]
 }
