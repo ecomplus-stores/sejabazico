@@ -352,6 +352,19 @@
           }
         ]
       }
+    },
+    {
+      "item": {
+        "title": "Encorpada",
+        "categories": [
+          {
+            "category": {
+              "title": "oversized"
+            }
+          }
+        ],
+        "image": "/img/uploads/ecnorpado.png"
+      }
     }
   ]
 }
