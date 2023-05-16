@@ -172,6 +172,22 @@
         ],
         "image": "/img/uploads/moeda-bazicash2.png"
       }
+    },
+    {
+      "item": {
+        "title": "1.400 Bazicashs",
+        "image": "/img/uploads/bazicash-outline.png",
+        "categories": [
+          {
+            "category": {
+              "title": "bazica-oversized"
+            }
+          }
+        ],
+        "text_color": "#232323",
+        "border_color": "#232323",
+        "bg_color": "#ffffff"
+      }
     }
   ]
 }
