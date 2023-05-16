@@ -339,6 +339,19 @@
         ],
         "image": "/img/uploads/100-algodao-egipcio.png"
       }
+    },
+    {
+      "item": {
+        "title": "Extremamente macia",
+        "image": "/img/uploads/extremamente-macio.png",
+        "categories": [
+          {
+            "category": {
+              "title": "/oversized"
+            }
+          }
+        ]
+      }
     }
   ]
 }
