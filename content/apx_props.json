@@ -342,6 +342,18 @@
     },
     {
       "item": {
+        "title": "Gola Alongada",
+        "categories": [
+          {
+            "category": {
+              "title": "bazica-oversized"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "item": {
         "title": "Extremamente macia",
         "image": "/img/uploads/asset-20.png",
         "categories": [
