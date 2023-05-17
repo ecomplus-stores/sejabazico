@@ -6,24 +6,16 @@
     },
     {
       "type": "apx_blockPerCategory",
+      "title": "Descrição das Bázicas | C, LONG, V e Kids",
+      "slug": "Bázicas",
       "list": [
         {
           "content": {
-            "subtitle": "",
             "body": "Medidas do modelo:1,79 m | 72kg | Veste: M",
             "text_align": "center",
             "image_position": "first"
           }
-        }
-      ],
-      "title": "Medidas do modelo:",
-      "slug": "Bázica Oversized"
-    },
-    {
-      "type": "apx_blockPerCategory",
-      "title": "Descrição das Bázicas | C, LONG, V e Kids",
-      "slug": "Bázicas",
-      "list": [
+        },
         {
           "content": {
             "title": "Nosso Diferencial",
