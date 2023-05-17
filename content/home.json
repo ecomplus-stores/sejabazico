@@ -19,6 +19,17 @@
           "end": "2023-05-21T02:59:39.600Z"
         },
         {
+          "start": "2023-05-17T21:00:26.498Z",
+          "img": "/img/uploads/oversizeddesktop.jpg",
+          "mobile_img": "/img/uploads/oversizedmobile.jpg",
+          "content_order": "inside_image",
+          "alt": "nova bázica: Oversized!",
+          "content_position": "center_left",
+          "mask_opacity": 0,
+          "link": "https://www.sejabazico.com.br/bazica-oversized",
+          "end": "2023-05-17T20:29:26.536Z"
+        },
+        {
           "animate": "backInUp",
           "start": "2023-05-11T12:00:43.010Z",
           "img": "/img/uploads/resposicao-e-novas-coresdesktop.jpg",
