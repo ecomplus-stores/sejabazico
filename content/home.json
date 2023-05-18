@@ -68,6 +68,30 @@
       "carrossel_sm": "Sim",
       "container": "container-fluid",
       "products": [
+        "64637452a0e875411e8f6b00",
+        "645a5ff34bd2e929c1f3ce22",
+        "645a5ea64bd2e929c1f3ca92",
+        "645a5cfb4bd2e929c1f3c523"
+      ],
+      "carrossel_dots_md": "Sim",
+      "carrossel_arrows_md": "Sim",
+      "carrossel_dots_sm": "Sim",
+      "carrossel_arrows_sm": "Sim",
+      "padding_sm": "px-1",
+      "num_col_md": "4",
+      "padding": "px-md-1",
+      "num_col_sm": "2",
+      "title": "100% única, 100% algodão egípcio.",
+      "type": "apx_productList_A",
+      "description": "a sua nova Bázica preferida em 4 cores.",
+      "btn_link": "/bazica-oversized",
+      "list": "description_first",
+      "carrossel_md": "Sim"
+    },
+    {
+      "carrossel_sm": "Sim",
+      "container": "container-fluid",
+      "products": [
         "636eac9673321213f8d6f745",
         "636eac9773321213f8d6f74b",
         "636eac9873321213f8d6f752",
