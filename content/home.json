@@ -155,18 +155,18 @@
         {
           "description_color": "#232323",
           "animate": "bounceInUp",
-          "img": "/img/uploads/grid-banner-650x650-vicentti.jpg",
+          "img": "/img/uploads/grid-banner-650x650-oversized.jpg",
           "content_order": "before_image",
-          "alt": "a-camisa-perfeita-para-a-praia",
+          "alt": "lancamento-oversized",
           "content_position": "center_left",
           "btn_text": "Vista-se com estilo",
           "btn_background": "#232323",
           "btn_text_color": "#ffffff",
           "mask_opacity": 0,
-          "title": "Bázica Vicentti",
-          "link": "/bazica-vicentti",
+          "title": "Bázica Oversized",
+          "link": "/bazica-oversized",
           "title_color": "#232323",
-          "description": "Descubra a camisa perfeita para os dias quentes! Nossa camisa é leve, fresca e de alta qualidade, garantindo conforto e estilo durante o verão. Seu caimento impecável vai deixar você pronto para qualquer ocasião, da praia ao trabalho. Não perca tempo, venha conferir!                                                                                      "
+          "description": "Para escolher a próxima nova Bázica, o processo é simples, escutamos vocês!  A Oversized é um modelo pedido há um bom tempo por vários de vocês! Foram vários meses e ajustes para deixar ela única.  Afinal, não é só mais uma, nem uma camiseta qualquer, é a sua nova Bázica Oversized.  100% de algodão egípcio e 100% de certeza que essa é a melhor Oversized que você vai ver!"
         }
       ],
       "padding": "px-3",
