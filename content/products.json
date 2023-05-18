@@ -45,6 +45,13 @@
       "list": [
         {
           "content": {
+            "body": "Medidas do modelo: 1,79 m | 72kg | Veste: M",
+            "image_position": "last",
+            "text_align": "center"
+          }
+        },
+        {
+          "content": {
             "title": "Nosso diferencial",
             "subtitle": "A sua nova Bázica preferida!",
             "image_position": "last",
@@ -65,9 +72,10 @@
         },
         {
           "content": {
-            "body": "Medidas do modelo: 1,79 m | 72kg | Veste: M",
-            "image_position": "last",
-            "text_align": "center"
+            "title": "Tabela de medidas",
+            "text_align": "center",
+            "image_position": "first",
+            "body": "![](/img/uploads/horizontal.png)"
           }
         }
       ]
