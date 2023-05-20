@@ -4,7 +4,7 @@
   "sections": [
     {
       "type": "offers-timer",
-      "max_hours": 24,
+      "max_hours": 12,
       "start": "",
       "end": "2023-05-21T02:59:31.822Z",
       "offers": [],
