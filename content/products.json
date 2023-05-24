@@ -6,8 +6,8 @@
     },
     {
       "type": "apx_blockPerCategory",
-      "title": "Descrição das Bázicas C",
-      "slug": "Bázica Gola C",
+      "title": "Descrição das Bázicas | C, LONG, V e Kids",
+      "slug": "Bázicas",
       "list": [
         {
           "content": {
@@ -16,7 +16,7 @@
             "body": "**Já chega de camisetas descartáveis.**\\\n\\\nPagar caro em peças que não duram só porque elas têm uma logomarca no peito é coisa do passado.\\\n\\\nNão é porque a sua camiseta não tem estampa que ela precisa ser qualquer uma!\\\n\\\nA nossa Bázica foi feita para durar. É extremamente versátil e te traz confiança com um caimento impecável.",
             "text_align": "left",
             "image_position": "first",
-            "image": "/img/uploads/pagina-de-venda-oversizedvarias-cores.jpg"
+            "image": "/img/uploads/rectangle-44-1-.png"
           }
         },
         {
@@ -25,7 +25,7 @@
             "image_position": "last",
             "text_align": "left",
             "body": "**A camiseta que dura até 7x mais do que as convencionais**\\\n**com a melhor experiência de compra do mercado.**\n\n* N﻿ão encolhe\n* N﻿ão estica\n* N﻿ão perde a cor\n* C﻿aimento incrível\n* A﻿lgodão egípcio (O melhor do **mundo**)\n* T﻿oque macio e confortável",
-            "image": "/img/uploads/pagina-de-venda-oversizedgola-c.jpg",
+            "image": "/img/uploads/rectangle-44-2-.png",
             "subtitle": "Veja com seus próprios olhos"
           }
         }
@@ -69,6 +69,32 @@
             "text_align": "center",
             "image_position": "first",
             "body": "![](/img/uploads/horizontal-2.png)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "apx_blockPerCategory",
+      "title": "Descrição das Bázicas V",
+      "slug": "Bázica Gola V",
+      "list": [
+        {
+          "content": {
+            "title": "Nosso Diferencial",
+            "subtitle": "Porque nem toda camiseta básica é igual",
+            "image_position": "first",
+            "text_align": "left",
+            "body": "**Já chega de camisetas descartáveis.**\\\n\\\nPagar caro em peças que não duram só porque elas têm uma logomarca no peito é coisa do passado.\\\n\\\nNão é porque a sua camiseta não tem estampa que ela precisa ser qualquer uma!\\\n\\\nA nossa Bázica foi feita para durar. É extremamente versátil e te traz confiança com um caimento impecável.",
+            "image": "/img/uploads/pagina-de-venda-oversizedgola-v.jpg"
+          }
+        },
+        {
+          "content": {
+            "title": "Porque a nossa é melhor?",
+            "subtitle": "Veja com seus próprios olhos",
+            "image_position": "last",
+            "text_align": "left",
+            "body": "**A camiseta que dura até 7x mais do que as convencionais**\\\n**com a melhor experiência de compra do mercado.**\n\n* N﻿ão encolhe\n* N﻿ão estica\n* N﻿ão perde a cor\n* C﻿aimento incrível\n* A﻿lgodão egípcio (O melhor do **mundo**)\n* T﻿oque macio e confortável"
           }
         }
       ]
