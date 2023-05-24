@@ -28,6 +28,13 @@
             "image": "/img/uploads/rectangle-44-2-.png",
             "subtitle": "Veja com seus próprios olhos"
           }
+        },
+        {
+          "content": {
+            "image_position": "first",
+            "text_align": "center",
+            "body": "![](/img/uploads/vertical-c.png)"
+          }
         }
       ]
     },
