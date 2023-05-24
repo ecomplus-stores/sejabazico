@@ -115,6 +115,33 @@
       ]
     },
     {
+      "type": "apx_blockPerCategory",
+      "title": "Bázica Long",
+      "slug": "Bázica Long",
+      "list": [
+        {
+          "content": {
+            "title": "Nosso Diferencial",
+            "subtitle": "Porque nem toda camiseta básica é igual",
+            "image_position": "last",
+            "text_align": "left",
+            "body": "**Já chega de camisetas descartáveis.**\\\n\\\nPagar caro em peças que não duram só porque elas têm uma logomarca no peito é coisa do passado.\\\n\\\nNão é porque a sua camiseta não tem estampa que ela precisa ser qualquer uma!\\\n\\\nA nossa Bázica foi feita para durar. É extremamente versátil e te traz confiança com um caimento impecável.",
+            "image": "/img/uploads/pagina-de-venda-oversizedvarias-cores.jpg"
+          }
+        },
+        {
+          "content": {
+            "title": "Porque a nossa é melhor?",
+            "subtitle": "Veja com seus próprios olhos",
+            "image_position": "last",
+            "text_align": "left",
+            "body": "**A camiseta que dura até 7x mais do que as convencionais**\\\n**com a melhor experiência de compra do mercado.**\n\n* N﻿ão encolhe\n* N﻿ão estica\n* N﻿ão perde a cor\n* Corte a laser na gola, manga e barra\n* Split lateral\n* C﻿aimento incrível\n* A﻿lgodão egípcio (O melhor do **mundo**)\n* T﻿oque macio e confortável",
+            "image": "/img/uploads/pagina-de-venda-oversizedlong.jpg"
+          }
+        }
+      ]
+    },
+    {
       "type": "recommended-products",
       "title": "Talvez você goste"
     },
