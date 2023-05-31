@@ -41,6 +41,12 @@
         },
         {
           "item": {
+            "title": "Bázica Feminina",
+            "url": "/bazica-feminina"
+          }
+        },
+        {
+          "item": {
             "title": "Bázica Oversized",
             "url": "/bazica-oversized"
           }
@@ -49,18 +55,6 @@
           "item": {
             "title": "Bázica Kids",
             "url": "/bazica-kids"
-          }
-        },
-        {
-          "item": {
-            "title": "Bázica Lord",
-            "url": "/bazica-lord"
-          }
-        },
-        {
-          "item": {
-            "title": "Bázica Vibe",
-            "url": "/bazica-vibe"
           }
         },
         {
