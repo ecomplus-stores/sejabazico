@@ -31,14 +31,14 @@
         },
         {
           "animate": "backInUp",
-          "start": "2023-05-11T12:00:43.010Z",
-          "img": "/img/uploads/resposicao-e-novas-coresdesktop.jpg",
-          "mobile_img": "/img/uploads/resposicao-e-novas-coresmobile.jpg",
+          "start": "2023-06-05T20:28:57.573Z",
+          "img": "/img/uploads/diadosnamoradosdesktop.jpg",
+          "mobile_img": "/img/uploads/diadosnamoradosmobile.jpg",
           "content_order": "inside_image",
           "content_position": "center_left",
-          "mask_opacity": 5,
-          "link": "https://www.sejabazico.com.br/novidades",
-          "end": "2023-05-21T02:59:43.041Z"
+          "mask_opacity": 0,
+          "link": "https://www.sejabazico.com.br/melhores-presentes",
+          "end": "2030-03-12T02:59:43.041Z"
         },
         {
           "animate": "slideInUp",
