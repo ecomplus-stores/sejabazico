@@ -8,6 +8,17 @@
       "slides": [
         {
           "animate": "backInUp",
+          "start": "2023-06-05T20:28:57.573Z",
+          "img": "/img/uploads/diadosnamoradosdesktop.jpg",
+          "mobile_img": "/img/uploads/diadosnamoradosmobile.jpg",
+          "content_order": "inside_image",
+          "content_position": "center_left",
+          "mask_opacity": 0,
+          "link": "https://www.sejabazico.com.br/melhores-presentes",
+          "end": "2030-03-12T02:59:43.041Z"
+        },
+        {
+          "animate": "backInUp",
           "start": "2023-05-31T15:25:11.114Z",
           "img": "/img/uploads/femininadesktop.jpg",
           "mobile_img": "/img/uploads/femininamobile.jpg",
@@ -28,17 +39,6 @@
           "mask_opacity": 0,
           "link": "https://www.sejabazico.com.br/bazica-oversized",
           "end": "2030-03-14T21:02:34.096Z"
-        },
-        {
-          "animate": "backInUp",
-          "start": "2023-06-05T20:28:57.573Z",
-          "img": "/img/uploads/diadosnamoradosdesktop.jpg",
-          "mobile_img": "/img/uploads/diadosnamoradosmobile.jpg",
-          "content_order": "inside_image",
-          "content_position": "center_left",
-          "mask_opacity": 0,
-          "link": "https://www.sejabazico.com.br/melhores-presentes",
-          "end": "2030-03-12T02:59:43.041Z"
         },
         {
           "animate": "slideInUp",
