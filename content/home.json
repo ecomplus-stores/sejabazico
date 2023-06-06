@@ -66,25 +66,29 @@
     },
     {
       "carrossel_sm": "Sim",
-      "container": "container-fluid",
+      "container": "container_90",
       "products": [
-        "647500a3a0e875411ea29697",
-        "6474ffefa0e875411ea29517",
-        "647500ffa0e875411ea29786",
-        "6474ff46a0e875411ea2937e"
+        "636eacc173321213f8d6f808",
+        "636eacba73321213f8d6f7e9",
+        "636eacab73321213f8d6f799",
+        "636eacc173321213f8d6f808",
+        "636eacc573321213f8d6f81b",
+        "636ead2473321213f8d6f95a",
+        "636eacc573321213f8d6f81b",
+        "636eacbb73321213f8d6f7ee",
+        "636eacaa73321213f8d6f794"
       ],
       "carrossel_dots_md": "Sim",
       "carrossel_arrows_md": "Sim",
-      "carrossel_dots_sm": "Não",
+      "carrossel_dots_sm": "Sim",
       "carrossel_arrows_sm": "Não",
       "padding_sm": "px-1",
-      "num_col_md": "3",
-      "padding": "px-md-1",
+      "num_col_md": "4",
+      "padding": "px-md-2",
       "num_col_sm": "2",
-      "title": "sejam muito bem-vindas",
+      "title": "mais vendidos",
       "type": "apx_productList_A",
-      "description": "foram feitas e pensadas especialmente para vocês",
-      "btn_link": "/bazica-oversized",
+      "description": "os 10 itens que nossos clientes mais curtem",
       "list": "description_last",
       "carrossel_md": "Sim"
     },
@@ -229,6 +233,30 @@
           }
         }
       ]
+    },
+    {
+      "carrossel_sm": "Sim",
+      "container": "container-fluid",
+      "products": [
+        "647500a3a0e875411ea29697",
+        "6474ffefa0e875411ea29517",
+        "647500ffa0e875411ea29786",
+        "6474ff46a0e875411ea2937e"
+      ],
+      "carrossel_dots_md": "Sim",
+      "carrossel_arrows_md": "Sim",
+      "carrossel_dots_sm": "Não",
+      "carrossel_arrows_sm": "Não",
+      "padding_sm": "px-1",
+      "num_col_md": "3",
+      "padding": "px-md-1",
+      "num_col_sm": "2",
+      "title": "sejam muito bem-vindas",
+      "type": "apx_productList_A",
+      "description": "foram feitas e pensadas especialmente para vocês",
+      "btn_link": "/bazica-oversized",
+      "list": "description_last",
+      "carrossel_md": "Sim"
     },
     {
       "type": "apx_newsletter",
