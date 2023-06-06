@@ -181,6 +181,30 @@
       "container": "container-fluid"
     },
     {
+      "carrossel_sm": "Sim",
+      "container": "container-fluid",
+      "products": [
+        "647500a3a0e875411ea29697",
+        "6474ffefa0e875411ea29517",
+        "647500ffa0e875411ea29786",
+        "6474ff46a0e875411ea2937e"
+      ],
+      "carrossel_dots_md": "Sim",
+      "carrossel_arrows_md": "Sim",
+      "carrossel_dots_sm": "Não",
+      "carrossel_arrows_sm": "Não",
+      "padding_sm": "px-1",
+      "num_col_md": "3",
+      "padding": "px-md-1",
+      "num_col_sm": "2",
+      "title": "sejam muito bem-vindas",
+      "type": "apx_productList_A",
+      "description": "foram feitas e pensadas especialmente para vocês",
+      "btn_link": "/bazica-oversized",
+      "list": "description_last",
+      "carrossel_md": "Sim"
+    },
+    {
       "type": "apx_faq",
       "title": "Perguntas Frequentes",
       "description": "O que normalmente querem saber",
@@ -235,30 +259,6 @@
           }
         }
       ]
-    },
-    {
-      "carrossel_sm": "Sim",
-      "container": "container-fluid",
-      "products": [
-        "647500a3a0e875411ea29697",
-        "6474ffefa0e875411ea29517",
-        "647500ffa0e875411ea29786",
-        "6474ff46a0e875411ea2937e"
-      ],
-      "carrossel_dots_md": "Sim",
-      "carrossel_arrows_md": "Sim",
-      "carrossel_dots_sm": "Não",
-      "carrossel_arrows_sm": "Não",
-      "padding_sm": "px-1",
-      "num_col_md": "3",
-      "padding": "px-md-1",
-      "num_col_sm": "2",
-      "title": "sejam muito bem-vindas",
-      "type": "apx_productList_A",
-      "description": "foram feitas e pensadas especialmente para vocês",
-      "btn_link": "/bazica-oversized",
-      "list": "description_last",
-      "carrossel_md": "Sim"
     },
     {
       "type": "apx_newsletter",
