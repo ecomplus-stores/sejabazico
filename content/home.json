@@ -165,7 +165,7 @@
           "animate": "bounceInUp",
           "img": "/img/uploads/grid-banner-650x650-dia-dos-namorados.jpg",
           "content_order": "before_image",
-          "alt": "dia-dos-namorados",
+          "alt": "/dia-dos-namorados",
           "content_position": "center_left",
           "btn_text": "Acerte no presente",
           "btn_background": "#232323",
