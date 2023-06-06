@@ -1,6 +1,10 @@
 {
   "stripe_slider": [
     {
+      "text": "O amor está no ar 🥰 conheça nossa seleção de presentes",
+      "url": "/melhores-presentes"
+    },
+    {
       "text": "Conheça sua <b>nova camiseta preferida!<b>",
       "url": "/roupas"
     },
@@ -72,8 +76,8 @@
       ]
     },
     {
-      "title": "Produtos Exclusivos",
-      "url": "/produtos-exclusivos"
+      "title": "Mais vendidos",
+      "url": "/top-10"
     },
     {
       "title": "Bazicash",
