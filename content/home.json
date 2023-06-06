@@ -165,16 +165,16 @@
           "animate": "bounceInUp",
           "img": "/img/uploads/grid-banner-650x650-oversized.jpg",
           "content_order": "before_image",
-          "alt": "lancamento-oversized",
+          "alt": "dia-dos-namorados",
           "content_position": "center_left",
-          "btn_text": "Vista-se com estilo",
+          "btn_text": "Acerte no presente",
           "btn_background": "#232323",
           "btn_text_color": "#ffffff",
           "mask_opacity": 0,
-          "title": "Bázica Oversized",
-          "link": "/bazica-oversized",
+          "title": "O amor está no ar 🥰",
+          "link": "/melhores-presentes",
           "title_color": "#232323",
-          "description": "Para escolher a próxima nova Bázica, o processo é simples, escutamos vocês!  A Oversized é um modelo pedido há um bom tempo por vários de vocês! Foram vários meses e ajustes para deixar ela única.  Afinal, não é só mais uma, nem uma camiseta qualquer, é a sua nova Bázica Oversized.  100% de algodão egípcio e 100% de certeza que essa é a melhor Oversized que você vai ver!"
+          "description": "Para ajudar os pombinhos na escolha dos presentes nossa equipe fez uma seleção criteriosa de Bázicas que todo mundo gosta! Essas são garantia de acerto"
         }
       ],
       "padding": "px-3",
