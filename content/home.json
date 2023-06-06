@@ -89,6 +89,7 @@
       "title": "mais vendidos",
       "type": "apx_productList_A",
       "description": "os 10 itens que nossos clientes mais curtem",
+      "btn_link": "/top-10",
       "list": "description_last",
       "carrossel_md": "Sim"
     },
