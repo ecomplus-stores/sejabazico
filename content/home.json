@@ -152,18 +152,18 @@
         {
           "description_color": "#232323",
           "animate": "bounceInUp",
-          "img": "/img/uploads/grid-banner-650x650-dia-dos-namorados.jpg",
+          "img": "/img/uploads/grid-banner-650x650-novidades.jpg",
           "content_order": "before_image",
-          "alt": "/dia-dos-namorados",
+          "alt": "novidades da bázico",
           "content_position": "center_left",
           "btn_text": "Acerte no presente",
           "btn_background": "#232323",
           "btn_text_color": "#ffffff",
           "mask_opacity": 0,
-          "title": "O amor está no ar 🥰",
-          "link": "/melhores-presentes",
+          "title": "Novidades!",
+          "link": "/novidades",
           "title_color": "#232323",
-          "description": "Para ajudar os pombinhos na escolha dos presentes, nossa equipe fez uma seleção criteriosa de presentes Bázicos que todo mundo gosta! Eles são garantia de agradar e ser lembrado por muito tempo."
+          "description": ""
         }
       ],
       "padding": "px-3",
