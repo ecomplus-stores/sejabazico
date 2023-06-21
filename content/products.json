@@ -206,14 +206,6 @@
           }
         }
       ]
-    },
-    {
-      "type": "recommended-products",
-      "title": "Talvez você goste"
-    },
-    {
-      "type": "related-products",
-      "title": "Produtos relacionados"
     }
   ]
 }
