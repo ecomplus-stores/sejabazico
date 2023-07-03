@@ -1,0 +1,37 @@
+{
+  "icons": [
+    {
+      "src": "/icon_512x512.008607b8e2819c93dee65edba6c658e8.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/icon_384x384.008607b8e2819c93dee65edba6c658e8.svg",
+      "sizes": "384x384",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/icon_192x192.008607b8e2819c93dee65edba6c658e8.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/icon_128x128.008607b8e2819c93dee65edba6c658e8.svg",
+      "sizes": "128x128",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/icon_96x96.008607b8e2819c93dee65edba6c658e8.svg",
+      "sizes": "96x96",
+      "type": "image/svg+xml"
+    }
+  ],
+  "name": "Bázico",
+  "short_name": "Bázico",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "Loja Oficial Bázico. Frete Grátis à partir de R$299 | Parcelamento em até 5x sem juros. Sua compra ainda mais valorizada! Conheça nosso Bazicash e troque por Bázicas.\n",
+  "background_color": "#ffffff",
+  "theme_color": "#232323"
+}
