@@ -11,8 +11,20 @@
         },
         {
           "item": {
+            "title": "Bázica Long",
+            "url": "/bazica-long"
+          }
+        },
+        {
+          "item": {
             "title": "Bázica Gola V",
             "url": "/bazica-gola-v"
+          }
+        },
+        {
+          "item": {
+            "title": "Bázica Oversized",
+            "url": "/bazica-oversized"
           }
         },
         {
@@ -29,32 +41,14 @@
         },
         {
           "item": {
-            "title": "Bázica Polo",
-            "url": "/bazica-polo"
-          }
-        },
-        {
-          "item": {
-            "title": "Bázica Vibe",
-            "url": "/bazica-vibe"
-          }
-        },
-        {
-          "item": {
-            "title": "Bázica Long",
-            "url": "/bazica-long"
+            "title": "Bázica Vicentti",
+            "url": "/bazica-vicentti"
           }
         },
         {
           "item": {
             "title": "Cuecas",
             "url": "/cuecas"
-          }
-        },
-        {
-          "item": {
-            "title": "TOP 10",
-            "url": "/top-10"
           }
         }
       ]

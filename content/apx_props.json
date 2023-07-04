@@ -326,6 +326,58 @@
         ],
         "image": "/img/uploads/propriedade-dos-produtos-vibe-mobilidade.png"
       }
+    },
+    {
+      "item": {
+        "title": "100% Algodão Egípcio",
+        "categories": [
+          {
+            "category": {
+              "title": "bazica-oversized"
+            }
+          }
+        ],
+        "image": "/img/uploads/100-algodao-egipcio.png"
+      }
+    },
+    {
+      "item": {
+        "title": "Gola Alongada",
+        "categories": [
+          {
+            "category": {
+              "title": "bazica-oversized"
+            }
+          }
+        ],
+        "image": "/img/uploads/gola-alongada.png"
+      }
+    },
+    {
+      "item": {
+        "title": "Extremamente macia",
+        "image": "/img/uploads/extremamente-macia-copia.png",
+        "categories": [
+          {
+            "category": {
+              "title": "bazica-oversized"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "item": {
+        "title": "Encorpada",
+        "categories": [
+          {
+            "category": {
+              "title": "bazica-oversized"
+            }
+          }
+        ],
+        "image": "/img/uploads/asset-21.png"
+      }
     }
   ]
 }

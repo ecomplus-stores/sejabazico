@@ -113,6 +113,10 @@ import {
         return checkOnPromotion(body)
           ? Math.round(((body.base_price - getPrice(body)) * 100) / body.base_price)
           : 0
+      },
+
+      locationPreVenda () {
+        return window.location.pathname === '/pre-venda'
       }
     },
   

@@ -8,24 +8,26 @@
       "slides": [
         {
           "animate": "backInUp",
-          "start": "2023-05-11T12:00:39.563Z",
-          "img": "/img/uploads/oferta-compre3leve4desktop.jpg",
-          "mobile_img": "/img/uploads/oferta-compre3leve4mobile.jpg",
+          "start": "2023-05-31T15:25:11.114Z",
+          "img": "/img/uploads/femininadesktop.jpg",
+          "mobile_img": "/img/uploads/femininamobile.jpg",
           "content_order": "inside_image",
-          "alt": "compre3leve4 oferta",
+          "alt": "bazica-feminina",
           "content_position": "top_center",
           "mask_opacity": 0,
-          "link": "https://sejabazico.com.br/roupas",
-          "end": "2023-05-21T02:59:39.600Z"
+          "link": "https://www.sejabazico.com.br/bazica-feminina",
+          "end": "2030-03-15T02:59:39.600Z"
         },
         {
+          "start": "2023-05-16T21:02:33.229Z",
+          "img": "/img/uploads/oversizeddesktop.jpg",
+          "mobile_img": "/img/uploads/oversizedmobile.jpg",
+          "content_order": "inside_image",
+          "alt": "nova bázica: Oversized!",
+          "content_position": "center_left",
           "mask_opacity": 0,
-          "start": "2023-05-02T04:23:42.548Z",
-          "end": "2023-05-11T11:57:42.677Z",
-          "img": "/img/uploads/prancheta-1.png",
-          "mobile_img": "/img/uploads/prancheta-1-copiar.png",
-          "content_position": "center_center",
-          "content_order": "inside_image"
+          "link": "https://www.sejabazico.com.br/bazica-oversized",
+          "end": "2030-03-14T21:02:34.096Z"
         },
         {
           "animate": "slideInUp",
@@ -48,17 +50,6 @@
           "mask_opacity": 5,
           "link": "https://landing.sejabazico.com.br/bazipass-assinatura/",
           "end": "2030-03-01T00:41:34.386Z"
-        },
-        {
-          "animate": "backInUp",
-          "start": "2023-05-11T12:00:43.010Z",
-          "img": "/img/uploads/resposicao-e-novas-coresdesktop.jpg",
-          "mobile_img": "/img/uploads/resposicao-e-novas-coresmobile.jpg",
-          "content_order": "inside_image",
-          "content_position": "center_left",
-          "mask_opacity": 5,
-          "link": "https://www.sejabazico.com.br/novidades",
-          "end": "2023-05-21T02:59:43.041Z"
         }
       ]
     },
@@ -66,13 +57,46 @@
       "carrossel_sm": "Sim",
       "container": "container-fluid",
       "products": [
-        "636eac9673321213f8d6f745",
-        "636eac9773321213f8d6f74b",
-        "636eac9873321213f8d6f752",
         "636eac9a73321213f8d6f75a",
-        "636eac9b73321213f8d6f75f",
-        "636eaca673321213f8d6f77e",
-        "636eacaf73321213f8d6f7ac"
+        "636eacba73321213f8d6f7e9",
+        "636eacab73321213f8d6f799",
+        "636eacaa73321213f8d6f794",
+        "645a5ea64bd2e929c1f3ca92",
+        "647500a3a0e875411ea29697",
+        "636eacc173321213f8d6f808",
+        "636eac9d73321213f8d6f763",
+        "645187af4bd2e929c1e9b2f6",
+        "636eacbc73321213f8d6f7f3"
+      ],
+      "carrossel_dots_md": "Sim",
+      "carrossel_arrows_md": "Sim",
+      "carrossel_dots_sm": "Sim",
+      "carrossel_arrows_sm": "Não",
+      "padding_sm": "px-1",
+      "num_col_md": "4",
+      "padding": "px-md-2",
+      "num_col_sm": "2",
+      "title": "mais vendidos",
+      "type": "apx_productList_A",
+      "description": "os 10 itens que nossos clientes mais curtem",
+      "btn_link": "/top-10",
+      "list": "description_last",
+      "carrossel_md": "Sim"
+    },
+    {
+      "carrossel_sm": "Sim",
+      "container": "container-fluid",
+      "products": [
+        "636eac9a73321213f8d6f75a",
+        "636eacba73321213f8d6f7e9",
+        "636eacab73321213f8d6f799",
+        "645187af4bd2e929c1e9b2f6",
+        "636eacad73321213f8d6f7a3",
+        "636ead1673321213f8d6f929",
+        "636ead1f73321213f8d6f946",
+        "645a5cfb4bd2e929c1f3c523",
+        "636eacb573321213f8d6f7d1",
+        "636eac9d73321213f8d6f763"
       ],
       "carrossel_dots_md": "Sim",
       "carrossel_arrows_md": "Sim",
@@ -84,7 +108,7 @@
       "btn_text": "Ver Todas",
       "padding": "px-md-0",
       "num_col_sm": "2",
-      "title": "Sua nova camisa preferida!",
+      "title": "sua nova camisa preferida!",
       "type": "apx_productList_A",
       "description": "Esqueça para sempre as básicas descartáveis",
       "btn_link": "/bazicas",
@@ -105,7 +129,7 @@
           "btn_background": "#232323",
           "btn_text_color": "#ffffff",
           "mask_opacity": 0,
-          "title": "BaziPass",
+          "title": "Bazipass",
           "link": "https://landing.sejabazico.com.br/bazipass-assinatura/",
           "title_color": "#232323",
           "description": "Descubra um mundo de privilégios! Nosso programa exclusivo oferece desconto de 15%, prioridade em compras, Bazicash dobrados, Bazicashs mensais e até mesmo uma Bázica grátis por indicação. Junte-se a nós e aproveite os benefícios especiais que o BaziPass dá para você."
@@ -124,27 +148,51 @@
           "title": "Prazer, Bázico!",
           "link": "pages/quem-somos-nos",
           "title_color": "#232323",
-          "description": "Bem-vindo à Bázico, a marca de moda básica masculina que está construindo relações através de experiências únicas! Com produtos de qualidade, confiança e estilo, estamos aqui para oferecer a melhor camisa do seu guarda-roupa. Somos mais do que apenas uma marca de moda, somos uma comunidade de homens confiantes. Conheça aqui mais sobre nossa história.!"
+          "description": "Bem-vindo à Bázico, a marca de moda básica masculina que está construindo relações através de experiências únicas! Com produtos de qualidade, confiança e estilo, estamos aqui para oferecer a melhor camisa do seu guarda-roupa. Somos mais do que apenas uma marca de moda, somos uma comunidade de homens confiantes. Conheça aqui mais sobre nossa história!"
         },
         {
           "description_color": "#232323",
           "animate": "bounceInUp",
-          "img": "/img/uploads/grid-banner-650x650-vicentti.jpg",
+          "img": "/img/uploads/grid-banner-650x650-novidades.jpg",
           "content_order": "before_image",
-          "alt": "a-camisa-perfeita-para-a-praia",
+          "alt": "novidades da bázico",
           "content_position": "center_left",
-          "btn_text": "Vista-se com estilo",
+          "btn_text": "Garanta a sua",
           "btn_background": "#232323",
           "btn_text_color": "#ffffff",
           "mask_opacity": 0,
-          "title": "Bázica Vicentti",
-          "link": "/bazica-vicentti",
+          "title": "Novidades!",
+          "link": "/novidades",
           "title_color": "#232323",
-          "description": "Descubra a camisa perfeita para os dias quentes! Nossa camisa é leve, fresca e de alta qualidade, garantindo conforto e estilo durante o verão. Seu caimento impecável vai deixar você pronto para qualquer ocasião, da praia ao trabalho. Não perca tempo, venha conferir!                                                                                      "
+          "description": "Nossos lançamentos! Alguns inclusive já esgotaram 😅 São novas cores e dois novos modelos imperdíveis: a Bázica Feminina e a Bázica Oversized. E o melhor de tudo é que eles estão disponíveis em quatro cores incríveis, para que você possa escolher aquela que melhor se adequa ao seu estilo. Garanta a sua "
         }
       ],
       "padding": "px-3",
       "container": "container-fluid"
+    },
+    {
+      "carrossel_sm": "Sim",
+      "container": "container_90",
+      "products": [
+        "647500a3a0e875411ea29697",
+        "6474ffefa0e875411ea29517",
+        "647500ffa0e875411ea29786",
+        "6474ff46a0e875411ea2937e"
+      ],
+      "carrossel_dots_md": "Sim",
+      "carrossel_arrows_md": "Sim",
+      "carrossel_dots_sm": "Não",
+      "carrossel_arrows_sm": "Não",
+      "padding_sm": "px-1",
+      "num_col_md": "4",
+      "padding": "px-md-1",
+      "num_col_sm": "2",
+      "title": "sejam muito bem-vindas",
+      "type": "apx_productList_A",
+      "description": "foram feitas e pensadas especialmente para vocês",
+      "btn_link": "/bazica-oversized",
+      "list": "description_last",
+      "carrossel_md": "Sim"
     },
     {
       "type": "apx_faq",
@@ -179,7 +227,7 @@
         {
           "question": {
             "title": "Qual o valor do frete?",
-            "response": "Temos frete grátis para compras acima de R$199,00 para todo Brasil! (Com exceção dos estados da região Norte).<br>Para compras abaixo desse valor você pode consultar inserindo o seu CEP na hora finalizar sua compra!"
+            "response": "Temos frete grátis para compras acima de R$299,00 para todo Brasil! (Com exceção dos estados da região Norte).<br>Para compras abaixo desse valor você pode consultar inserindo o seu CEP na hora finalizar sua compra!"
           }
         },
         {

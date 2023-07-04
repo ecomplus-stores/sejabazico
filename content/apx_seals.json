@@ -18,6 +18,23 @@
     },
     {
       "item": {
+        "title": "Lançamento",
+        "text_color": "#232323",
+        "border_color": "#232323",
+        "bg_color": "#ffffff",
+        "products": [],
+        "categories": [
+          {
+            "category": {
+              "title": "novidades"
+            }
+          }
+        ],
+        "image": "/img/uploads/asset-14.png"
+      }
+    },
+    {
+      "item": {
         "title": "Pré-venda",
         "text_color": "#232323",
         "border_color": "#232323",
@@ -33,7 +50,7 @@
     },
     {
       "item": {
-        "title": "Envio até 17/05",
+        "title": "Envio até 06/07",
         "text_color": "#232323",
         "border_color": "#232323",
         "bg_color": "#ffffff",
@@ -143,6 +160,22 @@
           }
         ],
         "image": "/img/uploads/moeda-bazicash2.png"
+      }
+    },
+    {
+      "item": {
+        "title": "1.400 Bazicashs",
+        "image": "/img/uploads/bazicash-outline.png",
+        "categories": [
+          {
+            "category": {
+              "title": "bazica-oversized"
+            }
+          }
+        ],
+        "text_color": "#232323",
+        "border_color": "#232323",
+        "bg_color": "#ffffff"
       }
     }
   ]

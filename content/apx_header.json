@@ -1,16 +1,16 @@
 {
   "stripe_slider": [
     {
-      "text": "🎁 aniversário 3 anos | save the date 11.05 🎁",
+      "text": "Conheça sua <b>nova camiseta preferida!<b>",
+      "url": "/roupas"
+    },
+    {
+      "text": "<b>Frete grátis<b> em compras acima de R$299*",
       "url": "/"
     },
     {
-      "text": "Sua primeira Bázica? Use o código: <b>PRIMEIRACOMPRA</b>",
-      "url": "/"
-    },
-    {
-      "text": "<u>Frete grátis</u> e em até 24hrs para Aracaju!",
-      "url": "/"
+      "text": "Dois novos modelos em 4 novas cores! <u>clique e conheça<u>",
+      "url": "/novidades"
     }
   ],
   "links": [
@@ -41,20 +41,20 @@
         },
         {
           "item": {
+            "title": "Bázica Feminina",
+            "url": "/bazica-feminina"
+          }
+        },
+        {
+          "item": {
+            "title": "Bázica Oversized",
+            "url": "/bazica-oversized"
+          }
+        },
+        {
+          "item": {
             "title": "Bázica Kids",
             "url": "/bazica-kids"
-          }
-        },
-        {
-          "item": {
-            "title": "Bázica Lord",
-            "url": "/bazica-lord"
-          }
-        },
-        {
-          "item": {
-            "title": "Bázica Vibe",
-            "url": "/bazica-vibe"
           }
         },
         {
@@ -72,8 +72,8 @@
       ]
     },
     {
-      "title": "Produtos Exclusivos",
-      "url": "/produtos-exclusivos"
+      "title": "Mais vendidos",
+      "url": "/top-10"
     },
     {
       "title": "Bazicash",

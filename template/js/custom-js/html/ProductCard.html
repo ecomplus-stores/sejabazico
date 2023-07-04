@@ -7,7 +7,7 @@ class="product-item"
     class="product-card"
     :data-product="JSON.stringify(body.itemData)"
     :class="{
-      'product-card--inactive': body._id && !isActive,
+      'product-card--inactive': body._id && !isActive && !locationPreVenda,
       'product-card--small': isSmall
     }"
     @mouseover="isHovered = true"
@@ -87,7 +87,7 @@ class="product-item"
 
         <slot
           name="unavailable"
-          v-if="!body.available || !body.visible"
+          v-if="!body.available || (!body.visible && !locationPreVenda)"
         >
           <p class="badge badge-warning">
             {{ i19unavailable }}
