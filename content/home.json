@@ -9,8 +9,8 @@
         {
           "animate": "backInUp",
           "start": "2023-05-31T15:25:11.114Z",
-          "img": "/img/uploads/femininadesktop.jpg",
-          "mobile_img": "/img/uploads/femininamobile.jpg",
+          "img": "/img/uploads/femininadesktop.webp",
+          "mobile_img": "/img/uploads/femininamobile.webp",
           "content_order": "inside_image",
           "alt": "bazica-feminina",
           "content_position": "top_center",
@@ -20,8 +20,8 @@
         },
         {
           "start": "2023-05-16T21:02:33.229Z",
-          "img": "/img/uploads/oversizeddesktop.jpg",
-          "mobile_img": "/img/uploads/oversizedmobile.jpg",
+          "img": "/img/uploads/oversizeddesktop.webp",
+          "mobile_img": "/img/uploads/oversizedmobile.webp",
           "content_order": "inside_image",
           "alt": "nova bázica: Oversized!",
           "content_position": "center_left",
@@ -32,8 +32,8 @@
         {
           "animate": "slideInUp",
           "start": "2023-04-16T23:42:23.093Z",
-          "img": "/img/uploads/frete-desktop-.png",
-          "mobile_img": "/img/uploads/frete-mobile-.png",
+          "img": "/img/uploads/frete-desktop-.webp",
+          "mobile_img": "/img/uploads/frete-mobile-.webp",
           "content_order": "inside_image",
           "alt": "frete-gratis",
           "content_position": "top_center",
@@ -121,7 +121,7 @@
         {
           "description_color": "#232323",
           "animate": "fadeInTopRight",
-          "img": "/img/uploads/grid-banner-650x650-bazipass.jpg",
+          "img": "/img/uploads/grid-banner-650x650-bazipass.webp",
           "content_order": "before_image",
           "alt": "bazipass-o-programa-de-privilegios-da-bazico",
           "content_position": "center_left",
@@ -137,7 +137,7 @@
         {
           "description_color": "#232323",
           "animate": "zoomInUp",
-          "img": "/img/uploads/grid-banner-650x650-quem-somos-nos.jpg",
+          "img": "/img/uploads/grid-banner-650x650-quem-somos-nos.webp",
           "content_order": "after_image",
           "alt": "time-da-bazico",
           "content_position": "center_left",
@@ -153,7 +153,7 @@
         {
           "description_color": "#232323",
           "animate": "bounceInUp",
-          "img": "/img/uploads/grid-banner-650x650-novidades.jpg",
+          "img": "/img/uploads/grid-banner-650x650-novidades.webp",
           "content_order": "before_image",
           "alt": "novidades da bázico",
           "content_position": "center_left",
