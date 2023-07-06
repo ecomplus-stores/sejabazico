@@ -7,6 +7,17 @@
       "autoplay": 3000,
       "slides": [
         {
+          "animate": "slideInUp",
+          "start": "2023-04-17T00:41:34.356Z",
+          "img": "/img/uploads/banners-site-novobazipass-desktop-.jpg",
+          "mobile_img": "/img/uploads/bazipass-mobile-.png",
+          "content_order": "inside_image",
+          "content_position": "top_center",
+          "mask_opacity": 5,
+          "link": "https://landing.sejabazico.com.br/bazipass-assinatura/",
+          "end": "2030-03-01T00:41:34.386Z"
+        },
+        {
           "animate": "backInUp",
           "start": "2023-05-31T15:25:11.114Z",
           "img": "/img/uploads/femininadesktop.webp",
@@ -39,17 +50,6 @@
           "content_position": "top_center",
           "mask_opacity": 0,
           "end": "2024-12-21T23:42:23.105Z"
-        },
-        {
-          "animate": "slideInUp",
-          "start": "2023-04-17T00:41:34.356Z",
-          "img": "/img/uploads/banners-site-novobazipass-desktop-.jpg",
-          "mobile_img": "/img/uploads/bazipass-mobile-.png",
-          "content_order": "inside_image",
-          "content_position": "top_center",
-          "mask_opacity": 5,
-          "link": "https://landing.sejabazico.com.br/bazipass-assinatura/",
-          "end": "2030-03-01T00:41:34.386Z"
         }
       ]
     },
