@@ -22,14 +22,12 @@
     <small v-if="hasVariedPrices">
       {{ i19asOf }}
     </small>
-    
     <span v-if="parseInt(formatMoney(price).split(',')[1]) == 0">
-        {{ formatMoney(price).split(',')[0] }}
+      {{ formatMoney(price).split(',')[0] }}
     </span>
     <span v-else>
-        {{ formatMoney(price) }}
+      {{ formatMoney(price) }}
     </span>
-    
   </strong>
 
   <transition-group enter-active-class="animated slideInDown">
@@ -64,6 +62,22 @@
       <small v-if="!monthlyInterest && isLiteral">
         {{ i19interestFree }}
       </small>
+    </div>
+
+    <div
+      key="discount-subscription"
+      v-if="canShowPriceOptions"
+      class="prices__discount prices__discount--subscription"
+    >
+      <a href="https://landing.sejabazico.com.br/bazipass-assinatura/" target="_blank">
+        <span>
+          {{ formatMoney(price * 0.85) }}
+        </span>
+        <small>
+          com <span class="fw-600">Bazi</span><span class="fw-900">Pass</span>
+        </small>
+        <i class="i-info-circle"></i>
+      </a>
     </div>
 
     <div

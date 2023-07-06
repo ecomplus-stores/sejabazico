@@ -27,6 +27,29 @@
   }
 }
 
+.prices .prices__discount--subscription {
+  font-size: 100% !important;
+  margin-top: .35rem;
+  &, a {
+    color: rgb(32, 15, 54);
+  }
+  b {
+    font-weight: 900;
+  }
+  small {
+    text-transform: none;
+  }
+}
+
+.fw- {
+  &600 {
+    font-weight: 600 !important;
+  }
+  &900 {
+    font-weight: 900 !important;
+  }
+}
+
 // -- // --
 
 :root{
