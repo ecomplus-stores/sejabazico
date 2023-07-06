@@ -55,9 +55,8 @@ class="product-item"
                 />
               </div>
             </a-link>
-            <div class="apx_fastBuy" 
+            <div v-if="!isSmall" class="apx_fastBuy" 
             :grid="JSON.stringify(body.variations)">
-              
             </div>
           </div>
             <a-link
@@ -111,9 +110,7 @@ class="product-item"
               :installments-option="installmentsOption"
               :discount-option="discountOption"
             />
-          </slot>
-
-          
+          </slot>          
         </template>
 
         <slot name="footer">
