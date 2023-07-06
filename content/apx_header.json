@@ -1,15 +1,15 @@
 {
   "stripe_slider": [
     {
-      "text": "Conheça sua <b>nova camiseta preferida!<b>",
+      "text": "Conheça sua <b>nova camiseta preferida!</b>",
       "url": "/roupas"
     },
     {
-      "text": "<b>Frete grátis<b> em compras acima de R$299*",
+      "text": "<b>Frete grátis</b> em compras acima de R$299*",
       "url": "/"
     },
     {
-      "text": "4 Novas cores e diversas reposições! 3 Lançamentos no tecido Powerfull <u>clique e conheça<u>",
+      "text": "4 Novas cores e diversas reposições! 3 Lançamentos no tecido Powerfull <u>clique e conheça</u>",
       "url": "/novidades"
     }
   ],
