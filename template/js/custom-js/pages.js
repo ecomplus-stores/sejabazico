@@ -227,4 +227,21 @@ if (window.location.pathname === '/pre-venda') {
         }
       ]
     })
+} else if (window.location.pathname === '/ultimas-unidades') {
+    EcomSearch.dslMiddlewares.push((dsl) => {
+        dsl.query.bool.filter = [
+          {
+            term: {
+              visible: false
+            }
+          },
+          {
+              "terms": {
+                  "categories.name": [
+                      "ultimas-unidades"
+                  ]
+              }
+          }
+        ]
+    })   
 }
