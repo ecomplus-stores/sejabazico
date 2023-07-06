@@ -4,25 +4,45 @@
   width: 100%;
 }
 
-.product-card--small {
-  .product-card {
-    &__pictures {
-      aspect-ratio: 0.6657;
-      width: 100%;
-      height: auto;
-      .picture {
+.badge {
+  border-radius: 0;
+}
+
+.product-card {
+  &__name {
+    max-width: 80%;
+  }
+  &__offer-stamp {
+    border-radius: 0;
+  }
+  .prices__compare,
+  .prices__value small {
+    display: none;
+  }
+
+  &--small {
+    .product-card {
+      &__name {
+        max-width: 75%;
+      }
+      &__pictures {
+        aspect-ratio: 0.6657;
         width: 100%;
-        height: 100%;
-        img {
-          object-fit: cover;
+        height: auto;
+        .picture {
+          width: 100%;
           height: 100%;
-          max-height: none;
-          width: auto;
+          img {
+            object-fit: cover;
+            height: 100%;
+            max-height: none;
+            width: auto;
+          }
         }
       }
-    }
-    &__prices {
-      bottom: 0 !important;
+      &__prices {
+        bottom: 0 !important;
+      }
     }
   }
 }
