@@ -41,6 +41,12 @@
         },
         {
           "item": {
+            "title": "Bázica Vibe",
+            "url": "/bazica-vibe"
+          }
+        },
+        {
+          "item": {
             "title": "Bázica Vicentti",
             "url": "/bazica-vicentti"
           }
@@ -49,6 +55,12 @@
           "item": {
             "title": "Cuecas",
             "url": "/cuecas"
+          }
+        },
+        {
+          "item": {
+            "title": "Últimas unidade - Itens em oferta",
+            "url": "/ultimas-unidades"
           }
         }
       ]
