@@ -180,7 +180,10 @@ export default {
     formatMoney,
 
     checkListedGateway (gateway, i) {
-      if (gateway.payment_method.code !== 'loyalty_points') {
+      if (gateway.payment_method.name === 'Bazicash') {
+        return this.amount.total < 1
+      }
+      if (this.amount.total >= 1 && gateway.payment_method.code !== 'loyalty_points') {
         if (this.canGroupRecurrentGateways) {
           const checkRecurrentCardGateway = (gateway) => {
             return gateway.type === 'recurrence' &&
