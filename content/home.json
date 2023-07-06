@@ -50,6 +50,17 @@
           "content_position": "top_center",
           "mask_opacity": 0,
           "end": "2024-12-21T23:42:23.105Z"
+        },
+        {
+          "animate": "slideInUp",
+          "start": "2023-07-06T14:59:43.544Z",
+          "img": "/img/uploads/novas-cores-desktop-.webp",
+          "mobile_img": "/img/uploads/novas-cores-mobile-.webp",
+          "content_order": "inside_image",
+          "content_position": "top_center",
+          "mask_opacity": 5,
+          "link": "https://www.sejabazico.com.br/novidades",
+          "end": "2030-01-31T12:26:50.628Z"
         }
       ]
     },
