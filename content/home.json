@@ -7,6 +7,17 @@
       "autoplay": 3000,
       "slides": [
         {
+          "animate": "slideInUp",
+          "start": "2023-04-17T00:41:34.356Z",
+          "img": "/img/uploads/banners-site-novobazipass-desktop-.jpg",
+          "mobile_img": "/img/uploads/bazipass-mobile-.png",
+          "content_order": "inside_image",
+          "content_position": "top_center",
+          "mask_opacity": 5,
+          "link": "https://landing.sejabazico.com.br/bazipass-assinatura/",
+          "end": "2030-03-01T00:41:34.386Z"
+        },
+        {
           "animate": "backInUp",
           "start": "2023-05-31T15:25:11.114Z",
           "img": "/img/uploads/femininadesktop.webp",
@@ -42,14 +53,14 @@
         },
         {
           "animate": "slideInUp",
-          "start": "2023-04-17T00:41:34.356Z",
-          "img": "/img/uploads/banners-site-novobazipass-desktop-.jpg",
-          "mobile_img": "/img/uploads/bazipass-mobile-.png",
+          "start": "2023-07-06T14:59:43.544Z",
+          "img": "/img/uploads/novas-cores-desktop-.webp",
+          "mobile_img": "/img/uploads/novas-cores-mobile-.webp",
           "content_order": "inside_image",
           "content_position": "top_center",
           "mask_opacity": 5,
-          "link": "https://landing.sejabazico.com.br/bazipass-assinatura/",
-          "end": "2030-03-01T00:41:34.386Z"
+          "link": "https://www.sejabazico.com.br/novidades",
+          "end": "2030-01-31T12:26:50.628Z"
         }
       ]
     },
@@ -153,7 +164,7 @@
         {
           "description_color": "#232323",
           "animate": "bounceInUp",
-          "img": "/img/uploads/grid-banner-650x650-novidades.webp",
+          "img": "/img/uploads/grid-banner-650x650-novas-cores.webp",
           "content_order": "before_image",
           "alt": "novidades da bázico",
           "content_position": "center_left",
