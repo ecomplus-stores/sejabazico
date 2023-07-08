@@ -50,6 +50,10 @@ export default {
     canShowPriceOptions: {
       type: Boolean,
       default: true
+    },
+    canShowBazipass: {
+      type: Boolean,
+      default: true
     }
   },
 
