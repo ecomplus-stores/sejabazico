@@ -108,7 +108,7 @@
             :discount-option="{ value: amount.discount }"
             :is-literal="true"
             :is-amount-total="true"
-            :can-show-price-options="canShowPriceOptions"
+            :can-show-price-options="!amount.discount && canShowPriceOptions"
           />
         </div>
         <div class="bazicash_amount text-right mt-3 mb-3 d-flex align-items-center justify-content-end" style="flex-wrap:wrap;font-size:12px;">
