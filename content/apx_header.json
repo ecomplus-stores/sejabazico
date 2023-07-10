@@ -68,6 +68,12 @@
             "title": "Cuecas",
             "url": "/cuecas"
           }
+        },
+        {
+          "item": {
+            "title": "Últimas unidades - Itens em oferta",
+            "url": "/ultimas-unidades"
+          }
         }
       ]
     },
