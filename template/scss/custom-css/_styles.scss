@@ -1810,3 +1810,13 @@ body #storefront-app>div>h1{
     translate: -50% -50%;
 }
 .status-ready .variations__grid.selected .status-denied:before{display:none}
+
+.bz_product-info-sticky {
+    padding-top: .5rem !important;
+}
+#product .product__prices {
+    margin: .5rem 0;
+}
+.variations__grid {
+    margin-bottom: var(--spacer-1) !important;
+}
