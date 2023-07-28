@@ -1,9 +1,12 @@
 const path = require('path')
+const dirSearchAlias = path.resolve(__dirname, 'template/js/lib/search-engine')
+const pathDslAlias = path.resolve(dirSearchAlias, 'dsl')
 
 module.exports = () => ({
   resolve: {
     alias: {
       './base-config': path.resolve(__dirname, 'template/js/netlify-cms/base-config'),
+      './methods/set-search-term': path.resolve(dirSearchAlias, 'set-search-term'),
       './html/ProductCard.html': path.resolve(__dirname, 'template/js/custom-js/html/ProductCard.html'),
       './js/ProductCard.js': path.resolve(__dirname, 'template/js/custom-js/html/ProductCard.js'),
       './html/ProductGallery.html': path.resolve(__dirname, 'template/js/custom-js/html/ProductGallery.html'),
