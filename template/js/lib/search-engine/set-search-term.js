@@ -17,6 +17,18 @@ export default (self, term) => {
           case 'pretas':
           case 'pretas':
             return 'pret'
+          case 'vermelho':
+          case 'vermelh':
+          case 'vermel':
+          case 'vermelha':
+          case 'red':
+            return 'verme'
+          case 'amarelo':
+          case 'amarela':
+          case 'amarel':
+          case 'amare':
+          case 'yellow':
+            return 'yello'
           default:
             return lower
         }
