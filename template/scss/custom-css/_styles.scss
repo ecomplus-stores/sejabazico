@@ -1834,3 +1834,14 @@ body #storefront-app>div>h1{
 
 }
 
+#gift-wrapper {
+    margin-top: 5px;
+}
+#gift {
+    margin-left: 5px;
+}
+.cart-item__data {
+    #gift-wrapper {
+        max-width: 300px !important;
+    }
+}
