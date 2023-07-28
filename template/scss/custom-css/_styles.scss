@@ -696,6 +696,13 @@ html:not(.isMobile) .bz_gallery{
         position: sticky;
         top: 3rem;
     }
+    #footer-additionals {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: var(--spacer-5);
+    }
 }
 
 #product{
