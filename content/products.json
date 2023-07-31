@@ -206,6 +206,22 @@
           }
         }
       ]
+    },
+    {
+      "type": "apx_blockPerCategory",
+      "title": "BaziPass",
+      "slug": "bazipass",
+      "list": [
+        {
+          "content": {
+            "title": "o cliente sempre em primeiro lugar",
+            "subtitle": "foi pensando nisso que o BaziPass foi criado",
+            "body": "C﻿riamos o BaziPass visando beneficiar nossos clientes mais fieis! Nada mais justo do",
+            "image_position": "first",
+            "text_align": "left"
+          }
+        }
+      ]
     }
   ]
 }
