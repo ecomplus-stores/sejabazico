@@ -235,7 +235,8 @@
             "image_position": "last",
             "text_align": "left",
             "title": "exemplo",
-            "body": "s﻿e quiser podemos fazer o calculo exclusivo para  sua realidade, basta clicar [aqui.](https://api.whatsapp.com/send?phone=5555798153340&text=Ol%C3%A1,%20estava%20olhando%20o%20BaziPass%20no%20site%20e%20fiquei%20interessado.%20%20Poderia%20me%20explicar%20mais%20sobre?)"
+            "body": "s﻿e quiser podemos fazer o calculo exclusivo para  sua realidade, basta clicar [aqui.](https://api.whatsapp.com/send?phone=5555798153340&text=Ol%C3%A1,%20estava%20olhando%20o%20BaziPass%20no%20site%20e%20fiquei%20interessado.%20%20Poderia%20me%20explicar%20mais%20sobre?)",
+            "subtitle": ""
           }
         }
       ]
