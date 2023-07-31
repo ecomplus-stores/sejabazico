@@ -216,7 +216,7 @@
           "content": {
             "title": "o cliente sempre em primeiro lugar",
             "subtitle": "foi pensando nisso que o BaziPass foi criado",
-            "body": "### C﻿riamos o BaziPass visando beneficiar nossos clientes mais fieis! Nada mais justo do que as pessoas mais próximas a Bázico tenham benefícios quando forem comprar.",
+            "body": "### C﻿riamos o BaziPass visando beneficiar nossos clientes mais fieis!\\\n\\\nNada mais justo do que as pessoas mais próximas a Bázico tenham benefícios quando forem comprar.",
             "image_position": "first",
             "text_align": "left"
           }
@@ -238,6 +238,14 @@
             "body": "s﻿e quiser podemos fazer o calculo exclusivo para  sua realidade, **basta clicar [aqui.](https://api.whatsapp.com/send?phone=5555798153340&text=Ol%C3%A1,%20estava%20olhando%20o%20BaziPass%20no%20site%20e%20fiquei%20interessado.%20%20Poderia%20me%20explicar%20mais%20sobre?)**",
             "subtitle": "vamos fazer uma conta de padeiro para você",
             "image": "/img/uploads/com-x-sem-bazicash.png"
+          }
+        },
+        {
+          "content": {
+            "body": "`<!DOCTYPE html>`\n\n`<html>\n<head>\n  <title>Lista Suspensa com Bazicash</title>\n</head>\n<body>`\n\n`<h1>O que é Bazicash?</h1>`\n\n`<!-- Criando a lista suspensa -->`\n\n`<select>\n  <option value=\"descricao\">\n    Bazicash é a moeda virtual da Bázico. A cada R$1 em pedidos na Bázico você ganha 1 BZ$, mas com o BaziPass você ganha 2 BZ$. Os Bazicashs ficam vinculados à sua conta e você pode trocar por diversos itens da Bázico a qualquer momento. Para ganhar 5.400 BZ$ você teria que gastar R$5.400,00 em pedidos na Bázica, mas com o Bazipass você tem tudo isso investindo só R$550.\n  </option>\n</select>`\n\n`</body>\n</html>`",
+            "text_align": "center",
+            "image_position": "first",
+            "title": "Perguntas frequentes"
           }
         }
       ]
