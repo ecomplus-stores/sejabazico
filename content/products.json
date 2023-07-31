@@ -242,7 +242,7 @@
         },
         {
           "content": {
-            "body": "`<!DOCTYPE html>`\n\n`<html>\n<head>\n  <title>Lista Suspensa com Bazicash</title>\n</head>\n<body>`\n\n`<h1>O que é Bazicash?</h1>`\n\n`<!-- Criando a lista suspensa -->`\n\n`<select>\n  <option value=\"descricao\">\n    Bazicash é a moeda virtual da Bázico. A cada R$1 em pedidos na Bázico você ganha 1 BZ$, mas com o BaziPass você ganha 2 BZ$. Os Bazicashs ficam vinculados à sua conta e você pode trocar por diversos itens da Bázico a qualquer momento. Para ganhar 5.400 BZ$ você teria que gastar R$5.400,00 em pedidos na Bázica, mas com o Bazipass você tem tudo isso investindo só R$550.\n  </option>\n</select>`\n\n`</body>\n</html>`",
+            "body": "``",
             "text_align": "center",
             "image_position": "first",
             "title": "Perguntas frequentes"
