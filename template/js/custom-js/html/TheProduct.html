@@ -2,6 +2,7 @@
   class="product"
   :data-product-id="body._id"
   :data-sku="body.sku"
+  :class="isBaziPassClub ? 'is-bazi-pass': null"
 >
   <a-alert
     :can-show="hasLoadError"
@@ -135,6 +136,7 @@
                   :is-literal="true"
                   :is-big="true"
                   @fix-price="price => fixedPrice = price"
+                  :canShowBazipass="isBaziPassClub ? false : true"
                 />
 
                 <slot
@@ -239,7 +241,7 @@
             </div>
             <template v-else>
               <div class="product__buy">
-                <div class="apx_quantity_selector">
+                <div class="apx_quantity_selector" v-if="!isBaziPassClub">
                   <button type="button"
                   @click="ev => changeQntUn(body, -1,ev)"
                   ><i class="fas fa-chevron-down"></i></button>
@@ -261,7 +263,7 @@
                   @click="ev => changeQntUn(body, 1,ev)"
                   ><i class="fas fa-chevron-up"></i></button>
                 </div>
-                <span @click="buy" class="w-100">
+                <span @click="buy" class="w-100" v-if="!isBaziPassClub">
                   <slot
                     name="buy"
                     v-bind="{ hasClickedBuy, isOnCart }"
@@ -278,6 +280,17 @@
                     </button>
                   </slot>
                 </span>
+                <span v-if="isBaziPassClub" class="w-100">
+                  <a href="https://go.sejabazico.com.br/pay/bazipass" class="btn btn-lg btn-primary">
+                    <span>
+                          Adicionar ao Carrinho 
+                    </span>
+                  </a>
+                </span>
+                
+              </div>
+              <div>
+              
               </div>
               <p
                 class="product__short-stock"
@@ -357,7 +370,7 @@
             </p>
 
             <slot
-              v-if="!isQuickview"
+              v-if="!isQuickview && !isBaziPassClub"
               name="shipping"
             >
               <shipping-calculator
