@@ -248,6 +248,13 @@
             "image_position": "first",
             "title": "Perguntas frequentes"
           }
+        },
+        {
+          "content": {
+            "image_position": "first",
+            "text_align": "left",
+            "body": "\n\n```\n<!DOCTYPE html>\n<html lang=\"pt-br\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Lista Alternante</title>\n    <style>\n        /* Estilização para os cabeçalhos (linhas com + na frente) */\n        dl {\n            margin: 0;\n            padding: 0;\n        }\n\n        dt {\n            font-weight: bold;\n        }\n\n        /* Estilização para os conteúdos */\n        dd {\n            margin-left: 20px; /* Indentação dos conteúdos em relação aos cabeçalhos */\n        }\n    </style>\n</head>\n<body>\n    <dl>\n        <dt>+ Cabeçalho 1</dt>\n        <dd>Conteúdo 1</dd>\n        <dt>+ Cabeçalho 2</dt>\n        <dd>Conteúdo 2</dd>\n        <dt>+ Cabeçalho 3</dt>\n        <dd>Conteúdo 3</dd>\n        <dt>+ Cabeçalho 4</dt>\n        <dd>Conteúdo 4</dd>\n    </dl>\n</body>\n</html>\n\n```"
+          }
         }
       ]
     }
