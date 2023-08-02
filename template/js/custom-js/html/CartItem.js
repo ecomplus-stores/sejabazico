@@ -49,8 +49,7 @@ export default {
     return {
       quantity: 0,
       canInputSelect: false,
-      isAsideVisible: false,
-      messageFather: ''
+      isAsideVisible: false
     }
   },
 
@@ -101,6 +100,26 @@ export default {
       return typeof maxQuantity === 'number' && maxQuantity >= 0
         ? maxQuantity
         : 9999999
+    },
+
+    messageFather () {
+      const { customizations } = this.item
+      if (Array.isArray(customizations) && customizations.length) {
+        const custom = customizations.find(customization => customization.label === 'É presente?')
+        if (Object.keys(custom).length) {
+          return custom.option && custom.option.text
+        }
+        return null
+      }
+      return null
+    },
+
+    checkMessage () {
+      if (this.messageFather && this.messageFather.length) {
+        this.isAsideVisible = true
+        return this.isAsideVisible
+      }
+      return false
     }
   },
 
@@ -147,7 +166,7 @@ export default {
     setCustomizationOption (text) {
       const customization = {
         _id: '6493010c5e6069037042dc97',
-        label: 'É presente!',
+        label: 'É presente?',
         grid_id: 'e_presente'
       }
       if (!this.item.customizations) {
@@ -167,12 +186,15 @@ export default {
       } else if (index > -1) {
         this.item.customizations.splice(index, 1)
       }
+      ecomCart.save()
     },
 
-    toggleFilters (isVisible) {
-      this.isAsideVisible = typeof isVisible === 'boolean'
-        ? isVisible
-        : !this.isAsideVisible
+    toggleInput (isVisible) {
+      const check = isVisible.target && isVisible.target.checked
+      if (!check) {
+        this.setCustomizationOption('')
+      }
+      this.isAsideVisible = check
     },
   },
 
