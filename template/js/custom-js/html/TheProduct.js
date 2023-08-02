@@ -154,6 +154,10 @@ import {
       isInStock () {
         return checkInStock(this.body)
       },
+
+      isBaziPassClub () {
+        return window.location.pathname === '/bazipass'
+      },
   
       productQuantity () {
         if (this.selectedVariation.quantity) {

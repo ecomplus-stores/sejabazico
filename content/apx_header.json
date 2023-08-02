@@ -68,12 +68,6 @@
             "title": "Cuecas",
             "url": "/cuecas"
           }
-        },
-        {
-          "item": {
-            "title": "Últimas unidades - Itens em oferta",
-            "url": "/ultimas-unidades"
-          }
         }
       ]
     },
@@ -87,7 +81,11 @@
     },
     {
       "title": "BaziPass",
-      "url": "https://landing.sejabazico.com.br/bazipass-assinatura/"
+      "url": "/bazipass"
+    },
+    {
+      "title": "Outlet",
+      "url": "/ultimas-unidades"
     }
   ]
 }

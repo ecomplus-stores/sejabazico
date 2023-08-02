@@ -206,6 +206,51 @@
           }
         }
       ]
+    },
+    {
+      "type": "apx_blockPerCategory",
+      "title": "BaziPass",
+      "slug": "BaziPass",
+      "list": [
+        {
+          "content": {
+            "title": "o cliente sempre em primeiro lugar",
+            "subtitle": "foi pensando nisso que o BaziPass foi criado",
+            "body": "### C﻿riamos o BaziPass para beneficiar nossos clientes mais fiéis\n\n\n\n### Nada mais justo do que as pessoas mais próximas a Bázico tenham benefícios quando forem comprar.",
+            "image_position": "first",
+            "text_align": "left"
+          }
+        },
+        {
+          "content": {
+            "title": "quais são os benefícios?",
+            "body": "💵**15% de desconto** em todas as compras\\\n🔅**Bazicash dobrado** em todas as compras\\\n🤝**Prioridade nos lançamentos** e reposições\\\n💰**3K Bazicashs** ou **3 Bázicas na hora**\\\n🤑**200 Bazicashs por mês** na conta\\\n\\\ne mais\\\n\\\n👕**1 Bázica por indicar alguém ao BaziPass** ou 500 bazicashs por indicação na primeira compra.",
+            "subtitle": "se você ainda estiver com alguma dúvida",
+            "text_align": "right",
+            "image_position": "first",
+            "image": "/img/uploads/pagina-de-venda-bazipassimagem-1-bazipass.jpg"
+          }
+        },
+        {
+          "content": {
+            "image_position": "last",
+            "text_align": "left",
+            "title": "exemplo",
+            "body": "s﻿e quiser podemos fazer o calculo exclusivo para  sua realidade, **[basta clicar aqui.](https://api.whatsapp.com/send?phone=5555798153340&text=Ol%C3%A1,%20estava%20olhando%20o%20BaziPass%20no%20site%20e%20fiquei%20interessado.%20%20Poderia%20me%20explicar%20mais%20sobre?)**",
+            "subtitle": "vamos fazer uma conta de padeiro para você",
+            "image": "/img/uploads/com-x-sem-bazicash.png"
+          }
+        },
+        {
+          "content": {
+            "body": "**+ O que é o BaziPass?**\n\nO BaziPass é a forma de você fazer parte da história da Bázico. \n\nCom as Bázicas, elevamos o nível das camisetas de milhares de homens – agora vamos fazer a mesma coisa com os shorts, bermudas, calças, camisas e blusas.\n\nApenas quem for membro BaziPass terá acesso aos itens excluzivos, acesso prioritário no lançamento de novos produtos e o melhor preço em todo pedido.\n\nAlém disso, ao assinar o BaziPass você ganha um total de 5.400 Bazicashs, equivalente a R$650 em Bázicas – investindo apenas R$550 ou R$50/mês.\n\n**+ O que é Bazicash?**\n\nBazicash é a moeda virtual da Bázico. A cada R$1 em pedidos na Bázico você ganha 1 BZ$, mas com o BaziPass você ganha 2 BZ$.\n\nOs Bazicashs ficam vinculados à sua conta e você pode trocar por diversos itens da Bázico a qualquer momento.\n\nPara ganhar 5.400 BZ$ você teria que gastar R$5.400,00 em pedidos na Bázica, mas com o Bazipass você tem tudo isso investindo só R$550.\n\n\n\n**+ Essa é minha primeira compra, vale a pena?**\n\nNós sabemos que fazer a primeira compra em qualquer loja dá medo do produto não ser bom ou não servir, mas na Bázico não tem erro.\n\nTemos milhares de pessoas extremamente satisfeitas, contamos com o provador virtual para você escolher seu tamanho e, ainda, a primeira troca é por nossa conta.\n\n**+ Vou comprar poucas Bázicas, o BaziPass é pra mim?**\n\nSim!\n\nÉ quase certo que você irá amar as suas Bázicas e vai voltar para pegar outros modelos e cores, mas nós também temos a camisa com botão Vicentti, a cueca Bázica, a linha Oversized e a linha Feminina e Kids, que você pode adquirir trocando os seus Bazicashs.\n\nMuitos dos nossos clientes também aproveitam o desconto do BaziPass para dar Bázicas de presentes a amigos e familiares, e com isso vai acumulando Bazicashs para pegar Bázicas de graça para si mesmo.\n\n\n\n**+ Como vou resgatar os Bazicashs e outros benefícios?**\n\nTodos os Bazicashs e benefícios serão enviados diretamente para o seu e-mail.\n\n**+ Como funcionam os 15% de desconto?**\n\nO desconto é aplicado automaticamente no checkout ao fazer o pedido com a mesma conta do BaziPass.\n\nEsse desconto não acumula com outras promoções.",
+            "text_align": "center",
+            "image_position": "first",
+            "title": "Perguntas frequentes",
+            "subtitle": "para sanar suas últimas dúvidas"
+          }
+        }
+      ]
     }
   ]
 }
