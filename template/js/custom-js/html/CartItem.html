@@ -133,7 +133,12 @@
             <span v-else>
                 {{ formatMoney(price * quantity) }}
             </span>
-          
+        </div>
+
+        <div id="gift-wrapper">
+          <label for="gift"><i class="i-gift"></i> É presente?</label>
+          <input type="checkbox" id="gift" @change="toggleFilters">
+          <input placeholder="Escreva uma mensagem aqui" type="text" class="form-control" id="gift-input" v-show="isAsideVisible" v-model="messageFather" @input="event => setCustomizationOption(event.target.value)">
         </div>
       </template>
 
