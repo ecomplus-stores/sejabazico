@@ -105,7 +105,7 @@ export default {
     messageFather () {
       const { customizations } = this.item
       if (Array.isArray(customizations) && customizations.length) {
-        const custom = customizations.find(customization => customization.label === 'É presente?')
+        const custom = customizations.find(customization => customization.grid_id === 'e_presente')
         if (Object.keys(custom).length) {
           return custom.option && custom.option.text
         }
@@ -166,21 +166,23 @@ export default {
     setCustomizationOption (text) {
       const customization = {
         _id: '6493010c5e6069037042dc97',
-        label: 'É presente?',
+        label: '[PRESENTE]',
         grid_id: 'e_presente'
       }
+      const { _id, label, grid_id } = customization
       if (!this.item.customizations) {
         this.item.customizations = []
       }
-      const index = this.item.customizations.findIndex(({ _id }) => _id === customization._id)
+      const index = this.item.customizations.findIndex(({ _id }) => _id === _id)
       if (text) {
         if (index > -1) {
           this.item.customizations[index].option = { text }
         } else {
           this.item.customizations.push({
-            _id: customization._id,
-            label: customization.label,
-            option: { text }
+            _id,
+            label,
+            option: { text },
+            grid_id
           })
         }
       } else if (index > -1) {
