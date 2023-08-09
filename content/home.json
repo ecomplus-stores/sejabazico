@@ -7,15 +7,16 @@
       "autoplay": 3000,
       "slides": [
         {
-          "animate": "slideInUp",
-          "start": "2023-07-06T14:59:43.544Z",
-          "img": "/img/uploads/novas-cores-desktop-.webp",
-          "mobile_img": "/img/uploads/novas-cores-mobile-.webp",
+          "animate": "backInUp",
+          "start": "2023-05-31T15:25:11.114Z",
+          "img": "/img/uploads/dia-dos-pais.png",
+          "mobile_img": "/img/uploads/dia-dos-pais-desktop-.png",
           "content_order": "inside_image",
+          "alt": "bazica-dia-dos-pais",
           "content_position": "top_center",
-          "mask_opacity": 5,
-          "link": "https://www.sejabazico.com.br/novidades",
-          "end": "2030-01-31T12:26:50.628Z"
+          "mask_opacity": 0,
+          "link": "https://sejabazico.com.br/top-10",
+          "end": "2030-03-15T02:59:39.600Z"
         },
         {
           "animate": "slideInUp",
@@ -29,16 +30,15 @@
           "end": "2030-03-01T00:41:34.386Z"
         },
         {
-          "animate": "backInUp",
-          "start": "2023-05-31T15:25:11.114Z",
-          "img": "/img/uploads/dia-dos-pais.png",
-          "mobile_img": "/img/uploads/dia-dos-pais-desktop-.png",
+          "animate": "slideInUp",
+          "start": "2023-07-06T14:59:43.544Z",
+          "img": "/img/uploads/novas-cores-desktop-.webp",
+          "mobile_img": "/img/uploads/novas-cores-mobile-.webp",
           "content_order": "inside_image",
-          "alt": "bazica-dia-dos-pais",
           "content_position": "top_center",
-          "mask_opacity": 0,
-          "link": "https://sejabazico.com.br/top-10",
-          "end": "2030-03-15T02:59:39.600Z"
+          "mask_opacity": 5,
+          "link": "https://www.sejabazico.com.br/novidades",
+          "end": "2030-01-31T12:26:50.628Z"
         },
         {
           "start": "2023-05-16T21:02:33.229Z",
