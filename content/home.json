@@ -31,13 +31,13 @@
         {
           "animate": "backInUp",
           "start": "2023-05-31T15:25:11.114Z",
-          "img": "/img/uploads/femininadesktop.webp",
-          "mobile_img": "/img/uploads/femininamobile.webp",
+          "img": "/img/uploads/dia-dos-pais.png",
+          "mobile_img": "/img/uploads/dia-dos-pais-desktop-.png",
           "content_order": "inside_image",
           "alt": "bazica-feminina",
           "content_position": "top_center",
           "mask_opacity": 0,
-          "link": "https://www.sejabazico.com.br/bazica-feminina",
+          "link": "https://sejabazico.com.br/top-10",
           "end": "2030-03-15T02:59:39.600Z"
         },
         {
