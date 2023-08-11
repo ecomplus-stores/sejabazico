@@ -163,18 +163,18 @@
         {
           "description_color": "#232323",
           "animate": "bounceInUp",
-          "img": "/img/uploads/grid-banner-650x650-novas-cores.webp",
+          "img": "/img/uploads/dia-dos-pais.webp",
           "content_order": "before_image",
-          "alt": "novidades da bázico",
+          "alt": "dia dos pais",
           "content_position": "center_left",
-          "btn_text": "Sua nova Bázica preferida!",
+          "btn_text": "A nova Bázica preferida do seu pai!",
           "btn_background": "#232323",
           "btn_text_color": "#ffffff",
           "mask_opacity": 0,
-          "title": "Novidades!",
-          "link": "/novidades",
+          "title": "Ame o presente",
+          "link": "/dia_dos_pais",
           "title_color": "#232323",
-          "description": "Trouxemos várias opções no Powerful pra quem prefere um tecido mais encorpado, que te deixa até mais forte. E claro, não podia faltar, caprichado de opções no Air pra quem prefere ter a sensação de quem não tá vestindo nada. Seja lá qual for sua preferência, vamos conseguir te atender. Só não pode esperar muito tempo, nosso estoque segue limitado e saindo como água, amém!"
+          "description": "Neste Dia dos Pais, celebramos o verdadeiro presente: o tempo precioso compartilhado entre pais e filhos. Valorize cada abraço, cada risada e cada momento juntos, pois são essas experiências únicas que constroem memórias eternas. Ame hoje, ame agora, ame o presente!"
         }
       ],
       "padding": "px-3",
