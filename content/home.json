@@ -162,18 +162,18 @@
         {
           "description_color": "#232323",
           "animate": "bounceInUp",
-          "img": "/img/uploads/dupla-classica.webp",
+          "img": "/img/uploads/dia-dos-pais.webp",
           "content_order": "before_image",
           "alt": "dia dos pais",
           "content_position": "center_left",
-          "btn_text": "Comprar agora",
+          "btn_text": "Escolha o presente do seu pai!",
           "btn_background": "#232323",
           "btn_text_color": "#ffffff",
           "mask_opacity": 0,
-          "title": "Dupla clássica",
-          "link": "https://sejabazico.com.br/bazicas-pretas-e-bazicas-brancas",
+          "title": "Ame o presente",
+          "link": "/novidades",
           "title_color": "#232323",
-          "description": "Chegou reposição da nossa dupla de sucesso: Bázica Preta e Bázica Branca, no tecido powerful. Essas são as duas Bázicas que todo homem precisa ter. Além de combinar com qualquer peça que você tem no guarda-roupa, elas vão te deixar ainda mais confiante!"
+          "description": "Neste Dia dos Pais, celebramos o verdadeiro presente: o tempo precioso compartilhado entre pais e filhos. Valorize cada abraço, cada risada e cada momento juntos, pois são essas experiências únicas que constroem memórias eternas. Ame hoje, ame agora, ame o presente!"
         }
       ],
       "padding": "px-3",
