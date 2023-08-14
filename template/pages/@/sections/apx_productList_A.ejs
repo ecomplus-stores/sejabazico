@@ -3,6 +3,12 @@
         const search = new _.EcomSearch()
         await search.setProductIds(opt.products).fetch(true)
         const items = search.getItems().filter(item => _.ecomUtils.inStock(item))
+        items.sort((a, b) => {
+            if (opt.products.indexOf(a._id) > opt.products.indexOf(b._id)) {
+                return 1
+            }
+            return -1
+        })
     %>
   
     <section
