@@ -7,6 +7,17 @@
       "autoplay": 3000,
       "slides": [
         {
+          "start": "2023-08-14T14:47:28.495Z",
+          "img": "/img/uploads/preta-powerful-desktop-.png",
+          "mobile_img": "/img/uploads/preta-powerful-mobile-.png",
+          "content_order": "inside_image",
+          "alt": "Preta Gola C Powerful",
+          "content_position": "center_left",
+          "mask_opacity": 5,
+          "link": "https://www.sejabazico.com.br/bazica-gola-c",
+          "end": "2024-10-18T14:47:28.539Z"
+        },
+        {
           "animate": "slideInUp",
           "start": "2023-04-17T00:41:34.356Z",
           "img": "/img/uploads/banners-site-novobazipass-desktop-.jpg",
@@ -49,17 +60,6 @@
           "content_position": "top_center",
           "mask_opacity": 0,
           "end": "2024-12-21T23:42:23.105Z"
-        },
-        {
-          "start": "2023-08-14T14:47:28.495Z",
-          "img": "/img/uploads/preta-powerful-desktop-.png",
-          "mobile_img": "/img/uploads/preta-powerful-mobile-.png",
-          "content_order": "inside_image",
-          "alt": "Preta Gola C Powerful",
-          "content_position": "center_left",
-          "mask_opacity": 5,
-          "link": "https://www.sejabazico.com.br/bazica-gola-c",
-          "end": "2024-10-18T14:47:28.539Z"
         }
       ]
     },
