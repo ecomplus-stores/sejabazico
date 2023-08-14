@@ -7,18 +7,6 @@
       "autoplay": 3000,
       "slides": [
         {
-          "animate": "backInUp",
-          "start": "2023-05-31T15:25:11.114Z",
-          "img": "/img/uploads/prancheta-1-copiar-2.png",
-          "mobile_img": "/img/uploads/dia-dos-pais-desktop-.png",
-          "content_order": "inside_image",
-          "alt": "bazica-dia-dos-pais",
-          "content_position": "top_center",
-          "mask_opacity": 0,
-          "link": "https://sejabazico.com.br/novidades",
-          "end": "2030-03-15T02:59:39.600Z"
-        },
-        {
           "animate": "slideInUp",
           "start": "2023-04-17T00:41:34.356Z",
           "img": "/img/uploads/banners-site-novobazipass-desktop-.jpg",
