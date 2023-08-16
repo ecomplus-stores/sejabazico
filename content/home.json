@@ -200,7 +200,7 @@
     {
       "type": "apx_faq",
       "title": "Perguntas Frequentes",
-      "description": "O que normalmente querem saber",
+      "description": "o que normalmente querem saber",
       "list": "description_first",
       "questions": [
         {
