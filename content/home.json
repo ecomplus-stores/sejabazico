@@ -147,27 +147,6 @@
       "container": "container-fluid"
     },
     {
-      "type": "apx_testimonials",
-      "title": "o que dizem por ai",
-      "description": "relatos de alguns dos nossos mais de 5 mil clientes",
-      "testimonials": [
-        {
-          "testimonial": {
-            "name": "Wilza",
-            "text": "As camisas dispensam comentários são EXCELENTES, meu filho amou ... ainda essa semana passo por aí, pois o aniversário dele será na próxima segunda.",
-            "image": "/img/uploads/wilza.png"
-          }
-        },
-        {
-          "testimonial": {
-            "name": "João Pedro",
-            "text": "A Bázico não deixa nada a desejar. Cumpre com o que promete. Tecido impecável e o caimento no corpo é sensacional também",
-            "image": "/img/uploads/joao-pedro.png"
-          }
-        }
-      ]
-    },
-    {
       "carrossel_sm": "Sim",
       "container": "container-fluid",
       "products": [
@@ -196,6 +175,27 @@
       "btn_link": "/top-10",
       "list": "description_last",
       "carrossel_md": "Sim"
+    },
+    {
+      "type": "apx_testimonials",
+      "title": "o que dizem por ai",
+      "description": "relatos de alguns dos nossos mais de 5 mil clientes",
+      "testimonials": [
+        {
+          "testimonial": {
+            "name": "Wilza",
+            "text": "As camisas dispensam comentários são EXCELENTES, meu filho amou ... ainda essa semana passo por aí, pois o aniversário dele será na próxima segunda.",
+            "image": "/img/uploads/wilza.png"
+          }
+        },
+        {
+          "testimonial": {
+            "name": "João Pedro",
+            "text": "A Bázico não deixa nada a desejar. Cumpre com o que promete. Tecido impecável e o caimento no corpo é sensacional também",
+            "image": "/img/uploads/joao-pedro.png"
+          }
+        }
+      ]
     },
     {
       "type": "apx_faq",
