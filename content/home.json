@@ -208,6 +208,27 @@
             "text": "Maravilha! Camisa sensacional e o atendimento ao cliente super especial, recomendo!",
             "image": "/img/uploads/anderson-silva.png"
           }
+        },
+        {
+          "testimonial": {
+            "name": "Gustavo Paixão",
+            "text": "Essa relação vocês com os clientes é MUITO F0%$A e é por isso que a Bázico não para de crescer e vai ser a melhor marca do Brasil num futuro bem próximo (pra mim já é há uito tempo kkkk).",
+            "image": "/img/uploads/gustavo-paixao.png"
+          }
+        },
+        {
+          "testimonial": {
+            "name": "Luiz Fraga",
+            "text": "Experiência F#$%. Camisa F#$%. Só quero usar Bázico.",
+            "image": "/img/uploads/luiz-fraga.png"
+          }
+        },
+        {
+          "testimonial": {
+            "name": "Augusto",
+            "text": "Tô me amarrando no BaziPass, gostei muito de ter a opção de não pegar várias camisas de vez, e assim que for necessário, vai pegando o que tem interesse no momento que tem interesse, muito massa!!!",
+            "image": "/img/uploads/augusto.png"
+          }
         }
       ]
     },
