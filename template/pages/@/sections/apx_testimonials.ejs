@@ -1,0 +1,77 @@
+<%
+let reviews = opt.testimonials
+const { title, description } = opt
+
+
+if (reviews && reviews.length) {
+  %>
+
+  <section class="brands-carousel container reviews">
+    <% if (title) { %>
+      <div class="apx_section-title text-center">
+        <h2 class="text-bold text-uppercase"><%- title %></h2>
+        <% if (description) { %>
+          <small class="text-uppercase"><%- description %></small>
+        <% } %>
+      </div>
+    <% } %>
+    
+    <div
+      class="glide"
+      data-autoplay="<%= opt.autoplay %>"
+      data-per-view="4"
+      data-per-view-md="4"
+      data-per-view-sm="3"
+      data-per-view-xs="1"
+    >
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides brands-carousel__list">
+          <% reviews.forEach(({ testimonial }) => { 
+            const { name, text, image } = testimonial
+            %>
+            <li class="glide__slide brands-carousel__item">
+              <div class="depoimento-box">
+                <div class="title-client-avk">
+                  <% if (image && image.length) { %>
+                    <img src="<%= image %>" alt="<%= name %>" loading="lazy" width="50" height="50">
+                  <%} %>
+                  <% if (name && name.length) { %>
+                    <p><%= name %></p> 
+                  <%} %>         
+                </div>
+                <% if (text && text.length) { %>
+                  <h5><%= text %></h5>
+                <%} %>
+            </div>
+            </li>
+          <% }) %>
+        </ul>
+
+        <% if (reviews.length > 3) { %>
+          <div
+            class="glide__arrows glide__arrows--outer"
+            data-glide-el="controls"
+          >
+            <button
+              class="btn glide__arrow glide__arrow--left"
+              data-glide-dir="<"
+              aria-label="<%= _.dictionary('previous') %>"
+            >
+              <i class="i-arrow-left"></i>
+            </button>
+            <button
+              class="btn glide__arrow glide__arrow--right"
+              data-glide-dir=">"
+              aria-label="<%= _.dictionary('next') %>"
+            >
+              <i class="i-arrow-right"></i>
+            </button>
+          </div>
+        <% } %>
+      </div>
+    </div>
+  </section>
+
+  <%
+}
+%>
