@@ -6,8 +6,8 @@
   "sections": [
     {
       "type": "responsive-banner",
-      "img": "/img/uploads/pg-bazicash-desktop-.png",
-      "mobile_img": "/img/uploads/pagina-bazicash.jpg"
+      "img": "/img/uploads/pagina-bazicash-desktop-.jpg",
+      "mobile_img": "/img/uploads/pagina-bazicash-copiar.jpg"
     }
   ]
 }
