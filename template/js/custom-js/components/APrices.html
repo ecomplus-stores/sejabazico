@@ -95,7 +95,7 @@
         <span>
           {{ formatMoney(price * 0.85) }}
         </span>
-        <small>
+        <small v-if="!extraDiscount.value">
           com <span class="fw-600">Bazi</span><span class="fw-900">Pass</span>
         </small>
         <i class="i-info-circle"></i>
