@@ -280,8 +280,9 @@
             "title": "descubra a revolução em conforto: A Cueca Bázica de Algodão Egípcio",
             "subtitle": "use a melhor para dar o seu melhor",
             "text_align": "center",
-            "image_position": "first",
-            "body": "A espera acabou. Apresentamos a você a Cueca Bázica — não é apenas uma cueca, **é a sua nova cueca preferida.**"
+            "image_position": "last",
+            "body": "A espera acabou. Apresentamos a você a Cueca Bázica — não é apenas uma cueca, **é a sua nova cueca preferida.**",
+            "image": "/img/uploads/pagina-de-venda-cuecacaixas.webp"
           }
         },
         {
