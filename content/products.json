@@ -269,6 +269,31 @@
           }
         }
       ]
+    },
+    {
+      "type": "apx_blockPerCategory",
+      "title": "Cueca",
+      "slug": "Cuecas",
+      "list": [
+        {
+          "content": {
+            "title": "descubra a revolução em conforto: A Cueca Bázica de Algodão Egípcio",
+            "subtitle": "use a melhor para dar o seu melhor",
+            "text_align": "left",
+            "image_position": "first",
+            "body": "A espera acabou. Apresentamos a você a Cueca Bázica — não é apenas uma cueca, **é a sua nova cueca preferida.**"
+          }
+        },
+        {
+          "content": {
+            "title": "a ciência do confiança: Descubra os Atributos da Cueca Bázica",
+            "subtitle": "Do Algodão Egípcio à Confiança Inabalável - Desvendando Cada Detalhe que Torna a Cueca Bázica",
+            "image_position": "first",
+            "text_align": "left",
+            "body": "*"
+          }
+        }
+      ]
     }
   ]
 }
