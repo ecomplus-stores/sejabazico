@@ -314,6 +314,62 @@
           }
         }
       ]
+    },
+    {
+      "type": "apx_testimonials",
+      "title": "o que dizem por ai",
+      "description": "relatos de alguns dos nossos mais de 5 mil clientes",
+      "testimonials": [
+        {
+          "testimonial": {
+            "name": "Wilza",
+            "text": "As camisas dispensam comentários são EXCELENTES, meu filho amou ... ainda essa semana passo por aí, pois o aniversário dele será na próxima segunda.",
+            "image": "/img/uploads/92634519_318041429167974_2580489211262009344_n-1-.jpg"
+          }
+        },
+        {
+          "testimonial": {
+            "name": "João Pedro",
+            "text": "A Bázico não deixa nada a desejar. Cumpre com o que promete. Tecido impecável e o caimento no corpo é sensacional também",
+            "image": "/img/uploads/joao-pedro.png"
+          }
+        },
+        {
+          "testimonial": {
+            "name": "Nancicleima",
+            "text": "Não posso deixar de elogiar o atendimento de vcs viu, parabéns!!👏👏👏",
+            "image": "/img/uploads/nancicleima.png"
+          }
+        },
+        {
+          "testimonial": {
+            "name": "Anderson Silva",
+            "text": "Maravilha! Camisa sensacional e o atendimento ao cliente super especial, recomendo!",
+            "image": "/img/uploads/anderson-silva.png"
+          }
+        },
+        {
+          "testimonial": {
+            "name": "Gustavo Paixão",
+            "text": "Essa relação vocês com os clientes é MUITO F0%$A e é por isso que a Bázico não para de crescer e vai ser a melhor marca do Brasil num futuro bem próximo (pra mim já é há uito tempo kkkk).",
+            "image": "/img/uploads/gustavo-paixao.png"
+          }
+        },
+        {
+          "testimonial": {
+            "name": "Luiz Fraga",
+            "text": "Experiência F#$%. Camisa F#$%. Só quero usar Bázico.",
+            "image": "/img/uploads/luiz-fraga.png"
+          }
+        },
+        {
+          "testimonial": {
+            "name": "Augusto",
+            "text": "Tô me amarrando no BaziPass, gostei muito de ter a opção de não pegar várias camisas de vez, e assim que for necessário, vai pegando o que tem interesse no momento que tem interesse, muito massa!!!",
+            "image": "/img/uploads/augusto.png"
+          }
+        }
+      ]
     }
   ]
 }

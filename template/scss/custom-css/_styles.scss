@@ -1878,6 +1878,9 @@ body #storefront-app>div>h1{
       }
       .title-client-avk {
         text-align: center;
+        &+ h5 {
+            font-size: 16px !important;
+        }
       }
       .title-client-avk img {
         border-radius: 200px;
@@ -1924,7 +1927,7 @@ body #storefront-app>div>h1{
         color: var(--secondary);
       }
       .depoimento-box {
-        min-height: 300px;
+        min-height: 260px;
       }
       height: unset;     
 }

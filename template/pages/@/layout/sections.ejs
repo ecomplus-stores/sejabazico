@@ -35,7 +35,7 @@ const apx_category = _.cms('apx_category') || {}
 
       //console.log('sessionsWithSlug',sessionsWithSlug)
 
-      let sectionsFinal = [...sections.filter(el => el.type != "apx_blockPerCategory")]
+      let sectionsFinal = [...sections.filter(el => ((el.type != "apx_blockPerCategory") && (el.type != "apx_testimonials")))]
       
       if(sessionsWithSlug){
         sectionsFinal = [...sectionsFinal,...sessionsWithSlug]
@@ -51,4 +51,13 @@ const apx_category = _.cms('apx_category') || {}
     }
     %>
   </div>
+  <%
+  const testimonial = sections.find(el => el.type == "apx_testimonials")
+  if (testimonial) {
+  %>
+    <%- await include(`@/sections/apx_testimonials`, { _, opt: testimonial }) %>
+  <%
+  }
+  %>
 </article>
+
