@@ -1,6 +1,5 @@
 const path = require('path')
 const dirSearchAlias = path.resolve(__dirname, 'template/js/lib/search-engine')
-const pathDslAlias = path.resolve(dirSearchAlias, 'dsl')
 
 module.exports = () => ({
   resolve: {
@@ -25,7 +24,8 @@ module.exports = () => ({
       './html/CartQuickview.html': path.resolve(__dirname, 'template/js/custom-js/html/CartQuickview.html'),
       './js/PaymentMethods.js': path.resolve(__dirname, 'template/js/custom-js/components/PaymentMethods.js'),
       './html/APrices.html': path.resolve(__dirname, 'template/js/custom-js/components/APrices.html'),
-      './js/APrices.js': path.resolve(__dirname, 'template/js/custom-js/components/APrices.js')
+      './js/APrices.js': path.resolve(__dirname, 'template/js/custom-js/components/APrices.js'),
+      './html/ShippingLine.html': path.resolve(__dirname, 'template/js/custom-js/components/ShippingLine.html')
     }
   }
 })
