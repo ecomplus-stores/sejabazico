@@ -60,6 +60,16 @@
           "content_position": "top_center",
           "mask_opacity": 0,
           "end": "2024-12-21T23:42:23.105Z"
+        },
+        {
+          "mask_opacity": 5,
+          "start": "2023-09-01T20:12:30.203Z",
+          "end": "2027-09-01T20:12:00.000Z",
+          "img": "/img/uploads/antecipacao-desktop-.webp",
+          "mobile_img": "/img/uploads/antecipacao-mobile-.webp",
+          "link": "https://www.sejabazico.com.br/roupas",
+          "content_position": "center_left",
+          "content_order": "inside_image"
         }
       ]
     },
