@@ -28,6 +28,10 @@ export default {
     }
   },
 
+  methods: {
+    formatMoney
+  },
+
   computed: {
     deadlineStr () {
       const shipping = this.shippingLine

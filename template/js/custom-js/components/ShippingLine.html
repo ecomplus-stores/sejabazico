@@ -3,6 +3,12 @@
     {{ deadlineStr }}
   </strong>
   <span class="mr-2">
+    <del
+      v-if="shippingLine.discount && shippingLine.total_price"
+      class="shipping-line__compare mr-1"
+      style="font-size: 92%; color: var(--danger)"
+    >
+      {{ formatMoney(shippingLine.discount + shippingLine.total_price) }}</del>
     {{ freightValueStr }}
   </span>
   <small v-if="shippingLine.delivery_instructions">
