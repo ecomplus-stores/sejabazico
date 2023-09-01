@@ -207,10 +207,10 @@ import {
       if (!this.isLoaded) {
         this.fetchItem()
       }
-      window.populateOptions(this.body._id)
-      
     },
     mounted () {
+      setTimeout(() => {
         window.populateOptions(this.body._id)
-      },
+      }, 200)
+    },
   }

@@ -100,8 +100,17 @@ $('body').on('click','.apx_fastBuy button', function(){
                     q = grid.find(el => el.specifications[options[0].key][0].text == options[0].value && el.specifications[options[1].key][0].text == options[1].value);
                 }
                 
-                if(q){
+                if (q && q.quantity) {
                     ecomCart.addProduct(product, q._id, 1, true)
+                } else {
+                    const text = $(this).text()
+                    $(this).text('Sem estoque').prop('disabled', true).css('opacity', 0.85).css('font-weight', 400)
+                    setTimeout(() => {
+                        $(this).text(text)
+                        $(document).one('click', () => {
+                            $(this).text(text).prop('disabled', false).css('opacity', '').css('font-weight', '')
+                        })
+                    }, 2000)
                 }
             }
         }
@@ -129,8 +138,17 @@ $('body').on('click','.apx_fastBuy button', function(){
                     q = grid.find(el => el.specifications[options[0].key][0].text == options[0].value && el.specifications[options[1].key][0].text == options[1].value);
                 }
                 
-                if(q){
+                if (q && q.quantity) {
                     ecomCart.addProduct(product, q._id, 1, true)
+                } else {
+                    const text = $(this).text()
+                    $(this).text('Sem estoque').prop('disabled', true).css('opacity', 0.85).css('font-weight', 400)
+                    setTimeout(() => {
+                        $(this).text(text)
+                        $(document).one('click', () => {
+                            $(this).text(text).prop('disabled', false).css('opacity', '').css('font-weight', '')
+                        })
+                    }, 2000)
                 }
             }
         }else{
