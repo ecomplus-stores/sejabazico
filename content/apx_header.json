@@ -1,16 +1,12 @@
 {
   "stripe_slider": [
     {
-      "text": "Conheça sua <b>nova camiseta preferida!</b>",
+      "text": "Frete Grátis de 04/09 a 11/09. Aproveite!",
       "url": "/roupas"
     },
     {
-      "text": "<b>Frete grátis</b> em compras acima de R$299*",
-      "url": "/"
-    },
-    {
-      "text": "4 Novas cores e diversas reposições! 3 Lançamentos no tecido Powerful <u>clique e conheça</u>",
-      "url": "/novidades"
+      "text": "Conheça sua <b>nova camiseta preferida!</b>",
+      "url": "/roupas"
     }
   ],
   "links": [
