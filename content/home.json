@@ -8,6 +8,16 @@
       "slides": [
         {
           "mask_opacity": 1,
+          "start": "2023-09-04T11:00:45.268Z",
+          "end": "2024-05-04T16:25:45.310Z",
+          "content_position": "center_left",
+          "content_order": "inside_image",
+          "mobile_img": "/img/uploads/durante-mobile-_.webp",
+          "img": "/img/uploads/durante-desktop-.webp",
+          "link": "https://www.sejabazico.com.br/roupas"
+        },
+        {
+          "mask_opacity": 1,
           "start": "2023-09-01T20:12:30.203Z",
           "end": "2023-09-04T10:59:00.000Z",
           "img": "/img/uploads/antecipacao-desktop-.jpg",
@@ -69,17 +79,7 @@
           "alt": "frete-gratis",
           "content_position": "top_center",
           "mask_opacity": 0,
-          "end": "2024-12-21T23:42:23.105Z"
-        },
-        {
-          "mask_opacity": 1,
-          "start": "2023-09-04T11:00:45.268Z",
-          "end": "2024-05-04T16:25:45.310Z",
-          "content_position": "center_left",
-          "content_order": "inside_image",
-          "mobile_img": "/img/uploads/durante-mobile-_.webp",
-          "img": "/img/uploads/durante-desktop-.webp",
-          "link": "https://www.sejabazico.com.br/roupas"
+          "end": "2022-02-01T23:42:23.105Z"
         }
       ]
     },
