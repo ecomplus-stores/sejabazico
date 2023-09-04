@@ -149,18 +149,18 @@
         {
           "description_color": "#232323",
           "animate": "bounceInUp",
-          "img": "/img/uploads/dupla-classica.webp",
+          "img": "/img/uploads/diga-adeus-ao-frete.webp",
           "content_order": "before_image",
           "alt": "camisa básicas pretas e brancas",
           "content_position": "center_left",
-          "btn_text": "Comprar agora",
+          "btn_text": "aproveitar agora",
           "btn_background": "#232323",
           "btn_text_color": "#ffffff",
           "mask_opacity": 0,
-          "title": "dupla clássica",
-          "link": "https://sejabazico.com.br/bazicas-pretas-e-bazicas-brancas",
+          "title": "diga adeus ao frete",
+          "link": "https://www.sejabazico.com.br/roupas",
           "title_color": "#232323",
-          "description": "Chegou reposição da nossa dupla de sucesso: Bázica Preta e Bázica Branca, no tecido powerful. Essas são as duas Bázicas que todo homem precisa ter. Além de combinar com qualquer peça que você tem no guarda-roupa, elas vão te deixar ainda mais confiante!"
+          "description": "Uma semana de FRETE GRÁTIS para todo o Nordeste! Sem asteriscos, sem ressalvas e sem pedido mínimo. Esse é o momento ideal pra você garantir a sua nova camisa preferida. De 04 a 11 de setembro!"
         }
       ],
       "padding": "px-3",
