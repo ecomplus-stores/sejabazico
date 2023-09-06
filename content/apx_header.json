@@ -7,6 +7,10 @@
     {
       "text": "Conheça sua <b>nova camiseta preferida!</b>",
       "url": "/roupas"
+    },
+    {
+      "text": "<b>15% em todas as suas compras<b>, conheça o BaziPass",
+      "url": "/bazipass"
     }
   ],
   "links": [
