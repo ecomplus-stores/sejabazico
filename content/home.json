@@ -60,17 +60,6 @@
           "end": "2030-01-31T12:26:50.628Z"
         },
         {
-          "start": "2023-05-16T21:02:33.229Z",
-          "img": "/img/uploads/oversizeddesktop.webp",
-          "mobile_img": "/img/uploads/oversizedmobile.webp",
-          "content_order": "inside_image",
-          "alt": "nova bázica: Oversized!",
-          "content_position": "center_left",
-          "mask_opacity": 0,
-          "link": "https://www.sejabazico.com.br/bazica-oversized",
-          "end": "2030-03-14T21:02:34.096Z"
-        },
-        {
           "animate": "slideInUp",
           "start": "2023-04-16T23:42:23.093Z",
           "img": "/img/uploads/frete-desktop-.webp",
@@ -80,6 +69,16 @@
           "content_position": "top_center",
           "mask_opacity": 0,
           "end": "2022-02-01T23:42:23.105Z"
+        },
+        {
+          "mask_opacity": 0,
+          "start": "2023-09-06T22:03:04.147Z",
+          "end": "2023-09-06T22:03:04.200Z",
+          "img": "/img/uploads/reposicao-desktop-.webp",
+          "mobile_img": "/img/uploads/reposicao-mobile-.webp",
+          "link": "http://bit.ly/bazicoreposicao",
+          "content_position": "center_left",
+          "content_order": "inside_image"
         }
       ]
     },
