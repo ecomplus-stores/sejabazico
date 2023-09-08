@@ -79,6 +79,16 @@
           "content_position": "top_center",
           "mask_opacity": 0,
           "end": "2022-02-01T23:42:23.105Z"
+        },
+        {
+          "mask_opacity": 1,
+          "start": "2023-09-08T13:44:12.823Z",
+          "end": "2024-05-04T13:44:12.862Z",
+          "link": "https://www.sejabazico.com.br/novidades",
+          "img": "/img/uploads/reposicao-desktop-.webp",
+          "mobile_img": "/img/uploads/reposicao-mobile-.webp",
+          "content_position": "center_left",
+          "content_order": "inside_image"
         }
       ]
     },
