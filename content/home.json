@@ -79,6 +79,16 @@
           "content_position": "top_center",
           "mask_opacity": 0,
           "end": "2022-02-01T23:42:23.105Z"
+        },
+        {
+          "mask_opacity": 1,
+          "start": "2023-09-08T15:00:51.077Z",
+          "end": "2024-04-06T14:56:51.145Z",
+          "link": "https://www.sejabazico.com.br/roupas",
+          "img": "/img/uploads/urgencia-desktop-.webp",
+          "mobile_img": "/img/uploads/urgencia-mobile-.webp",
+          "content_position": "center_left",
+          "content_order": "inside_image"
         }
       ]
     },
