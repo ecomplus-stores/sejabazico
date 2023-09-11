@@ -18,13 +18,12 @@
         },
         {
           "mask_opacity": 1,
-          "start": "2023-09-04T11:39:48.365Z",
-          "end": "2023-09-08T15:00:45.310Z",
+          "start": "2023-09-11T13:29:13.676Z",
+          "end": "2024-01-13T13:29:13.765Z",
+          "img": "/img/uploads/ultimo-dia-desktop-.webp",
+          "link": "https://www.sejabazico.com.br/roupas",
           "content_position": "center_left",
-          "content_order": "inside_image",
-          "mobile_img": "/img/uploads/durante-mobile-_.webp",
-          "img": "/img/uploads/durante-desktop-.webp",
-          "link": "https://www.sejabazico.com.br/roupas"
+          "content_order": "inside_image"
         },
         {
           "mask_opacity": 1,
@@ -89,15 +88,6 @@
           "content_position": "top_center",
           "mask_opacity": 0,
           "end": "2022-02-01T23:42:23.105Z"
-        },
-        {
-          "mask_opacity": 1,
-          "start": "2023-09-11T13:29:13.676Z",
-          "end": "2024-01-13T13:29:13.765Z",
-          "img": "/img/uploads/ultimo-dia-desktop-.webp",
-          "link": "https://www.sejabazico.com.br/roupas",
-          "content_position": "center_left",
-          "content_order": "inside_image"
         }
       ]
     },
