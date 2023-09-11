@@ -13,7 +13,8 @@
           "img": "/img/uploads/ultimo-dia-desktop-.webp",
           "link": "https://www.sejabazico.com.br/roupas",
           "content_position": "center_left",
-          "content_order": "inside_image"
+          "content_order": "inside_image",
+          "mobile_img": "/img/uploads/ultimo-dia-mobile-.webp"
         },
         {
           "mask_opacity": 1,
@@ -22,16 +23,6 @@
           "link": "https://www.sejabazico.com.br/novidades",
           "img": "/img/uploads/reposicao-desktop-.webp",
           "mobile_img": "/img/uploads/reposicao-mobile-.webp",
-          "content_position": "center_left",
-          "content_order": "inside_image"
-        },
-        {
-          "mask_opacity": 1,
-          "start": "2023-09-01T20:12:30.203Z",
-          "end": "2023-09-04T10:59:00.000Z",
-          "img": "/img/uploads/antecipacao-desktop-.jpg",
-          "mobile_img": "/img/uploads/antecipacao-mobile-.webp",
-          "link": "https://www.sejabazico.com.br/roupas",
           "content_position": "center_left",
           "content_order": "inside_image"
         },
