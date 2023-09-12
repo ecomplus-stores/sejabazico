@@ -47,7 +47,7 @@
           "alt": "frete-gratis",
           "content_position": "top_center",
           "mask_opacity": 0,
-          "end": "2024-06-01T23:42:23.105Z"
+          "end": "2022-02-01T23:42:23.105Z"
         }
       ]
     },
@@ -113,6 +113,22 @@
           "link": "pages/quem-somos-nos",
           "title_color": "#232323",
           "description": "Bem-vindo à Bázico, a marca de moda básica masculina que está construindo relações através de experiências únicas! Com produtos de qualidade, confiança e estilo, estamos aqui para oferecer a melhor camisa do seu guarda-roupa. Somos mais do que apenas uma marca de moda, somos uma comunidade de homens confiantes. Conheça aqui mais sobre nossa história!"
+        },
+        {
+          "description_color": "#000000",
+          "animate": "fadeInTopRight",
+          "img": "/img/uploads/reposicao-air.webp",
+          "content_order": "before_image",
+          "alt": "reposicao",
+          "content_position": "center_left",
+          "btn_text": "comprar agora",
+          "btn_background": "#232323",
+          "btn_text_color": "#ffffff",
+          "mask_opacity": 0,
+          "title": "reposição",
+          "link": "https://www.sejabazico.com.br/novidades",
+          "title_color": "#232323",
+          "description": "Sabe aquela sensação de leveza que só a Bázica Air te proporciona? Pois é, agora você pode reabastecer o seu guarda-roupa para o verão e aproveitar o calor da estação com muito conforto e estilo!"
         }
       ],
       "padding": "px-3",
