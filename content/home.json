@@ -124,22 +124,6 @@
           "link": "pages/quem-somos-nos",
           "title_color": "#232323",
           "description": "Bem-vindo à Bázico, a marca de moda básica masculina que está construindo relações através de experiências únicas! Com produtos de qualidade, confiança e estilo, estamos aqui para oferecer a melhor camisa do seu guarda-roupa. Somos mais do que apenas uma marca de moda, somos uma comunidade de homens confiantes. Conheça aqui mais sobre nossa história!"
-        },
-        {
-          "description_color": "#232323",
-          "animate": "bounceInUp",
-          "img": "/img/uploads/diga-adeus-ao-frete.webp",
-          "content_order": "before_image",
-          "alt": "camisa básicas pretas e brancas",
-          "content_position": "center_left",
-          "btn_text": "aproveitar agora",
-          "btn_background": "#232323",
-          "btn_text_color": "#ffffff",
-          "mask_opacity": 0,
-          "title": "diga adeus ao frete",
-          "link": "https://www.sejabazico.com.br/roupas",
-          "title_color": "#232323",
-          "description": "Uma semana de FRETE GRÁTIS para todo o Nordeste! Sem asteriscos, sem ressalvas e sem pedido mínimo. Descubra o conforto e a durabilidade das Bázicas com \"Z\" e aproveite essa oportunidade para abastecer o seu guarda-roupa de estilo e confiança. De 04 a 11 de setembro. Nós cuidamos do frete para você!"
         }
       ],
       "padding": "px-3",
