@@ -1,16 +1,16 @@
 {
   "stripe_slider": [
     {
-      "text": "<b>Último dia de frete grátis!</b> Aproveite, frete grátis para todo Nordeste",
-      "url": "/roupas"
-    },
-    {
       "text": "Conheça sua <b>nova camiseta preferida!</b>",
       "url": "/roupas"
     },
     {
       "text": "<b>15% em todas as suas compras</b>, conheça o BaziPass",
       "url": "/bazipass"
+    },
+    {
+      "url": "/roupas",
+      "text": "Frete grátis em compras acima de R$299,00 "
     }
   ],
   "links": [
