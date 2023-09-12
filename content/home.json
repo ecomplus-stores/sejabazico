@@ -8,16 +8,6 @@
       "slides": [
         {
           "mask_opacity": 1,
-          "start": "2023-09-11T13:29:13.676Z",
-          "end": "2024-01-13T13:29:13.765Z",
-          "img": "/img/uploads/ultimo-dia-desktop-.webp",
-          "link": "https://www.sejabazico.com.br/roupas",
-          "content_position": "center_left",
-          "content_order": "inside_image",
-          "mobile_img": "/img/uploads/ultimo-dia-mobile-.webp"
-        },
-        {
-          "mask_opacity": 1,
           "start": "2023-09-08T13:44:12.823Z",
           "end": "2024-05-04T13:44:12.862Z",
           "link": "https://www.sejabazico.com.br/novidades",
