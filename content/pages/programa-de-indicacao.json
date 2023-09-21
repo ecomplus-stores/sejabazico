@@ -9,7 +9,7 @@
     },
     {
       "type": "custom-html",
-      "html": "<script src='https://scripts.gomerlin.com.br/merlin.js'></script>\n<div id=\"merlin-container\" style='width: 50%; height: 500px'></div>\n<script>\n  Merlin.Container.initFromSource(\"https://tools.gomerlin.com.br/chat/1bb9cc51-1fb1-4983-a82b-1d68771dac8f\", '#merlin-container');\n</script>\n            "
+      "html": "<script src='https://scripts.gomerlin.com.br/merlin.js'></script>\n<div id=\"merlin-container\" style='width: 50%; height: 300px'></div>\n<script>\n  Merlin.Container.initFromSource(\"https://tools.gomerlin.com.br/chat/1bb9cc51-1fb1-4983-a82b-1d68771dac8f\", '#merlin-container');\n</script>\n            "
     }
   ],
   "meta_description": "programa-de-indicacao"
