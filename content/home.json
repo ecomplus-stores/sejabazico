@@ -48,6 +48,16 @@
           "content_position": "top_center",
           "mask_opacity": 0,
           "end": "2024-03-02T23:42:23.105Z"
+        },
+        {
+          "mask_opacity": 0,
+          "start": "2023-09-22T14:10:11.327Z",
+          "end": "2024-07-19T14:10:11.358Z",
+          "link": "https://www.sejabazico.com.br/novidades",
+          "img": "/img/uploads/novidades-desktop-.webp",
+          "mobile_img": "/img/uploads/novidades-mobile-.webp",
+          "content_position": "center_left",
+          "content_order": "inside_image"
         }
       ]
     },
