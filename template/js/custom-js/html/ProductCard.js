@@ -116,7 +116,7 @@ import {
       },
 
       locationPreVenda () {
-        return window.location.pathname === '/pre-venda'
+        return window.location.pathname === '/pre-venda' || (window.location.pathname === '/prioridade-bazipass')
       }
     },
   

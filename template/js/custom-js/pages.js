@@ -3,7 +3,9 @@
 
 import EcomSearch from '@ecomplus/search-engine'
 
-
+if (!window.sizeEvent) {
+    window.sizeEvent = []
+}
 $('.apx_product-list').each(function(){
     let oObj = $(this);
     let md = {};
@@ -53,6 +55,7 @@ window.populateOptions = function(_id){
         let me = $(this);
         let fb = me.find('.apx_fastBuy:not(.loaded)');
         let data = JSON.parse(me.attr('data-product'));
+        console.log(data)
         let grid = data.variationsGrids;
         if(grid){
             fb.append('<div class="apx_fastBuy-title text-uppercase text-bold">Compra Rápida</div>')
@@ -101,6 +104,7 @@ $('body').on('click','.apx_fastBuy button', function(){
                 }
                 
                 if (q && q.quantity) {
+                    window.sizeEvent.push(product)
                     ecomCart.addProduct(product, q._id, 1, true)
                 } else {
                     const text = $(this).text()
@@ -139,6 +143,7 @@ $('body').on('click','.apx_fastBuy button', function(){
                 }
                 
                 if (q && q.quantity) {
+                    window.sizeEvent.push(product)
                     ecomCart.addProduct(product, q._id, 1, true)
                 } else {
                     const text = $(this).text()
@@ -262,4 +267,21 @@ if (window.location.pathname === '/pre-venda') {
           }
         ]
     })   
+} else if (window.location.pathname === '/prioridade-bazipass') {
+    EcomSearch.dslMiddlewares.push((dsl) => {
+        dsl.query.bool.filter = [
+          {
+              "terms": {
+                  "categories.name": [
+                      "Prioridade BaziPass"
+                  ]
+              }
+          }
+        ]
+    })
+}
+
+if (window.storefront && window.storefront.context && window.storefront.context.resource === 'products') {
+    ecomCart.on('addItem', ({ data, item }) => { console.log(data, item) })
+
 }
