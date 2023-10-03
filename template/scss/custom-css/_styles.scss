@@ -1931,3 +1931,6 @@ body #storefront-app>div>h1{
       }
       height: unset;     
 }
+.account__nav .nav-item:nth-child(4) {
+  display: none !important;
+}
