@@ -348,7 +348,7 @@ import {
         const { customizations } = this
         this.$emit('buy', { product, variationId, customizations })
         if (this.canAddToCart) {
-          ecomCart.addProduct({ ...product, customizations }, variationId, parseInt(document.querySelector('.apx_quantity_selector > input').value))
+          ecomCart.addProduct({ ...product, customizations, skus:  [this.body.sku]}, variationId, parseInt(document.querySelector('.apx_quantity_selector > input').value))
         }
         this.isOnCart = true
       }
