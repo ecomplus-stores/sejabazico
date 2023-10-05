@@ -13,7 +13,8 @@
           "img": "/img/uploads/vicentti-manga-longa-desktop-.webp",
           "mobile_img": "/img/uploads/vicentti-manga-longa-mobile-.webp",
           "content_position": "center_left",
-          "content_order": "inside_image"
+          "content_order": "inside_image",
+          "link": "https://sejabazico.com.br/vicentti-manga-longa"
         },
         {
           "mask_opacity": 0,
