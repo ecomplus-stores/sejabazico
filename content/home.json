@@ -68,6 +68,15 @@
           "mobile_img": "/img/uploads/reposicao-mobile-.webp",
           "content_position": "center_left",
           "content_order": "inside_image"
+        },
+        {
+          "mask_opacity": 0,
+          "start": "2023-10-05T13:17:49.258Z",
+          "end": "2024-03-09T13:17:49.293Z",
+          "img": "/img/uploads/vicentti-manga-longa-desktop-.webp",
+          "mobile_img": "/img/uploads/vicentti-manga-longa-mobile-.webp",
+          "content_position": "center_left",
+          "content_order": "inside_image"
         }
       ]
     },
