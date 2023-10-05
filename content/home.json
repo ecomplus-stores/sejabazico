@@ -8,6 +8,16 @@
       "slides": [
         {
           "mask_opacity": 0,
+          "start": "2023-10-05T13:05:15.385Z",
+          "end": "2024-04-13T13:05:15.422Z",
+          "img": "/img/uploads/vicentti-manga-longa-desktop-.webp",
+          "mobile_img": "/img/uploads/vicentti-manga-longa-mobile-.webp",
+          "link": "https://sejabazico.com.br/vicentti-manga-longa",
+          "content_position": "center_left",
+          "content_order": "inside_image"
+        },
+        {
+          "mask_opacity": 0,
           "start": "2023-09-22T14:10:11.327Z",
           "end": "2024-07-19T14:10:11.358Z",
           "link": "https://www.sejabazico.com.br/novidades",
