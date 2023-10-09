@@ -1927,7 +1927,9 @@ body #storefront-app>div>h1{
         color: var(--secondary);
       }
       .depoimento-box {
-        min-height: 260px;
+        height: 260px;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
       height: unset;     
 }
