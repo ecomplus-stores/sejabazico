@@ -549,6 +549,12 @@ body{font-size:var(--body);color:#000}
         right: 0;
         padding-left: 1rem;
         padding-right: 1rem;
+        &--bazicash {
+          display: none;
+          align-items: center;
+          gap: 5px;
+          flex-direction: row;
+        }
     }
     .product-card__name{
         padding-left: 1rem;
@@ -556,6 +562,13 @@ body{font-size:var(--body);color:#000}
         padding-top:0;
         --max-lines:1
     }
+}
+
+[data-bazicash="true"] .product-card__prices {
+  display: none;
+  &--bazicash {
+    display: flex;
+  }
 }
 
 @media (min-width: 1200px){

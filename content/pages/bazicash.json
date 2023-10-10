@@ -1,0 +1,16 @@
+{
+  "title": "O que é Bazicash?",
+  "meta_title": "",
+  "meta_description": "",
+  "body": "![]()",
+  "sections": [
+    {
+      "type": "responsive-banner",
+      "img": "/img/uploads/pagina-bazicash-desktop-.webp",
+      "mobile_img": "/img/uploads/pagina-bazicash-mobile-.webp"
+    },
+    {
+      "type": "dynamic-showcase"
+    }
+  ]
+}

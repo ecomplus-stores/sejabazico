@@ -1,9 +1,26 @@
+<%
+let items
+const isBazicash = /pages\/.*bazicash.*/.test(_.pageName)
+if (isBazicash) {
+  const { data } = await _.axios.get('https://us-central1-app-bazicash.cloudfunctions.net/app/product-points')
+  const productIds = Object.keys(data)
+  if (productIds.length) {
+    const search = new _.EcomSearch()
+    search.setProductIds(productIds).setPageSize(72)
+    await search.fetch()
+    items = search.getItems()
+  }
+}
+%>
+
 <div class="dynamic-showcase">
   <%- await include('@/sections/inc/retail-grid', {
     _, opt: {
       sort: opt.sort,
       disable_filters: true,
-      disable_load_more: !opt.load_more
+      disable_load_more: !opt.load_more,
+      items,
+      bazicash: isBazicash
     }
   }) %>
 </div>

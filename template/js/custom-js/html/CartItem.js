@@ -49,7 +49,8 @@ export default {
     return {
       quantity: 0,
       canInputSelect: false,
-      isAsideVisible: false
+      isAsideVisible: false,
+      bazicashPrice: null
     }
   },
 
@@ -169,11 +170,11 @@ export default {
         label: '[PRESENTE]',
         grid_id: 'e_presente'
       }
-      const { _id, label, grid_id } = customization
+      const { _id, label, grid_id: gridId } = customization
       if (!this.item.customizations) {
         this.item.customizations = []
       }
-      const index = this.item.customizations.findIndex(({ _id }) => _id === _id)
+      const index = this.item.customizations.findIndex(c => c._id === _id)
       if (text) {
         if (index > -1) {
           this.item.customizations[index].option = { text }
@@ -182,7 +183,7 @@ export default {
             _id,
             label,
             option: { text },
-            grid_id
+            grid_id: gridId
           })
         }
       } else if (index > -1) {
@@ -197,7 +198,7 @@ export default {
         this.setCustomizationOption('')
       }
       this.isAsideVisible = check
-    },
+    }
   },
 
   watch: {
@@ -239,5 +240,12 @@ export default {
 
   created () {
     this.updateInputType()
+    if (window.isBazicashPage) {
+      const setBazicashPrice = () => {
+        this.bazicashPrice = window.bazicashPrices[this.item.product_id]
+      }
+      window.addEventListener('bazicashPrices', setBazicashPrice, { once: true })
+      if (window.bazicashPrices) setBazicashPrice()
+    }
   }
 }

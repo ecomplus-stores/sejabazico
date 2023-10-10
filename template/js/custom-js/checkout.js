@@ -1,3 +1,7 @@
+import loadBazicashPrices from './bazicash-prices'
+
+loadBazicashPrices(true)
+
 // Add your custom JavaScript for checkout here.
 const getProductData = item => {
   const productData = {

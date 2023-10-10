@@ -110,7 +110,14 @@ class="product-item"
               :installments-option="installmentsOption"
               :discount-option="discountOption"
             />
-          </slot>          
+            <div
+              v-if="bazicashPrice"
+              class="product-card__prices product-card__prices--bazicash"
+            >
+              <strong>{{ bazicashPrice }}</strong>
+              <img src="/img/uploads/bazicash-outline.png" width="15" height="15" />
+            </div>
+          </slot>
         </template>
 
         <slot name="footer">

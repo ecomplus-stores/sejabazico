@@ -118,21 +118,27 @@
             class="cart-item__price-un fade"
             :class="{ show: quantity > 1 }"
           >
-            <span v-if="parseInt(formatMoney(price).split(',')[1]) == 0">
-                {{ formatMoney(price).split(',')[0] }}
+            <span v-if="bazicashPrice">
+              {{ bazicashPrice }}
+            </span>
+            <span v-else-if="parseInt(formatMoney(price).split(',')[1]) == 0">
+              {{ formatMoney(price).split(',')[0] }}
             </span>
             <span v-else>
-                {{ formatMoney(price) }}
+              {{ formatMoney(price) }}
             </span>
-            
             <small>/un</small>
           </div>
-          <span v-if="parseInt(formatMoney(price).split(',')[1]) == 0">
+          <span v-if="bazicashPrice" class="d-flex" style="align-items: center; gap: 5px">
+            <strong>{{ bazicashPrice * quantity }}</strong>
+            <img src="/img/uploads/bazicash-outline.png" width="15" height="15" />
+          </span>
+          <span v-else-if="parseInt(formatMoney(price).split(',')[1]) == 0">
             {{ formatMoney(price * quantity).split(',')[0] }}
-            </span>
-            <span v-else>
-                {{ formatMoney(price * quantity) }}
-            </span>
+          </span>
+          <span v-else>
+            {{ formatMoney(price * quantity) }}
+          </span>
         </div>
 
         <div id="gift-wrapper">
