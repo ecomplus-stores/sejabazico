@@ -1,3 +1,4 @@
+import './quick-buy'
 import loadBazicashPrices from './bazicash-prices'
 
 loadBazicashPrices(true)
