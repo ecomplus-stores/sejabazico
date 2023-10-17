@@ -152,6 +152,12 @@ export default {
   methods: {
     getImg,
 
+    getBigImg (picture) {
+      const zoomUrl = getImg(picture, null, 'zoom')
+      if (zoomUrl && zoomUrl.url.endsWith('.webp')) return zoomUrl
+      return getImg(picture, null, 'big')
+    },
+
     moveSlider (index) {
       this.activeIndex = index
       this.$emit('update:current-slide', index + 1)
