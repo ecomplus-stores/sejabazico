@@ -30,8 +30,7 @@ class="product-item"
         </slot>
 
         <div
-          v-if="body.categories &&
-          body.categories.find(({ slug }) => slug === 'produtos-exclusivos')"
+          v-if="isBazicashOnly"
           class="product-card__stamps"
         >
           <span class="product-card__stamps-bazicash ml-3">
@@ -96,7 +95,7 @@ class="product-item"
 
         <slot
           name="unavailable"
-          v-if="!body.available || (!body.visible && !locationPreVenda)"
+          v-if="!body.available || (!body.visible && !isBazicashOnly && !locationPreVenda)"
         >
           <p class="badge badge-warning">
             {{ i19unavailable }}

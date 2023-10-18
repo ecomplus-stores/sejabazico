@@ -105,8 +105,13 @@ export default {
       return checkInStock(this.body)
     },
 
+    isBazicashOnly () {
+      return this.body.categories &&
+        this.body.categories.find(({ slug }) => slug === 'produtos-exclusivos')
+    },
+
     isActive () {
-      return this.body.available && this.body.visible && this.isInStock
+      return this.body.available && (this.body.visible || this.isBazicashOnly) && this.isInStock
     },
 
     discount () {
