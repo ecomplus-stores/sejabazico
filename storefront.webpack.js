@@ -26,7 +26,10 @@ module.exports = () => ({
       './html/APrices.html': path.resolve(__dirname, 'template/js/custom-js/components/APrices.html'),
       './js/APrices.js': path.resolve(__dirname, 'template/js/custom-js/components/APrices.js'),
       './html/ShippingLine.html': path.resolve(__dirname, 'template/js/custom-js/components/ShippingLine.html'),
-      './js/ShippingLine.js': path.resolve(__dirname, 'template/js/custom-js/components/ShippingLine.js')
+      './js/ShippingLine.js': path.resolve(__dirname, 'template/js/custom-js/components/ShippingLine.js'),
+      './html/PointsApplier.html': path.resolve(__dirname, 'template/js/custom-js/components/PointsApplier.html'),
+      './js/PointsApplier.js': path.resolve(__dirname, 'template/js/custom-js/components/PointsApplier.js'),
+      './html/EcCheckout.html': path.resolve(__dirname, 'template/js/custom-js/components/EcCheckout.html')
     }
   }
 })
