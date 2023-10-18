@@ -8,6 +8,8 @@ if (isBazicash) {
     if (productIds.length) {
       const search = new _.EcomSearch()
       search.setProductIds(productIds.slice(0, 72)).setPageSize(72)
+      /* const { bool } = search.dsl.query
+      bool.filter = bool.filter.filter((filter) => !(filter.term && filter.term.visible)) */
       await search.fetch()
       items = search.getItems()
       let offset = 72;

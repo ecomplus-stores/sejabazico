@@ -29,6 +29,16 @@ class="product-item"
           </span>
         </slot>
 
+        <div
+          v-if="body.categories &&
+          body.categories.find(({ slug }) => slug === 'produtos-exclusivos')"
+          class="product-card__stamps"
+        >
+          <span class="product-card__stamps-bazicash ml-3">
+            <img src="/img/uploads/bazicash-stamp.png" alt="Exclusivo Bazicash">
+          </span>
+        </div>
+
         <slot name="body">
           <div class="apx_fastBuyContainer">
             <a-link
