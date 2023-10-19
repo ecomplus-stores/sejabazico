@@ -83,8 +83,7 @@ export default {
       processingAppId: undefined,
       hasLoaded: false,
       selectedGateway: -1,
-      loadedClients: {},
-      isBazicashAllowed: window.location.search.includes('bazicash')
+      loadedClients: {}
     }
   },
 
@@ -181,7 +180,7 @@ export default {
     formatMoney,
 
     checkListedGateway (gateway, i) {
-      if (gateway.payment_method.name === 'Bazicash' && !this.isBazicashAllowed) {
+      if (gateway.payment_method.name === 'Bazicash') {
         return this.amount.total < 1
       }
       if (this.amount.total >= 1 && gateway.payment_method.code !== 'loyalty_points') {
