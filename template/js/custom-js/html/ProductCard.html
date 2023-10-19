@@ -1,8 +1,5 @@
 
-<article 
-class="product-item" 
-
->
+<article class="product-item">
   <div
     class="product-card"
     :data-product="JSON.stringify(body.itemData)"
@@ -40,7 +37,8 @@ class="product-item"
 
         <slot name="body">
           <div class="apx_fastBuyContainer">
-            <a-link
+            <component
+              :is="isBazicashPage ? 'span' : 'a-link'"
               class="product-card__link"
               :href="`/${body.slug}`"
               :title="name"
@@ -63,12 +61,13 @@ class="product-item"
                   class="product-card__picture"
                 />
               </div>
-            </a-link>
+            </component>
             <div v-if="!isSmall" class="apx_fastBuy" 
             :grid="JSON.stringify(body.variations)">
             </div>
           </div>
-            <a-link
+          <component
+            :is="isBazicashPage ? 'span' : 'a-link'"
             class="product-card__link"
             :href="`/${body.slug}`"
             :title="name"
@@ -81,7 +80,7 @@ class="product-item"
                 {{ name }}
               </component>
             </slot>
-          </a-link>
+          </component>
         </slot>
 
         <slot name="rating">

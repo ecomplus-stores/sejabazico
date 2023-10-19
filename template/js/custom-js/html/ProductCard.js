@@ -71,7 +71,8 @@ export default {
       isWaitingBuy: false,
       isHovered: false,
       error: '',
-      bazicashPrice: null
+      bazicashPrice: null,
+      isBazicashPage: false
     }
   },
 
@@ -218,6 +219,7 @@ export default {
     }
     const setBazicashPrice = () => {
       this.bazicashPrice = window.bazicashPrices[this.body._id || this.productId]
+      this.isBazicashPage = window.isBazicashPage
     }
     window.addEventListener('bazicashPrices', setBazicashPrice, { once: true })
     if (window.bazicashPrices) setBazicashPrice()
