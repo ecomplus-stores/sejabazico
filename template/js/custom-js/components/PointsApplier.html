@@ -1,26 +1,33 @@
 <div class="points-applier">
   <div
-    v-for="({ name }, programId) in localPointsPrograms"
-    v-if="availablePoints[programId] >= 0.1"
+    v-for="({ name, ratio }, programId) in localPointsPrograms"
     class="custom-control custom-switch"
   >
-    <input
-      type="checkbox"
-      class="custom-control-input"
-      :id="`points-applier-${programId}`"
-      :checked="pointsApplied[programId]"
-      @change="ev => togglePoints(programId, ev.target.checked)"
+    <div
+      v-for="discount in discountOptions"
+      :key="`${discount}`"
+      v-if="getPointsAmount(programId) >= discount"
     >
-
-    <label
-      class="custom-control-label"
-      :for="`points-applier-${programId}`"
-    >
-      <span class="badge badge-info">
-        -{{ formatMoney(getPointsAmount(programId)) }}
-      </span>
-      {{ i19use$1LoyaltyPoints.replace('$1', availablePoints[programId].toFixed(1)) }}
-      <em>{{ name }}</em>
-    </label>
+      <input
+        type="checkbox"
+        class="custom-control-input"
+        :id="`points-applier-${programId}-${discount}`"
+        :checked="pointsApplied[programId] === (discount / ratio)"
+        @change="ev => togglePoints(programId, ev.target.checked, discount)"
+      >
+      <label
+        class="custom-control-label"
+        :for="`points-applier-${programId}-${discount}`"
+      >
+        <span class="badge badge-info">
+          <i class="i-tag mr-1"></i>
+          -{{ formatMoney(discount) }}
+        </span>
+        <small>
+          resgatar por
+          {{ (discount / ratio) }} <em>{{ name }}</em>
+        </small>
+      </label>
+    </div>
   </div>
 </div>

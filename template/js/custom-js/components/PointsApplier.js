@@ -31,7 +31,8 @@ export default {
     return {
       localPointsPrograms: this.pointsPrograms || {},
       availablePoints: {},
-      isBazicashAllowed: window.location.search.includes('bazicash')
+      isBazicashAllowed: window.location.search.includes('bazicash'),
+      discountOptions: [20, 50, 100]
     }
   },
 
@@ -83,15 +84,17 @@ export default {
       return this.availablePoints[programId] * this.localPointsPrograms[programId].ratio
     },
 
-    togglePoints (programId, isChecked) {
+    togglePoints (programId, isChecked, discount) {
       const pointsApplied = {}
       if (isChecked) {
-        pointsApplied[programId] = this.availablePoints[programId]
+        pointsApplied[programId] = discount > 0
+          ? discount / this.localPointsPrograms[programId].ratio
+          : this.availablePoints[programId]
       }
       this.$emit('update:points-applied', pointsApplied)
       let pointsAmount = 0
       for (programId in pointsApplied) {
-        pointsAmount += this.getPointsAmount(programId)
+        pointsAmount += (discount || this.getPointsAmount(programId))
       }
       this.$emit('update:points-amount', pointsAmount)
     }
