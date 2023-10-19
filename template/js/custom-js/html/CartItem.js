@@ -240,7 +240,7 @@ export default {
 
   created () {
     this.updateInputType()
-    if (window.isBazicashPage) {
+    if (window.isBazicashPage || (this.item.flags && this.item.flags.includes('bazicash'))) {
       const setBazicashPrice = () => {
         this.bazicashPrice = window.bazicashPrices[this.item.product_id]
       }
