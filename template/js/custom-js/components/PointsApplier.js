@@ -30,7 +30,8 @@ export default {
   data () {
     return {
       localPointsPrograms: this.pointsPrograms || {},
-      availablePoints: {}
+      availablePoints: {},
+      isBazicashAllowed: window.location.search.includes('bazicash')
     }
   },
 
@@ -50,6 +51,7 @@ export default {
     },
 
     fixAvailablePoints () {
+      if (!this.isBazicashAllowed) return
       const pointsEntries = this.ecomPassport.getCustomer().loyalty_points_entries
       this.availablePoints = pointsEntries
         ? pointsEntries.reduce((availablePoints, pointsEntry) => {
