@@ -256,7 +256,7 @@ export default {
     },
 
     hasBazicashItem () {
-      return !this.cart.items.find(({ flags }) => flags && flags.includes('bazicash'))
+      return Boolean(this.cart.items.find(({ flags }) => flags && flags.includes('bazicash')))
     },
 
     bazicashAmount () {
