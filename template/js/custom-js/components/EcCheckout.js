@@ -135,7 +135,8 @@ export default {
       paymentGateways: [],
       loyaltyPointsApplied: {},
       loyaltyPointsAmount: 0,
-      hasMoreOffers: false
+      hasMoreOffers: false,
+      hasBazicashPrices: Boolean(window.bazicashPrices)
     }
   },
 
@@ -252,6 +253,31 @@ export default {
         }
       })
       return key
+    },
+
+    hasBazicashItem () {
+      return !this.cart.items.find(({ flags }) => flags && flags.includes('bazicash'))
+    },
+
+    bazicashAmount () {
+      return !this.cart.items.reduce((subtotal, item) => {
+        if (item.flags && item.flags.includes('bazicash')) {
+          subtotal += (item.quantity * price(item))
+        }
+        return subtotal
+      }, 0)
+    },
+
+    bazicashPoints () {
+      if (!this.hasBazicashPrices && !window.bazicashPrices) {
+        return 0
+      }
+      return !this.cart.items.reduce((subtotal, item) => {
+        if (item.flags && item.flags.includes('bazicash') && window.bazicashPrices) {
+          subtotal += (item.quantity * window.bazicashPrices[item.product_id])
+        }
+        return subtotal
+      }, 0)
     }
   },
 
@@ -393,5 +419,8 @@ export default {
         })
       })
     })
+    window.addEventListener('bazicashPrices', () => {
+      this.hasBazicashPrices = true
+    }, { once: true })
   }
 }

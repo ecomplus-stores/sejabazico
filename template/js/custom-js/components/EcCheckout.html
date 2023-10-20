@@ -161,7 +161,8 @@
           </div>
 
           <discount-applier
-            v-if="canHideSummary && enabledCheckoutStep > 1"
+            v-if="canHideSummary && enabledCheckoutStep > 1 &&
+              !loyaltyPointsAmount && !hasBazicashItem"
             class="checkout__discount mt-4"
             :amount="amount"
             :coupon-code.sync="localDiscountCoupon"
@@ -201,15 +202,16 @@
 
               <template #amount-custom>
                 <points-applier
-                  v-if="enabledCheckoutStep > 1"
+                  v-if="enabledCheckoutStep > 1 && !localDiscountCoupon && !hasBazicashItem"
                   class="checkout__loyalty-points"
                   :points-applied.sync="loyaltyPointsApplied"
                   :points-amount.sync="loyaltyPointsAmount"
-                  :max-points-amount="Math.min(amount.subtotal - 5, amount.total / 2)"
+                  :max-points-amount="amount.subtotal"
+                  :cart-items="cart.items"
                 />
               </template>
 
-              <template v-if="enabledCheckoutStep > 1">
+              <template v-if="enabledCheckoutStep > 1 && !loyaltyPointsAmount && !hasBazicashItem">
                 <discount-applier
                   class="checkout__discount"
                   :amount="amount"
