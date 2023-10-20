@@ -260,7 +260,7 @@ export default {
     },
 
     bazicashAmount () {
-      return !this.cart.items.reduce((subtotal, item) => {
+      return this.cart.items.reduce((subtotal, item) => {
         if (item.flags && item.flags.includes('bazicash')) {
           subtotal += (item.quantity * price(item))
         }
@@ -272,7 +272,7 @@ export default {
       if (!this.hasBazicashPrices && !window.bazicashPrices) {
         return 0
       }
-      return !this.cart.items.reduce((subtotal, item) => {
+      return this.cart.items.reduce((subtotal, item) => {
         if (item.flags && item.flags.includes('bazicash') && window.bazicashPrices) {
           subtotal += (item.quantity * window.bazicashPrices[item.product_id])
         }
