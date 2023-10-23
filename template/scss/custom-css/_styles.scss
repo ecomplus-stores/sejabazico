@@ -569,11 +569,16 @@ body{font-size:var(--body);color:#000}
     }
 }
 
-[data-bazicash="true"] .product-card__prices {
-  display: none;
-  &--bazicash {
-    display: flex;
-  }
+[data-bazicash="true"] {
+    .product-card__prices {
+        display: none;
+        &--bazicash {
+            display: flex;
+        }
+    }
+    .product-card__offer-stamp {
+        display: none;
+    }
 }
 
 @media (min-width: 1200px){
