@@ -111,6 +111,15 @@ export default {
       if (!canApplyDiscount) {
         this.isCouponApplied = false
       }
+    },
+
+    'cart.items': {
+      handler () {
+        if (this.cart.items.find(({ flags }) => flags && flags.includes('bazicash'))) {
+          window.location = this.checkoutUrl
+        }
+      },
+      immediate: true
     }
   },
 
