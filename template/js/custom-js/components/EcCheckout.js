@@ -349,6 +349,10 @@ export default {
         for (let i = 0; i < this.paymentGateways.length; i++) {
           if (this.paymentGateways[i].payment_method.code === 'loyalty_points') {
             const pointsAmountPart = (this.loyaltyPointsAmount + this.bazicashAmount) / this.amount.total
+            const loyaltyPointsApplied = { ...this.loyaltyPointsApplied }
+            if (loyaltyPointsApplied.bazicash) {
+              loyaltyPointsApplied.bazicash += this.bazicashPoints
+            }
             return this.$emit('checkout', [{
               ...transaction,
               amount_part: 1 - pointsAmountPart
