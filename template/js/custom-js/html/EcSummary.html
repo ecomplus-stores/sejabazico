@@ -112,7 +112,11 @@
             :can-show-bazipass="!amount.discount"
           />
         </div>
-        <div class="bazicash_amount text-right mt-3 mb-3 d-flex align-items-center justify-content-end" style="flex-wrap:wrap;font-size:12px;">
+        <div
+          v-if="!items.find(({ flags }) => flags && flags.includes('bazicash'))"
+          class="bazicash_amount text-right mt-3 mb-3 d-flex align-items-center justify-content-end"
+          style="flex-wrap:wrap;font-size:12px;"
+        >
             <i style="background-image:url(/img/uploads/bcash.png);
                 height: 20px;
                 width: 20px;

@@ -86,7 +86,11 @@
                   :can-show-bazipass="!amount.discount"
                 />
               </div>
-              <div class="bazicash_amount text-right mb-3 d-flex align-items-center justify-content-end" style="flex-wrap:wrap">
+              <div
+                v-if="!cart.items.find(({ flags }) => flags && flags.includes('bazicash'))"
+                class="bazicash_amount text-right mb-3 d-flex align-items-center justify-content-end"
+                style="flex-wrap:wrap"
+              >
                 <i style="background-image:url(/img/uploads/bcash.png)"class="bcash_icon"></i>
                 Você ganhará&nbsp;
                 <b>{{(amount.total - amount.freight).toFixed(0)}}</b>&nbsp;Bazicash!
