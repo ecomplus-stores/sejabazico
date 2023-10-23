@@ -75,6 +75,7 @@ export default {
               }
             }
           }
+          this.$emit('available-points', availablePoints)
           return availablePoints
         }, {})
         : {}

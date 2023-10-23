@@ -140,7 +140,19 @@
                   v-if="enabledCheckoutStep >= 2"
                   :class="shownCheckoutStep !== 2 ? 'd-none d-md-block' : null"
                 >
+                  <div v-if="bazicashPoints > availableBazicash">
+                    <p class="lead mt-2">
+                      Não há Bazicash suficiente em sua conta para finalizar esse pedido :/
+                    </p>
+                    <button
+                      class="btn btn-secondary"
+                      @click="ecomCart.clear()"
+                    >
+                      Limpar carrinho
+                    </button>
+                  </div>
                   <payment-methods
+                    v-else
                     :key="paymentsListKey"
                     :amount="paymentAmount"
                     :customer="localCustomer"
@@ -184,7 +196,7 @@
               :buyer="customer"
               :shippingAddress="shippingAddress"
               :can-show-price-options="!(paymentGateway && paymentGateway.app_id)"
-              :paid-in-advance="loyaltyPointsAmount"
+              :paid-in-advance="loyaltyPointsAmount + bazicashAmount"
               @click:account="editAccount = true"
             >
               <template #more-offers>
@@ -201,13 +213,24 @@
               </template>
 
               <template #amount-custom>
-                <points-applier
-                  v-if="enabledCheckoutStep > 1 && !localDiscountCoupon && !hasBazicashItem"
-                  class="checkout__loyalty-points"
-                  :points-applied.sync="loyaltyPointsApplied"
-                  :points-amount.sync="loyaltyPointsAmount"
-                  :max-points-amount="amount.subtotal"
-                />
+                <div>
+                  <points-applier
+                    v-show="enabledCheckoutStep > 1 && !localDiscountCoupon && !hasBazicashItem"
+                    class="checkout__loyalty-points"
+                    @available-points="({ bazicash }) => availableBazicash = bazicash"
+                    :points-applied.sync="loyaltyPointsApplied"
+                    :points-amount.sync="loyaltyPointsAmount"
+                    :max-points-amount="amount.subtotal"
+                  />
+                  <span
+                    v-if="bazicashPoints"
+                    class="d-flex mt-2 align-items-center justify-content-end"
+                    style="gap: 5px; font-size: 1.15rem"
+                  >
+                    <strong>{{ bazicashPoints }}</strong>
+                    <img src="/img/uploads/bazicash-outline.png" width="15" height="15" />
+                  </span>
+                </div>
               </template>
 
               <template v-if="enabledCheckoutStep > 1 && !loyaltyPointsAmount && !hasBazicashItem">
@@ -237,7 +260,7 @@
               </div>
             </div>
 
-            <div class="checkout__back">
+            <div v-if="!hasBazicashItem" class="checkout__back">
               <a :href="cartUrl" class="btn btn-sm btn-light">
                 <i class="i-chevron-left mr-1"></i>
                 {{ i18n('BackToCart') }}

@@ -96,7 +96,9 @@
           class="summary__amount__row"
         >
           <span>{{ i19total }}</span>
-          <div>{{ formatMoney(amount.total) }}</div>
+          <component :is="paidInAdvance ? 'del' : 'div'">
+            {{ formatMoney(amount.total) }}
+          </component>
         </div>
   
         <slot name="amount-custom"/>

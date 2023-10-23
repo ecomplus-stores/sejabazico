@@ -136,7 +136,8 @@ export default {
       loyaltyPointsApplied: {},
       loyaltyPointsAmount: 0,
       hasMoreOffers: false,
-      hasBazicashPrices: Boolean(window.bazicashPrices)
+      hasBazicashPrices: Boolean(window.bazicashPrices),
+      availableBazicash: 0
     }
   },
 
@@ -207,7 +208,7 @@ export default {
     paymentAmount () {
       return {
         ...this.amount,
-        total: this.amount.total - this.loyaltyPointsAmount
+        total: this.amount.total - this.loyaltyPointsAmount - this.bazicashAmount
       }
     },
 
@@ -344,10 +345,10 @@ export default {
     },
 
     checkout (transaction) {
-      if (this.loyaltyPointsAmount) {
+      if (this.loyaltyPointsAmount || this.bazicashAmount) {
         for (let i = 0; i < this.paymentGateways.length; i++) {
           if (this.paymentGateways[i].payment_method.code === 'loyalty_points') {
-            const pointsAmountPart = this.loyaltyPointsAmount / this.amount.total
+            const pointsAmountPart = (this.loyaltyPointsAmount + this.bazicashAmount) / this.amount.total
             return this.$emit('checkout', [{
               ...transaction,
               amount_part: 1 - pointsAmountPart
