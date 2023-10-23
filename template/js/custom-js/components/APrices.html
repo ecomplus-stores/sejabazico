@@ -84,11 +84,9 @@
       </small>
     </div>
 
-
-
     <div
       key="discount-subscription"
-      v-if="canShowBazipass && canShowPriceOptions"
+      v-if="canShowBazipass && canShowPriceOptions && !isAmountTotal"
       class="prices__discount prices__discount--subscription"
     >
       <a href="https://bazipass.sejabazico.com.br/?utm_medium=site&utm_term=preco" target="_blank">
