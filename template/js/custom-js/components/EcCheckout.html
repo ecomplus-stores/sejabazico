@@ -217,7 +217,7 @@
                   <points-applier
                     v-show="enabledCheckoutStep > 1 && !localDiscountCoupon && !hasBazicashItem"
                     class="checkout__loyalty-points"
-                    @available-points="({ bazicash }) => availableBazicash = bazicash"
+                    @available-points="({ p0_pontos }) => availableBazicash = p0_pontos"
                     :points-applied.sync="loyaltyPointsApplied"
                     :points-amount.sync="loyaltyPointsAmount"
                     :max-points-amount="amount.subtotal"

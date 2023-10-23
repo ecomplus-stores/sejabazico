@@ -25,7 +25,8 @@
         </span>
         <small>
           resgatar por
-          {{ (discount / ratio) }} <em>{{ name }}</em>
+          {{ (discount / ratio) }}
+          <em>{{ name !== 'Pontos' ? name : 'Bazicash' }}</em>
         </small>
       </label>
     </div>
