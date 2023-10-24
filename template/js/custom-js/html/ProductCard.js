@@ -72,7 +72,7 @@ export default {
       isHovered: false,
       error: '',
       bazicashPrice: null,
-      isBazicashPage: false
+      isBazicashPage: Boolean(window.isBazicashPage)
     }
   },
 

@@ -576,7 +576,10 @@ body{font-size:var(--body);color:#000}
             display: flex;
         }
     }
-    .product-card__offer-stamp {
+    .product-card__offer-stamp,
+    .search-engine__retail > .row > div:empty,
+    .search-engine__count,
+    .search-engine__option small {
         display: none;
     }
 }

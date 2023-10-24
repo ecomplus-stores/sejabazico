@@ -1,5 +1,8 @@
 
-<article class="product-item">
+<article
+  v-if="!isBazicashPage || bazicashPrice"
+  class="product-item"
+>
   <div
     class="product-card"
     :data-product="JSON.stringify(body.itemData)"

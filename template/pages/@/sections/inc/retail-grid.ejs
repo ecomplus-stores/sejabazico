@@ -30,10 +30,9 @@ const apx_category = _.cms('apx_category') || {}
 <section class="retail-grid">
   <!-- <div class="<%= apx_category.container %> <%= apx_category.padding_sm %> <%= apx_category.padding_md %>"> -->
     <div
+      id="search-engine"
       <% if (opt.bazicash) { %>
         data-bazicash="true"
-      <% } else { %>
-        id="search-engine"
       <% } %>
       <% if (opt.category_names) { %>
         data-categories="<%= JSON.stringify(opt.category_names) %>"
