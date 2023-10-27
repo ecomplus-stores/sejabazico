@@ -27,16 +27,6 @@
           "content_order": "inside_image"
         },
         {
-          "mask_opacity": 0,
-          "start": "2023-09-22T14:10:11.327Z",
-          "end": "2024-07-19T14:10:11.358Z",
-          "link": "https://www.sejabazico.com.br/novidades",
-          "img": "/img/uploads/novidades-desktop-.webp",
-          "mobile_img": "/img/uploads/novidades-mobile-.webp",
-          "content_position": "center_left",
-          "content_order": "inside_image"
-        },
-        {
           "start": "2023-08-14T14:47:28.495Z",
           "img": "/img/uploads/preta-powerful-desktop-.png",
           "mobile_img": "/img/uploads/preta-powerful-mobile-.png",
@@ -68,6 +58,16 @@
           "content_position": "top_center",
           "mask_opacity": 0,
           "end": "2024-03-02T23:42:23.105Z"
+        },
+        {
+          "mask_opacity": 0,
+          "start": "2023-10-27T13:21:41.743Z",
+          "end": "2024-06-01T13:21:41.797Z",
+          "img": "/img/uploads/feminina-c-desktop-copiar.webp",
+          "link": "https://www.sejabazico.com.br/bazica-feminina",
+          "mobile_img": "/img/uploads/feminina-c-mobile-copiar.webp",
+          "content_position": "top_center",
+          "content_order": "inside_image"
         }
       ]
     },
