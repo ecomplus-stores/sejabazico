@@ -8,6 +8,16 @@
       "slides": [
         {
           "mask_opacity": 0,
+          "start": "2023-10-27T13:21:41.743Z",
+          "end": "2024-06-01T13:21:41.797Z",
+          "img": "/img/uploads/feminina-c-desktop-copiar.webp",
+          "link": "https://www.sejabazico.com.br/bazica-feminina",
+          "mobile_img": "/img/uploads/feminina-c-mobile-copiar.webp",
+          "content_position": "top_center",
+          "content_order": "inside_image"
+        },
+        {
+          "mask_opacity": 0,
           "start": "2023-10-05T13:17:49.258Z",
           "end": "2024-03-09T13:17:49.293Z",
           "img": "/img/uploads/vicentti-manga-longa-desktop-.webp",
@@ -58,16 +68,6 @@
           "content_position": "top_center",
           "mask_opacity": 0,
           "end": "2024-03-02T23:42:23.105Z"
-        },
-        {
-          "mask_opacity": 0,
-          "start": "2023-10-27T13:21:41.743Z",
-          "end": "2024-06-01T13:21:41.797Z",
-          "img": "/img/uploads/feminina-c-desktop-copiar.webp",
-          "link": "https://www.sejabazico.com.br/bazica-feminina",
-          "mobile_img": "/img/uploads/feminina-c-mobile-copiar.webp",
-          "content_position": "top_center",
-          "content_order": "inside_image"
         }
       ]
     },
