@@ -302,11 +302,18 @@ import {
                 options = options.filter(({ key }) => presetedOptions.indexOf(key) === -1)
               }
             }
+            if (filter === 'size') {
+              const sizeSpec = ["PP", "P", "M", "G", "GG", "XGG", "XXGG"]
+              options = options.sort((a, b) => {
+                return sizeSpec.indexOf(a.key) - sizeSpec.indexOf(b.key)
+              })
+            }
             this.filters[filterIndex] = {
               filter,
               options,
               isSpec
             }
+            
             const optionsList = !this.selectedOptions[filter]
               ? []
               : this.selectedOptions[filter]
@@ -316,7 +323,11 @@ import {
           updatedFilters.push(filterIndex)
         }
         addFilter('Brands', this.ecomSearch.getBrands())
-        addFilter('Categories', this.ecomSearch.getCategories())
+        const sortCategories = ["Top 10", "Bázica Gola V", "Bázica Long", "Bázica Gola C", "Bázicas"]
+        const categories = this.ecomSearch.getCategories().sort((a, b) => {
+          return sortCategories.indexOf(b.key) - sortCategories.indexOf(a.key)
+        })
+        addFilter('Categories', categories.filter(cat => cat.key !== 'Últimas Unidades'))
         this.ecomSearch.getSpecs().forEach(({ key, options }) => {
           addFilter(key, options, true)
         })

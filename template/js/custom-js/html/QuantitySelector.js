@@ -117,10 +117,12 @@ import {
   
     methods: {
         setKitProductOption(items){
+          if (window.innerWidth > 992) {
             $('.bz_gallery').empty()
             for(let image in items[0].pictures){
                 $('<div class="bz_gallery-item"><picture data-iesrc="'+ items[0].pictures[image].big.url +'" class="picture gallery__big-image loaded" ><source srcset="'+ items[0].pictures[image].big.url +'"><img  style=""></picture></div>').appendTo('.bz_gallery')
             }
+          }
             $('#apx_kit-options .variations__option').removeClass('variations__option--selected')
             this.selectedProduct = items
             this.selectedOption = []
