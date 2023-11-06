@@ -1,20 +1,12 @@
 {
   "stripe_slider": [
     {
-      "text": "Conheça sua <b>nova camiseta preferida!</b>",
-      "url": "/roupas"
+      "text": "<b>Black Bázico, de 16/11 a 30/11</b>",
+      "url": "/"
     },
     {
       "text": "<b>15% em todas as suas compras</b>, conheça o BaziPass",
       "url": "https://bazipass.sejabazico.com.br/?utm_medium=site&utm_term=slider"
-    },
-    {
-      "url": "/roupas",
-      "text": "Frete grátis em compras acima de R$299,00 "
-    },
-    {
-      "text": "Faça parte da nossa equipe, <u>processo seletivo aberto</u>",
-      "url": "https://sejabazico.com.br/psel-2023-2/"
     }
   ],
   "links": [
