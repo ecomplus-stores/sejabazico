@@ -3,13 +3,6 @@
   "meta_description": "",
   "sections": [
     {
-      "type": "offers-timer",
-      "max_hours": 1000,
-      "start": "2023-11-06T20:05:01.409Z",
-      "end": "2023-11-16T03:01:45.402Z",
-      "offers": []
-    },
-    {
       "type": "apx_banner-slider",
       "autoplay": 3000,
       "slides": [
