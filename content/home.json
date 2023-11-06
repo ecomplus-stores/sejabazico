@@ -17,26 +17,6 @@
           "content_order": "inside_image"
         },
         {
-          "mask_opacity": 0,
-          "start": "2023-10-05T13:17:49.258Z",
-          "end": "2024-03-09T13:17:49.293Z",
-          "img": "/img/uploads/vicentti-manga-longa-desktop-.webp",
-          "mobile_img": "/img/uploads/vicentti-manga-longa-mobile-.webp",
-          "content_position": "center_left",
-          "content_order": "inside_image",
-          "link": "https://sejabazico.com.br/vicentti-manga-longa"
-        },
-        {
-          "mask_opacity": 0,
-          "start": "2023-10-05T13:08:12.275Z",
-          "end": "2024-04-06T13:08:12.310Z",
-          "link": "https://sejabazico.com.br/bazica-vicentti",
-          "img": "/img/uploads/caramelo-desktop-.webp",
-          "mobile_img": "/img/uploads/caramelo-mobile-.webp",
-          "content_position": "center_left",
-          "content_order": "inside_image"
-        },
-        {
           "start": "2023-08-14T14:47:28.495Z",
           "img": "/img/uploads/preta-powerful-desktop-.png",
           "mobile_img": "/img/uploads/preta-powerful-mobile-.png",
