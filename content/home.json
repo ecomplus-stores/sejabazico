@@ -48,6 +48,15 @@
           "content_position": "top_center",
           "mask_opacity": 0,
           "end": "2024-03-02T23:42:23.105Z"
+        },
+        {
+          "mask_opacity": 0,
+          "start": "2023-11-06T19:59:13.321Z",
+          "end": "2024-04-06T19:59:13.346Z",
+          "img": "/img/uploads/black-bazico-antecipacao-desktop-.webp",
+          "mobile_img": "/img/uploads/black-bazico-antecipacao-mobile-.webp",
+          "content_position": "top_center",
+          "content_order": "inside_image"
         }
       ]
     },
