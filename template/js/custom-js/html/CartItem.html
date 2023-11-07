@@ -144,7 +144,10 @@
         <div id="gift-wrapper">
           <label for="gift"><i class="i-gift"></i> É presente?</label>
           <input type="checkbox" :checked="checkMessage" id="gift" @change="toggleInput">
-          <input placeholder="Escreva uma mensagem aqui" type="text" class="form-control" id="gift-input" v-show="isAsideVisible" v-model="messageFather" @input="event => setCustomizationOption(event.target.value)">
+          <input placeholder="Escreva uma mensagem aqui" type="text" class="form-control" id="gift-input" v-show="isAsideVisible" v-model="messageFather" @input="event => setCustomizationOption(event.target.value)" maxlength="70">
+          <a-alert v-if="messageFather && messageFather.length > 69">
+            <span>Limite máximo de 70 caracteres!</span> <em>Evite o uso de emojis</em>
+          </a-alert>
         </div>
       </template>
 

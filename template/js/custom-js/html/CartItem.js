@@ -14,6 +14,7 @@ import {
 
 import ecomCart from '@ecomplus/shopping-cart'
 import ALink from '@ecomplus/storefront-components/src/ALink.vue'
+import AAlert from '@ecomplus/storefront-components/src/AAlert.vue'
 import APicture from '@ecomplus/storefront-components/src/APicture.vue'
 import ItemCustomizations from '@ecomplus/storefront-components/src/ItemCustomizations.vue'
 
@@ -22,6 +23,7 @@ export default {
 
   components: {
     ALink,
+    AAlert,
     APicture,
     ItemCustomizations
   },
@@ -103,16 +105,29 @@ export default {
         : 9999999
     },
 
-    messageFather () {
-      const { customizations } = this.item
-      if (Array.isArray(customizations) && customizations.length) {
-        const custom = customizations.find(customization => customization.grid_id === 'e_presente')
-        if (Object.keys(custom).length) {
-          return custom.option && custom.option.text
+    messageFather: {
+      get () {
+        const { customizations } = this.item
+        if (Array.isArray(customizations) && customizations.length) {
+          const custom = customizations.find(customization => customization.grid_id === 'e_presente')
+          if (Object.keys(custom).length) {
+            return custom.option && custom.option.text
+          }
+          return null
+        }
+        return null
+      },
+      set (value) {
+        const { customizations } = this.item
+        if (Array.isArray(customizations) && customizations.length) {
+          const custom = customizations.find(customization => customization.grid_id === 'e_presente')
+          if (Object.keys(custom).length) {
+            return value || custom.option && custom.option.text
+          }
+          return null
         }
         return null
       }
-      return null
     },
 
     checkMessage () {
