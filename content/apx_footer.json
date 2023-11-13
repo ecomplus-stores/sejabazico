@@ -103,6 +103,12 @@
             "title": "Quem somos nós",
             "url": "/pages/quem-somos-nos"
           }
+        },
+        {
+          "item": {
+            "title": "Livro de Regras da Black Bázico",
+            "url": "https://www.sejabazico.com.br/pages/regras-black-bazico"
+          }
         }
       ]
     },
