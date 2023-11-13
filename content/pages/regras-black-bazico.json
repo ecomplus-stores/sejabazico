@@ -11,6 +11,11 @@
     {
       "type": "extra-page",
       "enabled": true
+    },
+    {
+      "type": "responsive-banner",
+      "img": "/img/uploads/black-bazico-antecipacao-desktop-.webp",
+      "mobile_img": "/img/uploads/black-bazico-antecipacao-mobile-.webp"
     }
   ]
 }
