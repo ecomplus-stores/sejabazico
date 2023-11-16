@@ -15,6 +15,16 @@
           "mobile_img": "/img/uploads/50-off-frete-mobile-.webp",
           "content_position": "center_left",
           "content_order": "inside_image"
+        },
+        {
+          "mask_opacity": 0,
+          "start": "2023-11-16T11:56:46.912Z",
+          "end": "2024-04-06T11:56:46.942Z",
+          "img": "/img/uploads/bazipass-desktop-.webp",
+          "link": "https://bazipass.sejabazico.com.br/?utm_medium=site&utm_term=cabecalho",
+          "mobile_img": "/img/uploads/bazipass-mobile-.webp",
+          "content_position": "center_left",
+          "content_order": "inside_image"
         }
       ]
     },
