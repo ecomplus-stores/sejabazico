@@ -21,7 +21,7 @@
           "start": "2023-11-16T11:56:46.912Z",
           "end": "2024-04-06T11:56:46.942Z",
           "img": "/img/uploads/bazipass-desktop-.webp",
-          "link": "https://bazipass.sejabazico.com.br/black?utm_medium=site&utm_term=cabecalho",
+          "link": "https://bazipass.sejabazico.com.br/?utm_medium=site&utm_term=cabecalho",
           "mobile_img": "/img/uploads/bazipass-mobile-.webp",
           "content_position": "center_left",
           "content_order": "inside_image"
@@ -31,7 +31,7 @@
           "start": "2023-11-16T11:57:55.996Z",
           "end": "2024-03-15T11:57:56.015Z",
           "img": "/img/uploads/mega-outlet-frete-desktop-.webp",
-          "link": "https://www.sejabazico.com.br/mega-outlet",
+          "link": "https://www.sejabazico.com.br/ultimas-unidades",
           "mobile_img": "/img/uploads/mega-outlet-frete-mobile-.webp",
           "content_position": "center_left",
           "content_order": "inside_image"
@@ -104,16 +104,16 @@
         {
           "description_color": "#000000",
           "animate": "fadeInTopRight",
-          "img": "/img/uploads/reposicao-air.webp",
+          "img": "/img/uploads/50-off-frete.webp",
           "content_order": "before_image",
-          "alt": "reposicao",
+          "alt": "50% OFF + Frete Grátis",
           "content_position": "center_left",
           "btn_text": "comprar agora",
           "btn_background": "#232323",
           "btn_text_color": "#ffffff",
           "mask_opacity": 0,
-          "title": "reposição",
-          "link": "https://www.sejabazico.com.br/novidades",
+          "title": "Black Bázico",
+          "link": "https://www.sejabazico.com.br/roupas",
           "title_color": "#232323",
           "description": "Sabe aquela sensação de leveza que só a Bázica Air te proporciona? Pois é, agora você pode reabastecer o seu guarda-roupa para o verão e aproveitar o calor da estação com muito conforto e estilo!"
         }
