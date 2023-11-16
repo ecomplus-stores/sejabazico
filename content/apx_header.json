@@ -1,12 +1,16 @@
 {
   "stripe_slider": [
     {
-      "text": "<b>Se agora já vale a pena, imagine na Black Bázico</b> - 16/11 até 30/11!",
+      "text": "2 Bázicas com frete grátis para todo o Brasil por R$195",
       "url": "/"
     },
     {
-      "text": "<b>15% em todas as suas compras</b>, conheça o BaziPass",
-      "url": "https://bazipass.sejabazico.com.br/?utm_medium=site&utm_term=slider"
+      "text": "Você nunca imaginou que R$50 fosse render tanto, descubra como.",
+      "url": "https://bazipass.sejabazico.com.br/black?utm_medium=site&utm_term=slider"
+    },
+    {
+      "text": "Aproveite a Black Bázico até o dia 30/11, se o estoque durar até lá.",
+      "url": "/"
     }
   ],
   "links": [
