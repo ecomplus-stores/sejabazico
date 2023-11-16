@@ -72,12 +72,12 @@
       <small v-if="isLiteral">
         {{ i19upTo }}
       </small>
-      12 x
+      {{ installmentsNumber }} x
       <small v-if="isLiteral">
         {{ i19of }}
       </small>
       <span>
-        {{ formatMoney(price / 12) }}
+        {{ formatMoney(price / installmentsNumber) }}
       </span>
       <small v-if="!monthlyInterest && isLiteral">
         {{ i19interestFree }}
