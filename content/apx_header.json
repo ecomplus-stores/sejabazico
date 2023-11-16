@@ -53,14 +53,8 @@
         },
         {
           "item": {
-            "url": "/vicentti-manga-curta",
-            "title": "Bázica Vicentti Manga Curta"
-          }
-        },
-        {
-          "item": {
-            "title": "Vicentti Manga Longa",
-            "url": "/vicentti-manga-longa"
+            "title": "Vicentti",
+            "url": "/bazica-vicentti"
           }
         },
         {
