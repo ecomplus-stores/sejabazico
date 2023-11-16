@@ -8,55 +8,13 @@
       "slides": [
         {
           "mask_opacity": 0,
-          "start": "2023-11-06T19:59:13.321Z",
-          "end": "2024-04-06T19:59:13.346Z",
-          "img": "/img/uploads/black-bazico-antecipacao-desktop-.webp",
-          "mobile_img": "/img/uploads/black-bazico-antecipacao-mobile-.webp",
-          "content_position": "top_center",
-          "content_order": "inside_image"
-        },
-        {
-          "mask_opacity": 0,
-          "start": "2023-10-27T13:21:41.743Z",
-          "end": "2024-06-01T13:21:41.797Z",
-          "img": "/img/uploads/feminina-c-desktop-copiar.webp",
-          "link": "https://www.sejabazico.com.br/bazica-feminina",
-          "mobile_img": "/img/uploads/feminina-c-mobile-copiar.webp",
-          "content_position": "top_center",
-          "content_order": "inside_image"
-        },
-        {
-          "start": "2023-08-14T14:47:28.495Z",
-          "img": "/img/uploads/preta-powerful-desktop-.png",
-          "mobile_img": "/img/uploads/preta-powerful-mobile-.png",
-          "content_order": "inside_image",
-          "alt": "Preta Gola C Powerful",
+          "start": "2023-11-16T11:54:10.274Z",
+          "end": "2024-04-06T11:54:10.286Z",
+          "img": "/img/uploads/50-off-frete-desktop-.webp",
+          "link": "https://www.sejabazico.com.br/roupas",
+          "mobile_img": "/img/uploads/50-off-frete-mobile-.webp",
           "content_position": "center_left",
-          "mask_opacity": 5,
-          "link": "https://www.sejabazico.com.br/bazica-gola-c",
-          "end": "2024-10-18T14:47:28.539Z"
-        },
-        {
-          "animate": "slideInUp",
-          "start": "2023-04-17T00:41:34.356Z",
-          "img": "/img/uploads/banners-site-novobazipass-desktop-.jpg",
-          "mobile_img": "/img/uploads/bazipass-mobile-.png",
-          "content_order": "inside_image",
-          "content_position": "top_center",
-          "mask_opacity": 5,
-          "link": "https://bazipass.sejabazico.com.br/?utm_medium=site&utm_term=banner",
-          "end": "2030-03-01T00:41:34.386Z"
-        },
-        {
-          "animate": "slideInUp",
-          "start": "2023-04-16T23:42:23.093Z",
-          "img": "/img/uploads/frete-desktop-.webp",
-          "mobile_img": "/img/uploads/frete-mobile-.webp",
-          "content_order": "inside_image",
-          "alt": "frete-gratis",
-          "content_position": "top_center",
-          "mask_opacity": 0,
-          "end": "2024-03-02T23:42:23.105Z"
+          "content_order": "inside_image"
         }
       ]
     },
