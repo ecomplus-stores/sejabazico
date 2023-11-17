@@ -85,11 +85,11 @@
       "banners": [
         {
           "description_color": "#232323",
-          "animate": "zoomInDown",
+          "animate": "backInLeft",
           "img": "/img/uploads/bazipass-black.webp",
           "content_order": "inside_image",
           "alt": "bazipass-o-programa-de-privilegios-da-bazico",
-          "content_position": "center_left",
+          "content_position": "center_center",
           "btn_text": "seja um membro VIP!",
           "btn_background": "#232323",
           "btn_text_color": "#ffffff",
@@ -97,7 +97,7 @@
           "title": "BaziPass",
           "link": "https://bazipass.sejabazico.com.br/?utm_medium=site&utm_term=minibanner",
           "title_color": "#232323",
-          "description": "Descubra um mundo de privilégios! Nosso programa exclusivo oferece desconto de 15%, prioridade em compras, Bazicash dobrados, Bazicashs mensais e até mesmo uma Bázica grátis por indicação. Junte-se a nós e aproveite os benefícios especiais que o BaziPass dá para você."
+          "description": ""
         },
         {
           "description_color": "#232323",
