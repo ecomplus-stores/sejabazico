@@ -77,9 +77,9 @@
       "banners": [
         {
           "description_color": "#232323",
-          "animate": "fadeInTopRight",
+          "animate": "zoomInDown",
           "img": "/img/uploads/bazipass-black.webp",
-          "content_order": "before_image",
+          "content_order": "inside_image",
           "alt": "bazipass-o-programa-de-privilegios-da-bazico",
           "content_position": "center_left",
           "btn_text": "seja um membro VIP!",
