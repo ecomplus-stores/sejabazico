@@ -67,6 +67,12 @@
       "carrossel_md": "Sim"
     },
     {
+      "type": "responsive-banner",
+      "img": "/img/uploads/pretinobazicopreta-powerful-desktop-.webp",
+      "mobile_img": "/img/uploads/pretinobazicopreta-powerful-mobile-.webp",
+      "link": "https://sejabazico.com.br/all-black"
+    },
+    {
       "type": "apx_banners-grid",
       "banners": [
         {
