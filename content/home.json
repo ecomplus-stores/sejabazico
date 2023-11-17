@@ -89,7 +89,7 @@
           "img": "/img/uploads/bazipass-black.webp",
           "content_order": "inside_image",
           "alt": "bazipass-o-programa-de-privilegios-da-bazico",
-          "content_position": "center_center",
+          "content_position": "bottom_center",
           "btn_text": "seja um membro VIP!",
           "btn_background": "#232323",
           "btn_text_color": "#ffffff",
