@@ -276,6 +276,20 @@
       "list": "description_last",
       "btn_text": "Assinar",
       "input_placeholder": "seumelhoremail@email.com"
+    },
+    {
+      "type": "banner-slider",
+      "autoplay": 9000,
+      "full_width": true,
+      "slides": [
+        {
+          "start": "2023-11-17T17:21:58.269Z",
+          "end": "2031-03-31T03:00:00.000Z",
+          "img": "/img/uploads/pretinobazicopreta-powerful-desktop-.webp",
+          "mobile_img": "/img/uploads/pretinobazicopreta-powerful-mobile-.webp",
+          "link": "https://sejabazico.com.br/all-black"
+        }
+      ]
     }
   ]
 }
