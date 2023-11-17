@@ -119,17 +119,17 @@
           "description_color": "#000000",
           "animate": "fadeInTopRight",
           "img": "/img/uploads/50-off-frete.webp",
-          "content_order": "before_image",
+          "content_order": "inside_image",
           "alt": "50% OFF + Frete Grátis",
-          "content_position": "center_left",
-          "btn_text": "comprar agora",
+          "content_position": "center_center",
+          "btn_text": "aproveitar nossa Black",
           "btn_background": "#232323",
           "btn_text_color": "#ffffff",
           "mask_opacity": 0,
           "title": "Black Bázico",
           "link": "https://www.sejabazico.com.br/roupas",
           "title_color": "#232323",
-          "description": "Comecou a Black Bazico! 50% OFF a partir da segunda Bazica, BaziPass melhor do que nunca e um Mega Outlet com 23 modelos!"
+          "description": ""
         }
       ],
       "padding": "px-2",
