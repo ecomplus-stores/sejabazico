@@ -67,6 +67,12 @@
       "carrossel_md": "Sim"
     },
     {
+      "type": "responsive-banner",
+      "link": "https://sejabazico.com.br/all-black",
+      "img": "/img/uploads/pretinobazicopreta-powerful-desktop-.webp",
+      "mobile_img": "/img/uploads/pretinobazicopreta-powerful-mobile-.webp"
+    },
+    {
       "type": "apx_banners-grid",
       "banners": [
         {
@@ -270,12 +276,6 @@
       "list": "description_last",
       "btn_text": "Assinar",
       "input_placeholder": "seumelhoremail@email.com"
-    },
-    {
-      "type": "responsive-banner",
-      "link": "https://sejabazico.com.br/all-black",
-      "img": "/img/uploads/pretinobazicopreta-powerful-desktop-.webp",
-      "mobile_img": "/img/uploads/pretinobazicopreta-powerful-mobile-.webp"
     }
   ]
 }
