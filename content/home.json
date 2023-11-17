@@ -93,7 +93,7 @@
         },
         {
           "description_color": "#232323",
-          "animate": "backInUp",
+          "animate": "fadeInTopRight",
           "img": "/img/uploads/grid-banner-650x650-quem-somos-nos.webp",
           "content_order": "after_image",
           "alt": "time-da-bazico",
