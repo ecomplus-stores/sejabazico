@@ -85,7 +85,7 @@
       "banners": [
         {
           "description_color": "#232323",
-          "animate": "backInLeft",
+          "animate": "backInDown",
           "img": "/img/uploads/bazipass-black.webp",
           "content_order": "inside_image",
           "alt": "bazipass-o-programa-de-privilegios-da-bazico",
