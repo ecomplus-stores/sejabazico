@@ -133,7 +133,7 @@
         }
       ],
       "padding": "px-3",
-      "container": "container"
+      "container": "container-fluid"
     },
     {
       "carrossel_sm": "Sim",
