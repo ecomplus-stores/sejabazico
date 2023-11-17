@@ -121,7 +121,7 @@
           "img": "/img/uploads/50-off-frete.webp",
           "content_order": "inside_image",
           "alt": "50% OFF + Frete Grátis",
-          "content_position": "center_center",
+          "content_position": "bottom_center",
           "btn_text": "aproveitar nossa Black",
           "btn_background": "#232323",
           "btn_text_color": "#ffffff",
