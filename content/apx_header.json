@@ -41,19 +41,13 @@
         },
         {
           "item": {
-            "title": "Bázica Feminina",
-            "url": "/bazica-feminina"
-          }
-        },
-        {
-          "item": {
             "title": "Bázica Oversized",
             "url": "/bazica-oversized"
           }
         },
         {
           "item": {
-            "title": "Vicentti",
+            "title": "Bázica Vicentti",
             "url": "/bazica-vicentti"
           }
         },
@@ -61,6 +55,12 @@
           "item": {
             "title": "Cuecas",
             "url": "/cuecas"
+          }
+        },
+        {
+          "item": {
+            "title": "Bázicas Femininas",
+            "url": "/bazica-feminina"
           }
         }
       ]
