@@ -25,6 +25,10 @@ export default {
     productionDeadline: {
       type: Number,
       default: 0
+    },
+    serviceCode: {
+      type: String,
+      required: false
     }
   },
 
@@ -42,6 +46,14 @@ export default {
         days += shipping.delivery_time.days
       }
       days += this.productionDeadline
+      const date = new Date()
+      const today = date.getDay()
+      const hour = date.getHours()
+      console.log(today)
+      console.log(this.serviceCode)
+      if (((today === 6 && hour > 13) || (today === 0)) && this.serviceCode && this.serviceCode.includes('PROPRIA-')) {
+        return 'Na segunda'
+      }
       if (days > 1) {
         return `${i18n(i19upTo)} ${days} ` +
           i18n(isWorkingDays ? i19workingDays : i19days).toLowerCase()
