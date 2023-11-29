@@ -56,7 +56,8 @@ export default {
     return {
       localZipCode: this.zipCode,
       canApplyDiscount: false,
-      isCouponApplied: false
+      isCouponApplied: false,
+      isBazipass: false
     }
   },
 
@@ -121,6 +122,14 @@ export default {
       },
       immediate: true
     }
+  },
+
+  created () {
+    const checkBazipass = () => {
+      this.isBazipass = Boolean(window.checkedBazipassDoc)
+    }
+    window.addEventListener('bazipassCheck', checkBazipass)
+    checkBazipass()
   },
 
   mounted () {

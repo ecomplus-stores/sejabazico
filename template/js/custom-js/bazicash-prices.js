@@ -1,4 +1,6 @@
 import ecomCart from '@ecomplus/shopping-cart'
+import ecomPassport from '@ecomplus/passport-client'
+import { debounce } from 'perfect-debounce'
 
 export default (isCheckout = false) => {
   window.isBazicashPage = /^\/pages\/.*bazicash.*/.test(window.location.pathname)
@@ -12,7 +14,7 @@ export default (isCheckout = false) => {
         .catch(console.error)
     }
     if (typeof window.requestIdleCallback === 'function') {
-      setTimeout(fetch, window.requestIdleCallback(fetch), 300)
+      setTimeout(() => window.requestIdleCallback(fetch), 300)
     } else {
       setTimeout(fetch, 600)
     }
@@ -22,5 +24,25 @@ export default (isCheckout = false) => {
       if (!item.flags) item.flags = []
       item.flags.push('bazicash')
     })
+  }
+  const checkBazipass = debounce(() => {
+    const customerDoc = ecomPassport.getCustomer().doc_number
+    if (customerDoc && customerDoc !== window.checkedBazipassDoc) {
+      window.axios.get(
+        'https://us-central1-app-bazicash.cloudfunctions.net/app/check-bazipass' +
+        `?doc=${customerDoc}`
+      )
+        .then(({ data }) => {
+          if (data.hasBazipass) {
+            window.checkedBazipassDoc = customerDoc
+            window.dispatchEvent(new Event('bazipassCheck'))
+          }
+        })
+        .catch(console.error)
+    }
+  }, 400)
+  ecomPassport.on('change', checkBazipass)
+  if (ecomPassport.checkLogin()) {
+    checkBazipass()
   }
 }

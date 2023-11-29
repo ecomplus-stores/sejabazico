@@ -126,7 +126,8 @@
                 class="bcash_icon"
             ></i>
             Você ganhará&nbsp;
-            <b>{{(amount.total - amount.freight).toFixed(0)}}</b>&nbsp;Bazicash!
+            <b>{{ ((isBazipass ? 2 : 1) * (amount.total - amount.freight)).toFixed(0) }}</b>
+            &nbsp;Bazicash!
           <br>
         </div>
       </div>

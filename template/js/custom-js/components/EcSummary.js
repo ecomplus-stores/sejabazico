@@ -52,6 +52,12 @@ export default {
     }
   },
 
+  data () {
+    return {
+      isBazipass: false
+    }
+  },
+
   computed: {
     i19balanceOrPoints: () => i18n(i19balanceOrPoints),
     i19buyer: () => i18n(i19buyer),
@@ -88,5 +94,14 @@ export default {
     getPrice,
     formatMoney,
     getImg: item => getImg(item, null, 'small')
+  },
+
+  created () {
+    const checkBazipass = () => {
+      this.isBazipass = this.buyer.doc_number &&
+        window.checkedBazipassDoc === this.buyer.doc_number
+    }
+    window.addEventListener('bazipassCheck', checkBazipass)
+    checkBazipass()
   }
 }

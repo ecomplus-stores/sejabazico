@@ -92,7 +92,8 @@
               >
                 <i style="background-image:url(/img/uploads/bcash.png)"class="bcash_icon"></i>
                 Você ganhará&nbsp;
-                <b>{{(amount.total - amount.freight).toFixed(0)}}</b>&nbsp;Bazicash!
+                <b>{{ ((isBazipass ? 2 : 1) * (amount.total - amount.freight)).toFixed(0) }}</b>
+                &nbsp;Bazicash!
                 <br>
                 <div style="width:100%"><a style="font-size:12px;" target="_blank" href="/pages/o-que-e-bazicash"><u>O que é isso?</u></a></div>
               </div>
