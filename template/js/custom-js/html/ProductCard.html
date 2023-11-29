@@ -40,10 +40,9 @@
 
         <slot name="body">
           <div class="apx_fastBuyContainer">
-            <component
-              :is="isBazicashPage ? 'span' : 'a-link'"
+            <a-link
               class="product-card__link"
-              :href="`/${body.slug}`"
+              :href="`/${body.slug}${(isBazicashPage ? '?bazicash' : '')}`"
               :title="name"
             >
               <slot name="header"/>
@@ -64,15 +63,14 @@
                   class="product-card__picture"
                 />
               </div>
-            </component>
+            </a-link>
             <div v-if="!isSmall" class="apx_fastBuy" 
             :grid="JSON.stringify(body.variations)">
             </div>
           </div>
-          <component
-            :is="isBazicashPage ? 'span' : 'a-link'"
+          <a-link
             class="product-card__link"
-            :href="`/${body.slug}`"
+            :href="`/${body.slug}${(isBazicashPage ? '?bazicash' : '')}`"
             :title="name"
           >
             <slot name="title">
@@ -83,7 +81,7 @@
                 {{ name }}
               </component>
             </slot>
-          </component>
+          </a-link>
         </slot>
 
         <slot name="rating">

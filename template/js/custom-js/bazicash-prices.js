@@ -3,7 +3,8 @@ import ecomPassport from '@ecomplus/passport-client'
 import { debounce } from 'perfect-debounce'
 
 export default (isCheckout = false) => {
-  window.isBazicashPage = /^\/pages\/.*bazicash.*/.test(window.location.pathname)
+  window.isBazicashPage = /^\/pages\/.*bazicash.*/.test(window.location.pathname) ||
+    window.location.search.includes('?bazicash')
   if (isCheckout || window.isBazicashPage) {
     const fetch = () => {
       window.axios.get('https://us-central1-app-bazicash.cloudfunctions.net/app/product-points')
@@ -19,7 +20,7 @@ export default (isCheckout = false) => {
       setTimeout(fetch, 600)
     }
   }
-  if (window.isBazicashPage) {
+  if (window.isBazicashPage && !isCheckout) {
     ecomCart.on('addItem', ({ item }) => {
       if (!item.flags) item.flags = []
       item.flags.push('bazicash')

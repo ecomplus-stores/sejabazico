@@ -142,7 +142,9 @@ export default {
         variationsGrids: window.ecomUtils.variationsGrids(this.body, {}, true)
       }
       setTimeout(() => {
-        window.populateOptions(this.body._id, this.$el.children[0])
+        if (this.$el.children) {
+          window.populateOptions(this.body._id, this.$el.children[0])
+        }
       }, 200)
     },
 

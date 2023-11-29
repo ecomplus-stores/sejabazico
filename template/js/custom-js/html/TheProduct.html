@@ -129,7 +129,15 @@
           </slot>
 
           <template v-else>
-            <slot name="prices">
+            <p
+              v-if="bazicashPrice"
+              class="product__prices product__prices--bazicash prices prices--big"
+            >
+              <strong class="prices__value">
+                {{ bazicashPrice }}<img src="/img/uploads/bcash.png" width="42" height="42" />
+              </strong>
+            </p>
+            <slot v-else name="prices">
               <p class="product__prices">
                 <a-prices
                   :product="{ ...body, ...selectedVariation, ...finalPrices }"
@@ -138,7 +146,6 @@
                   @fix-price="price => fixedPrice = price"
                   :canShowBazipass="isBaziPassClub ? false : true"
                 />
-
                 <slot
                   name="discount-tag"
                   v-bind="{ discount }"
@@ -152,9 +159,8 @@
                   </span>
                 </slot>
               </p>
-            </slot> 
+            </slot>
 
-            
             <slot
               name="variations"
               v-if="hasVariations"
