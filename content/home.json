@@ -25,6 +25,16 @@
           "mobile_img": "/img/uploads/bazipass-mobile-.webp",
           "content_position": "center_left",
           "content_order": "inside_image"
+        },
+        {
+          "mask_opacity": 0,
+          "start": "2023-12-01T12:55:38.802Z",
+          "end": "2024-05-04T12:55:38.829Z",
+          "link": "https://www.sejabazico.com.br/roupas",
+          "img": "/img/uploads/preta-powerful-desktop-.webp",
+          "mobile_img": "/img/uploads/preta-powerful-mobile-.webp",
+          "content_position": "center_left",
+          "content_order": "inside_image"
         }
       ]
     },
