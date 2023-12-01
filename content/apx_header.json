@@ -1,14 +1,6 @@
 {
   "stripe_slider": [
     {
-      "text": "Restam 48hrs para ganhar 50% OFF na segunda peça.",
-      "url": "/"
-    },
-    {
-      "text": "Você nunca imaginou que R$50 fosse render tanto, descubra como.",
-      "url": "https://bazipass.sejabazico.com.br/black?utm_medium=site&utm_term=slider"
-    },
-    {
       "text": "Só falta o seu pedido! Aproveite o frete grátis para todo o Brasil até amanhã, 30/11.",
       "url": "/"
     }
@@ -79,7 +71,7 @@
     },
     {
       "title": "Mega Outlet",
-      "url": "/mega-outlet"
+      "url": "/ultimas-unidades"
     }
   ]
 }
