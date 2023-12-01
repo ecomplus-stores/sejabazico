@@ -8,41 +8,21 @@
       "slides": [
         {
           "mask_opacity": 0,
-          "start": "2023-11-16T11:54:10.274Z",
-          "end": "2024-04-06T11:54:10.286Z",
-          "img": "/img/uploads/black-urgencia-desktop-.webp",
-          "link": "https://www.sejabazico.com.br/roupas",
-          "mobile_img": "/img/uploads/black-urgencia-mobile-.png",
-          "content_position": "center_left",
-          "content_order": "inside_image"
-        },
-        {
-          "mask_opacity": 0,
-          "start": "2023-11-16T11:56:46.912Z",
-          "end": "2024-04-06T11:56:46.942Z",
-          "img": "/img/uploads/2-bazipass-_desktop_.webp",
-          "link": "https://bazipass.sejabazico.com.br/?utm_medium=site&utm_term=cabecalho",
-          "mobile_img": "/img/uploads/2-bazipass-_mobile_.webp",
-          "content_position": "center_left",
-          "content_order": "inside_image"
-        },
-        {
-          "mask_opacity": 0,
-          "start": "2023-11-16T11:57:55.996Z",
-          "end": "2024-03-15T11:57:56.015Z",
-          "img": "/img/uploads/mega-outlet-frete-desktop-.webp",
-          "link": "https://www.sejabazico.com.br/ultimas-unidades",
-          "mobile_img": "/img/uploads/mega-outlet-frete-mobile-.webp",
-          "content_position": "center_left",
-          "content_order": "inside_image"
-        },
-        {
-          "mask_opacity": 0,
           "start": "2023-12-01T12:51:19.753Z",
           "end": "2024-12-07T12:51:19.782Z",
           "img": "/img/uploads/frete-desktop-.webp",
           "mobile_img": "/img/uploads/frete-mobile-.webp",
           "link": "https://www.sejabazico.com.br/roupas",
+          "content_position": "center_left",
+          "content_order": "inside_image"
+        },
+        {
+          "mask_opacity": 0,
+          "start": "2023-12-01T12:53:45.426Z",
+          "end": "2024-06-28T12:53:45.443Z",
+          "img": "/img/uploads/banners-site-novobazipass-desktop-.webp",
+          "link": "https://bazipass.sejabazico.com.br/black?utm_medium=site&utm_term=cabecalho",
+          "mobile_img": "/img/uploads/bazipass-mobile-.webp",
           "content_position": "center_left",
           "content_order": "inside_image"
         }
