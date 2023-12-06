@@ -388,6 +388,22 @@
           }
         }
       ]
+    },
+    {
+      "type": "apx_blockPerCategory",
+      "slug": "Short Bázico",
+      "title": "Descrição short",
+      "list": [
+        {
+          "content": {
+            "title": "Elegância Casual",
+            "subtitle": "Um verdadeiro equilíbrio entre o clássico da alfaiataria e a modernidade do estilo casual.",
+            "image_position": "first",
+            "text_align": "right",
+            "body": "**O Corte Clássico da Alfaiataria**\n\nO Short Bázico ostenta o corte de alfaiataria clássico, com bolsos retos e um bolso traseiro invisível, adicionando um toque de sofisticação à sua vestimenta casual.\n\n**Atenção aos Detalhes**\n\nMas o que torna o nosso Short Bázico verdadeiramente especial está nos detalhes. Apresentamos o cordão, com extremidades em metal, que não apenas é funcional, mas também adiciona um toque de elegância e estilo ao seu look."
+          }
+        }
+      ]
     }
   ]
 }
