@@ -7,6 +7,16 @@
       "autoplay": 3000,
       "slides": [
         {
+          "mask_opacity": 5,
+          "start": "2023-12-06T19:29:46.594Z",
+          "end": "2024-05-03T19:29:46.635Z",
+          "link": "https://www.sejabazico.com.br/bazica-oversized",
+          "content_position": "center_left",
+          "content_order": "inside_image",
+          "img": "/img/uploads/desktop.webp",
+          "mobile_img": "/img/uploads/mobile.webp"
+        },
+        {
           "mask_opacity": 0,
           "start": "2023-12-01T12:55:38.802Z",
           "end": "2024-05-04T12:55:38.829Z",
