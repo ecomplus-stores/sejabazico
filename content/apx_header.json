@@ -49,18 +49,6 @@
         },
         {
           "item": {
-            "title": "Cuecas",
-            "url": "/cuecas"
-          }
-        },
-        {
-          "item": {
-            "title": "Bázicas Femininas",
-            "url": "/bazica-feminina"
-          }
-        },
-        {
-          "item": {
             "title": " Bázica Polo",
             "url": "/bazica-polo"
           }
@@ -69,6 +57,18 @@
           "item": {
             "title": "Short Bázico",
             "url": "/short"
+          }
+        },
+        {
+          "item": {
+            "title": "Cuecas",
+            "url": "/cuecas"
+          }
+        },
+        {
+          "item": {
+            "title": "Bázicas Femininas",
+            "url": "/bazica-feminina"
           }
         }
       ]
