@@ -10,10 +10,11 @@
           "mask_opacity": 0,
           "start": "2023-12-13T14:37:58.949Z",
           "end": "2024-04-12T14:37:58.974Z",
-          "img": "/img/uploads/polo-e-short-desktop.webp",
+          "img": "/img/uploads/polo-e-short-desktop-.webp",
           "link": "https://www.sejabazico.com.br/novidades",
           "content_position": "center_left",
-          "content_order": "inside_image"
+          "content_order": "inside_image",
+          "mobile_img": "/img/uploads/polo-e-short-mobile-.webp"
         },
         {
           "mask_opacity": 5,
@@ -24,16 +25,6 @@
           "content_order": "inside_image",
           "img": "/img/uploads/desktop.webp",
           "mobile_img": "/img/uploads/mobile.webp"
-        },
-        {
-          "mask_opacity": 0,
-          "start": "2023-12-01T12:55:38.802Z",
-          "end": "2024-05-04T12:55:38.829Z",
-          "link": "https://www.sejabazico.com.br/roupas",
-          "img": "/img/uploads/preta-powerful-desktop-.webp",
-          "mobile_img": "/img/uploads/preta-powerful-mobile-.webp",
-          "content_position": "center_left",
-          "content_order": "inside_image"
         },
         {
           "mask_opacity": 0,
