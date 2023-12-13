@@ -422,6 +422,11 @@
           }
         }
       ]
+    },
+    {
+      "type": "apx_blockPerCategory",
+      "title": "Polo",
+      "slug": " Bázica Polo"
     }
   ]
 }
