@@ -41,6 +41,18 @@
         },
         {
           "item": {
+            "title": "Bázica Polo",
+            "url": "/bazica-polo"
+          }
+        },
+        {
+          "item": {
+            "title": "Short Bázico",
+            "url": "/short"
+          }
+        },
+        {
+          "item": {
             "title": "Cuecas",
             "url": "/cuecas"
           }
@@ -102,12 +114,6 @@
           "item": {
             "title": "Quem somos nós",
             "url": "/pages/quem-somos-nos"
-          }
-        },
-        {
-          "item": {
-            "title": "Livro de Regras da Black Bázico",
-            "url": "https://www.sejabazico.com.br/pages/regras-black-bazico"
           }
         }
       ]
