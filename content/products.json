@@ -426,7 +426,18 @@
     {
       "type": "apx_blockPerCategory",
       "title": "Polo",
-      "slug": " Bázica Polo"
+      "slug": " Bázica Polo",
+      "list": [
+        {
+          "content": {
+            "title": "Conforto e Durabilidade em uma Só Peça",
+            "subtitle": "Composição: Algodão Pima 97% e Elastano 3%",
+            "image_position": "first",
+            "text_align": "left",
+            "body": "A mistura de 97% Algodão Pima e 3% Elastano proporciona conforto excepcional e resistência duradoura. O Algodão Pima oferece uma sensação agradável para uso prolongado, enquanto o Elastano mantém a forma da polo ao longo do tempo."
+          }
+        }
+      ]
     }
   ]
 }
