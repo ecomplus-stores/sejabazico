@@ -46,6 +46,21 @@
         ],
         "image": "/img/uploads/untitled-1.jpg"
       }
+    },
+    {
+      "item": {
+        "title": "97% de viscose e 7% de elastano",
+        "text_color": "#232323",
+        "border_color": "#232323",
+        "categories": [
+          {
+            "category": {
+              "title": "bazica-vicentti"
+            }
+          }
+        ],
+        "bg_color": "#ffffff"
+      }
     }
   ]
 }
