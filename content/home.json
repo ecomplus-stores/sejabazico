@@ -153,6 +153,16 @@
           "link": "pages/quem-somos-nos",
           "title_color": "#232323",
           "description": ""
+        },
+        {
+          "mask_opacity": 5,
+          "img": "/img/uploads/short-e-polo.webp",
+          "link": "/novidades",
+          "btn_text": "confira nossas novidades",
+          "btn_text_color": "#ffffff",
+          "btn_background": "#232323",
+          "content_position": "bottom_right",
+          "content_order": "after_image"
         }
       ],
       "padding": "px-2",
