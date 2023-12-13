@@ -50,7 +50,7 @@
     },
     {
       "carrossel_sm": "Sim",
-      "container": "container",
+      "container": "container-fluid",
       "products": [
         "636eacbc73321213f8d6f7f3",
         "636ead2673321213f8d6f960",
