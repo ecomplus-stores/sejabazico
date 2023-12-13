@@ -7,6 +7,15 @@
       "autoplay": 3000,
       "slides": [
         {
+          "mask_opacity": 0,
+          "start": "2023-12-13T14:37:58.949Z",
+          "end": "2024-04-12T14:37:58.974Z",
+          "img": "/img/uploads/polo-e-short-desktop.webp",
+          "link": "https://www.sejabazico.com.br/novidades",
+          "content_position": "center_left",
+          "content_order": "inside_image"
+        },
+        {
           "mask_opacity": 5,
           "start": "2023-12-06T19:29:46.594Z",
           "end": "2024-05-03T19:29:46.635Z",
