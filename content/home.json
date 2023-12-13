@@ -50,6 +50,24 @@
     },
     {
       "carrossel_sm": "Sim",
+      "container": "container",
+      "products": [
+        "636eacbc73321213f8d6f7f3"
+      ],
+      "carrossel_dots_md": "Sim",
+      "carrossel_arrows_md": "Não",
+      "carrossel_dots_sm": "Sim",
+      "carrossel_arrows_sm": "Não",
+      "padding_sm": "px-1",
+      "num_col_md": "5",
+      "padding": "px-md-0",
+      "num_col_sm": "2",
+      "type": "apx_productList_A",
+      "list": "description_first",
+      "carrossel_md": "Sim"
+    },
+    {
+      "carrossel_sm": "Sim",
       "container": "container-fluid",
       "products": [
         "636eac9a73321213f8d6f75a",
