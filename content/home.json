@@ -55,16 +55,6 @@
           "content_order": "inside_image",
           "img": "/img/uploads/over-desktop-.webp",
           "mobile_img": "/img/uploads/mobile.webp"
-        },
-        {
-          "mask_opacity": 0,
-          "start": "2023-12-01T12:51:19.753Z",
-          "end": "2024-12-07T12:51:19.782Z",
-          "img": "/img/uploads/frete-desktop-.webp",
-          "mobile_img": "/img/uploads/frete-mobile-.webp",
-          "link": "https://www.sejabazico.com.br/roupas",
-          "content_position": "center_left",
-          "content_order": "inside_image"
         }
       ]
     },
