@@ -55,6 +55,16 @@
           "link": "https://www.sejabazico.com.br/roupas",
           "content_position": "center_left",
           "content_order": "inside_image"
+        },
+        {
+          "mask_opacity": 0,
+          "start": "2023-12-14T11:32:57.779Z",
+          "end": "2024-02-27T11:32:57.814Z",
+          "img": "/img/uploads/principal-desktop-web.webp",
+          "link": "https://www.sejabazico.com.br/roupas",
+          "mobile_img": "/img/uploads/principal-mobile-web.webp",
+          "content_position": "center_left",
+          "content_order": "inside_image"
         }
       ]
     },
