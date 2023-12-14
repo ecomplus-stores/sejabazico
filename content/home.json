@@ -69,6 +69,25 @@
       ]
     },
     {
+      "type": "banner-slider",
+      "autoplay": 9000,
+      "full_width": true,
+      "slides": [
+        {
+          "start": "2023-11-17T17:21:58.269Z",
+          "end": "2031-03-31T03:00:00.000Z",
+          "img": "/img/uploads/pretinobazicopreta-powerful-desktop-.webp",
+          "mobile_img": "/img/uploads/pretinobazicopreta-powerful-mobile-.webp",
+          "link": "https://sejabazico.com.br/all-black"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/banner-tarja-natal-web.webp"
+        }
+      ]
+    },
+    {
       "carrossel_sm": "Sim",
       "container": "container-fluid",
       "products": [
@@ -124,20 +143,6 @@
       "btn_link": "/bazicas",
       "list": "description_last",
       "carrossel_md": "Sim"
-    },
-    {
-      "type": "banner-slider",
-      "autoplay": 9000,
-      "full_width": true,
-      "slides": [
-        {
-          "start": "2023-11-17T17:21:58.269Z",
-          "end": "2031-03-31T03:00:00.000Z",
-          "img": "/img/uploads/pretinobazicopreta-powerful-desktop-.webp",
-          "mobile_img": "/img/uploads/pretinobazicopreta-powerful-mobile-.webp",
-          "link": "https://sejabazico.com.br/all-black"
-        }
-      ]
     },
     {
       "type": "apx_banners-grid",
