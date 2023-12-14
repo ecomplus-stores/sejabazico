@@ -17,6 +17,16 @@
           "mobile_img": "/img/uploads/ps-mobile.webp"
         },
         {
+          "mask_opacity": 0,
+          "start": "2023-12-14T11:28:54.012Z",
+          "end": "2024-04-05T11:28:54.038Z",
+          "img": "/img/uploads/bazipass-desktop-web.webp",
+          "mobile_img": "/img/uploads/bazipass-mobile-web.webp",
+          "link": "https://bazipass.sejabazico.com.br/?utm_medium=site&utm_term=cabecalho",
+          "content_position": "center_left",
+          "content_order": "inside_image"
+        },
+        {
           "mask_opacity": 5,
           "start": "2023-12-06T19:29:46.594Z",
           "end": "2024-05-03T19:29:46.635Z",
@@ -38,11 +48,11 @@
         },
         {
           "mask_opacity": 0,
-          "start": "2023-12-14T11:28:54.012Z",
-          "end": "2024-04-05T11:28:54.038Z",
-          "img": "/img/uploads/bazipass-desktop-web.webp",
-          "mobile_img": "/img/uploads/bazipass-mobile-web.webp",
-          "link": "https://bazipass.sejabazico.com.br/?utm_medium=site&utm_term=cabecalho",
+          "start": "2023-12-14T11:30:48.381Z",
+          "end": "2024-04-25T11:30:48.402Z",
+          "img": "/img/uploads/presente-desktop-web.webp",
+          "link": "https://www.sejabazico.com.br/roupas",
+          "mobile_img": "/img/uploads/presente-mobile-web.webp",
           "content_position": "center_left",
           "content_order": "inside_image"
         }
