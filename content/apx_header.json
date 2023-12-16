@@ -106,6 +106,12 @@
             "title": "Presentes Femininos",
             "url": "presentes-para-mulheres"
           }
+        },
+        {
+          "item": {
+            "title": "Para caras clássicos",
+            "url": "/classico"
+          }
         }
       ]
     }
