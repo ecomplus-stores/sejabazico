@@ -86,13 +86,19 @@
       "url": "https://bazipass.sejabazico.com.br/?utm_medium=site&utm_term=cabecalho"
     },
     {
-      "title": "Presentes",
+      "title": "Guia de Presentes",
       "url": "/presentes",
       "list": [
         {
           "item": {
             "title": "Presentes Masculinos",
             "url": "/presentes-para-homens"
+          }
+        },
+        {
+          "item": {
+            "title": "   Para caras modernos",
+            "url": "/moderno"
           }
         },
         {
