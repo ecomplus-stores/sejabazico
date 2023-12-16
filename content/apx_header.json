@@ -97,6 +97,12 @@
         },
         {
           "item": {
+            "title": "Presentes Femininos",
+            "url": "presentes-para-mulheres"
+          }
+        },
+        {
+          "item": {
             "title": "   Para caras modernos",
             "url": "/moderno"
           }
@@ -105,12 +111,6 @@
           "item": {
             "title": "Para caras clássicos",
             "url": "/classico"
-          }
-        },
-        {
-          "item": {
-            "title": "Presentes Femininos",
-            "url": "presentes-para-mulheres"
           }
         }
       ]
