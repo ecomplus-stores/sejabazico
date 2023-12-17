@@ -1963,6 +1963,6 @@ body #storefront-app>div>h1{
   display: none !important;
 }
 
-.bz-menu .level_1 li:last-child {
-    color: red
+#bz-menu .level_1 li:last-child a {
+    color: red !important
 }
