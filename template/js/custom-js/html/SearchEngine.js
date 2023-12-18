@@ -291,36 +291,39 @@ import {
       updateFilters () {
         const updatedFilters = []
         const addFilter = (filter, options, isSpec) => {
-          let filterIndex = this.filters.findIndex(filterObj => filterObj.filter === filter)
-          if (filter !== this.lastSelectedFilter) {
-            if (filterIndex === -1) {
-              filterIndex = this.filters.length
-            }
-            if (this[`isFixed${filter}`]) {
-              const presetedOptions = this[filter.toLowerCase()]
-              if (presetedOptions) {
-                options = options.filter(({ key }) => presetedOptions.indexOf(key) === -1)
+          if (filter !== 'gender' && filter !== 'age_group') {
+            let filterIndex = this.filters.findIndex(filterObj => filterObj.filter === filter)
+            if (filter !== this.lastSelectedFilter) {
+              if (filterIndex === -1) {
+                filterIndex = this.filters.length
               }
+              if (this[`isFixed${filter}`]) {
+                const presetedOptions = this[filter.toLowerCase()]
+                if (presetedOptions) {
+                  options = options.filter(({ key }) => presetedOptions.indexOf(key) === -1)
+                }
+              }
+              if (filter === 'size') {
+                const sizeSpec = ["PP", "P", "M", "G", "GG", "XGG", "XXGG"]
+                options = options.sort((a, b) => {
+                  return sizeSpec.indexOf(a.key) - sizeSpec.indexOf(b.key)
+                })
+              }
+              console.log(filter)
+              this.filters[filterIndex] = {
+                filter,
+                options,
+                isSpec
+              }
+              
+              const optionsList = !this.selectedOptions[filter]
+                ? []
+                : this.selectedOptions[filter]
+                  .filter(option => options.find(({ key }) => key === option))
+              this.$set(this.selectedOptions, filter, optionsList)
             }
-            if (filter === 'size') {
-              const sizeSpec = ["PP", "P", "M", "G", "GG", "XGG", "XXGG"]
-              options = options.sort((a, b) => {
-                return sizeSpec.indexOf(a.key) - sizeSpec.indexOf(b.key)
-              })
-            }
-            this.filters[filterIndex] = {
-              filter,
-              options,
-              isSpec
-            }
-            
-            const optionsList = !this.selectedOptions[filter]
-              ? []
-              : this.selectedOptions[filter]
-                .filter(option => options.find(({ key }) => key === option))
-            this.$set(this.selectedOptions, filter, optionsList)
+            updatedFilters.push(filterIndex)
           }
-          updatedFilters.push(filterIndex)
         }
         addFilter('Brands', this.ecomSearch.getBrands())
         const sortCategories = ["Top 10", "Bázica Gola V", "Bázica Long", "Bázica Gola C", "Bázicas"]
