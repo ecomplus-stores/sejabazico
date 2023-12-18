@@ -1,2 +1,13 @@
 @import '#template/scss/main';
 @import 'custom-css/styles';
+
+.shipping-calculator__services .list-group-item.list-group-item-action.active {
+  border: 2px solid $color-bazica;
+}
+
+.product-card__offer-stamp {
+  background-color: $color-bazica;
+}
+.product__discount, .cart__summary-row.mt-1 {
+  color: $color-bazica !important;
+}
