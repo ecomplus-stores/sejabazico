@@ -1964,5 +1964,9 @@ body #storefront-app>div>h1{
 }
 
 #bz-menu .level_1 li:last-child a {
-    color: red !important
+    color: #b20d0d !important
+}
+
+.shipping-calculator__services .list-group-item.list-group-item-action.active {
+    border: 1px solid #25d366;
 }

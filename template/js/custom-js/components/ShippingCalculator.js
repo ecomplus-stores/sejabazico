@@ -117,6 +117,10 @@ export default {
         : { blocks: [30] }
     },
 
+    isAracaju () {
+      return this.localZipCode >= 49000000 && this.localZipCode <= 49099999
+    },
+
     freeFromPercentage () {
       return this.hasPaidOption && this.amountSubtotal < this.freeFromValue
         ? Math.round(this.amountSubtotal * 100 / this.freeFromValue)
@@ -220,12 +224,17 @@ export default {
                   ? -1
                   : 1
           })
-          this.setSelectedService(0)
           this.hasPaidOption = Boolean(this.shippingServices.find(service => {
             return service.shipping_line.total_price || service.shipping_line.price
           }))
           if (Array.isArray(this.shippingAppsSort) && this.shippingAppsSort.length) {
             this.shippingServices = sortApps(this.shippingServices, this.shippingAppsSort)
+          }
+          if (this.isAracaju) {
+            const indexMotoboy = this.shippingServices.findIndex(service => service.service_code === 'PROPRIA-1')
+            this.setSelectedService(indexMotoboy)
+          } else {
+            this.setSelectedService(0)
           }
         }
       }
