@@ -5,9 +5,18 @@
   border: 2px solid $color-bazica;
 }
 
-.product-card__offer-stamp {
-  background-color: $color-bazica;
+.product-card__offer-stamp, .cart__btn-checkout, .checkout__btn-proceed, .payment__method button.btn-success {
+  background-color: $color-bazica !important;
+  border-color: $color-bazica !important;
+  &:hover {
+    background-color: $color-bazica-hover !important;
+    border-color: $color-bazica-hover !important;
+  }
 }
 .product__discount, .cart__summary-row.mt-1 {
   color: $color-bazica !important;
+}
+
+.checkout__shipping-method {
+  border-left-color: $color-bazica !important;
 }
