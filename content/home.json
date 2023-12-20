@@ -345,7 +345,8 @@
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/all-white-web.webp"
+          "img": "/img/uploads/all-white-web.webp",
+          "mobile_img": "/img/uploads/all-white-_mobile_webp.webp"
         }
       ]
     }
