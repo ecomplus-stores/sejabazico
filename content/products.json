@@ -477,7 +477,9 @@
             "image_position": "first"
           }
         }
-      ]
+      ],
+      "title": "Gift Card - Descrição",
+      "slug": "GiftCard"
     }
   ]
 }
