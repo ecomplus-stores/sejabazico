@@ -336,19 +336,6 @@
       "list": "description_last",
       "btn_text": "Assinar",
       "input_placeholder": "seumelhoremail@email.com"
-    },
-    {
-      "type": "banner-slider",
-      "autoplay": 9000,
-      "full_width": false,
-      "slides": [
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/all-white-web.webp",
-          "mobile_img": "/img/uploads/all-white-_mobile_webp.webp"
-        }
-      ]
     }
   ]
 }
