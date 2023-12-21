@@ -181,8 +181,8 @@
         },
         {
           "mask_opacity": 5,
-          "img": "/img/uploads/short-e-polo.webp",
-          "link": "/novidades",
+          "img": "/img/uploads/reveillon.webp",
+          "link": "/reveillon",
           "btn_text": "confira nossas novidades",
           "btn_text_color": "#ffffff",
           "btn_background": "#232323",
