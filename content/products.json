@@ -480,11 +480,6 @@
       ],
       "title": "Gift Card - Descrição",
       "slug": "GiftCard"
-    },
-    {
-      "type": "dynamic-showcase",
-      "load_more": true,
-      "sort": "sales"
     }
   ]
 }
