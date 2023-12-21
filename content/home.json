@@ -117,19 +117,6 @@
       ]
     },
     {
-      "type": "banner-slider",
-      "autoplay": 9000,
-      "full_width": false,
-      "slides": [
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/all-white-desktop-web.webp",
-          "mobile_img": "/img/uploads/all-white-mobile-web.webp"
-        }
-      ]
-    },
-    {
       "carrossel_sm": "Sim",
       "container": "container-fluid",
       "products": [
