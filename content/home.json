@@ -112,7 +112,8 @@
           "img": "/img/uploads/all-white-desktop-web.webp",
           "mobile_img": "/img/uploads/all-white-mobile-web.webp",
           "content_position": "center_left",
-          "content_order": "inside_image"
+          "content_order": "inside_image",
+          "link": "/reveillon"
         }
       ]
     },
