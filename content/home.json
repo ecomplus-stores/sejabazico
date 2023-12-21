@@ -102,6 +102,21 @@
       "carrossel_md": "Sim"
     },
     {
+      "type": "apx_banner-slider",
+      "autoplay": 9000,
+      "slides": [
+        {
+          "mask_opacity": 0,
+          "start": "2023-12-21T13:33:11.101Z",
+          "end": "2024-06-22T13:33:11.112Z",
+          "img": "/img/uploads/all-white-desktop-web.webp",
+          "mobile_img": "/img/uploads/all-white-mobile-web.webp",
+          "content_position": "center_left",
+          "content_order": "inside_image"
+        }
+      ]
+    },
+    {
       "type": "banner-slider",
       "autoplay": 9000,
       "full_width": false,
