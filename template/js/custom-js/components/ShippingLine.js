@@ -52,7 +52,7 @@ export default {
       console.log(today)
       console.log(this.serviceCode)
       if (((today === 6 && hour > 13) || (today === 0)) && this.serviceCode && this.serviceCode.includes('PROPRIA-')) {
-        return 'Na segunda'
+        return 'Antes da ceia'
       }
       if (days > 1) {
         return `${i18n(i19upTo)} ${days} ` +
