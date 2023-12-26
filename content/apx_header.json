@@ -7,6 +7,10 @@
     {
       "url": "https://bazipass.sejabazico.com.br/?utm_medium=site&utm_term=slider",
       "text": "Você nunca imaginou que R$50 fosse render tanto, <u>descubra como</u>"
+    },
+    {
+      "text": "<p><b>Compre 2 Bázicas e recebe Sedex Grátis</b></p> - Válido para Salvador, João Pessoa, Maceió, Recife, Fortaleza e Natal",
+      "url": "/"
     }
   ],
   "links": [
@@ -86,8 +90,8 @@
       "url": "https://bazipass.sejabazico.com.br/?utm_medium=site&utm_term=cabecalho"
     },
     {
-      "title": "Guia de Presentes",
-      "url": "/presentes",
+      "title": "Ano Novo",
+      "url": "/reveillon",
       "list": [
         {
           "item": {
@@ -114,7 +118,7 @@
           }
         }
       ],
-      "image": "/img/uploads/categoria-presente.jpg"
+      "image": ""
     }
   ]
 }
