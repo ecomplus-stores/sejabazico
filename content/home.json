@@ -8,16 +8,6 @@
       "slides": [
         {
           "mask_opacity": 0,
-          "start": "2023-12-14T11:30:48.381Z",
-          "end": "2024-04-25T11:30:48.402Z",
-          "img": "/img/uploads/presente-desktop-webp.webp",
-          "link": "https://www.sejabazico.com.br/roupas",
-          "mobile_img": "/img/uploads/presente-mobile-web.webp",
-          "content_position": "center_left",
-          "content_order": "inside_image"
-        },
-        {
-          "mask_opacity": 0,
           "start": "2023-12-16T00:10:15.463Z",
           "end": "2024-03-03T00:10:15.489Z",
           "img": "/img/uploads/frete-desktop-webp.webp",
@@ -34,16 +24,6 @@
           "content_position": "center_left",
           "content_order": "inside_image",
           "mobile_img": "/img/uploads/ps-mobile.webp"
-        },
-        {
-          "mask_opacity": 0,
-          "start": "2023-12-14T11:32:57.779Z",
-          "end": "2024-02-27T11:32:57.814Z",
-          "img": "/img/uploads/principal-desktop-web.webp",
-          "link": "https://www.sejabazico.com.br/roupas",
-          "mobile_img": "/img/uploads/principal-mobile-web.webp",
-          "content_position": "center_left",
-          "content_order": "inside_image"
         },
         {
           "mask_opacity": 0,
