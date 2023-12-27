@@ -138,6 +138,72 @@
                   ]
                 }        
               ]
+            },
+            {
+              "label": "Widget FAQ",
+              "name": "faq_plus",
+              "widget": "object",
+              "fields": [  
+                {
+                  "label": "Ativar widget",
+                  "name": "enabled",
+                  "widget": "boolean",
+                  "required": false
+                },
+                {
+                  "label": "Banner widget",
+                  "name": "banner_widget",
+                  "widget": "image",
+                  "required": false
+                },   
+                {
+                  "label": "Perguntas",
+                  "name": "questions",
+                  "widget": "list",
+                  "required":false,
+                  "fields": [
+                    {
+                     "label": "Pergunta",
+                     "name": "question",
+                     "widget": "object",
+                     "required":false,
+                      "fields": [
+                        {
+                          "label": "Pergunta",
+                          "name": "title",
+                          "widget": "string"          
+                        },
+                        {
+                          "label": "Imagem ou Ícone",
+                          "name": "img",
+                          "widget": "image"          
+                        },
+                        {
+                          "label": "Resposta",
+                          "name": "responses",
+                          "widget": "list",
+                          "required": false,
+                          "fields": [
+                            {
+                              "label": "Resposta",
+                              "name": "response",
+                              "widget": "object",
+                              "required":false,
+                              "fields": [
+                                {
+                                  "label": "Texto da resposta",
+                                  "name": "description",
+                                  "widget": "string"          
+                                }
+                              ]         
+                            }
+                          ]          
+                        }              
+                      ]
+                    }         
+                  ]
+                }    
+              ]
             }
           ]
         },

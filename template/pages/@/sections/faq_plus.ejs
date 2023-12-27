@@ -1,0 +1,53 @@
+<% 
+const faqs = opt.faq_plus
+    if(Array.isArray(faqs.questions) && faqs.questions.length){
+        %>
+        <style>
+            #fmais-loyalty__bottom__open__btn {
+                margin-top: 190px !important;
+            }
+        </style>
+        <section
+            class="apx_faq my-5 py-5 px-2"
+       >
+            <div class="container">
+            <div class="row list mx-0">      
+                <div class="">
+                <% for (let i = 0; i < faqs.questions.length; i++) { 
+                    const question = faqs.questions[i].question
+                    %>
+                    <div class="apx_faq-item">
+                        <div class="hat px-3 py-2 my-2 d-flex justify-content-between">
+                            <span class="a_text py-2 d-block">
+                                <% if (question.img) { %>
+                                    <img style="max-width: 100%;" src="<%- question.img %>">
+                                <% } %>
+                                <%- question.title %>
+                            </span>
+                            <button type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 7V17M7 12L17 12" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="content">
+                            <% if (question.responses && question.responses.length) { 
+                                %>
+                                <ul>
+                                    <% for (let index = 0; index < question.responses.length; index++) { 
+                                    const response = question.responses[index]
+                                    %>
+                                    <li style="list-style: none;"><%- response.description %></li>
+                                <% } %>
+                                </ul>
+                            <% } %>
+                        </div>
+                    </div>
+                <% } %>          
+                </div>  
+            </div>
+        </div>
+      </section>
+    <%
+    }
+%>      

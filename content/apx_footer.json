@@ -147,5 +147,39 @@
         }
       ]
     }
-  ]
+  ],
+  "faq_plus": {
+    "enabled": false,
+    "banner_widget": "/img/uploads/banner-bazicash-program.jpg",
+    "questions": [
+      {
+        "question": {
+          "title": "Como ganhar",
+          "img": "/img/uploads/question.svg",
+          "responses": [
+            {
+              "description": "- Primeiro..."
+            },
+            {
+              "description": "- Segundo ..."
+            }
+          ]
+        }
+      },
+      {
+        "question": {
+          "title": "Regras",
+          "img": "/img/uploads/rules.svg",
+          "responses": [
+            {
+              "description": "- Primeiro..."
+            },
+            {
+              "description": "- Segundo ..."
+            }
+          ]
+        }
+      }
+    ]
+  }
 }

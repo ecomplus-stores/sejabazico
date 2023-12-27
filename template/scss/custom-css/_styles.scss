@@ -1986,3 +1986,295 @@ body #storefront-app>div>h1{
       margin-left: -24px
     }
 }
+
+
+@-webkit-keyframes ecom_swing {
+    15% {
+      -webkit-transform:translateX(5px);
+      transform:translateX(5px)
+    }
+    30% {
+      -webkit-transform:translateX(-5px);
+      transform:translateX(-5px)
+    }
+    50% {
+      -webkit-transform:translateX(3px);
+      transform:translateX(3px)
+    }
+    65% {
+      -webkit-transform:translateX(-3px);
+      transform:translateX(-3px)
+    }
+    80% {
+      -webkit-transform:translateX(2px);
+      transform:translateX(2px)
+    }
+    100% {
+      -webkit-transform:translateX(0);
+      transform:translateX(0)
+    }
+  }
+  @keyframes ecom_swing {
+    15% {
+      -webkit-transform:translateX(5px);
+      transform:translateX(5px)
+    }
+    30% {
+      -webkit-transform:translateX(-5px);
+      transform:translateX(-5px)
+    }
+    50% {
+      -webkit-transform:translateX(3px);
+      transform:translateX(3px)
+    }
+    65% {
+      -webkit-transform:translateX(-3px);
+      transform:translateX(-3px)
+    }
+    80% {
+      -webkit-transform:translateX(2px);
+      transform:translateX(2px)
+    }
+    100% {
+      -webkit-transform:translateX(0);
+      transform:translateX(0)
+    }
+  }
+
+  .ecom__swing {
+    -webkit-animation:ecom_swing 1s ease;
+    animation:ecom_swing infinite 1s ease;
+    -webkit-animation-iteration-count:infinite;
+    animation-iteration-count:infinite
+  }
+  
+  #bazicash-widget-open {
+    -webkit-box-shadow: 5px 5px 30px -1px #dee2e6;
+    -moz-box-shadow: 5px 5px 30px -1px #dee2e6;
+    box-shadow: 5px 5px 30px -1px #dee2e6;
+    @media (min-width: 990px) {
+        z-index: 10 !important;
+    }
+  }
+
+  #ecom-div-img > img {
+    padding: 0;
+    max-width: 32px !important;
+    max-height: 32px !important;
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 30px !important;
+  }
+
+  #ecom-div-img {
+    font-size: 1em;
+    border-radius: 7px;
+    border-width: 4px;
+    padding: 2px 7px !important;
+    margin: 8px 2px;
+    position: absolute;
+    line-height: 35px;
+    top: -8px;
+    left: 0;
+    bottom: -8px;
+    float: left;
+  }
+
+  #ecom-div-text {
+    color: #FFFFFF !important;
+    font-weight: initial;
+    font-style: normal;
+    text-align: center;
+    margin: 0;
+    float: left;
+    line-height: 46px;
+  }
+
+  .ecom-fidelidade-btn-bottom-right-custom {
+    background-color: #000000 !important;
+    background: #000000 !important;
+    color: #FFFFFF !important;
+  }
+
+  .ecom-fidelidade-btn-right-center {
+    top: 1%;
+    right: 0;
+    backface-visibility: hidden;
+    position: fixed;
+    left: auto;
+    height: 43px;
+    bottom: auto;
+    transform-origin: bottom right !important;
+    transform: rotate(-90deg);
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+    background: #e53439;
+    border: 0 solid #e53439;
+    border-width: 0;
+    padding: 0 20px 0 50px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 900;
+    font-style: normal;
+    float: right;
+    border-radius: 4px 17px 4px 4px !important;
+  }
+
+  .ecom-fidelidade-exit-right-center {
+    color: #fff;
+    top: 30%;
+    right: 0;
+    margin-left: auto;
+    transform-origin: bottom right !important;
+    margin-right: 0;
+    backface-visibility: hidden;
+    position: fixed;
+    left: auto;
+    height: 28px;
+    z-index: 999999999999999999;
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+    background: #754ea9;
+    border: 0 solid #754ea9;
+    border-width: 0;
+    padding: 1px 5px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 900;
+    font-style: normal;
+    float: left;
+    border-radius: 4px !important;
+  }
+  
+  .closed-widget-bazicash {
+    display: none;
+  }
+
+  .open-widget-bazicash {
+    display: block;
+  }
+
+  .global-root-27CbN.global-bottom_right-2n1BB {
+    left: auto;
+    right: 50px;
+    position: fixed;
+    display: block;
+  }
+
+  .global-root-27CbN {
+    position: fixed;
+    z-index: 100;
+    border-radius: var(--border-radius);
+    width: 400px;
+    -webkit-box-shadow: 0px 0px 5px 0px #000000;
+    -moz-box-shadow: 0px 0px 5px 0px #000000;
+    box-shadow: 0px 0px 5px 0px #000000;
+    bottom: 10px;
+  }
+
+  .global-reset-2xxDJ {
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    margin: 0;
+  }
+
+  .global-scope-3EHyX {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .global-root-27CbN > div {
+    border-radius: 5px;
+  }
+
+  .titlebar-root-gUSUz {
+    background: #fff;
+    display: flex;
+    padding: 2px 10px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .titlebar-root-gUSUz h4 {
+    margin: 0 1rem 0 0;
+    color: #fff;
+  }
+
+  .close-widget {
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    cursor: pointer !important;
+    height: 22px !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .titlebar-root-gUSUz .titlebar-titlebar_link-QyguE {
+    width: 18px;
+    height: 18px;
+    margin: 8px 8px;
+    display: block;
+    padding: 2px;
+    background-size: contain;
+  }
+
+  .global-container-1w4O7 {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-color: #fff;
+  }
+  .global-container-1w4O7 {
+    padding: 0.5rem;
+    position: relative;
+    max-height: 460px;
+    min-height: 250px;
+    overflow: auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .styles-widget_home-3ZCFt {
+    padding: 1.2rem;
+  }
+
+  .styles-home_header-2e3Y1 {
+    margin: 0.2rem;
+  }
+
+  .global-reset-2xxDJ h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .styles-home_content-1sclX {
+    border-radius: 0.8rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-top: 1rem;
+    background: #fff;
+  }
+
+  .styles-router_div-AII62 a:link {
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .styles-content_standard-T1aSI {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .styles-content_header-2O2Wv, .styles-content_recovery-2qrjD, .styles-content_standard-T1aSI, .styles-content_footer-gdQvR {
+    padding: 0.8rem;
+  }
+
+  #bazicash-widget ul {
+    padding-left: 0 !important;
+  }
