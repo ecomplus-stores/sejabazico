@@ -64,6 +64,7 @@
       "carrossel_sm": "Sim",
       "container": "container-fluid",
       "products": [
+        "636eac9a73321213f8d6f75a",
         "636eacba73321213f8d6f7e9",
         "6579bf272cd6b65959db6c11",
         "636eacad73321213f8d6f7a3",
@@ -77,8 +78,7 @@
         "656f882b2cd6b65959ce247c",
         "656f9b362cd6b65959ce4152",
         "6579bf272cd6b65959db6c11",
-        "652d79152cd6b659597c6803",
-        "636eac9a73321213f8d6f75a"
+        "65156e3a2cd6b65959616c18"
       ],
       "carrossel_dots_md": "Sim",
       "carrossel_arrows_md": "Não",
