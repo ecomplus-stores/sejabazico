@@ -4,6 +4,7 @@ const header = _.cms('header') || {}
 const apx_header = _.cms('apx_header') || {}
 const contacts = _.cms('contacts') || {}
 const themeCustom = _.settings.theme.custom || ''
+let isBazipass = false
 
 // social networks handled by contacts
 const networks = [
@@ -184,7 +185,8 @@ let marketingStripeStyle = ''
             href="/app/#/account/"
             title="<%= _.dictionary('myAccount') %>"
           >
-            <img src="/assets/User-Outline.svg"/>
+            <img id="not-bazipass" class="show" src="/assets/User-Outline.svg"/>
+            <img id="is-bazipass" class="d-none" src="/img/uploads/bazipass-user.svg"/>
           </a>
           <a
             id="cart-button"
@@ -279,3 +281,6 @@ let marketingStripeStyle = ''
   </div>
 </div>
 </div>
+<script>
+  bazipass =
+</script>
