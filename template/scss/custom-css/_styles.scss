@@ -193,7 +193,11 @@ body{font-size:var(--body);color:#000}
 #bz-functions .header__buttons{display: flex;align-items: center;}
 #bz-functions button img,
 #bz-functions a.btn img{
-    height:24px;
+    height:36px;
+}
+
+#is-bazipass {
+    height: 40px !important;
 }
 
 #bz-functions .header__search{
@@ -2156,14 +2160,14 @@ body #storefront-app>div>h1{
     display: block;
   }
 
-  .global-root-27CbN.global-bottom_right-2n1BB {
+  .widget-open-bazipass.widget-open-bazipass-container-bottom {
     left: auto;
     right: 50px;
     position: fixed;
     display: block;
   }
 
-  .global-root-27CbN {
+  .widget-open-bazipass {
     position: fixed;
     z-index: 100;
     border-radius: var(--border-radius);
@@ -2174,24 +2178,24 @@ body #storefront-app>div>h1{
     bottom: 10px;
   }
 
-  .global-reset-2xxDJ {
+  .widget-open-bazipass-container-reset {
     background: var(--color-bg);
     color: var(--color-text);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     margin: 0;
   }
 
-  .global-scope-3EHyX {
+  .widget-open-bazipass-container-scope {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  .global-root-27CbN > div {
+  .widget-open-bazipass > div {
     border-radius: 5px;
   }
 
-  .titlebar-root-gUSUz {
+  .widget-open-bazipass-title {
     background: #fff;
     display: flex;
     padding: 2px 10px;
@@ -2202,7 +2206,7 @@ body #storefront-app>div>h1{
     border-top-right-radius: 5px;
   }
 
-  .titlebar-root-gUSUz h4 {
+  .widget-open-bazipass-title h4 {
     margin: 0 1rem 0 0;
     color: #fff;
   }
@@ -2217,7 +2221,7 @@ body #storefront-app>div>h1{
     align-items: center !important;
   }
 
-  .titlebar-root-gUSUz .titlebar-titlebar_link-QyguE {
+  .widget-open-bazipass-title .titlebar-titlebar_link-QyguE {
     width: 18px;
     height: 18px;
     margin: 8px 8px;
@@ -2226,12 +2230,12 @@ body #storefront-app>div>h1{
     background-size: contain;
   }
 
-  .global-container-1w4O7 {
+  .widget-open-bazipass-container {
     -ms-overflow-style: none;
     scrollbar-width: none;
     background-color: #fff;
   }
-  .global-container-1w4O7 {
+  .widget-open-bazipass-container {
     padding: 0.5rem;
     position: relative;
     max-height: 460px;
@@ -2241,20 +2245,20 @@ body #storefront-app>div>h1{
     border-bottom-right-radius: 5px;
   }
 
-  .styles-widget_home-3ZCFt {
+  .widget-open-bazipass-container-home {
     padding: 1.2rem;
   }
 
-  .styles-home_header-2e3Y1 {
+  .widget-open-bazipass-container-home_header {
     margin: 0.2rem;
   }
 
-  .global-reset-2xxDJ h2 {
+  .widget-open-bazipass-container-reset h2 {
     font-size: 1.5rem;
     font-weight: bold;
   }
 
-  .styles-home_content-1sclX {
+  .widget-open-bazipass-container-home_body {
     border-radius: 0.8rem;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     margin-top: 1rem;

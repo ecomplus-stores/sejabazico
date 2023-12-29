@@ -36,6 +36,7 @@ export default (isCheckout = false) => {
         .then(({ data }) => {
           if (data.hasBazipass) {
             window.checkedBazipassDoc = customerDoc
+            window.sessionStorage.setItem('isBazipass', 1)
             window.dispatchEvent(new Event('bazipassCheck'))
           }
         })
