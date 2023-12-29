@@ -8,6 +8,16 @@
       "slides": [
         {
           "mask_opacity": 0,
+          "start": "2023-12-29T21:18:49.735Z",
+          "end": "2024-03-02T21:18:49.760Z",
+          "img": "/img/uploads/peb-desktop.webp",
+          "mobile_img": "/img/uploads/peb-mobile.webp",
+          "content_position": "center_left",
+          "content_order": "inside_image",
+          "link": "/novidades"
+        },
+        {
+          "mask_opacity": 0,
           "start": "2023-12-27T19:46:25.950Z",
           "end": "2024-03-08T19:46:25.983Z",
           "img": "/img/uploads/desktop-ano-novo.webp",
