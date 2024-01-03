@@ -106,6 +106,15 @@
           "content_position": "center_left",
           "content_order": "inside_image",
           "link": "/all-black"
+        },
+        {
+          "mask_opacity": 5,
+          "start": "2024-01-03T12:53:44.474Z",
+          "end": "2024-03-08T12:53:44.494Z",
+          "link": "/search?term=branca",
+          "img": "/img/uploads/branca-desktop-.webp",
+          "content_position": "center_left",
+          "content_order": "inside_image"
         }
       ]
     },
