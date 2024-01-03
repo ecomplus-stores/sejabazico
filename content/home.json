@@ -18,25 +18,6 @@
         },
         {
           "mask_opacity": 0,
-          "start": "2023-12-27T19:46:25.950Z",
-          "end": "2024-03-08T19:46:25.983Z",
-          "img": "/img/uploads/desktop-ano-novo.webp",
-          "mobile_img": "/img/uploads/mobile-ano-novo.webp",
-          "link": "https://www.sejabazico.com.br/reveillon",
-          "content_position": "center_left",
-          "content_order": "inside_image"
-        },
-        {
-          "mask_opacity": 0,
-          "start": "2023-12-16T00:10:15.463Z",
-          "end": "2024-03-03T00:10:15.489Z",
-          "img": "/img/uploads/frete-desktop-webp.webp",
-          "mobile_img": "/img/uploads/frete-mobile-webp.webp",
-          "content_position": "center_left",
-          "content_order": "inside_image"
-        },
-        {
-          "mask_opacity": 0,
           "start": "2023-12-13T14:37:58.949Z",
           "end": "2024-04-12T14:37:58.974Z",
           "img": "/img/uploads/ps-desktop.webp",
@@ -52,6 +33,16 @@
           "img": "/img/uploads/bazipass-ano-novo-desktop.webp",
           "mobile_img": "/img/uploads/bazipass-ano-novo-mobile.webp",
           "link": "https://bazipass.sejabazico.com.br/?utm_medium=site&utm_term=cabecalho",
+          "content_position": "center_left",
+          "content_order": "inside_image"
+        },
+        {
+          "mask_opacity": 0,
+          "start": "2024-01-03T11:40:21.960Z",
+          "end": "2024-03-01T11:40:21.988Z",
+          "img": "/img/uploads/frete-desktop-.webp",
+          "mobile_img": "/img/uploads/frete-mobile-.webp",
+          "link": "/roupas",
           "content_position": "center_left",
           "content_order": "inside_image"
         }
