@@ -120,7 +120,8 @@
           "img": "/img/uploads/branca-desktop-.webp",
           "link": "/search?term=branca",
           "content_position": "center_left",
-          "content_order": "inside_image"
+          "content_order": "inside_image",
+          "mobile_img": "/img/uploads/branca-mobile-.webp"
         }
       ]
     },
