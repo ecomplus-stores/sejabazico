@@ -110,6 +110,21 @@
       ]
     },
     {
+      "type": "apx_banner-slider",
+      "autoplay": 9000,
+      "slides": [
+        {
+          "mask_opacity": 0,
+          "start": "2024-01-03T13:03:13.029Z",
+          "end": "2024-03-01T13:03:13.042Z",
+          "img": "/img/uploads/branca-desktop-.webp",
+          "link": "/search?term=branca",
+          "content_position": "center_left",
+          "content_order": "inside_image"
+        }
+      ]
+    },
+    {
       "carrossel_sm": "Sim",
       "container": "container-fluid",
       "products": [
