@@ -134,7 +134,9 @@
         "636ead1173321213f8d6f916",
         "636eacba73321213f8d6f7e9",
         "65156e3a2cd6b65959616c18",
-        "636ead0c73321213f8d6f900"
+        "636ead0c73321213f8d6f900",
+        "650a0b832cd6b6595954b875",
+        "642f09cc4bd2e929c1c4a22a"
       ],
       "carrossel_dots_md": "Sim",
       "carrossel_arrows_md": "Sim",
@@ -146,9 +148,9 @@
       "btn_text": "Ver Todas",
       "padding": "px-md-0",
       "num_col_sm": "2",
-      "title": "Vem, Verão!",
+      "title": "vem, verão!",
       "type": "apx_productList_A",
-      "description": "Esqueça para sempre as básicas descartáveis",
+      "description": "O essencial para enfrentar o calor com estilo",
       "btn_link": "/bazicas",
       "list": "description_last",
       "carrossel_md": "Sim"
