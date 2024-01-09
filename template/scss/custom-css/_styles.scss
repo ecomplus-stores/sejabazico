@@ -196,8 +196,14 @@ body{font-size:var(--body);color:#000}
     height:36px;
 }
 
-#is-bazipass {
+#is-bazipass, .is-bazipass {
     height: 40px !important;
+}
+.account__greetings.is-bazipass-icon i::before {
+    content: url(/img/uploads/bazipass-user.svg);
+    height: 40px !important;
+    display: inline-block;
+    width: 40px;
 }
 
 #bz-functions .header__search{

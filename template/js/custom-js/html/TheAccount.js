@@ -86,6 +86,23 @@ export default {
 
     nickname () {
       return getNickname(this.customer)
+    },
+
+    hasBazipass () {
+      const isBazipass = this.localCustomer.doc_number &&
+          window.checkedBazipassDoc === this.localCustomer.doc_number
+      if (isBazipass) {
+        return true
+      }
+      
+      return false
+    },
+
+    helloPhrase () {
+      if (this.hasBazipass) {
+        return `E ai, ${this.nickname}, curtindo muito o BaziPass?`
+      }
+      return `Olá ${this.nickname}`
     }
   },
 
