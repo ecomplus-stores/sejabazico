@@ -76,6 +76,17 @@
       "type": "dynamic-showcase",
       "load_more": false,
       "sort": "sales"
+    },
+    {
+      "type": "shelfs-nav",
+      "shuffle": false,
+      "limit": 9,
+      "page": 1,
+      "collection_ids": [
+        "6346265573321213f8a7e082:categories:Roupas:/roupas"
+      ],
+      "sort": "sales",
+      "shelfs_title": "você também vai curtir"
     }
   ]
 }
