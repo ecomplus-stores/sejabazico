@@ -13,6 +13,10 @@
       "sort": "sales"
     },
     {
+      "type": "document-description",
+      "enabled": true
+    },
+    {
       "type": "apx_testimonials",
       "title": "o que dizem por ai",
       "description": "relatos de alguns dos nossos mais de 5 mil clientes",
@@ -67,10 +71,6 @@
           }
         }
       ]
-    },
-    {
-      "type": "document-description",
-      "enabled": true
     },
     {
       "type": "shelfs-nav",
