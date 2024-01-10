@@ -73,17 +73,14 @@
       "enabled": true
     },
     {
-      "type": "dynamic-showcase",
-      "load_more": false,
-      "sort": "sales"
-    },
-    {
       "type": "shelfs-nav",
       "shuffle": false,
       "limit": 9,
       "page": 1,
       "collection_ids": [
-        "6346265573321213f8a7e082:categories:Roupas:/roupas"
+        "6346265573321213f8a7e082:categories:Roupas:/roupas",
+        "64f8c5e22cd6b659594114d1:categories:Novidades:/novidades",
+        "647f210ba0e875411eac79d5:categories:Top 10:/top-10"
       ],
       "sort": "sales",
       "shelfs_title": "você também vai curtir"
