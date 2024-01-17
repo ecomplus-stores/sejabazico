@@ -4,9 +4,12 @@ if (opt.img) {
   const sources = [{ src: opt.img }]
   if (opt.mobile_img) {
     sources[0].media = '(min-width: 576px)'
+    const { width, height } = _.tryImageSize(opt.mobile_img)
     sources.push({
       src: opt.mobile_img,
-      media: '(min-width: 100px)'
+      media: '(min-width: 100px)',
+      width,
+      height
     })
   }
   sources.forEach(source => {
