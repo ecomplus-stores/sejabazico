@@ -51,7 +51,8 @@ export default {
   data () {
     return {
       favoriteIds: [],
-      navTabs: []
+      navTabs: [],
+      hasBazipass: false
     }
   },
 
@@ -88,17 +89,8 @@ export default {
       return getNickname(this.customer)
     },
 
-    hasBazipass () {
-      const docNumber = this.localCustomer.doc_number || this.customer.doc_number
-      console.log('doc number', docNumber)
-      const isBazipass = docNumber &&
-          window.checkedBazipassDoc === docNumber
-      console.log('é bazipass', isBazipass)
-      if (isBazipass) {
-        return true
-      }
-      
-      return false
+    bazipassDoc () {
+      return window.checkedBazipassDoc
     },
 
     helloPhrase () {
@@ -160,6 +152,20 @@ export default {
       },
       immediate: true,
       deep: true
+    },
+
+    bazipassDoc: {
+      handler (newDoc) {
+        const isBazipass = newDoc &&
+          window.checkedBazipassDoc === newDoc
+        console.log('é bazipass?', isBazipass)
+        if (isBazipass) {
+          this.hasBazipass = true
+        }
+        console.log('novo doc', newDoc)
+        console.log('tem bazipass', this.hasBazipass)
+      },
+      immediate: true
     }
   },
 
