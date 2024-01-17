@@ -90,7 +90,7 @@ export default {
     },
 
     bazipassDoc () {
-      const checkBazipass = debounce(() => {
+      setTimeout(() => {
         const customerDoc = this.localCustomer && this.localCustomer.doc_number
         if (customerDoc && customerDoc !== window.checkedBazipassDoc) {
           window.axios.get(
@@ -106,8 +106,7 @@ export default {
             })
             .catch(console.error)
         }
-      }, 400)
-      return checkBazipass()
+      }, 500)
     },
 
     helloPhrase () {
