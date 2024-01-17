@@ -90,7 +90,24 @@ export default {
     },
 
     bazipassDoc () {
-      return window.checkedBazipassDoc
+      const checkBazipass = debounce(() => {
+        const customerDoc = this.localCustomer && this.localCustomer.doc_number
+        if (customerDoc && customerDoc !== window.checkedBazipassDoc) {
+          window.axios.get(
+            'https://us-central1-app-bazicash.cloudfunctions.net/app/check-bazipass' +
+            `?doc=${customerDoc}`
+          )
+            .then(({ data }) => {
+              if (data.hasBazipass) {
+                window.dispatchEvent(new Event('bazipassCheck'))
+                this.hasBazipass = true
+                return true 
+              }
+            })
+            .catch(console.error)
+        }
+      }, 400)
+      return checkBazipass()
     },
 
     helloPhrase () {
