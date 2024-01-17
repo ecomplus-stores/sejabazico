@@ -89,8 +89,11 @@ export default {
     },
 
     hasBazipass () {
-      const isBazipass = this.localCustomer.doc_number &&
-          window.checkedBazipassDoc === this.localCustomer.doc_number
+      const docNumber = this.localCustomer.doc_number || this.customer.doc_number
+      console.log('doc number', docNumber)
+      const isBazipass = docNumber &&
+          window.checkedBazipassDoc === docNumber
+      console.log('é bazipass', isBazipass)
       if (isBazipass) {
         return true
       }
@@ -99,6 +102,7 @@ export default {
     },
 
     helloPhrase () {
+      console.log('tem bazipass?', this.hasBazipass)
       if (this.hasBazipass) {
         return `E ai, ${this.nickname}, curtindo muito o BaziPass?`
       }
