@@ -89,7 +89,8 @@ export default {
       return getNickname(this.customer)
     },
 
-    bazipassDoc () {
+    helloPhrase () {
+      let isBazipass = false
       setTimeout(() => {
         const customerDoc = this.localCustomer && this.localCustomer.doc_number
         if (customerDoc && customerDoc !== window.checkedBazipassDoc) {
@@ -98,20 +99,17 @@ export default {
             `?doc=${customerDoc}`
           )
             .then(({ data }) => {
+              console.log(data)
               if (data.hasBazipass) {
+                isBazipass = true
                 window.dispatchEvent(new Event('bazipassCheck'))
-                this.hasBazipass = true
-                return true 
               }
             })
             .catch(console.error)
         }
-      }, 500)
-    },
-
-    helloPhrase () {
-      console.log('tem bazipass?', this.hasBazipass)
-      if (this.hasBazipass) {
+      }, 400)
+      console.log('tem bazipass?', isBazipass)
+      if (isBazipass) {
         return `E ai, ${this.nickname}, curtindo muito o BaziPass?`
       }
       return `Olá ${this.nickname}`
@@ -168,20 +166,6 @@ export default {
       },
       immediate: true,
       deep: true
-    },
-
-    bazipassDoc: {
-      handler (newDoc) {
-        const isBazipass = newDoc &&
-          window.checkedBazipassDoc === newDoc
-        console.log('é bazipass?', isBazipass)
-        if (isBazipass) {
-          this.hasBazipass = true
-        }
-        console.log('novo doc', newDoc)
-        console.log('tem bazipass', this.hasBazipass)
-      },
-      immediate: true
     }
   },
 
