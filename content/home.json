@@ -4,7 +4,7 @@
   "sections": [
     {
       "type": "apx_banner-slider",
-      "autoplay": 9000,
+      "autoplay": 10000,
       "slides": [
         {
           "mask_opacity": 0,
@@ -50,7 +50,7 @@
     },
     {
       "type": "banner-slider",
-      "autoplay": 9000,
+      "autoplay": 10000,
       "full_width": true,
       "slides": [
         {

@@ -1,10 +1,15 @@
 <%
 if (opt.img) {
-  const { width, height } = _.tryImageSize(opt.img)
+  let width, height
+  const imgDesktop = _.tryImageSize(opt.img)
+  width = imgDesktop && imgDesktop.width
+  height = imgDesktop && imgDesktop.height
   const sources = [{ src: opt.img }]
   if (opt.mobile_img) {
     sources[0].media = '(min-width: 576px)'
-    const { width, height } = _.tryImageSize(opt.mobile_img)
+    const imgMobile = _.tryImageSize(opt.mobile_img)
+    width = imgMobile && imgMobile.width
+    height = imgMobile && imgMobile.height
     sources.push({
       src: opt.mobile_img,
       media: '(min-width: 100px)',
@@ -27,7 +32,7 @@ if (opt.img) {
   <div class="banner apx_banner">
     <a
       href="<%= opt.link || 'javascript:;' %>"
-      aria-label="<%= opt.alt %>"
+      aria-label="<%= opt.alt || 'Banner seja bazico' %>"
     >
       <picture
         <% if (opt.sync_load) { %>
