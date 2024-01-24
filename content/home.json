@@ -11,7 +11,7 @@
           "start": "2023-12-29T21:18:49.735Z",
           "end": "2024-03-02T21:18:49.760Z",
           "img": "/img/uploads/peb-desktop.webp",
-          "mobile_img": "/img/uploads/peb-mobile.webp",
+          "mobile_img": "/img/uploads/peb-mobile-1.webp",
           "content_position": "center_left",
           "content_order": "inside_image",
           "link": "/novidades"
@@ -24,14 +24,14 @@
           "link": "https://www.sejabazico.com.br/novidades",
           "content_position": "center_left",
           "content_order": "inside_image",
-          "mobile_img": "/img/uploads/polo-e-azul-mobile.webp"
+          "mobile_img": "/img/uploads/polo-e-azul-mobile-1.webp"
         },
         {
           "mask_opacity": 0,
           "start": "2024-01-03T11:40:21.960Z",
           "end": "2024-03-01T11:40:21.988Z",
           "img": "/img/uploads/frete-desktop-.webp",
-          "mobile_img": "/img/uploads/frete-mobile-.webp",
+          "mobile_img": "/img/uploads/frete-mobile--1.webp",
           "link": "/roupas",
           "content_position": "center_left",
           "content_order": "inside_image"
@@ -41,7 +41,7 @@
           "start": "2023-12-14T11:28:54.012Z",
           "end": "2024-04-05T11:28:54.038Z",
           "img": "/img/uploads/bazipass-2024-desktop.webp",
-          "mobile_img": "/img/uploads/bazipass-2024-mobile.webp",
+          "mobile_img": "/img/uploads/bazipass-2024-mobile-1.webp",
           "link": "https://bazipass.sejabazico.com.br/?utm_medium=site&utm_term=cabecalho",
           "content_position": "center_left",
           "content_order": "inside_image"
