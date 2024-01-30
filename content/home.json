@@ -8,6 +8,16 @@
       "slides": [
         {
           "mask_opacity": 0,
+          "start": "2024-01-30T14:40:41.665Z",
+          "end": "2024-06-01T14:40:41.688Z",
+          "img": "/img/uploads/desktop_short.webp",
+          "link": "/novidades",
+          "mobile_img": "/img/uploads/mobile_short.webp",
+          "content_position": "center_left",
+          "content_order": "inside_image"
+        },
+        {
+          "mask_opacity": 0,
           "start": "2023-12-29T21:18:49.735Z",
           "end": "2024-03-02T21:18:49.760Z",
           "img": "/img/uploads/peb-desktop.webp",
@@ -15,6 +25,16 @@
           "content_position": "center_left",
           "content_order": "inside_image",
           "link": "/novidades"
+        },
+        {
+          "mask_opacity": 0,
+          "start": "2023-12-14T11:28:54.012Z",
+          "end": "2024-04-05T11:28:54.038Z",
+          "img": "/img/uploads/bazipass-2024-desktop.webp",
+          "mobile_img": "/img/uploads/bazipass-2024-mobile-1.webp",
+          "link": "https://bazipass.sejabazico.com.br/?utm_medium=site&utm_term=cabecalho",
+          "content_position": "center_left",
+          "content_order": "inside_image"
         },
         {
           "mask_opacity": 0,
@@ -33,16 +53,6 @@
           "img": "/img/uploads/frete-desktop-.webp",
           "mobile_img": "/img/uploads/frete-mobile--1.webp",
           "link": "/roupas",
-          "content_position": "center_left",
-          "content_order": "inside_image"
-        },
-        {
-          "mask_opacity": 0,
-          "start": "2023-12-14T11:28:54.012Z",
-          "end": "2024-04-05T11:28:54.038Z",
-          "img": "/img/uploads/bazipass-2024-desktop.webp",
-          "mobile_img": "/img/uploads/bazipass-2024-mobile-1.webp",
-          "link": "https://bazipass.sejabazico.com.br/?utm_medium=site&utm_term=cabecalho",
           "content_position": "center_left",
           "content_order": "inside_image"
         }
