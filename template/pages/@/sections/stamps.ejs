@@ -3,7 +3,7 @@
     <% opt.stamps.forEach(({ src, alt, link, ...dimensions }) => {
       const { width, height } = _.tryImageSize(src, dimensions)
       const imgHtml = `<img data-src="${(_.assetsPrefix || '')}${src}" alt="${alt}" class="lozad fade"` +
-        (width ? ` data-preload width="${width}" height="${height}">` : '>')
+        (width ? ` data-preload width="${width || 150}" height="${height || 62}">` : '>')
       %>
 
       <% if (link) { %>

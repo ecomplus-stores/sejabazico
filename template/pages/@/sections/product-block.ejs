@@ -115,8 +115,20 @@ const apx_props = _.cms('apx_props') || {}
                   if(flag){
                 %>
                     <li>
-                    <% if (item.image) {%>
-                      <img src="<%=  item.image %>" alt="<%=  item.title %>"/>
+                    <% if (item.image) {
+                      let { width, height } = _.tryImageSize(item.image)
+                      %>
+                      <img 
+                        src="<%=  item.image %>" 
+                        alt="<%=  item.title %>"
+                        <% if (width) { %>
+                          width="<%= width %>"
+                          height="<%= height %>"
+                        <% } else { %>
+                          width="31"
+                          height="35"
+                        <% } %>
+                      />
                     <% } %>
                     <%- item.title %>      
                     </li>

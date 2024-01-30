@@ -6,7 +6,8 @@ const logo = mysettings.logo
   ? { url: mysettings.logo, alt: mysettings.name }
   : _.store.logo
 if (logo && logo.url) {
-  const { width, height } = _.tryImageSize(logo.url)
+  let { width, height } = _.tryImageSize(logo.url)
+  console.log(width, height)
   %>
   <img
     id="logo"
@@ -16,6 +17,9 @@ if (logo && logo.url) {
     <% if (width) { %>
       width="<%= width %>"
       height="<%= height %>"
+    <% } else { %>
+      width="380"
+      height="107"
     <% } %>
   >
 <% } else { %>

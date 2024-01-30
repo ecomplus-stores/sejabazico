@@ -23,10 +23,19 @@
                 }
             %>
             <div class="row d-flex justify-content-center align-items-center order_<%= opt.list[i].content.image_position %>">      
-                <% if(opt.list[i].content.image){ %>
+                <% if(opt.list[i].content.image){ 
+                    let { width, height } = _.tryImageSize(opt.list[i].content.image)
+                    %>
                     <div class="col-auto">
                     <img
                         src="<%= opt.list[i].content.image.replace('.webp', '.png') %>"
+                        <% if (width) { %>
+                        width="<%= width %>"
+                        height="<%= height %>"
+                        <% } else { %>
+                        width="279"
+                        height="280"
+                        <% } %>
                     >
                     </div>
                 <% } %>
