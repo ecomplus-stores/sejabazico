@@ -163,6 +163,7 @@ if (window.storefront && window.storefront.context && window.storefront.context.
 const startUserInterval = setInterval(() => {
     const isBazipass = Number(window.sessionStorage.getItem('isBazipass'))
     if (window.checkedBazipassDoc || isBazipass) {
+        document.querySelector('body').classList.add('is-bazipass')
         const classListNot = document.getElementById('not-bazipass').classList 
         const classListIs = document.getElementById('is-bazipass').classList 
         if (document.getElementsByClassName('.widget-open-bazipass-container-home_header-text') && document.getElementsByClassName('.widget-open-bazipass-container-home_header-text').length) {

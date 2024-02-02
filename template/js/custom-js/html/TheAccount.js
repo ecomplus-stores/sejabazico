@@ -96,7 +96,7 @@ export default {
 
     helloPhrase: {
       get () {
-        if (this.bazipassDoc) {
+        if (this.bazipassDoc || Number(window.sessionStorage.getItem('isBazipass'))) {
           return `E ai, ${this.nickname}, curtindo muito o BaziPass?`
         }
         this.$nextTick(() => {
@@ -105,6 +105,7 @@ export default {
           }
           return `Olá ${this.nickname}`
         })
+        return `Olá ${this.nickname}`
       },
       set (bazipassDoc) {
         if (bazipassDoc) {
@@ -116,6 +117,7 @@ export default {
           }
           return `Olá ${this.nickname}`
         })
+        return `Olá ${this.nickname}`
       }
     }
   },
