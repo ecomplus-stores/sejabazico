@@ -191,5 +191,22 @@ export default {
     this.$once('hook:beforeDestroy', () => {
       this.ecomPassport.off('login', this.insertSubscriptionTab)
     })
+    if (this.localCustomer.doc_number && this.localCustomer.doc_number !== window.checkedBazipassDoc) {
+      window.axios.get(
+        'https://us-central1-app-bazicash.cloudfunctions.net/app/check-bazipass' +
+        `?doc=${this.localCustomer.doc_number}`
+      )
+        .then(({ data }) => {
+          if (data.hasBazipass) {
+            console.log(data)
+            window.checkedBazipassDoc = this.localCustomer.doc_number
+            this.bazipassDoc = this.localCustomer.doc_number
+            window.sessionStorage.setItem('isBazipass', 1)
+            window.dispatchEvent(new Event('bazipassCheck'))
+            this.helloPhrase = `E ai, ${this.nickname}, curtindo muito o BaziPass?`
+          }
+        })
+        .catch(console.error)
+    }
   }
 }
