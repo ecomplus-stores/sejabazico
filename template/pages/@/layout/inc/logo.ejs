@@ -7,7 +7,6 @@ const logo = mysettings.logo
   : _.store.logo
 if (logo && logo.url) {
   let { width, height } = _.tryImageSize(logo.url)
-  console.log(width, height)
   %>
   <img
     id="logo"

@@ -90,26 +90,7 @@ export default {
     },
 
     helloPhrase () {
-      let isBazipass = false
-      setTimeout(() => {
-        const customerDoc = this.localCustomer && this.localCustomer.doc_number
-        if (customerDoc && customerDoc !== window.checkedBazipassDoc) {
-          window.axios.get(
-            'https://us-central1-app-bazicash.cloudfunctions.net/app/check-bazipass' +
-            `?doc=${customerDoc}`
-          )
-            .then(({ data }) => {
-              console.log(data)
-              if (data.hasBazipass) {
-                isBazipass = true
-                window.dispatchEvent(new Event('bazipassCheck'))
-              }
-            })
-            .catch(console.error)
-        }
-      }, 400)
-      console.log('tem bazipass?', isBazipass)
-      if (isBazipass) {
+      if (window.checkedBazipassDoc) {
         return `E ai, ${this.nickname}, curtindo muito o BaziPass?`
       }
       return `Olá ${this.nickname}`
