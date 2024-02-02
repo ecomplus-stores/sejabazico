@@ -7,7 +7,7 @@
       class="account__greetings"
       :class="hasBazipass ? 'is-bazipass-icon' :  ''">
       <i class="i-user-circle"></i>
-      {{ helloPhrase }}
+      {{ hello || helloPhrase }}
     </h2>
 
     <div class="account__logout">

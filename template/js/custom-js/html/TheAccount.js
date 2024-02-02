@@ -52,7 +52,8 @@ export default {
     return {
       favoriteIds: [],
       navTabs: [],
-      hasBazipass: false
+      hasBazipass: false,
+      hello: null
     }
   },
 
@@ -98,13 +99,23 @@ export default {
         if (this.bazipassDoc) {
           return `E ai, ${this.nickname}, curtindo muito o BaziPass?`
         }
-        return `Olá ${this.nickname}`
+        this.$nextTick(() => {
+          if (this.bazipassDoc || window.checkedBazipassDoc) {
+            return `E ai, ${this.nickname}, curtindo muito o BaziPass?`
+          }
+          return `Olá ${this.nickname}`
+        })
       },
       set (bazipassDoc) {
         if (bazipassDoc) {
           return `E ai, ${this.nickname}, curtindo muito o BaziPass?`
         }
-        return `Olá ${this.nickname}`
+        this.$nextTick(() => {
+          if (this.bazipassDoc || window.checkedBazipassDoc) {
+            return `E ai, ${this.nickname}, curtindo muito o BaziPass?`
+          }
+          return `Olá ${this.nickname}`
+        })
       }
     }
   },
@@ -191,22 +202,25 @@ export default {
     this.$once('hook:beforeDestroy', () => {
       this.ecomPassport.off('login', this.insertSubscriptionTab)
     })
-    if (this.localCustomer.doc_number) {
-      window.axios.get(
-        'https://us-central1-app-bazicash.cloudfunctions.net/app/check-bazipass' +
-        `?doc=${this.localCustomer.doc_number}`
-      )
-        .then(({ data }) => {
-          if (data.hasBazipass) {
-            console.log(data)
-            window.checkedBazipassDoc = this.localCustomer.doc_number
-            this.bazipassDoc = this.localCustomer.doc_number
-            window.sessionStorage.setItem('isBazipass', 1)
-            window.dispatchEvent(new Event('bazipassCheck'))
-            this.helloPhrase = `E ai, ${this.nickname}, curtindo muito o BaziPass?`
-          }
-        })
-        .catch(console.error)
-    }
+    this.$nextTick(() => {
+      if (this.localCustomer.doc_number) {
+        window.axios.get(
+          'https://us-central1-app-bazicash.cloudfunctions.net/app/check-bazipass' +
+          `?doc=${this.localCustomer.doc_number}`
+        )
+          .then(({ data }) => {
+            if (data.hasBazipass) {
+              console.log(data)
+              window.checkedBazipassDoc = this.localCustomer.doc_number
+              this.bazipassDoc = this.localCustomer.doc_number
+              window.sessionStorage.setItem('isBazipass', 1)
+              window.dispatchEvent(new Event('bazipassCheck'))
+              this.hello = `E ai, ${this.nickname}, curtindo muito o BaziPass?`
+            }
+          })
+          .catch(console.error)
+      }
+    })
+    
   }
 }
