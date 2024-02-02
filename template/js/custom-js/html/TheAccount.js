@@ -76,6 +76,10 @@ export default {
       }
     },
 
+    bazipassDoc () {
+      return window.checkedBazipassDoc
+    },
+
     localCustomer: {
       get () {
         return this.customer
@@ -89,11 +93,19 @@ export default {
       return getNickname(this.customer)
     },
 
-    helloPhrase () {
-      if (window.checkedBazipassDoc) {
-        return `E ai, ${this.nickname}, curtindo muito o BaziPass?`
+    helloPhrase: {
+      get () {
+        if (this.bazipassDoc) {
+          return `E ai, ${this.nickname}, curtindo muito o BaziPass?`
+        }
+        return `Olá ${this.nickname}`
+      },
+      set (bazipassDoc) {
+        if (bazipassDoc) {
+          return `E ai, ${this.nickname}, curtindo muito o BaziPass?`
+        }
+        return `Olá ${this.nickname}`
       }
-      return `Olá ${this.nickname}`
     }
   },
 
@@ -147,6 +159,13 @@ export default {
       },
       immediate: true,
       deep: true
+    },
+
+    bazipassDoc: {
+      handler (old, current) {
+        console.log('bazipassdoc:', old, current)
+      },
+      immediate: true
     }
   },
 
