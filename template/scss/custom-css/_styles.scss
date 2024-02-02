@@ -2289,6 +2289,8 @@ body #storefront-app>div>h1{
     padding-left: 0 !important;
   }
 
-  .is-bazipass .top-bar__countdown {
-    background: #754ea9 !important;
-  }
+  .is-bazipass {
+    .top-bar, .top-bar__countdown {
+        background: #754ea9 !important;
+      }
+  } 

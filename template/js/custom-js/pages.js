@@ -164,6 +164,10 @@ const startUserInterval = setInterval(() => {
     const isBazipass = Number(window.sessionStorage.getItem('isBazipass'))
     if (window.checkedBazipassDoc || isBazipass) {
         document.querySelector('body').classList.add('is-bazipass')
+        document.querySelector('.top-bar').style.background = '#754ea9'
+        ocument.querySelector('.top-bar ul').insertAdjacentHTML('afterbegin', `<li class="glide__slide" style="width: 1280px; margin-right: 5px;"><a class="top-bar__countdown" style="" href="/">${window.ecomPassport && window.ecomPassport.customer && window.ecomPassport.customer.display_name}, bem vindo ao BaziPass!</a></li>`)
+        
+        document.querySelector('.top-bar__countdown').style.background = '#754ea9'
         const classListNot = document.getElementById('not-bazipass').classList 
         const classListIs = document.getElementById('is-bazipass').classList 
         if (document.getElementsByClassName('.widget-open-bazipass-container-home_header-text') && document.getElementsByClassName('.widget-open-bazipass-container-home_header-text').length) {
