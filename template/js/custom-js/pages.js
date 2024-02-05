@@ -165,8 +165,7 @@ const startUserInterval = setInterval(() => {
     if (window.checkedBazipassDoc || isBazipass) {
         document.querySelector('body').classList.add('is-bazipass');
         document.querySelector('.top-bar').style.background = '#24174a';
-        document.querySelector('.top-bar ul').insertAdjacentHTML('afterbegin', `<li class="glide__slide" style="width: 1280px; margin-right: 5px;"><a class="top-bar__countdown" style="" href="/">${window.ecomPassport && window.ecomPassport.customer && window.ecomPassport.customer.display_name}, bem vindo ao BaziPass!</a></li>`);
-        document.querySelector('.top-bar ul li:last-child').remove()
+        document.querySelector('.top-bar ul li:last-child a').replaceWith(`<a class="top-bar__countdown" style="" href="/">${window.ecomPassport && window.ecomPassport.customer && window.ecomPassport.customer.display_name}, bem vindo ao BaziPass!</a>`)
         
         document.querySelector('.top-bar__countdown').style.background = '#24174a';
         const classListNot = document.getElementById('not-bazipass').classList 
