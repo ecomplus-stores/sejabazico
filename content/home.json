@@ -8,6 +8,16 @@
       "slides": [
         {
           "mask_opacity": 0,
+          "start": "2023-12-13T14:37:58.949Z",
+          "end": "2024-04-12T14:37:58.974Z",
+          "img": "/img/uploads/desktop_verao.webp",
+          "link": "https://www.sejabazico.com.br/novidades",
+          "content_position": "center_left",
+          "content_order": "inside_image",
+          "mobile_img": "/img/uploads/mobile_verao.webp"
+        },
+        {
+          "mask_opacity": 0,
           "start": "2024-01-30T14:40:41.665Z",
           "end": "2024-06-01T14:40:41.688Z",
           "img": "/img/uploads/desktop_short.webp",
@@ -35,16 +45,6 @@
           "link": "https://bazipass.sejabazico.com.br/?utm_medium=site&utm_term=cabecalho",
           "content_position": "center_left",
           "content_order": "inside_image"
-        },
-        {
-          "mask_opacity": 0,
-          "start": "2023-12-13T14:37:58.949Z",
-          "end": "2024-04-12T14:37:58.974Z",
-          "img": "/img/uploads/polo-e-azul-desktop.webp",
-          "link": "https://www.sejabazico.com.br/novidades",
-          "content_position": "center_left",
-          "content_order": "inside_image",
-          "mobile_img": "/img/uploads/polo-e-azul-mobile-1.webp"
         },
         {
           "mask_opacity": 0,
