@@ -37,7 +37,9 @@ const faqs = opt.faq_plus
                                     <% for (let index = 0; index < question.responses.length; index++) { 
                                     const response = question.responses[index]
                                     %>
-                                    <li style="list-style: none;"><%- response.description %></li>
+                                    <li style="list-style: none;">
+                                        <%- await include('@/sections/inc/md-content', { _, opt: {markdown: response.description} }) %>
+                                    </li>
                                 <% } %>
                                 </ul>
                             <% } %>

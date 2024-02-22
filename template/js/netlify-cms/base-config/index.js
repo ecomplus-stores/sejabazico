@@ -321,12 +321,14 @@ export default options => {
                 {
                   label: 'Pergunta',
                   name: 'title',
-                  widget: 'string'          
+                  widget: 'string',
+                  required: false         
                 },
                 {
                   label: 'Resposta',
                   name: 'response',
-                  widget: 'string'          
+                  widget: 'string',
+                  required: false            
                 }              
               ]
             },          

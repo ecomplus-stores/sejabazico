@@ -171,12 +171,14 @@
                         {
                           "label": "Pergunta",
                           "name": "title",
-                          "widget": "string"          
+                          "widget": "string",
+                          "required": false          
                         },
                         {
                           "label": "Imagem ou Ícone",
                           "name": "img",
-                          "widget": "image"          
+                          "widget": "image",
+                          "required": false        
                         },
                         {
                           "label": "Resposta",
@@ -193,7 +195,8 @@
                                 {
                                   "label": "Texto da resposta",
                                   "name": "description",
-                                  "widget": "string"          
+                                  "widget": "string",
+                                  "required": false          
                                 }
                               ]         
                             }
