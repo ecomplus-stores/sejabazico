@@ -195,7 +195,7 @@
                                 {
                                   "label": "Texto da resposta",
                                   "name": "description",
-                                  "widget": "string",
+                                  "widget": "markdown",
                                   "required": false          
                                 }
                               ]         
