@@ -3,36 +3,52 @@
   class="account-points"
 >
   <div class="account-points__info">
-    <h4>{{ i19loyaltyPoints }}</h4>
     <span>{{ i19available }}: <b>{{ totalPoints.toFixed(1) }}</b> / Bazicash: <b>{{ formatMoney(totalBazicash) }}</b></span>
   </div>
 
   <ul class="list-group">
+  <li
+      v-if="purchases && purchases.length"
+      v-for="purchase in purchases"
+      class="list-group-item account-points__entry"
+    >
+      <div class="account-points__entry-title">
+        <h5 class="mb-1">
+          Resgate
+        </h5>
+        <small>
+          Pedido:
+          {{ formatDate(purchase.created_at) }}
+        </small>
+      </div>
+
+      <div class="bazipass-info">
+        <b style="padding: 7px; background-color: black; color: #fff; margin-top: 5px; margin-bottom: 5px">- {{ (purchase.amount.discount * 10).toFixed(2) }} Bazicashs</b>
+        <b style="padding: 7px; background-color: var(--success); color: #fff; margin-top: 5px; margin-bottom: 5px"> Débito </b>
+      </div>
+    </li>
     <li
       v-for="pointsEntry in validPointsEntries"
       class="list-group-item account-points__entry"
     >
       <div class="account-points__entry-title">
-        <h5 class="mb-1">
-          {{ pointsEntry.name }}
+        <h5 class="mb-1" v-if="pointsEntry.active_points >= 5000">
+          Bazipass
         </h5>
+        <template v-else>
+          <h5 class="mb-1">
+            Compra
+          </h5>
+        </template>
         <small v-if="pointsEntry.valid_thru">
           {{ i19upTo }}
           {{ formatDate(pointsEntry.valid_thru) }}
         </small>
       </div>
 
-      {{ i19available }}:
-      <b>{{ pointsEntry.active_points.toFixed(1) }}</b>
-      <small
-        v-if="pointsEntry.earned_points"
-        class="text-muted"
-      >
-        / {{ `${pointsEntry.earned_points.toFixed(1)} ${i19pointsEarned}` }}
-      </small>
-      <div class="account-points__Bazicash">
-        Bazicash:
-        <b>{{ formatMoney(pointsEntry.active_points * pointsEntry.ratio) }}</b>
+      <div class="bazipass-info">
+        <b style="padding: 7px; background-color: black; color: #fff; margin-top: 5px; margin-bottom: 5px">+ {{ (pointsEntry.active_points).toFixed(2) }} Bazicashs</b>
+        <b style="padding: 7px; background-color: var(--info); color: #fff; margin-top: 5px; margin-bottom: 5px"> Crédito </b>
       </div>
     </li>
   </ul>

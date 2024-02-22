@@ -29,6 +29,10 @@ export default {
     i19pointsEarned: () => i18n(i19pointsEarned),
     i19upTo: () => i18n(i19upTo),
 
+    purchases () {
+      return window.ecomPassport && window.ecomPassport.customer && window.ecomPassport.customer.orders.filter(({payment_method_label}) => payment_method_label && payment_method_label.toLowerCase() === 'bazicash') || []
+    },
+
     validPointsEntries () {
       const pointsEntries = this.customer.loyalty_points_entries
       if (pointsEntries) {
@@ -48,7 +52,7 @@ export default {
       return 0
     },
 
-    totalCashback () {
+    totalBazicash () {
       if (this.validPointsEntries.length) {
         return this.validPointsEntries.reduce((prev, curr) => (prev + (curr.active_points * curr.ratio)), 0)
       }
