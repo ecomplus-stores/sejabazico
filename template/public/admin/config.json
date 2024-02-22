@@ -194,7 +194,7 @@
                               "fields": [
                                 {
                                   "label": "Texto da resposta",
-                                  "name": "description",
+                                  "name": "markdown",
                                   "widget": "markdown",
                                   "required": false          
                                 }
