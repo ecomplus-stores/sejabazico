@@ -2294,3 +2294,22 @@ body #storefront-app>div>h1{
         background: #24174a !important;
       }
   } 
+
+@media(max-width: 767px) {
+    .widget-open-bazipass.widget-open-bazipass-container-bottom {
+        right: unset !important;
+        max-width: 100%;
+        width: 100%;
+    }
+    #ecom-div-text {
+        display: none !important;
+    }
+    
+    #ecom-div-img {
+        background-color: black;
+    }
+
+    .ecom-fidelidade-btn-right-center {
+        padding: 0px 0 25px !important
+    }
+}
