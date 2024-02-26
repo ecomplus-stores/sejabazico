@@ -178,10 +178,16 @@
           "img": "/img/uploads/rules.svg",
           "responses": [
             {
-              "description": "- Primeiro..."
+              "description": "- Primeiro...",
+              "response": {
+                "markdown": "S﻿eus Bazicashs tem validade de 365 dias."
+              }
             },
             {
-              "description": "- Segundo ..."
+              "description": "- Segundo ...",
+              "response": {
+                "markdown": "B﻿azicashs são intransferíveis"
+              }
             }
           ]
         }
