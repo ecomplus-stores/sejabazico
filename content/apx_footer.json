@@ -154,6 +154,19 @@
     "questions": [
       {
         "question": {
+          "title": "Resgate agora",
+          "responses": [
+            {
+              "response": {
+                "markdown": "[Clique aqui e resgate seus Bazicashs](https://www.sejabazico.com.br/pages/produtos-bazicash)"
+              }
+            }
+          ],
+          "img": "/img/uploads/bazicash-icon.png"
+        }
+      },
+      {
+        "question": {
           "title": "Como ganhar",
           "img": "/img/uploads/question.svg",
           "responses": [
