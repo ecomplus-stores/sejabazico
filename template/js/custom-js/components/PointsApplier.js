@@ -52,7 +52,6 @@ export default {
     },
 
     fixAvailablePoints () {
-      if (!this.isBazicashAllowed) return
       const pointsEntries = this.ecomPassport.getCustomer().loyalty_points_entries
       this.availablePoints = pointsEntries
         ? pointsEntries.reduce((availablePoints, pointsEntry) => {
