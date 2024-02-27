@@ -2313,3 +2313,16 @@ body #storefront-app>div>h1{
         padding: 0px 0 25px !important
     }
 }
+#resgate {
+    background-color: #000;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        margin-right: 15px;
+    }
+  }
