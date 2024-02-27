@@ -5,12 +5,8 @@
   "body": "![]()",
   "sections": [
     {
-      "type": "responsive-banner",
-      "img": "/img/uploads/pagina-bazicash-desktop-.webp",
-      "mobile_img": "/img/uploads/pagina-bazicash-mobile-.webp"
-    },
-    {
-      "type": "dynamic-showcase"
+      "type": "dynamic-showcase",
+      "load_more": true
     }
   ]
 }
