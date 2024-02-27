@@ -6,7 +6,7 @@
   "options": {
     "gtmContainerId": "GTM-PTNB8NZ",
     "dataLayerVar": "dataLayer",
-    "partytown": false,
+    "partytown": true,
     "isDebug": true
   },
   "headAppend": "src/append/head",
