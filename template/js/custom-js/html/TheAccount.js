@@ -163,7 +163,7 @@ export default {
     customer: {
       handler (customer) {
         const hasPoints = this.hasTab('points')
-        if (Array.isArray(customer.loyalty_points_entries) && customer.loyalty_points_entries.length && !hasPoints) {
+        if (Array.isArray(customer.loyalty_points_entries) && customer.loyalty_points_entries.length) {
           this.navTabs.push({
             label: 'Bazicash',
             value: 'points'

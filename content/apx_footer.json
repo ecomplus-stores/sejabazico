@@ -149,7 +149,7 @@
     }
   ],
   "faq_plus": {
-    "enabled": false,
+    "enabled": true,
     "banner_widget": "/img/uploads/banner-bzh.png",
     "questions": [
       {
