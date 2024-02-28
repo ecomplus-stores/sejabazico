@@ -55,6 +55,17 @@
           "link": "/roupas",
           "content_position": "center_left",
           "content_order": "inside_image"
+        },
+        {
+          "animate": "fadeInRight",
+          "start": "2024-02-28T13:57:19.395Z",
+          "img": "/img/uploads/vs_desktop.webp",
+          "mobile_img": "/img/uploads/vs_mobile.webp",
+          "content_order": "before_image",
+          "content_position": "top_left",
+          "mask_opacity": 5,
+          "link": "https://www.sejabazico.com.br/novidades",
+          "end": "2030-07-11T13:54:15.768Z"
         }
       ]
     },
