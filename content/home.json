@@ -39,16 +39,6 @@
         },
         {
           "mask_opacity": 0,
-          "start": "2023-12-29T21:18:49.735Z",
-          "end": "2024-03-02T21:18:49.760Z",
-          "img": "/img/uploads/peb-desktop.webp",
-          "mobile_img": "/img/uploads/peb-mobile-1.webp",
-          "content_position": "center_left",
-          "content_order": "inside_image",
-          "link": "/novidades"
-        },
-        {
-          "mask_opacity": 0,
           "start": "2023-12-14T11:28:54.012Z",
           "end": "2024-04-05T11:28:54.038Z",
           "img": "/img/uploads/bazipass-2024-desktop.webp",
