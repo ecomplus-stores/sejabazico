@@ -1969,9 +1969,7 @@ body #storefront-app>div>h1{
       }
       height: unset;     
 }
-.account__nav .nav-item:nth-child(4) {
-  display: none !important;
-}
+
 
 #bz-menu .level_1 li.dropdown:last-child a {
     color: #b20d0d !important
@@ -2324,6 +2322,11 @@ body #storefront-app>div>h1{
     align-items: center;
     img {
         margin-right: 15px;
+    }
+    &+ span {
+        @media(max-width: 767px) {
+            text-align: right;
+        }
     }
 }
 

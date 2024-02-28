@@ -163,7 +163,7 @@ export default {
     customer: {
       handler (customer) {
         const hasPoints = this.hasTab('points')
-        if (Array.isArray(customer.loyalty_points_entries) && customer.loyalty_points_entries.length) {
+        if (Array.isArray(customer.loyalty_points_entries) && customer.loyalty_points_entries.length && !hasPoints) {
           this.navTabs.push({
             label: 'Bazicash',
             value: 'points'
@@ -195,6 +195,10 @@ export default {
       {
         label: this.i19favorites,
         value: 'favorites'
+      },
+      {
+        label: 'Bazicash',
+        value: 'points'
       }
     ]
     const { favorites } = this.ecomPassport.getCustomer()
