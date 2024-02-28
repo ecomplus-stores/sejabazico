@@ -346,8 +346,9 @@ export default {
 
     checkout (transaction) {
       if (this.loyaltyPointsAmount || this.bazicashAmount) {
+
         for (let i = 0; i < this.paymentGateways.length; i++) {
-          if (this.paymentGateways[i].payment_method.code === 'loyalty_points') {
+          if (this.paymentGateways[i].payment_method.code === 'loyalty_points' && this.paymentGateway.payment_method.code !== 'loyalty_points') {
             const pointsAmountPart = (this.loyaltyPointsAmount + this.bazicashAmount) / this.amount.total
             const loyaltyPointsApplied = { ...this.loyaltyPointsApplied }
             if (loyaltyPointsApplied.p0_pontos) {
@@ -360,6 +361,15 @@ export default {
               ...this.paymentGateways[i],
               loyalty_points_applied: this.loyaltyPointsApplied,
               amount_part: pointsAmountPart
+            }])
+          } else if (this.paymentGateways[i].payment_method.code === 'loyalty_points' && this.paymentGateway.payment_method.code === 'loyalty_points') {
+            const loyaltyPointsApplied = { 
+              p0_pontos: this.bazicashAmount
+             }
+            return this.$emit('checkout', [{
+              ...transaction,
+              loyalty_points_applied: loyaltyPointsApplied,
+              amount: this.bazicashAmount
             }])
           }
         }
