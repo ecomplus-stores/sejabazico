@@ -7,6 +7,17 @@
       "autoplay": 10000,
       "slides": [
         {
+          "animate": "fadeInRight",
+          "start": "2024-02-28T13:57:19.395Z",
+          "img": "/img/uploads/vs_desktop.webp",
+          "mobile_img": "/img/uploads/vs_mobile.webp",
+          "content_order": "before_image",
+          "content_position": "top_left",
+          "mask_opacity": 5,
+          "link": "https://www.sejabazico.com.br/novidades",
+          "end": "2030-07-11T13:54:15.768Z"
+        },
+        {
           "mask_opacity": 0,
           "start": "2023-12-13T14:37:58.949Z",
           "end": "2024-04-12T14:37:58.974Z",
@@ -55,17 +66,6 @@
           "link": "/roupas",
           "content_position": "center_left",
           "content_order": "inside_image"
-        },
-        {
-          "animate": "fadeInRight",
-          "start": "2024-02-28T13:57:19.395Z",
-          "img": "/img/uploads/vs_desktop.webp",
-          "mobile_img": "/img/uploads/vs_mobile.webp",
-          "content_order": "before_image",
-          "content_position": "top_left",
-          "mask_opacity": 5,
-          "link": "https://www.sejabazico.com.br/novidades",
-          "end": "2030-07-11T13:54:15.768Z"
         }
       ]
     },
