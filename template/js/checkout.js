@@ -15,4 +15,9 @@ if (mcId) {
   sessionUtm.term = mcId
   window.sessionStorage.setItem('ecomUtm', JSON.stringify(sessionUtm))
 }
+if (isBazicash) {
 
+  const sessionUtmBazipass = JSON.parse(window.sessionStorage.getItem('ecomUtm') || '{}') 
+  sessionUtmBazipass.content = 'is-bazicash-checkout'
+  window.sessionStorage.setItem('ecomUtm', JSON.stringify(sessionUtmBazipass))
+}
