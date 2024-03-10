@@ -70,7 +70,7 @@ let marketingStripeStyle = ''
         </div>
         <% if (apx_header.links) { %>
           <script>
-            window.headerLinks = <%= apx_header.links[0].list %> || [];
+            window.headerLinks = <%- apx_header.links[0].list %> || [];
           </script>
           <ul class="level_1">
             <% apx_header.links.forEach(({ url, title, image, list })=> { %>
