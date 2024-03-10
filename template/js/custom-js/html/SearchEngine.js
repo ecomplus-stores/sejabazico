@@ -291,7 +291,7 @@ import {
       updateFilters () {
         const updatedFilters = []
         const addFilter = (filter, options, isSpec) => {
-          if (filter !== 'gender' && filter !== 'age_group') {
+          if (filter !== 'age_group') {
             let filterIndex = this.filters.findIndex(filterObj => filterObj.filter === filter)
             if (filter !== this.lastSelectedFilter) {
               if (filterIndex === -1) {
