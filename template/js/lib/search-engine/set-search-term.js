@@ -29,6 +29,8 @@ export default (self, term) => {
           case 'amare':
           case 'yellow':
             return 'yello'
+          case 'bazica':
+            return 'bázica'
           default:
             return lower
         }

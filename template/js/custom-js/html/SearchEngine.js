@@ -326,10 +326,14 @@ import {
           }
         }
         addFilter('Brands', this.ecomSearch.getBrands())
-        const sortCategories = ["Top 10", "Bázica Gola V", "Bázica Long", "Bázica Gola C", "Bázicas"]
-        const categories = this.ecomSearch.getCategories().sort((a, b) => {
-          return sortCategories.indexOf(b.key) - sortCategories.indexOf(a.key)
+        const filterCategory = window.headerLinks.map(({item}) => item.title) || []
+        const sortCategories = [...filterCategory]
+        const categories = this.ecomSearch.getCategories().filter(({key}) => sortCategories.indexOf(key) > -1)
+        
+        categories.sort((a, b) => {
+          return sortCategories.indexOf(a.key) - sortCategories.indexOf(b.key)
         })
+        
         addFilter('Categories', categories.filter(cat => cat.key !== 'Últimas Unidades'))
         this.ecomSearch.getSpecs().forEach(({ key, options }) => {
           addFilter(key, options, true)
