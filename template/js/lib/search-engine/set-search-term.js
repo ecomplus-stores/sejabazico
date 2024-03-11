@@ -30,6 +30,9 @@ export default (self, term) => {
           case 'yellow':
             return 'yello'
           case 'bazica':
+          case 'basico':
+          case 'bázico':
+          case 'básica':
             return 'bázica'
           default:
             return lower
