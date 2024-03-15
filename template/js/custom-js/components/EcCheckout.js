@@ -364,7 +364,7 @@ export default {
             }])
           } else if (this.paymentGateways[i].payment_method.code === 'loyalty_points' && this.paymentGateway.payment_method.code === 'loyalty_points') {
             const loyaltyPointsApplied = { 
-              p0_pontos: this.bazicashAmount
+              p0_pontos: this.bazicashPoints
              }
             return this.$emit('checkout', [{
               ...transaction,
