@@ -1,0 +1,56 @@
+<div
+  v-if="validPointsEntries.length || purchases.length"
+  class="account-gamification"
+>
+  <div class="account-gamification__info">
+    <a id="resgate" href="/pages/produtos-bazicash"> <img class="ecom__swing" src="/img/uploads/bazicash-icon.png"> Resgatar Bazicash </a>
+    <span>{{ i19available }}: <b>{{ totalPoints.toFixed(1) }} Bazicash</b></span>
+  </div>
+
+  <ul class="list-group">
+  <li
+      v-if="purchases && purchases.length"
+      v-for="purchase in purchases"
+      class="list-group-item account-gamification__entry"
+    >
+      <div class="account-gamification__entry-title">
+        <h5 class="mb-1">
+          Resgate
+        </h5>
+        <small>
+          Pedido:
+          {{ formatDate(purchase.created_at) }}
+        </small>
+      </div>
+
+      <div class="bazipass-info">
+        <b style="padding: 7px; background-color: black; color: #fff; margin-top: 5px; margin-bottom: 5px">- {{ (purchase.amount.discount * 10).toFixed(2) }} Bazicashs</b>
+        <b style="padding: 7px; background-color: var(--success); color: #fff; margin-top: 5px; margin-bottom: 5px"> Débito </b>
+      </div>
+    </li>
+    <li
+      v-for="pointsEntry in validPointsEntries"
+      class="list-group-item account-gamification__entry"
+    >
+      <div class="account-gamification__entry-title">
+        <h5 class="mb-1" v-if="pointsEntry.active_points >= 5000">
+          Bazipass
+        </h5>
+        <template v-else>
+          <h5 class="mb-1">
+            Compra
+          </h5>
+        </template>
+        <small v-if="pointsEntry.valid_thru">
+          {{ i19upTo }}
+          {{ formatDate(pointsEntry.valid_thru) }}
+        </small>
+      </div>
+
+      <div class="bazipass-info">
+        <b style="padding: 7px; background-color: black; color: #fff; margin-top: 5px; margin-bottom: 5px">+ {{ (pointsEntry.active_points).toFixed(2) }} Bazicashs</b>
+        <b style="padding: 7px; background-color: var(--info); color: #fff; margin-top: 5px; margin-bottom: 5px"> Crédito </b>
+      </div>
+    </li>
+  </ul>
+</div>

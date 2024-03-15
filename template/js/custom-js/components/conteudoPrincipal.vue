@@ -1,5 +1,5 @@
 <template>
-  <main class="conteudo-principal">
+  <main class="account-asd">
     <SuaLista :ingredientes="ingredientes" />
 
     <component :is="conteudoComponente"
