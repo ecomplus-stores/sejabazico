@@ -9,23 +9,23 @@
         {
           "animate": "fadeInRight",
           "start": "2024-02-28T13:57:19.395Z",
-          "img": "/img/uploads/vs_desktop.webp",
-          "mobile_img": "/img/uploads/vs_mobile.webp",
+          "img": "/img/uploads/outlet-desktop.webp",
+          "mobile_img": "/img/uploads/outlet-mobile.webp",
           "content_order": "before_image",
           "content_position": "top_left",
           "mask_opacity": 5,
-          "link": "https://www.sejabazico.com.br/novidades",
+          "link": "https://www.sejabazico.com.br/OUTLET",
           "end": "2030-07-11T13:54:15.768Z"
         },
         {
           "mask_opacity": 0,
           "start": "2023-12-13T14:37:58.949Z",
           "end": "2024-04-12T14:37:58.974Z",
-          "img": "/img/uploads/desktop_rep-23-02.webp",
-          "link": "https://www.sejabazico.com.br/novidades",
+          "img": "/img/uploads/idv-base.webp",
+          "link": "https://bazipass.sejabazico.com.br/",
           "content_position": "center_left",
           "content_order": "inside_image",
-          "mobile_img": "/img/uploads/mobile_rep-23-02.webp"
+          "mobile_img": "/img/uploads/feed-caixa.webp"
         },
         {
           "mask_opacity": 0,
