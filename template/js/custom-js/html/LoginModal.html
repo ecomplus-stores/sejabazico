@@ -33,7 +33,7 @@
           role="alert"
         >
           {{ i19loginErrorMsg }}
-        </div>
+        </div>    
 
         <transition-group
           enter-active-class="animated fadeIn"
@@ -82,6 +82,16 @@
                 Bazicashs
               </a-link>
             </div>
+          <div>
+            <a-link
+  v-if="isBazipass"
+  :href="`/app/#/gamificacao`"  
+  class="list-group-item list-group-item-action"
+>
+  Acessar Gamificação
+</a-link>
+</div>
+
 
             <button
               class="login-modal__logout btn btn-block btn-danger"

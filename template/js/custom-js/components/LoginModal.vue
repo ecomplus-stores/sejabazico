@@ -48,6 +48,9 @@ import AAlert from '@ecomplus/storefront-components/src/AAlert.vue'
 
 Vue.use(VueClipboard)
 
+
+
+
 export default {
   name: 'LoginModal',
 
@@ -55,31 +58,44 @@ export default {
     AAlert
   },
 
-  data () {
+  data() {
     return {
       isLogged: false,
       link: '',
-      copyIconClass: 'i-copy'
+      copyIconClass: 'i-copy',
+      isBazipass: false // Adicione esta linha
     }
   },
 
+  mounted() {
+    window.addEventListener('bazipassCheck', this.handleBazipassCheck);
+  },
+
+  beforeDestroy() {
+    window.removeEventListener('bazipassCheck', this.handleBazipassCheck);
+  },
+
   methods: {
-    login () {
-      const loginButton = document.getElementById('user-button')
+    login() {
+      const loginButton = document.getElementById('user-button');
       if (loginButton) {
-        loginButton.click()
+        loginButton.click();
       } else {
-        window.location = '/app/#/account/'
+        window.location = '/app/#/account/';
       }
     },
 
-    setLink () {
-      const customer = ecomPassport.getCustomer()
-      this.link = `https://${window.location.host}/` +
-        `?coupon=CONVITEESPECIAL&referral=${customer._id}`
+    handleBazipassCheck() {
+      this.isBazipass = true;
     },
 
-    share () {
+    setLink() {
+      const customer = ecomPassport.getCustomer();
+      this.link = `https://${window.location.host}/` +
+        `?coupon=CONVITEESPECIAL&referral=${customer._id}`;
+    },
+
+    share() {
       const text = 'Compre a melhor granola e outros alimentos saudáveis e deliciosos na Tia Sônia ' +
         'com R$ 25,00 de desconto através desse link!';
       const share = async () => {
@@ -88,41 +104,40 @@ export default {
             title: 'Tia Sônia - Convite especial: Ganhe R$ 25,00',
             text,
             url: this.link
-          })
+          });
         } catch (err) {
-          console.error(err)
+          console.error(err);
           if (typeof navigator.share !== 'function') {
             const wppLink = 'https://web.whatsapp.com/send?text=' +
-              encodeURIComponent(text + ' ' + this.link)
-            window.open(wppLink, '_blank')
+              encodeURIComponent(text + ' ' + this.link);
+            window.open(wppLink, '_blank');
           }
         }
-      }
-      share()
+      };
+      share();
     },
 
-    toClipboard (text) {
+    toClipboard(text) {
       this.$copyText(text).then(() => {
-        this.copyIconClass = 'i-check'
+        this.copyIconClass = 'i-check';
         setTimeout(() => {
-          this.copyIconClass = 'i-copy'
-        }, 3000)
+          this.copyIconClass = 'i-copy';
+        }, 3000);
       }, err => {
-        console.error(err)
-      })
+        console.error(err);
+      });
     }
   },
 
-  created () {
-    this.isLogged = ecomPassport.checkLogin()
+  created() {
+    this.isLogged = ecomPassport.checkLogin();
     if (this.isLogged) {
-      this.setLink()
+      this.setLink();
     } else {
       ecomPassport.on('login', () => {
-        this.isLogged = true
-        this.setLink()
-      })
+        this.isLogged = true;
+        this.setLink();
+      });
     }
   },
 }
-</script>
