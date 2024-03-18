@@ -199,7 +199,11 @@ export default {
       {
         label: 'Bazicash',
         value: 'points'
-      }
+      }/* ,
+      {
+        label: 'Gamificação',
+        value: 'gamification'
+      } */
     ]
     const { favorites } = this.ecomPassport.getCustomer()
     this.favoriteIds = favorites || []

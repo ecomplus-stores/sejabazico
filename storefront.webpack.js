@@ -32,6 +32,8 @@ module.exports = () => ({
       './html/AccountForm.html': path.resolve(__dirname, 'template/js/custom-js/components/AccountForm.html'),
       './js/AccountForm.js': path.resolve(__dirname, 'template/js/custom-js/components/AccountForm.js'),
       './html/EcSummary.html': path.resolve(__dirname, 'template/js/custom-js/components/EcSummary.html'),
+      './Account.js': path.resolve(__dirname, 'template/js/custom-js/components/Account.js'),
+      './Account.vue': path.resolve(__dirname, 'template/js/custom-js/components/Account.vue'),
       './js/EcSummary.js': path.resolve(__dirname, 'template/js/custom-js/components/EcSummary.js'),
       './html/QuantitySelector.html': path.resolve(__dirname, 'template/js/custom-js/html/QuantitySelector.html'),
       './js/QuantitySelector.js': path.resolve(__dirname, 'template/js/custom-js/html/QuantitySelector.js'),
