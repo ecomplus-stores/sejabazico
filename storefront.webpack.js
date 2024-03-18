@@ -29,8 +29,6 @@ module.exports = () => ({
       './js/LoginModal.js': path.resolve(__dirname, 'template/js/custom-js/html/LoginModal.js'),
       './html/TheCart.html': path.resolve(__dirname, 'template/js/custom-js/components/TheCart.html'),
       './js/TheCart.js': path.resolve(__dirname, 'template/js/custom-js/components/TheCart.js'),
-      './html/AccountForm.html': path.resolve(__dirname, 'template/js/custom-js/components/AccountForm.html'),
-      './js/AccountForm.js': path.resolve(__dirname, 'template/js/custom-js/components/AccountForm.js'),
       './html/EcSummary.html': path.resolve(__dirname, 'template/js/custom-js/components/EcSummary.html'),
       './Account.js': path.resolve(__dirname, 'template/js/custom-js/components/Account.js'),
       './Account.vue': path.resolve(__dirname, 'template/js/custom-js/components/Account.vue'),
