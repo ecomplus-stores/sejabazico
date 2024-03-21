@@ -38,8 +38,10 @@ export default {
       if (pointsEntries) {
         return pointsEntries.filter(pointsEntry => {
           const validThru = pointsEntry.valid_thru
-          return (!validThru || new Date(validThru).getTime() >= Date.now()) &&
-            pointsEntry.active_points > 0
+          if (new Date(validThru).getTime() <= Date.now()) {
+            pointsEntry.vencido = true
+          }
+          return pointsEntry.active_points >= 0
         })
       }
       return []
