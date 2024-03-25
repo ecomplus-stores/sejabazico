@@ -16,9 +16,12 @@
       <template #account-points>
         <account-points :customer.sync="customer"/>
       </template>
-      <!-- <template #account-gamification>
-        <account-gamification :customer.sync="customer"/>
-      </template> -->
+      
+      <template #account-gamification>
+  <account-gamification
+  :customer.sync="customer"></account-gamification>
+</template>
+{{ totalBazicash }}
       <template #orders-list>
         <ec-orders-list
           :ecom-passport="ecomPassport"
@@ -38,3 +41,4 @@
 </template>
 
 <script src="./Account.js"></script>
+
