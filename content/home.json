@@ -90,6 +90,28 @@
       "carrossel_md": "Sim"
     },
     {
+      "type": "apx_banners-grid",
+      "container": "container-fluid",
+      "padding": "px-2",
+      "banners": [
+        {
+          "mask_opacity": 5,
+          "img": "/img/uploads/polo.png",
+          "link": "https://www.sejabazico.com.br/bazica-polo"
+        },
+        {
+          "mask_opacity": 5,
+          "img": "/img/uploads/kids.png",
+          "link": "https://www.sejabazico.com.br/bazica-kids"
+        },
+        {
+          "mask_opacity": 5,
+          "img": "/img/uploads/vicentti.png",
+          "link": "https://www.sejabazico.com.br/bazica-vicentti"
+        }
+      ]
+    },
+    {
       "type": "apx_banner-slider",
       "autoplay": 9000,
       "slides": [
@@ -350,28 +372,6 @@
       "list": "description_last",
       "btn_text": "Assinar",
       "input_placeholder": "seumelhoremail@email.com"
-    },
-    {
-      "type": "apx_banners-grid",
-      "container": "container-fluid",
-      "padding": "px-2",
-      "banners": [
-        {
-          "mask_opacity": 5,
-          "img": "/img/uploads/polo.png",
-          "link": "https://www.sejabazico.com.br/bazica-polo"
-        },
-        {
-          "mask_opacity": 5,
-          "img": "/img/uploads/kids.png",
-          "link": "https://www.sejabazico.com.br/bazica-kids"
-        },
-        {
-          "mask_opacity": 5,
-          "img": "/img/uploads/vicentti.png",
-          "link": "https://www.sejabazico.com.br/bazica-vicentti"
-        }
-      ]
     }
   ]
 }
