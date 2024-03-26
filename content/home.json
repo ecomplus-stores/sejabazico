@@ -245,6 +245,10 @@
       "carrossel_md": "Sim"
     },
     {
+      "type": "custom-html",
+      "html": "<div class=\"skeepers_carousel_container\" data-slides-count=\"4\"></div><script async charset=\"utf-8\" src=\"//widgets.rr.skeepers.io/carousel/1320fe34-7021-6ed4-8dfa-84d497e80097/6fa5c066-80c8-42b8-9139-0f664cb4d62e.js\"></script>"
+    },
+    {
       "type": "apx_testimonials",
       "title": "o que dizem por ai",
       "description": "relatos de alguns dos nossos mais de 5 mil clientes",
