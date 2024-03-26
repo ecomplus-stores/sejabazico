@@ -4,7 +4,7 @@
   "sections": [
     {
       "type": "apx_banner-slider",
-      "autoplay": 1000,
+      "autoplay": 1500,
       "slides": [
         {
           "mask_opacity": 0,
