@@ -3,47 +3,6 @@
   "meta_description": "Camisas Básicas de algodão egípcio que não desbotam, não encolhem e duram 7x mais que a média do mercado",
   "sections": [
     {
-      "type": "banner-slider",
-      "autoplay": 10000,
-      "full_width": true,
-      "slides": [
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/banner-tarja-2024.webp",
-          "mobile_img": "/img/uploads/tarja-2024-desktop-.webp"
-        }
-      ]
-    },
-    {
-      "carrossel_sm": "Sim",
-      "container": "container-fluid",
-      "products": [
-        "636eac9a73321213f8d6f75a",
-        "636ead3b73321213f8d6f9b4",
-        "636ead1673321213f8d6f929",
-        "636eacb373321213f8d6f7c9",
-        "652d79152cd6b659597c6803",
-        "656f9c2e2cd6b65959ce43bf",
-        "645a5ea64bd2e929c1f3ca92",
-        "65156e3a2cd6b65959616c18"
-      ],
-      "carrossel_dots_md": "Sim",
-      "carrossel_arrows_md": "Sim",
-      "carrossel_dots_sm": "Sim",
-      "carrossel_arrows_sm": "Não",
-      "padding_sm": "px-1",
-      "num_col_md": "4",
-      "padding": "px-md-2",
-      "num_col_sm": "2",
-      "title": "mais vendidos",
-      "type": "apx_productList_A",
-      "description": "os 10 itens que nossos clientes mais curtem",
-      "btn_link": "/top-10",
-      "list": "description_last",
-      "carrossel_md": "Sim"
-    },
-    {
       "type": "apx_banner-slider",
       "autoplay": 1000,
       "slides": [
@@ -88,6 +47,47 @@
           "content_order": "inside_image"
         }
       ]
+    },
+    {
+      "type": "banner-slider",
+      "autoplay": 10000,
+      "full_width": true,
+      "slides": [
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/banner-tarja-2024.webp",
+          "mobile_img": "/img/uploads/tarja-2024-desktop-.webp"
+        }
+      ]
+    },
+    {
+      "carrossel_sm": "Sim",
+      "container": "container-fluid",
+      "products": [
+        "636eac9a73321213f8d6f75a",
+        "636ead3b73321213f8d6f9b4",
+        "636ead1673321213f8d6f929",
+        "636eacb373321213f8d6f7c9",
+        "652d79152cd6b659597c6803",
+        "656f9c2e2cd6b65959ce43bf",
+        "645a5ea64bd2e929c1f3ca92",
+        "65156e3a2cd6b65959616c18"
+      ],
+      "carrossel_dots_md": "Sim",
+      "carrossel_arrows_md": "Sim",
+      "carrossel_dots_sm": "Sim",
+      "carrossel_arrows_sm": "Não",
+      "padding_sm": "px-1",
+      "num_col_md": "4",
+      "padding": "px-md-2",
+      "num_col_sm": "2",
+      "title": "mais vendidos",
+      "type": "apx_productList_A",
+      "description": "os 10 itens que nossos clientes mais curtem",
+      "btn_link": "/top-10",
+      "list": "description_last",
+      "carrossel_md": "Sim"
     },
     {
       "type": "apx_banner-slider",
