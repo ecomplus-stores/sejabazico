@@ -63,7 +63,7 @@ export default {
       isLogged: false,
       link: '',
       copyIconClass: 'i-copy',
-      isBazipass: false // Adicione esta linha
+      isBazipass: false 
     }
   },
 
