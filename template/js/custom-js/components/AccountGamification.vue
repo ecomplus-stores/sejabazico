@@ -111,12 +111,9 @@ export default {
    i19pointsEarned: () => i18n(i19pointsEarned),
     i19upTo: () => i18n(i19upTo),
 
-  
-  
-
    purchases () {
-        return window.ecomPassport && window.ecomPassport.customer && window.ecomPassport.customer.orders && window.ecomPassport.customer.orders.filter(({payment_method_label}) => payment_method_label && payment_method_label.toLowerCase() === 'bazicash') || []
-      },
+    return window.ecomPassport && window.ecomPassport.customer && window.ecomPassport.customer.orders && window.ecomPassport.customer.orders || []
+   },
 
    validPointsEntries () {
      const pointsEntries = this.customer.loyalty_points_entries
@@ -181,12 +178,9 @@ export default {
   <div class="account-gamification">
     <h1 class="Pontos">{{ customer.display_name }}, você tem {{ totalPoints }} Bazicash!</h1>
     <br>
-    
-    {{ customer.orders }}
     <h2 class="titulo-missoes">Missões 🚀</h2>
     <p class="paragrafo-lg">Participe e ganhe bazicash para trocar por produtos incríveis!</p>
    <div class="missoes">
-    {{ pedido }}
      <div class="row">
        <div v-for="mission in missions" :key="mission.nome" class="col-md-6 mb-3">
          <div class="card">

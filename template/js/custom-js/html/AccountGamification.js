@@ -30,7 +30,7 @@ export default {
     i19upTo: () => i18n(i19upTo),
 
     purchases () {
-      return window.ecomPassport && window.ecomPassport.customer && window.ecomPassport.customer.orders && window.ecomPassport.customer.orders.filter(({payment_method_label}) => payment_method_label && payment_method_label.toLowerCase() === 'bazicash') || []
+      return window.ecomPassport && window.ecomPassport.customer && window.ecomPassport.customer.orders && window.ecomPassport.customer.orders || []
     },
 
     validPointsEntries () {
