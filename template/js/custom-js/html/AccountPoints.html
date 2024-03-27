@@ -48,8 +48,8 @@
       </div>
 
       <div class="bazipass-info">
-        <b style="padding: 7px; background-color: black; color: #fff; margin-top: 5px; margin-bottom: 5px">+ {{ (pointsEntry.active_points).toFixed(2) }} Bazicashs</b>
-        <b style="padding: 7px; background-color: var(--info); color: #fff; margin-top: 5px; margin-bottom: 5px"> Crédito </b>
+        <b style="padding: 7px; background-color: black; color: #fff; margin-top: 5px; margin-bottom: 5px">{{ pointsEntry.vencido ? '-' : '+' }} {{ (pointsEntry.active_points).toFixed(2) }} Bazicashs</b>
+        <b :style="`padding: 7px; background-color: ${pointsEntry.vencido ? 'var(--danger);' : 'var(--info);'} color: #fff; margin-top: 5px; margin-bottom: 5px`"> {{ pointsEntry.vencido ? 'Vencido' : 'Crédito' }}  </b>
       </div>
     </li>
   </ul>

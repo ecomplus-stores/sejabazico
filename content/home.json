@@ -4,28 +4,27 @@
   "sections": [
     {
       "type": "apx_banner-slider",
-      "autoplay": 10000,
+      "autoplay": 1500,
       "slides": [
         {
-          "animate": "fadeInRight",
-          "start": "2024-02-28T13:57:19.395Z",
-          "img": "/img/uploads/outlet-desktop.webp",
-          "mobile_img": "/img/uploads/outlet-mobile.webp",
-          "content_order": "before_image",
-          "content_position": "top_left",
-          "mask_opacity": 5,
-          "link": "https://www.sejabazico.com.br/outlet",
-          "end": "2030-07-11T13:54:15.768Z"
+          "mask_opacity": 0,
+          "start": "2024-03-25T21:23:27.895Z",
+          "end": "2024-07-06T21:23:27.923Z",
+          "img": "/img/uploads/kids-desktop.webp",
+          "link": "/bazica-kids",
+          "mobile_img": "/img/uploads/kids-mobile.webp",
+          "content_position": "top_center",
+          "content_order": "inside_image"
         },
         {
           "mask_opacity": 0,
           "start": "2023-12-13T14:37:58.949Z",
           "end": "2024-04-12T14:37:58.974Z",
-          "img": "/img/uploads/bazipass-oferta-desktop.webp",
+          "img": "/img/uploads/bazipass-2024-desktop.webp",
           "link": "https://bazipass.sejabazico.com.br/",
           "content_position": "center_left",
           "content_order": "inside_image",
-          "mobile_img": "/img/uploads/bazipass-oferta-mobile.webp"
+          "mobile_img": "/img/uploads/bazipass-2024-mobile-1.webp"
         },
         {
           "mask_opacity": 0,
@@ -91,18 +90,24 @@
       "carrossel_md": "Sim"
     },
     {
-      "type": "apx_banner-slider",
-      "autoplay": 9000,
-      "slides": [
+      "type": "apx_banners-grid",
+      "container": "container-fluid",
+      "padding": "px-2",
+      "banners": [
         {
-          "mask_opacity": 0,
-          "start": "2023-12-21T13:33:11.101Z",
-          "end": "2024-06-22T13:33:11.112Z",
-          "img": "/img/uploads/preta-desktop-.webp",
-          "mobile_img": "/img/uploads/preta-mobile-.webp",
-          "content_position": "center_left",
-          "content_order": "inside_image",
-          "link": "/all-black"
+          "mask_opacity": 5,
+          "img": "/img/uploads/polo.png",
+          "link": "https://www.sejabazico.com.br/bazica-polo"
+        },
+        {
+          "mask_opacity": 5,
+          "img": "/img/uploads/kids.png",
+          "link": "https://www.sejabazico.com.br/bazica-kids"
+        },
+        {
+          "mask_opacity": 5,
+          "img": "/img/uploads/vicentti.png",
+          "link": "https://www.sejabazico.com.br/bazica-vicentti"
         }
       ]
     },
@@ -229,60 +234,8 @@
       "carrossel_md": "Sim"
     },
     {
-      "type": "apx_testimonials",
-      "title": "o que dizem por ai",
-      "description": "relatos de alguns dos nossos mais de 5 mil clientes",
-      "testimonials": [
-        {
-          "testimonial": {
-            "name": "Wilza",
-            "text": "As camisas dispensam comentários são EXCELENTES, meu filho amou ... ainda essa semana passo por aí, pois o aniversário dele será na próxima segunda.",
-            "image": "/img/uploads/92634519_318041429167974_2580489211262009344_n-1-.jpg"
-          }
-        },
-        {
-          "testimonial": {
-            "name": "João Pedro",
-            "text": "A Bázico não deixa nada a desejar. Cumpre com o que promete. Tecido impecável e o caimento no corpo é sensacional também",
-            "image": "/img/uploads/joao-pedro.png"
-          }
-        },
-        {
-          "testimonial": {
-            "name": "Nancicleima",
-            "text": "Não posso deixar de elogiar o atendimento de vcs viu, parabéns!!👏👏👏",
-            "image": "/img/uploads/nancicleima.png"
-          }
-        },
-        {
-          "testimonial": {
-            "name": "Anderson Silva",
-            "text": "Maravilha! Camisa sensacional e o atendimento ao cliente super especial, recomendo!",
-            "image": "/img/uploads/anderson-silva.png"
-          }
-        },
-        {
-          "testimonial": {
-            "name": "Gustavo Paixão",
-            "text": "Essa relação vocês com os clientes é MUITO F0%$A e é por isso que a Bázico não para de crescer e vai ser a melhor marca do Brasil num futuro bem próximo (pra mim já é há uito tempo kkkk).",
-            "image": "/img/uploads/gustavo-paixao.png"
-          }
-        },
-        {
-          "testimonial": {
-            "name": "Luiz Fraga",
-            "text": "Experiência F#$%. Camisa F#$%. Só quero usar Bázico.",
-            "image": "/img/uploads/luiz-fraga.png"
-          }
-        },
-        {
-          "testimonial": {
-            "name": "Augusto",
-            "text": "Tô me amarrando no BaziPass, gostei muito de ter a opção de não pegar várias camisas de vez, e assim que for necessário, vai pegando o que tem interesse no momento que tem interesse, muito massa!!!",
-            "image": "/img/uploads/augusto.png"
-          }
-        }
-      ]
+      "type": "custom-html",
+      "html": "<div class=\"apx_section-title text-center\"><h2 class=\"text-bold text-uppercase\">o que dizem por ai</h2><small class=\"text-uppercase\">relatos de alguns dos nossos mais de 5 mil clientes</small></div>\n<div class=\"skeepers_carousel_container\" data-slides-count=\"4\"></div>\n<script async charset=\"utf-8\" src=\"//widgets.rr.skeepers.io/carousel/1320fe34-7021-6ed4-8dfa-84d497e80097/6fa5c066-80c8-42b8-9139-0f664cb4d62e.js\"></script>"
     },
     {
       "type": "apx_faq",

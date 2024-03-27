@@ -1,12 +1,16 @@
 {
   "stripe_slider": [
     {
-      "text": "Frete Grátis para todo o Nordeste | até 22/03",
+      "text": "Sedex 50% em todas as suas compras.",
       "url": "/"
     },
     {
       "url": "https://bazipass.sejabazico.com.br/",
-      "text": "R$600 por 5 Bázicas + 1 Shot Bázico, <u>descubra como</u>"
+      "text": "R$600 por 5 Bázicas + 15% desconto durante 1 ano, <u>descubra como</u>"
+    },
+    {
+      "text": "Conheça a Bázica Kids, armadura do seu mini super herói",
+      "url": "https://www.sejabazico.com.br/bazica-kids"
     }
   ],
   "links": [
@@ -90,10 +94,6 @@
     {
       "title": "BaziPass",
       "url": "https://bazipass.sejabazico.com.br/?utm_medium=site&utm_term=cabecalho"
-    },
-    {
-      "url": "https://www.sejabazico.com.br/outlet",
-      "title": "Outlet | até 30%"
     }
   ]
 }
