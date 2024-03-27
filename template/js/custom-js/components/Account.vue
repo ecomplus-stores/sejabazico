@@ -18,9 +18,9 @@
       </template>
       
       <template #account-gamification>
-  <account-gamification
-  :customer.sync="customer"></account-gamification>
-</template>
+          <account-gamification
+          :customer.sync="customer"></account-gamification>
+        </template>
       <template #orders-list>
         <ec-orders-list
           :ecom-passport="ecomPassport"
@@ -40,4 +40,3 @@
 </template>
 
 <script src="./Account.js"></script>
-

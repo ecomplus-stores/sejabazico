@@ -37,7 +37,7 @@ export default {
     currentTab: {
       type: String,
       validator: function (value) {
-        return ['orders', 'favorites', 'subscriptions', 'points', 'account'].includes(value)
+        return ['orders', 'favorites', 'subscriptions', 'points', 'account', 'gamification'].includes(value)
       }
     },
     ecomPassport: {
@@ -199,6 +199,10 @@ export default {
       {
         label: 'Bazicash',
         value: 'points'
+      },
+      {
+        label: 'Gamification',
+        value: 'gamification'
       }
     ]
     const { favorites } = this.ecomPassport.getCustomer()

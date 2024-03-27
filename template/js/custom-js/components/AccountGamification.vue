@@ -31,6 +31,8 @@ export default {
   name: 'AccountGamification',
   
 
+
+
   components: {
     ALink,
     AAlert,
@@ -111,9 +113,7 @@ export default {
    i19pointsEarned: () => i18n(i19pointsEarned),
     i19upTo: () => i18n(i19upTo),
 
-   purchases () {
-    return window.ecomPassport && window.ecomPassport.customer && window.ecomPassport.customer.orders && window.ecomPassport.customer.orders || []
-   },
+
 
    validPointsEntries () {
      const pointsEntries = this.customer.loyalty_points_entries
@@ -147,25 +147,7 @@ export default {
   methods: {
     getImg,
     getName,
-    checkCustomerOrders() {
-      console.log(customer);
-      const orders = customer.orders || [];
-      console.log(orders);
-      const ownedColors = { Yellow: false, Red: false, Blue: false };
-
-      orders.forEach(order => {
-        order.items.forEach(item => {
-          for (const [color, skus] of Object.entries(this.skus)) {
-            if (skus.includes(item.sku)) {
-              ownedColors[color] = true;
-              break;
-            }
-          }
-        });
-      });
-
-      this.missingColors = Object.keys(ownedColors).filter(color => !ownedColors[color]);
-    },
+   
     
     
   },
@@ -180,21 +162,22 @@ export default {
     <br>
     <h2 class="titulo-missoes">Missões 🚀</h2>
     <p class="paragrafo-lg">Participe e ganhe bazicash para trocar por produtos incríveis!</p>
-   <div class="missoes">
-     <div class="row">
-       <div v-for="mission in missions" :key="mission.nome" class="col-md-6 mb-3">
-         <div class="card">
-           <div class="card-body">
-             <h5 class="card-title">{{ mission.nome }}</h5>
-             <p class="card-text">{{ mission.descricao }}</p>
-             <a href="#" class="btn btn-primary">Ganhe {{ mission.bazicash }} bazicash</a>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
+    <div class="missoes">
+      <div class="row">
+        <div v-for="mission in missions" :key="mission.nome" class="col-md-6 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">{{ mission.nome }}</h5>
+              <p class="card-text">{{ mission.descricao }}</p>
+              <a href="#" class="btn btn-primary">Ganhe {{ mission.bazicash }} bazicash</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
+
 
 
 <style>
