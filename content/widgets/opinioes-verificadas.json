@@ -1,13 +1,10 @@
 {
   "pkg": "@ecomplus/widget-opinioes-verificadas",
-  "active": true,
+  "active": false,
   "desktopOnly": false,
   "enableCheckout": false,
   "disablePages": true,
-  "options": {
-    "stamp": "<meta class=\"netreviewsWidget\" id=\"netreviewsWidgetNum3913\" data-jsurl=\"//cl.avis-verifies.com/br/cache/7/3/3/1320fe34-7021-6ed4-8dfa-84d497e80097/widget4/widget01-3913_script.js\"/><script src=\"//cl.avis-verifies.com/br/widget4/widget01_FB3.min.js\"></script>",
-    "tagJs": "<script charset=\"utf-8\" src=\"//cl.avis-verifies.com/br/cache/7/3/3/1320fe34-7021-6ed4-8dfa-84d497e80097/AWS/PRODUCT_API/tag.min.js\"></script>"
-  },
+  "options": {},
   "headAppend": "src/append/head",
   "bodyAppend": "src/append/body",
   "productCardSlots": "src/append/product-card-slots",
