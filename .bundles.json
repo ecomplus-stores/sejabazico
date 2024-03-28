@@ -1,29 +1,27 @@
 {
   "assetsByChunkName": {
-    "vendors~app-account~app-confirmation~app-order": "chunk.5ae1c4f8e9445567366f.js",
-    "vendors~app-account~app-checkout": "chunk.a9d679c5eadddc6b6981.js",
-    "vendors~app-cart~app-checkout": "chunk.574cbdb56e611f181419.js",
+    "vendors~app-account~app-confirmation~app-order": "chunk.2a1718692dd904d6e29c.js",
+    "vendors~app-account~app-checkout": "chunk.ad0dc7d77f0c2801f0d2.js",
+    "vendors~app-cart~app-checkout": "chunk.b13263c22c996499a83d.js",
     "admin": [
-      "admin.2aa87004fff8cf81fc93.js",
-      "admin.2aa87004fff8cf81fc93.js.map"
+      "admin.18659a327450b21131dc.js",
+      "admin.18659a327450b21131dc.js.map"
     ],
-    "app-account": "chunk.261933be0c3e7936132f.js",
-    "app-cart": "chunk.3daca1e7106cdbf3266b.js",
-    "app-checkout": "chunk.48c3638ace6976ba3cf5.js",
-    "app-confirmation": "chunk.141cc3bc1d40548e4838.js",
-    "app-order": "chunk.11d2fade925186c44e25.js",
+    "app-account": "chunk.6a782091e671aefc13f4.js",
+    "app-cart": "chunk.78838b19c360cc099e6f.js",
+    "app-checkout": "chunk.c9ca3016da730f4b2252.js",
+    "app-confirmation": "chunk.82c800e3dcbfe2bcb227.js",
+    "app-order": "chunk.f81c660440af150b8bc2.js",
     "checkout": [
-      "checkout.5565bce9b107512275b0.js",
-      "checkout.5565bce9b107512275b0.js.map"
+      "checkout.117631a4b59aac8c8c34.js",
+      "checkout.117631a4b59aac8c8c34.js.map"
     ],
     "storefront": [
-      "storefront.4f677890b51d44196c29.css",
-      "storefront.80df329a8bb7d2d1d3b4.js",
-      "storefront.4f677890b51d44196c29.css.map",
-      "storefront.80df329a8bb7d2d1d3b4.js.map"
+      "storefront.90382add194e7b018901.css",
+      "storefront.6c79e6406b85ab4c1d1a.js",
+      "storefront.90382add194e7b018901.css.map",
+      "storefront.6c79e6406b85ab4c1d1a.js.map"
     ],
-    "vendors~app-account": "chunk.18c9dc843b76616d698c.js",
-    "vendors~app-cart": "chunk.54efb9c66f19ee26c0cc.js",
-    "vendors~app-checkout": "chunk.fbc487230331794a033d.js"
+    "vendors~app-checkout": "chunk.f17721e1bb290f6b2654.js"
   }
 }

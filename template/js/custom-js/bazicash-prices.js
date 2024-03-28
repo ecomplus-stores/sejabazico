@@ -43,6 +43,7 @@ export default (isCheckout = false) => {
         .catch(console.error)
     }
   }, 400)
+
   ecomPassport.on('change', checkBazipass)
   if (ecomPassport.checkLogin()) {
     checkBazipass()

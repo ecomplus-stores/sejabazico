@@ -23,7 +23,7 @@ export default {
     return {
       isMounted: false,
       ecomPassport,
-      tal: false
+      tal: false,
     }
   },
 

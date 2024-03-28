@@ -50,6 +50,10 @@ export default {
       type: String,
       default: '/app/#/account/favorites'
     },
+    gamificationUrl: {
+      type: String,
+      default: '/app/#/account/gamification'
+    },
     ecomPassport: {
       type: Object,
       default () {

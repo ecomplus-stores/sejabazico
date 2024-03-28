@@ -89,6 +89,7 @@ const apx_props = _.cms('apx_props') || {}
             <h1 class="product__name d-md-block d-none">
               <%= _.ecomUtils.name(_.state) %>
             </h1>
+            <div class="skeepers_product__stars" data-product-id="<%= _.state.sku %>"></div>
             <ul id="apx_props"><% apx_props.props.forEach(({ item })=> {
                 
                   let flag = false
@@ -286,6 +287,7 @@ const apx_props = _.cms('apx_props') || {}
           </div>
         </div>
       </div>
+      <div class="skeepers_product__reviews" data-product-id="<%= _.state.sku %>" data-locale="pt_BR" data-price="<%= _.state.price %>" data-currency="BRL" data-name="<%= _.state.name %>" data-url="https://www.sejabazico.com.br/<%= _.state.slug %>" data-image-url="<%= _.state.pictures && _.state.pictures.length && _.state.pictures[0] && _.state.pictures[0].zoom && _.state.pictures[0].zoom.url %>"></div>
 
       <%- await include('@/helpers/widgets-append', {
         _, opt: {}, field: 'productSlots'
