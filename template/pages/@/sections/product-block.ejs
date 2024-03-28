@@ -136,7 +136,9 @@ const apx_props = _.cms('apx_props') || {}
                   }
               }) 
             %></ul>
-            <div class="skeepers_product__stars" data-product-id="<%= _.state.sku %>"></div>
+            <div data-slot="rating">
+              <div class="skeepers_product__stars" data-product-id="<%= itemData.sku %>"></div> 
+            </div>
             <ul id="apx_seals" class=" d-md-flex d-none"><% apx_seals.seals.forEach(({ item })=> {
                 
                   let flag = false
