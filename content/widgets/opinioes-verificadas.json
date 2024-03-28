@@ -4,7 +4,10 @@
   "desktopOnly": false,
   "enableCheckout": false,
   "disablePages": true,
-  "options": {},
+  "options": {
+    "stamp": "",
+    "tagJs": ""
+  },
   "headAppend": "src/append/head",
   "bodyAppend": "src/append/body",
   "productCardSlots": "src/append/product-card-slots",
