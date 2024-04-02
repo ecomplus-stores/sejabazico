@@ -1,5 +1,8 @@
 <% if (Array.isArray(opt.stamps)) { %>
   <ul class="stamps">
+    <li>
+      <div id="5be85ffe-ad8c-423f-8da1-041a882a57e3"></div><script async charset="utf-8" src="https://widgets.rr.skeepers.io/generated/1320fe34-7021-6ed4-8dfa-84d497e80097/5be85ffe-ad8c-423f-8da1-041a882a57e3.js"></script>
+    </li>
     <% opt.stamps.forEach(({ src, alt, link, ...dimensions }) => {
       const { width, height } = _.tryImageSize(src, dimensions)
       const imgHtml = `<img data-src="${(_.assetsPrefix || '')}${src}" alt="${alt}" class="lozad fade"` +
