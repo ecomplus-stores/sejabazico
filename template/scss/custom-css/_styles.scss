@@ -2330,10 +2330,8 @@ body #storefront-app>div>h1{
     }
 }
 
-.product-item {
-    .skeepers_product__stars {
-        padding-left: 1rem;
-    }
+.product-item + div[data-slot="rating"] {
+    padding-left: 1rem !important;;
 }
 
 .skeepers_product__stars .stars .stars__item {
