@@ -87,7 +87,7 @@ export default {
           bazicashPrice += window.bazicashPrices[item._id]
         }
       })
-      console.log(bazicashPrice)
+      console.log('bazicash price is', bazicashPrice)
       return bazicashPrice
     }
   },
