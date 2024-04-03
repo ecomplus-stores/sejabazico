@@ -28,6 +28,8 @@ export default (isCheckout = false) => {
   }
   const checkBazipass = debounce(() => {
     const customerDoc = ecomPassport.getCustomer().doc_number
+    /* window.checkedBazipassDoc = customerDoc
+    window.sessionStorage.setItem('isBazipass', 1) */
     if (customerDoc && customerDoc !== window.checkedBazipassDoc) {
       window.axios.get(
         'https://us-central1-app-bazicash.cloudfunctions.net/app/check-bazipass' +

@@ -161,7 +161,7 @@ if (window.storefront && window.storefront.context && window.storefront.context.
 }
 
 const startUserInterval = setInterval(() => {
-    const isBazipass = Number(window.sessionStorage.getItem('isBazipass'))
+    const isBazipass = Number(window.sessionStorage.getItem('isBazipass'))/*  || 1 */
     if (window.checkedBazipassDoc || isBazipass) {
         document.querySelector('body').classList.add('is-bazipass');
         document.querySelector('.top-bar').style.background = '#24174a';
