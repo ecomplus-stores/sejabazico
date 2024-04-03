@@ -18,6 +18,9 @@
   </section>
 <% } %>
 
+<div class="skeepers_product__reviews" data-product-id="<%= _.state._id %>" data-locale="pt_BR" data-price="<%= _.state.price %>" data-currency="BRL" data-name="<%= _.state.name %>" data-url="https://www.sejabazico.com.br/<%= _.state.slug %>" data-image-url="<%= _.state.pictures && _.state.pictures.length && _.state.pictures[0] && _.state.pictures[0].zoom && _.state.pictures[0].zoom.url %>"></div>
+
+
 <%- await include('@/helpers/widgets-append', {
   _, opt: {}, field: 'productDescriptionAppend'
 }) %>
