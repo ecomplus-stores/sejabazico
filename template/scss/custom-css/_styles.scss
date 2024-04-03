@@ -2330,3 +2330,16 @@ body #storefront-app>div>h1{
     }
 }
 
+.product-item {
+    .skeepers_product__stars {
+        padding-left: 1rem;
+    }
+}
+
+.skeepers_product__stars .stars .stars__item {
+    background: transparent !important;
+}
+  
+.skeepers_product__stars .star-svg path {
+    fill: rgba(117,78,169,1)
+}
