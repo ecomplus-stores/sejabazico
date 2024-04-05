@@ -2379,4 +2379,7 @@ div[data-slot="rating"] .skeepers_product__stars {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .product__name {
+        width: 50%;
+    }
 }
