@@ -2331,7 +2331,10 @@ body #storefront-app>div>h1{
 }
 
 .product-item + div[data-slot="rating"] {
-    padding-left: 1rem !important;;
+    padding-left: 1rem !important;
+    @media (max-width: 990px) {
+        padding-left: .5rem !important;
+    }
 }
 
 .skeepers_product__stars .stars .stars__item {
@@ -2340,4 +2343,24 @@ body #storefront-app>div>h1{
   
 .skeepers_product__stars .star-svg path {
     fill: rgba(117,78,169,1)
+}
+.product-item + div[data-slot="rating"] .skeepers_product__stars {
+    .rate-aggregate, .rate-aggregate__separator, .rate-aggregate__max {
+        display: none !important;
+    }
+    .rate-total {
+        @media(max-width: 600px) {
+            font-size: 10px !important;
+        }
+    }
+    span[data-lang="SKEEPERS_AVIS"] {
+        font-size: 0px;
+        &::after {
+            content: 'avaliações';
+            font-size: 14px !important;
+            @media(max-width: 600px) {
+                font-size: 10px !important;
+            }
+        }
+    }
 }
