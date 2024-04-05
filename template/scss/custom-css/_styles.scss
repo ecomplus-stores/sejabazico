@@ -2344,7 +2344,7 @@ body #storefront-app>div>h1{
 .skeepers_product__stars .star-svg path {
     fill: rgba(117,78,169,1)
 }
-.product-item + div[data-slot="rating"] .skeepers_product__stars {
+div[data-slot="rating"] .skeepers_product__stars {
     .rate-aggregate, .rate-aggregate__separator, .rate-aggregate__max {
         display: none !important;
     }
@@ -2366,4 +2366,17 @@ body #storefront-app>div>h1{
 }
 #product-actions .skeepers_product__stars {
     display: none !important
+}
+@media(max-width: 990px) {
+    .bz_product-info-sticky {
+        .skeepers_product__stars {
+            display: none !important;
+        }
+    }
+}
+
+.block-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

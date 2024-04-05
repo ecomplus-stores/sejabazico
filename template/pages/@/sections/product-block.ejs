@@ -20,9 +20,14 @@ const apx_props = _.cms('apx_props') || {}
       </div>
       <div class="row d-block d-md-none py-3 px-2" >
         <div class="col" id="bz_product_mobile">
-          <h1 class="product__name">
-            <%= _.ecomUtils.name(_.state) %>
-          </h1>
+          <div class="block-rating">
+            <h1 class="product__name">
+              <%= _.ecomUtils.name(_.state) %>
+            </h1>
+            <div data-slot="rating">
+              <div class="skeepers_product__stars" data-product-id="<%= _.state._id %>"></div>
+            </div>
+          </div>
           <div class="__prices"></div>
           <ul id="apx_seals">
             <% apx_seals.seals.forEach(({ item })=> {
@@ -86,9 +91,14 @@ const apx_props = _.cms('apx_props') || {}
         <div class="col col-md-4  px-md-5 product--side">
           <div class="bz_product-info-sticky pt-md-5">
             <%- await include('@/sections/breadcrumbs') %>
-            <h1 class="product__name d-md-block d-none">
-              <%= _.ecomUtils.name(_.state) %>
-            </h1>
+            <div class="block-rating">
+              <h1 class="product__name">
+                <%= _.ecomUtils.name(_.state) %>
+              </h1>
+              <div data-slot="rating">
+                <div class="skeepers_product__stars" data-product-id="<%= _.state._id %>"></div>
+              </div>
+            </div>
             <ul id="apx_props"><% apx_props.props.forEach(({ item })=> {
                 
                   let flag = false
@@ -136,9 +146,6 @@ const apx_props = _.cms('apx_props') || {}
                   }
               }) 
             %></ul>
-            <div data-slot="rating">
-              <div class="skeepers_product__stars" data-product-id="<%= _.state._id %>"></div>
-            </div>
             <ul id="apx_seals" class=" d-md-flex d-none"><% apx_seals.seals.forEach(({ item })=> {
                 
                   let flag = false
@@ -300,7 +307,6 @@ const apx_props = _.cms('apx_props') || {}
     }) %>
   </div>
 </div>
-<div class="skeepers_product__reviews" data-product-id="<%= _.state._id %>" data-locale="pt_BR" data-price="<%= _.state.price %>" data-currency="BRL" data-name="<%= _.state.name %>" data-url="https://www.sejabazico.com.br/<%= _.state.slug %>" data-image-url="<%= _.state.pictures && _.state.pictures.length && _.state.pictures[0] && _.state.pictures[0].zoom && _.state.pictures[0].zoom.url %>"></div>
 
 <%
 const productJsonLd = {
