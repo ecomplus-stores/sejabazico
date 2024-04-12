@@ -185,4 +185,11 @@ const startUserInterval = setInterval(() => {
 if (!window.checkedBazipassDoc) {
     startUserInterval
 }
+
+const loginLinkDiv = document.getElementById('check-login-widget')
+if (loginLinkDiv) {
+  import('./components/AccountSummaryBazicash.vue').then(({ default: AccountSummaryBazicash }) => {
+    new Vue(AccountSummaryBazicash).$mount(loginLinkDiv)
+  })
+}
   
