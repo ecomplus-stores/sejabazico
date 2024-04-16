@@ -52,7 +52,7 @@ export default {
         },
         {
           nome: "Grave um vídeo contando sobre sua experiência com o bazipass",
-          descricao: "Mande-nos um vídeo de no mínimo 30 segundos contando sua experiência com o Bazipass",
+          descricao: "Mande-nos um vídeo de no mínimo 30 segundos contando sua experiência com o BaziPass",
           bazicash: "150"
         },
         {
