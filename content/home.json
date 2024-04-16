@@ -4,7 +4,7 @@
   "sections": [
     {
       "type": "apx_banner-slider",
-      "autoplay": 3000,
+      "autoplay": 5000,
       "slides": [
         {
           "mask_opacity": 5,
@@ -26,8 +26,8 @@
         },
         {
           "mask_opacity": 0,
-          "start": "2023-12-13T14:37:58.949Z",
-          "end": "2024-04-12T14:37:58.974Z",
+          "start": "2024-04-16T13:32:40.386Z",
+          "end": "2045-07-06T14:37:58.974Z",
           "img": "/img/uploads/bazipass-2024-desktop.webp",
           "link": "https://bazipass.sejabazico.com.br/",
           "content_position": "center_left",
