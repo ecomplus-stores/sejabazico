@@ -7,6 +7,14 @@
       "autoplay": 3000,
       "slides": [
         {
+          "mask_opacity": 5,
+          "start": "2024-04-16T13:07:51.717Z",
+          "end": "2024-04-16T13:07:51.745Z",
+          "img": "/img/uploads/banner-_desktop_.webp",
+          "link": "sejabazico.com.br/novidades",
+          "mobile_img": "/img/uploads/banner-_mobile_.webp"
+        },
+        {
           "mask_opacity": 0,
           "start": "2024-03-25T21:23:27.895Z",
           "end": "2024-07-06T21:23:27.923Z",
