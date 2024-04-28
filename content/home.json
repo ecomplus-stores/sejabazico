@@ -8,6 +8,16 @@
       "slides": [
         {
           "mask_opacity": 5,
+          "start": "2024-04-28T14:19:10.695Z",
+          "end": "2024-04-29T14:19:10.731Z",
+          "link": "/novidades",
+          "img": "/img/uploads/desktop-frete-gratis-ne.webp",
+          "mobile_img": "/img/uploads/mobile-frete-gratis-ne.webp",
+          "content_order": "inside_image",
+          "content_position": "center_left"
+        },
+        {
+          "mask_opacity": 5,
           "start": "2024-04-16T13:07:51.717Z",
           "end": "2042-03-07T13:07:51.745Z",
           "img": "/img/uploads/banner-desktop-2-1-.webp",
