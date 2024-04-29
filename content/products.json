@@ -481,6 +481,22 @@
       ],
       "title": "Gift Card - Descrição",
       "slug": "GiftCard"
+    },
+    {
+      "type": "apx_blockPerCategory",
+      "title": "Mochila",
+      "slug": "Mochila",
+      "list": [
+        {
+          "content": {
+            "title": "Exclusivo para membros do BaziPass!",
+            "subtitle": "Pré-venda, 30 dias para a chegada da sua nova mochila preferida.",
+            "image_position": "last",
+            "text_align": "center",
+            "body": "Mantenha seu estilo em alta com a Mochila Bázica.\n\nA Mochila Bázica é a companheira perfeita para quem busca sofisticação e praticidade no dia a dia. Com medidas de 38x28x14cm, ela possui o tamanho ideal para acomodar seus pertences de forma organizada. Fabricada em Couro Premium Vêneto, garante durabilidade e elegância ao mesmo tempo."
+          }
+        }
+      ]
     }
   ]
 }
