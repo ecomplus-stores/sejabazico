@@ -4,8 +4,16 @@
   "sections": [
     {
       "type": "apx_banner-slider",
-      "autoplay": 5000,
+      "autoplay": 7000,
       "slides": [
+        {
+          "mask_opacity": 5,
+          "start": "2024-04-30T22:12:46.132Z",
+          "end": "2024-05-01T22:12:46.182Z",
+          "img": "/img/uploads/desktop-1-.webp",
+          "link": "www.sejabazico.com.br/outlet",
+          "mobile_img": "/img/uploads/mobile-1-.webp"
+        },
         {
           "mask_opacity": 5,
           "start": "2024-04-16T13:07:51.717Z",
