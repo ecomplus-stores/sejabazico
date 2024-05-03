@@ -1,16 +1,16 @@
 {
   "stripe_slider": [
     {
-      "text": "Sedex 50% em todas as suas compras.",
+      "text": "Teste sua sorte, 100 chances para você ganhar uma Bázica!",
+      "url": "http://bazipass.sejabazico.com.br/aniversario-bazico?utm_source=org&utm_medium=tarjasite&utm_campaign=4anos"
+    },
+    {
+      "url": "http://bazipass.sejabazico.com.br/aniversario-bazico?utm_source=org&utm_medium=tarjasite&utm_campaign=4anos",
+      "text": "Salve na agenda: aniversário da Bázico do dia 10/05 até 16/05! "
+    },
+    {
+      "text": "Sedex com 50% OFF para todo o Brasil!",
       "url": "/"
-    },
-    {
-      "url": "https://bazipass.sejabazico.com.br/",
-      "text": "R$600 por 5 Bázicas + 15% desconto durante 1 ano, <u>descubra como</u>"
-    },
-    {
-      "text": "Conheça a Bázica Kids, armadura do seu mini super herói",
-      "url": "https://www.sejabazico.com.br/bazica-kids"
     }
   ],
   "links": [
