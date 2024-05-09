@@ -27,16 +27,6 @@
         },
         {
           "mask_opacity": 0,
-          "start": "2024-03-25T21:23:27.895Z",
-          "end": "2024-07-06T21:23:27.923Z",
-          "img": "/img/uploads/kids-desktop.webp",
-          "link": "/bazica-kids",
-          "mobile_img": "/img/uploads/kids-mobile.webp",
-          "content_position": "top_center",
-          "content_order": "inside_image"
-        },
-        {
-          "mask_opacity": 0,
           "start": "2024-04-16T13:32:40.386Z",
           "end": "2045-07-06T14:37:58.974Z",
           "img": "/img/uploads/bazipass-2024-desktop.webp",
@@ -44,16 +34,6 @@
           "content_position": "center_left",
           "content_order": "inside_image",
           "mobile_img": "/img/uploads/bazipass-2024-mobile-1.webp"
-        },
-        {
-          "mask_opacity": 0,
-          "start": "2024-01-30T14:40:41.665Z",
-          "end": "2024-06-01T14:40:41.688Z",
-          "img": "/img/uploads/desktop_short.webp",
-          "link": "/novidades",
-          "mobile_img": "/img/uploads/mobile_short.webp",
-          "content_position": "center_left",
-          "content_order": "inside_image"
         },
         {
           "mask_opacity": 0,
