@@ -167,6 +167,11 @@
         },
         {
           "mask_opacity": 5,
+          "img": "/img/uploads/100-bazicas-de-presente.webp",
+          "link": "https://bazipass.sejabazico.com.br/aniversariobazico4anos/"
+        },
+        {
+          "mask_opacity": 5,
           "img": "/img/uploads/bazipass.webp"
         }
       ],
