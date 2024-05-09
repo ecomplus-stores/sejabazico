@@ -172,7 +172,8 @@
         },
         {
           "mask_opacity": 5,
-          "img": "/img/uploads/bazipass.webp"
+          "img": "/img/uploads/bazipass.webp",
+          "link": "https://bazipass.sejabazico.com.br/"
         }
       ],
       "padding": "px-2",
