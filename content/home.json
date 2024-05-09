@@ -161,46 +161,13 @@
       "type": "apx_banners-grid",
       "banners": [
         {
-          "description_color": "#232323",
-          "animate": "backInDown",
-          "img": "/img/uploads/grid-banner-650x650-bazipass.webp",
-          "content_order": "before_image",
-          "alt": "bazipass-o-programa-de-privilegios-da-bazico",
-          "content_position": "bottom_center",
-          "btn_text": "seja um membro VIP!",
-          "btn_background": "#232323",
-          "btn_text_color": "#ffffff",
           "mask_opacity": 0,
-          "title": "",
-          "link": "https://bazipass.sejabazico.com.br/?utm_medium=site&utm_term=minibanner",
-          "title_color": "#232323",
-          "description": ""
-        },
-        {
-          "description_color": "#232323",
-          "animate": "fadeInTopRight",
-          "img": "/img/uploads/grid-banner-650x650-quem-somos-nos.webp",
-          "content_order": "after_image",
-          "alt": "time-da-bazico",
-          "content_position": "center_left",
-          "btn_text": "conheça quem somos nós!",
-          "btn_background": "#232323",
-          "btn_text_color": "#ffffff",
-          "mask_opacity": 0,
-          "title": "",
-          "link": "pages/quem-somos-nos",
-          "title_color": "#232323",
-          "description": ""
+          "img": "/img/uploads/programa-de-indicacao.webp",
+          "link": "https://www.sejabazico.com.br/pages/programa-de-indicacao"
         },
         {
           "mask_opacity": 5,
-          "img": "/img/uploads/polo.webp",
-          "link": "/bazica-polo",
-          "btn_text": "confira nossas novidades",
-          "btn_text_color": "#ffffff",
-          "btn_background": "#232323",
-          "content_position": "bottom_right",
-          "content_order": "after_image"
+          "img": "/img/uploads/bazipass.webp"
         }
       ],
       "padding": "px-2",
