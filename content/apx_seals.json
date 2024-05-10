@@ -34,18 +34,19 @@
     },
     {
       "item": {
-        "title": "Entrega até 10/06",
+        "title": "Envio até 14/05",
         "text_color": "#232323",
         "border_color": "#232323",
         "bg_color": "#ffffff",
-        "categories": [
+        "categories": [],
+        "image": "/img/uploads/untitled-1.jpg",
+        "products": [
           {
-            "category": {
-              "title": "mochila"
+            "product": {
+              "title": "663e0b32f4e6d85ab27fa1cd"
             }
           }
-        ],
-        "image": "/img/uploads/untitled-1.jpg"
+        ]
       }
     },
     {
