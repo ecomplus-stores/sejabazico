@@ -22,10 +22,11 @@
         "text_color": "#232323",
         "border_color": "#232323",
         "bg_color": "#ffffff",
-        "categories": [
+        "categories": [],
+        "products": [
           {
-            "category": {
-              "title": "mochila"
+            "product": {
+              "title": "663e0b32f4e6d85ab27fa1cd"
             }
           }
         ]
