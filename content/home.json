@@ -23,7 +23,8 @@
           "img": "/img/uploads/bazipass-desktop-.png",
           "mobile_img": "/img/uploads/bazipass-mobile-.png",
           "content_position": "center_left",
-          "content_order": "inside_image"
+          "content_order": "inside_image",
+          "link": "https://bazipass.sejabazico.com.br/"
         },
         {
           "mask_opacity": 0,
