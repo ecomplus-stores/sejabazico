@@ -230,7 +230,7 @@ export default {
     },
 
     isBazipass () {
-      return window.checkedBazipassDoc
+      return this.amount.discount >= 130
     },
 
     shippingAddress () {
