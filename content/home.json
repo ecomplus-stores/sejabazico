@@ -10,9 +10,9 @@
           "mask_opacity": 5,
           "start": "2024-05-03T23:27:42.726Z",
           "end": "2024-08-02T23:27:42.758Z",
-          "link": "https://bazipass.sejabazico.com.br/aniversariobazico4anos/",
-          "img": "/img/uploads/desktop-100.webp",
-          "mobile_img": "/img/uploads/mobile-100.jpg",
+          "link": "https://www.sejabazico.com.br/roupas",
+          "img": "/img/uploads/oferta-desktop-.jpg",
+          "mobile_img": "/img/uploads/oferta-mobile-.jpg",
           "content_position": "center_left",
           "content_order": "inside_image"
         },
@@ -20,27 +20,18 @@
           "mask_opacity": 5,
           "start": "2024-05-07T23:46:32.736Z",
           "end": "2024-07-06T23:46:32.770Z",
-          "img": "/img/uploads/desktop_ant.webp",
-          "mobile_img": "/img/uploads/mobile_ant.webp",
-          "content_position": "center_left",
-          "content_order": "inside_image"
-        },
-        {
-          "mask_opacity": 0,
-          "start": "2024-04-16T13:32:40.386Z",
-          "end": "2045-07-06T14:37:58.974Z",
-          "img": "/img/uploads/bazipass-2024-desktop.webp",
-          "link": "https://bazipass.sejabazico.com.br/",
+          "img": "/img/uploads/bazipass-desktop-.png",
+          "mobile_img": "/img/uploads/bazipass-mobile-.png",
           "content_position": "center_left",
           "content_order": "inside_image",
-          "mobile_img": "/img/uploads/bazipass-2024-mobile-1.webp"
+          "link": "https://bazipass.sejabazico.com.br/"
         },
         {
           "mask_opacity": 0,
           "start": "2024-01-03T11:40:21.960Z",
           "end": "2024-06-01T11:40:21.988Z",
-          "img": "/img/uploads/frete-desktop-.webp",
-          "mobile_img": "/img/uploads/frete-mobile--1.webp",
+          "img": "/img/uploads/frete-desktop-.jpg",
+          "mobile_img": "/img/uploads/frete-mobile-.jpg",
           "link": "/roupas",
           "content_position": "center_left",
           "content_order": "inside_image"
@@ -167,8 +158,8 @@
         },
         {
           "mask_opacity": 5,
-          "img": "/img/uploads/100-bazicas-de-presente.webp",
-          "link": "https://bazipass.sejabazico.com.br/aniversariobazico4anos/"
+          "img": "/img/uploads/top-10.webp",
+          "link": "https://www.sejabazico.com.br/top-10"
         },
         {
           "mask_opacity": 5,

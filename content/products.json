@@ -506,6 +506,40 @@
           }
         }
       ]
+    },
+    {
+      "type": "apx_blockPerCategory",
+      "title": "Porta Cartão",
+      "slug": "Porta Cartão",
+      "list": [
+        {
+          "content": {
+            "title": "para quem tem cartões demais e espaço de menos!",
+            "subtitle": "Compacto por Fora, Espaçoso por Dentro: O seu novo Porta Cartão preferido.",
+            "image_position": "first",
+            "text_align": "center",
+            "body": "Feito para os minimalistas sofisticados, nosso porta-cartão é compacto e inteligente - cabe sua CNH e se acomoda perfeitamente no bolso sem fazer volume. Disponível nas cores atemporais: Café, Caramelo e Preto.\n\n### O Couro que Fala\n\nEscolha entre três opções de cores elegantes: Café, Caramelo ou Preto. Cada uma reflete uma personalidade única, seja você mais clássico, audaz ou elegante. Feito de couro legítimo, nosso porta-cartão é mais que um acessório; é uma extensão do seu estilo pessoal.\n\n### Proteção é o Nosso Segundo Nome\n\nCom um forro interno em nylon impermeável, o Porta Cartão Bázico garante que seus cartões estejam sempre protegidos, aconteça o que acontecer. É o companheiro perfeito para todas as suas aventuras.\n\n### Design Pensado Para Você\n\nImagine um acessório que não só organiza, mas eleva seu estilo. Nosso porta-cartão, disponível em Café, Caramelo e Preto, é desenhado para ser seu aliado diário.\n\n### Por Que Escolher o Porta-Cartão Bázico?\n\n* **Qualidade Inegável:** Confeccionado com couro legítimo, promete durabilidade e estilo.\n* **Prático e Elegante:** Design moderno que cabe discretamente no seu bolso.\n* **Facilidade Garantida:** Devolução simples se não atender às suas expectativas."
+          }
+        },
+        {
+          "content": {
+            "body": "* **Material:** Couro legítimo\n* **Cores Disponíveis:** Café, Caramelo, Preto\n* **Dimensões:** 11x8cm\n* **Capacidade:** Até 3 cartões e CNH\n* **Forro:** Nylon impermeável",
+            "title": "tudo que você precisa saber, sem enrolação!",
+            "image_position": "first",
+            "text_align": "center",
+            "subtitle": "Desvendamos Cada Detalhe"
+          }
+        },
+        {
+          "content": {
+            "title": "e se eu não curtir?",
+            "subtitle": "é só devolver ou trocar! Simples e sem burocracia.",
+            "image_position": "first",
+            "text_align": "left",
+            "body": "Então, a cada compra que você faz aqui na Bázico, ***você tem direito a uma troca gratuitamente.***\n\n**P﻿ara isso basta**\n\n* Q﻿ue a compra tenha sido feita nos últimos 30 dias\n* E﻿ntrar em contato com o nosso time pelo e-mail ou WhatsApp."
+          }
+        }
+      ]
     }
   ]
 }
