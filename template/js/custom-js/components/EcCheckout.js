@@ -229,6 +229,10 @@ export default {
       }
     },
 
+    isBazipass () {
+      return window.checkedBazipassDoc === (this.localCustomer && this.localCustomer.doc_number)
+    },
+
     shippingAddress () {
       const { addresses } = this.customer
       return addresses && addresses.find(addr => {

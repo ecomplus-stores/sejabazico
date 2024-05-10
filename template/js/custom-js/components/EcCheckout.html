@@ -215,7 +215,7 @@
               <template #amount-custom>
                 <div>
                   <points-applier
-                    v-show="enabledCheckoutStep > 1 && !localDiscountCoupon && !hasBazicashItem"
+                    v-show="enabledCheckoutStep > 1 && !localDiscountCoupon && !hasBazicashItem && !isBazipass"
                     class="checkout__loyalty-points"
                     @available-points="({ p0_pontos }) => availableBazicash = p0_pontos"
                     :points-applied.sync="loyaltyPointsApplied"
