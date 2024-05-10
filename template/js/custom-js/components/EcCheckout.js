@@ -230,7 +230,7 @@ export default {
     },
 
     isBazipass () {
-      return window.checkedBazipassDoc === (this.localCustomer && this.localCustomer.doc_number)
+      return window.checkedBazipassDoc
     },
 
     shippingAddress () {
