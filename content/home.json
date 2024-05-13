@@ -81,7 +81,7 @@
     },
     {
       "type": "apx_banners-grid",
-      "container": "container",
+      "container": "container_90",
       "padding": "px-0",
       "banners": [
         {
