@@ -52,11 +52,6 @@
       ]
     },
     {
-      "type": "dynamic-showcase",
-      "load_more": true,
-      "sort": "sales"
-    },
-    {
       "carrossel_sm": "Sim",
       "container": "container-fluid",
       "products": [
