@@ -263,6 +263,19 @@
       "list": "description_last",
       "btn_text": "Assinar",
       "input_placeholder": "seumelhoremail@email.com"
+    },
+    {
+      "type": "apx_banners-grid",
+      "container": "container_90",
+      "padding": "px-0",
+      "banners": [
+        {
+          "mask_opacity": 0,
+          "img": "/img/uploads/banner-tarja-air.webp",
+          "mobile_img": "/img/uploads/tarja-air-_mobile_.webp",
+          "link": ""
+        }
+      ]
     }
   ]
 }
