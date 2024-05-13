@@ -274,6 +274,12 @@
           "img": "/img/uploads/banner-tarja-air.webp",
           "mobile_img": "/img/uploads/tarja-air-_mobile_.webp",
           "link": ""
+        },
+        {
+          "mask_opacity": 0,
+          "img": "/img/uploads/banner-tarja-powerful.webp",
+          "link": "https://www.sejabazico.com.br/search?categories[]=Roupas&filters[]=tecido:Powerful+(Bem+encorpada)",
+          "mobile_img": "/img/uploads/tarja-powerful-_mobile_.webp"
         }
       ]
     }
