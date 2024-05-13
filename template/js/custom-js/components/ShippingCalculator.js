@@ -304,6 +304,16 @@ export default {
       if (this.canSelectServices) {
         this.$emit('select-service', this.shippingServices[i])
         this.selectedService = i
+        const eventLayer = window.dataLayer.find(({event}) => event === 'eec.checkout')
+        window.dataLayer.push({
+          event: 'add_shipping_info',
+          ecommerce: {
+            currency: 'BRL',
+            shipping_method: this.shippingServices[i] && this.shippingServices[i].label,
+            value: this.shippingServices[i] && this.shippingServices[i].shipping_line && this.shippingServices[i].shipping_line.total_price,
+            items: eventLayer && eventLayer.ecommerce && eventLayer.ecommerce.checkout && eventLayer.ecommerce.checkout.products
+          }
+        })
       }
     }
   },

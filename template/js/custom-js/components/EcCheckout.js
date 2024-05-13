@@ -342,6 +342,16 @@ export default {
     },
 
     selectPaymentGateway (gateway) {
+      const eventLayer = window.dataLayer.find(({event}) => event === 'eec.checkout')
+      window.dataLayer.push({
+        event: 'add_payment_info',
+        ecommerce: {
+          currency: 'BRL',
+          payment_method: gateway && gateway.label,
+          value: this.amount.total,
+          items: eventLayer && eventLayer.ecommerce && eventLayer.ecommerce.checkout && eventLayer.ecommerce.checkout.products
+        }
+      })
       this.$emit('update:payment-gateway', gateway)
       if (this.checkoutStep === 2 && !this.paymentGateway) {
         this.goToTop()
