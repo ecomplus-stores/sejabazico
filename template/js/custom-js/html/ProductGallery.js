@@ -87,6 +87,21 @@ export default {
     i19video: () => i18n(i19video),
 
     localPictures () {
+      window.pictures = this.pictures && this.pictures.length
+      ? this.pictures : (this.product.pictures || [])
+      window.dataLayer.push({
+        event: 'view_product_image',
+        ecommerce: {
+          currency: 'BRL',
+          value: this.product.price,
+          items: [{
+            item_id: this.product.sku,
+            item_name: this.product.name,
+            item_viewed_image_index: 0,
+            item_viewed_image_url: window.pictures && window.pictures[0].zoom && window.pictures[0].zoom.url
+          }]
+        }
+      })
       return this.pictures && this.pictures.length
         ? this.pictures : (this.product.pictures || [])
     },
@@ -200,6 +215,18 @@ export default {
   watch: {
     currentSlide: {
       handler (currentSlide) {
+        window.dataLayer.push({
+          event: 'view_product_image',
+          ecommerce: {
+            currency: 'BRL',
+            value: this.product.price,
+            items: [{
+              item_id: this.product.sku,
+              item_name: this.product.name,
+              item_viewed_image: '1'
+            }]
+          }
+        })
         this.activeIndex = currentSlide - 1
       },
       immediate: true
@@ -238,6 +265,24 @@ export default {
         $(this).find('picture').css('background-image', 'url('+ src +')')        
         //$(this).find('img').css('opacity',0)
     })
+
+    $('.isMobile #page-products .bz_gallery').on('afterChange', function(event, slick, currentSlide){
+      console.log('Current slide index is:', currentSlide);
+      window.dataLayer.push({
+        event: 'view_product_image',
+        ecommerce: {
+          currency: 'BRL',
+          value: window.ecomUtils.price(window._context.body) ,
+          items: [{
+            item_id: window._context.body.sku,
+            item_name: window._context.body.name,
+            item_viewed_image_index: currentSlide,
+            item_viewed_image_url: window.pictures && window.pictures[currentSlide].zoom && window.pictures[currentSlide].zoom.url
+          }]
+        }
+      })
+      console.log(window.dataLayer)
+    });
     //$('.isMobile #page-products .bz_gallery .picture').append('<img style=""/>')
     // const glide = new Glide(this.$refs.glide, this.glideOptions)
     // glide.on('run', () => {
