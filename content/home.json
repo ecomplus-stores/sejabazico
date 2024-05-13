@@ -52,25 +52,6 @@
       ]
     },
     {
-      "type": "apx_banners-grid",
-      "container": "container-fluid",
-      "padding": "px-0",
-      "banners": [
-        {
-          "mask_opacity": 0,
-          "img": "/img/uploads/banner-tarja-air.webp",
-          "mobile_img": "/img/uploads/tarja-air-_mobile_.webp",
-          "link": "https://www.sejabazico.com.br/search?categories[]=Roupas&filters[]=tecido:Air+(Super+leve)"
-        },
-        {
-          "mask_opacity": 0,
-          "img": "/img/uploads/banner-tarja-powerful.webp",
-          "link": "https://www.sejabazico.com.br/search?categories[]=Roupas&filters[]=tecido:Powerful+(Bem+encorpada)",
-          "mobile_img": "/img/uploads/tarja-powerful-_mobile_.webp"
-        }
-      ]
-    },
-    {
       "carrossel_sm": "Sim",
       "container": "container-fluid",
       "products": [
@@ -97,6 +78,25 @@
       "btn_link": "/top-10",
       "list": "description_last",
       "carrossel_md": "Sim"
+    },
+    {
+      "type": "apx_banners-grid",
+      "container": "container-fluid",
+      "padding": "px-0",
+      "banners": [
+        {
+          "mask_opacity": 0,
+          "img": "/img/uploads/banner-tarja-air.webp",
+          "mobile_img": "/img/uploads/tarja-air-_mobile_.webp",
+          "link": "https://www.sejabazico.com.br/search?categories[]=Roupas&filters[]=tecido:Air+(Super+leve)"
+        },
+        {
+          "mask_opacity": 0,
+          "img": "/img/uploads/banner-tarja-powerful.webp",
+          "link": "https://www.sejabazico.com.br/search?categories[]=Roupas&filters[]=tecido:Powerful+(Bem+encorpada)",
+          "mobile_img": "/img/uploads/tarja-powerful-_mobile_.webp"
+        }
+      ]
     },
     {
       "type": "apx_banners-grid",
