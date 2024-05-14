@@ -2383,3 +2383,9 @@ div[data-slot="rating"] .skeepers_product__stars {
         width: 50%;
     }
 }
+
+@media(max-width: 767px) {
+    .width-mobile {
+      max-width: 50%;
+    } 
+}

@@ -177,7 +177,13 @@ export default options => {
           name: 'container',
           widget: 'select',
           options: ["container","container-fluid","container_90"]
-        },  
+        },
+        {
+          label: 'Ativar 50% de largura no mobile',
+          name: 'width_mobile',
+          widget: 'boolean',
+          required: false
+        },
         {
           label: 'Espaçamento',
           required: true,
@@ -636,6 +642,27 @@ export default options => {
     }
 
 ])
+
+if (Array.isArray(options.sections) && options.sections.length && options.sections[0] && options.sections[0].name === 'responsive-banner') {
+  options.sections.forEach(element => {
+    if ((element.name === 'banners-grid')) {
+      element.fields.push({
+        label: 'Ativar 50% de largura no mobile',
+        name: 'width_mobile',
+        widget: 'boolean',
+        required: false
+      })
+    }
+    if (element.name === 'responsive-banner') {
+      element.fields.push({
+        label: 'Ativar Banner em tela cheia',
+        name: 'full_banner_responsive',
+        widget: 'boolean',
+        required: false
+      })
+    }
+  });
+}
 
   return {
     backend: {

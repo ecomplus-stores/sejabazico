@@ -85,6 +85,7 @@
       "type": "apx_banners-grid",
       "container": "container-fluid",
       "padding": "px-0",
+      "width_mobile": true,
       "banners": [
         {
           "mask_opacity": 0,
