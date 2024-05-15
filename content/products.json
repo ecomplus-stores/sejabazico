@@ -540,6 +540,22 @@
           }
         }
       ]
+    },
+    {
+      "type": "apx_blockPerCategory",
+      "title": "Calça",
+      "slug": "Calça",
+      "list": [
+        {
+          "content": {
+            "image_position": "first",
+            "text_align": "center",
+            "body": "A Calça Everyday da Bázico é a peça essencial para homens que buscam conforto e estilo no dia a dia. Desenvolvida a partir do feedback dos nossos clientes, esta calça combina materiais de alta qualidade, durabilidade e um design moderno, tornando-se ideal para diversas ocasiões.\n\n### Características Principais\n\n* **Material Premium:** Confeccionada com tecido de sarja composto por 92% algodão, 5% elastomultiéster e 3% elastano, proporcionando um ajuste perfeito e durabilidade.\n* **Conforto Superior:** Forro interno com 97% algodão e 3% elastano, garantindo maciez e conforto em contato com a pele.\n* **Elasticidade e Flexibilidade:** O elastomultiéster adiciona elasticidade moderada, enquanto o elastano oferece extrema elasticidade, permitindo liberdade de movimento e recuperação de forma.\n* **Design Moderno e Versátil:** Formato sofisticado, ideal para diversas ocasiões, desde o trabalho até momentos de lazer.\n* **Detalhes Funcionais:** Bolso faca que combina estilo e praticidade, perfeito para carregar pequenos itens.",
+            "title": "porque todo dia é dia de usar sua calça preferida",
+            "subtitle": "O nome Everyday não é por acaso"
+          }
+        }
+      ]
     }
   ]
 }
