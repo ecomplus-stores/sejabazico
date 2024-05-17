@@ -7,32 +7,12 @@
       "autoplay": 7000,
       "slides": [
         {
-          "mask_opacity": 5,
-          "start": "2024-05-03T23:27:42.726Z",
-          "end": "2024-08-02T23:27:42.758Z",
-          "link": "https://www.sejabazico.com.br/roupas",
-          "img": "/img/uploads/ultimas-horas-oferta-_desktop_.webp",
-          "mobile_img": "/img/uploads/ultimas-horas-oferta-_mobile_.webp",
-          "content_position": "center_left",
-          "content_order": "inside_image"
-        },
-        {
-          "mask_opacity": 5,
-          "start": "2024-05-07T23:46:32.736Z",
-          "end": "2024-07-06T23:46:32.770Z",
-          "img": "/img/uploads/bazipass-_desktop_-atualizado.webp",
-          "mobile_img": "/img/uploads/bazipass-_mobile_-atualizado.webp",
-          "content_position": "center_left",
-          "content_order": "inside_image",
-          "link": "https://bazipass.sejabazico.com.br/"
-        },
-        {
           "mask_opacity": 0,
           "start": "2024-01-03T11:40:21.960Z",
           "end": "2024-06-01T11:40:21.988Z",
-          "img": "/img/uploads/frete-desktop-.jpg",
-          "mobile_img": "/img/uploads/frete-mobile-.jpg",
-          "link": "/roupas",
+          "img": "/img/uploads/bazipass-2-desktop-.webp",
+          "mobile_img": "/img/uploads/bazipass-2-mobile-.webp",
+          "link": "bazipass.sejabazico.com.br",
           "content_position": "center_left",
           "content_order": "inside_image"
         }
