@@ -7,6 +7,14 @@
       "autoplay": 7000,
       "slides": [
         {
+          "mask_opacity": 5,
+          "start": "2024-05-22T13:06:33.095Z",
+          "end": "2030-03-14T13:06:33.187Z",
+          "link": "https://www.sejabazico.com.br/novidades",
+          "img": "/img/uploads/calca-desktop.webp",
+          "mobile_img": "/img/uploads/calca-mobile.webp"
+        },
+        {
           "mask_opacity": 0,
           "start": "2024-05-18T17:32:26.423Z",
           "end": "2024-08-02T17:32:26.447Z",
