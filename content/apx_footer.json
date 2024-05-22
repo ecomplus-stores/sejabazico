@@ -41,6 +41,12 @@
         },
         {
           "item": {
+            "title": "Calça Everyday",
+            "url": "https://www.sejabazico.com.br/calca"
+          }
+        },
+        {
+          "item": {
             "title": "Short Bázico",
             "url": "/short"
           }
@@ -53,8 +59,8 @@
         },
         {
           "item": {
-            "title": "Últimas unidade - Itens em oferta",
-            "url": "/ultimas-unidades"
+            "title": "Porta Cartão",
+            "url": "https://sejabazico.com.br/porta-cartao"
           }
         }
       ]
