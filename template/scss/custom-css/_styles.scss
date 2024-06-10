@@ -2389,3 +2389,7 @@ div[data-slot="rating"] .skeepers_product__stars {
       max-width: 50%;
     } 
 }
+
+#checkout .product__buy {
+    display: none !important;
+}

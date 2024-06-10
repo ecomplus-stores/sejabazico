@@ -77,6 +77,7 @@ const routeInterval = setInterval(function () {
     }
 
     const addRoute1ToData = ({ name, params }) => {
+      console.log(params)
       if (name === 'checkout') {
         window.cartSizeBay = window.ecomCart
         window.sessionStorage.setItem('cartsizebay', JSON.stringify(window.ecomCart))

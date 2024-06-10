@@ -233,6 +233,12 @@ export default {
       return this.amount.discount >= 130
     },
 
+    bazipassItem () {
+      return Boolean(this.cart.items.find(({ name }) => name && name.includes('Bazipass')))
+    },
+
+    
+
     shippingAddress () {
       const { addresses } = this.customer
       return addresses && addresses.find(addr => {
