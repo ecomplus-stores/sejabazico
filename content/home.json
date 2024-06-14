@@ -4,7 +4,7 @@
   "sections": [
     {
       "type": "apx_banner-slider",
-      "autoplay": 7000,
+      "autoplay": 0,
       "slides": [
         {
           "mask_opacity": 5,
@@ -31,6 +31,16 @@
           "img": "/img/uploads/bazipass-2-desktop-.webp",
           "mobile_img": "/img/uploads/bazipass-2-mobile-.webp",
           "link": "https://bazipass.sejabazico.com.br/",
+          "content_position": "center_left",
+          "content_order": "inside_image"
+        },
+        {
+          "mask_opacity": 0,
+          "start": "2024-06-14T13:10:28.616Z",
+          "end": "2024-12-14T13:10:28.638Z",
+          "img": "/img/uploads/frete-desktop-.webp",
+          "mobile_img": "/img/uploads/frete-mobile--1.webp",
+          "link": "sejabazico.com.br/roupas",
           "content_position": "center_left",
           "content_order": "inside_image"
         }
