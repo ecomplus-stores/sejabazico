@@ -14,6 +14,7 @@
         <div :class="canHideSummary ? 'col' : 'col-lg-8'">
           <nav class="checkout__steps">
             <a
+              v-if="!bazipassItem"
               :href="cartUrl"
               class="checkout__step"
               :title="i18n('BackToCart')"
@@ -91,6 +92,8 @@
                       :can-select-services="true"
                       :shipped-items="cart.items"
                       :zip-code="localZipCode"
+                      :is-subscription="bazipassItem"
+                      v-show="!bazipassItem"
                       :can-input-zip="false"
                       :skip-app-ids="skipShippingApps"
                       @select-service="service => $emit('update:shipping-service', service)"
@@ -174,7 +177,7 @@
 
           <discount-applier
             v-if="canHideSummary && enabledCheckoutStep > 1 &&
-              !loyaltyPointsAmount && !hasBazicashItem"
+              !loyaltyPointsAmount && !hasBazicashItem && !bazipassItem"
             class="checkout__discount mt-4"
             :amount="amount"
             :coupon-code.sync="localDiscountCoupon"
@@ -260,7 +263,7 @@
               </div>
             </div>
 
-            <div v-if="!hasBazicashItem" class="checkout__back">
+            <div v-if="!bazipassItem" class="checkout__back">
               <a :href="cartUrl" class="btn btn-sm btn-light">
                 <i class="i-chevron-left mr-1"></i>
                 {{ i18n('BackToCart') }}
@@ -270,7 +273,7 @@
         </div>
       </div>
 
-      <template v-if="canRecommendItems">
+      <template v-if="canRecommendItems && !bazipassItem">
         <recommended-items
           ref="offers"
           class="mt-5 pt-lg-3 mx-xl-3"
@@ -301,13 +304,14 @@
     </div>
 
     <div
-      v-else-if="!isUserIdentified"
+      v-else-if="!isUserIdentified || bazipassItem"
       key="login"
     >
       <slot name="login">
         <login-block
           @login="login"
           @update="isUserIdentified = true"
+          :is-subscription="bazipassItem"
           :customer-email.sync="customerEmail"
         />
       </slot>

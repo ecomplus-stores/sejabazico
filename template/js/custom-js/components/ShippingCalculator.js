@@ -54,6 +54,7 @@ export default {
   props: {
     zipCode: String,
     canSelectServices: Boolean,
+    isSubscription: Boolean,
     canInputZip: {
       type: Boolean,
       default: true
@@ -125,6 +126,29 @@ export default {
       return this.hasPaidOption && this.amountSubtotal < this.freeFromValue
         ? Math.round(this.amountSubtotal * 100 / this.freeFromValue)
         : null
+    },
+
+    bazipassItem () {
+      return Boolean(this.localShippedItems.find(({ name }) => name && name.includes('Bazipass')))
+    },
+
+    shippingServicesFinal () {
+      const date = new Date()
+      const today = date.getDay()
+      const hour = date.getHours()
+      const minutes = date.getMinutes()
+      const fifteenHalf = hour === 15 && minutes <= 30
+      const isBetweenHours = today >= 1 && today <= 5 && hour >= 8 && (hour < 15 || fifteenHalf) || (today === 6 && hour >= 9 && hour <= 11)
+      console.log(isBetweenHours)
+      return (this.isSubscription || this.bazipassItem) 
+        ? this.shippingServices.filter(service => service.app_id === 1253 && service.service_code === 'bazipass')
+        : this.shippingServices.filter(service => {
+          if (!isBetweenHours) {
+            return service.service_code !== 'express'
+          } else {
+            return service
+          }
+        })
     },
 
     productionDeadline () {

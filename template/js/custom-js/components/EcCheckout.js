@@ -176,6 +176,10 @@ export default {
       return this.ecomCart.data
     },
 
+    isLpSubscription () {
+      return window.location.hash && window.location.hash.includes('/lp/') && this.bazipassItem
+    },
+
     hasBuyerInfo () {
       const { customer } = this
       return this.customerEmail &&
@@ -214,7 +218,8 @@ export default {
 
     localNotes: {
       get () {
-        return this.notes
+        const sessionUtm = JSON.parse(window.sessionStorage.getItem('ecomUtm') || '{}') 
+        return this.notes || this.isLpSubscription ? sessionUtm.campaign : ''
       },
       set (notes) {
         this.$emit('update:notes', notes)

@@ -54,7 +54,7 @@
           :is="canSelectServices ? 'a' : 'div'"
           :href="canSelectServices && '#'"
           class="list-group-item"
-          v-for="(service, i) in shippingServices"
+          v-for="(service, i) in shippingServicesFinal"
           :key="i"
           :class="{
             'list-group-item-action': canSelectServices,
