@@ -194,6 +194,7 @@ export default {
               const date = new Date()
               const today = date.getDay()
               const hour = date.getHours()
+              console.log(hour)
               if (today > 0 && today < 6 && hour < 18 && service.service_code && service.service_code.includes('PROPRIA-1')) {
                 this.shippingServices.push({
                   app_id: appResult.app_id,
@@ -204,12 +205,12 @@ export default {
                   app_id: appResult.app_id,
                   ...service
                 })
-              } else if (today > 0 && today < 6 && hour > 18 && service.service_code && service.service_code.includes('PROPRIA-2')) {
+              } else if (today > 0 && today < 6 && hour >= 18 && service.service_code && service.service_code.includes('PROPRIA-2')) {
                 this.shippingServices.push({
                   app_id: appResult.app_id,
                   ...service
                 })
-              } else if (((today === 6 && hour > 13) || (today === 0)) && service.service_code && service.service_code.includes('PROPRIA-3')) {
+              } else if (((today === 6 && hour >= 13) || (today === 0)) && service.service_code && service.service_code.includes('PROPRIA-3')) {
                 this.shippingServices.push({
                   app_id: appResult.app_id,
                   ...service
