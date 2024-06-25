@@ -2390,6 +2390,9 @@ div[data-slot="rating"] .skeepers_product__stars {
     } 
 }
 
-#checkout .product__buy {
-    display: none !important;
+#checkout {
+    .product__sku, .product__buy, .prices__installments, .prices__discount--subscription {
+        display: none !important;
+    }
 }
+ 
