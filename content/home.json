@@ -139,6 +139,26 @@
       ]
     },
     {
+      "type": "apx_banners-grid",
+      "container": "container-fluid",
+      "padding": "px-2",
+      "banners": [
+        {
+          "mask_opacity": 0,
+          "img": "/img/uploads/novidades.webp",
+          "link": "https://www.sejabazico.com.br/novidades"
+        }
+      ]
+    },
+    {
+      "type": "apx_newsletter",
+      "title": "Assine nossa Newsletter",
+      "description": "Não fique de fora dos lançamentos, reposições, novidades e receba conhecimentos bázicos que todo homem precisa saber!",
+      "list": "description_last",
+      "btn_text": "Assinar",
+      "input_placeholder": "seumelhoremail@email.com"
+    },
+    {
       "type": "apx_banner-slider",
       "autoplay": 9000,
       "slides": [
@@ -291,14 +311,6 @@
           }
         }
       ]
-    },
-    {
-      "type": "apx_newsletter",
-      "title": "Assine nossa Newsletter",
-      "description": "Não fique de fora dos lançamentos, reposições, novidades e receba conhecimentos bázicos que todo homem precisa saber!",
-      "list": "description_last",
-      "btn_text": "Assinar",
-      "input_placeholder": "seumelhoremail@email.com"
     }
   ]
 }
