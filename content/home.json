@@ -71,15 +71,11 @@
       "carrossel_sm": "Sim",
       "container": "container-fluid",
       "products": [
-        "636eac9a73321213f8d6f75a",
-        "636eacba73321213f8d6f7e9",
-        "652d79152cd6b659597c6803",
+        "666472e0f4e6d85ab2a49273",
         "64999c4f5e6069037048f127",
-        "645a5ea64bd2e929c1f3ca92",
-        "636eacbc73321213f8d6f7f3",
-        "636eacb373321213f8d6f7c9",
-        "663d1207f4e6d85ab27edeb4",
-        "645a5cfb4bd2e929c1f3c523"
+        "66743ef7f4e6d85ab2b2c85e",
+        "652d79152cd6b659597c6803",
+        "636eac9a73321213f8d6f75a"
       ],
       "carrossel_dots_md": "Sim",
       "carrossel_arrows_md": "Sim",
@@ -137,31 +133,6 @@
           "link": "https://www.sejabazico.com.br/bazica-long"
         }
       ]
-    },
-    {
-      "type": "apx_banners-grid",
-      "container": "container-fluid",
-      "padding": "px-2",
-      "banners": [
-        {
-          "mask_opacity": 0,
-          "img": "/img/uploads/novidades.webp",
-          "link": "https://www.sejabazico.com.br/novidades"
-        },
-        {
-          "mask_opacity": 0,
-          "img": "/img/uploads/outlet.webp",
-          "link": "https://www.sejabazico.com.br/outlet"
-        }
-      ]
-    },
-    {
-      "type": "apx_newsletter",
-      "title": "Assine nossa Newsletter",
-      "description": "Não fique de fora dos lançamentos, reposições, novidades e receba conhecimentos bázicos que todo homem precisa saber!",
-      "list": "description_last",
-      "btn_text": "Assinar",
-      "input_placeholder": "seumelhoremail@email.com"
     },
     {
       "type": "apx_banner-slider",
@@ -316,6 +287,14 @@
           }
         }
       ]
+    },
+    {
+      "type": "apx_newsletter",
+      "title": "Assine nossa Newsletter",
+      "description": "Não fique de fora dos lançamentos, reposições, novidades e receba conhecimentos bázicos que todo homem precisa saber!",
+      "list": "description_last",
+      "btn_text": "Assinar",
+      "input_placeholder": "seumelhoremail@email.com"
     }
   ]
 }
