@@ -145,6 +145,11 @@
           "mask_opacity": 0,
           "img": "/img/uploads/novidades.jpg",
           "link": "https://www.sejabazico.com.br/novidades"
+        },
+        {
+          "mask_opacity": 5,
+          "img": "/img/uploads/outlet.webp",
+          "link": "https://www.sejabazico.com.br/outlet"
         }
       ]
     },
