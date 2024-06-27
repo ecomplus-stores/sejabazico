@@ -73,11 +73,12 @@
       "products": [
         "666472e0f4e6d85ab2a49273",
         "64999c4f5e6069037048f127",
-        "636eacba73321213f8d6f7e9",
         "66743ef7f4e6d85ab2b2c85e",
+        "652d79152cd6b659597c6803",
         "636eac9a73321213f8d6f75a",
         "636eacb373321213f8d6f7c9",
-        "652d79152cd6b659597c6803"
+        "636eacba73321213f8d6f7e9",
+        "636eacbc73321213f8d6f7f3"
       ],
       "carrossel_dots_md": "Sim",
       "carrossel_arrows_md": "Sim",
@@ -133,23 +134,6 @@
           "mask_opacity": 5,
           "img": "/img/uploads/banner.grid-4-.webp",
           "link": "https://www.sejabazico.com.br/bazica-long"
-        }
-      ]
-    },
-    {
-      "type": "apx_banners-grid",
-      "container": "container-fluid",
-      "padding": "px-2",
-      "banners": [
-        {
-          "mask_opacity": 0,
-          "img": "/img/uploads/novidades.jpg",
-          "link": "https://www.sejabazico.com.br/novidades"
-        },
-        {
-          "mask_opacity": 0,
-          "img": "/img/uploads/outlet.webp",
-          "link": "https://www.sejabazico.com.br/outlet"
         }
       ]
     },
