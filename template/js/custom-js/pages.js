@@ -5,9 +5,18 @@ import Vue from 'vue'
 import EcomSearch from '@ecomplus/search-engine'
 import './quick-buy'
 import loadBazicashPrices from './bazicash-prices'
+import ecomCart from '@ecomplus/shopping-cart'
 
 loadBazicashPrices()
 
+ecomCart.on('change', ({ data }) => { 
+    if (data.items && data.items.length > 1) {
+        const bazipassItem = data.items.find(({ name }) => name && name.includes('Bazipass'))
+        if (bazipassItem && bazipassItem.product_id) {
+            ecomCart.removeItem(bazipassItem.product_id)
+        }
+    }
+ })
 $('.apx_product-list').each(function(){
     let oObj = $(this);
     let md = {};

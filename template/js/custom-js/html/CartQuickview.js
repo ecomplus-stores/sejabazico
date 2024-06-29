@@ -80,6 +80,27 @@ export default {
       return this.cart.subtotal + this.selectedShippingPrice
     },
 
+    canBuyBazipass () {
+      let bazicasNumber = 0
+      if (this.cart.items && this.cart.items.length) {
+        this.cart.items.forEach(({ categories, quantity }) => {
+          const hasBazicaCategory = categories.some(({_id}) => _id === '638eb9ba73321213f805aa1c') 
+          if (hasBazicaCategory) {
+            bazicasNumber += quantity
+          }
+        })
+      }
+      return bazicasNumber >= 5
+    },
+
+    economic () {
+      let redux = 0
+      if (this.canBuyBazipass) {
+        redux = this.cart.subtotal - 600
+      }
+      return redux
+    },
+
     totalBazicashPrice () {
       let bazicashPrice = 0
       this.cart.items.forEach(item => {

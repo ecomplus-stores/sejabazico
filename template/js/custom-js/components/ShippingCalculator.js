@@ -129,7 +129,7 @@ export default {
     },
 
     bazipassItem () {
-      return Boolean(this.localShippedItems.find(({ name }) => name && name.includes('Bazipass')))
+      return this.localShippedItems.every(({ name }) => name && name.includes('Bazipass'))
     },
 
     shippingServicesFinal () {

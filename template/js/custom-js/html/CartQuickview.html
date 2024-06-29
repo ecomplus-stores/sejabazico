@@ -100,6 +100,19 @@
                 />
               </div>
             </div>
+
+            <a-link
+              v-if="canBuyBazipass"
+              class="minicart__btn-checkout-bazipass btn btn-block"
+              role="button"
+              style="background: #754ea9; color: #fff"
+              href="/app/#/lp/64c7b7f15e6069037079acde/checkout/"
+            >
+              <i class="i-check mr-1"></i>
+              <strong> Economize {{ formatMoney(economic) }} </strong>
+              <br>Compre Bazipass 
+              
+            </a-link>
   
             <a-link
               class="minicart__btn-checkout btn btn-block btn-primary"

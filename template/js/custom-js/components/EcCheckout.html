@@ -154,15 +154,33 @@
                       Limpar carrinho
                     </button>
                   </div>
-                  <payment-methods
+                  <template
                     v-else
-                    :key="paymentsListKey"
-                    :amount="paymentAmount"
-                    :customer="localCustomer"
-                    :payment-gateways.sync="paymentGateways"
-                    @select-gateway="selectPaymentGateway"
-                    @checkout="checkout"
-                  />
+                  >
+                    <div class="checkout__notes mt-4 mb-auto" v-if="isLpSubscription">
+                      <div class="form-group">
+                        <label for="order-notes">Programa de Indicação</label>
+                        <input
+                          class="form-control"
+                          placeholder="Insira seu cupom de indicação"
+                          id="order-notes"
+                          pattern="[a-zA-Z0-9]"
+                          rows="3"
+                          v-model="localNotes"
+                          maxlength="50"
+                        />
+                      </div>
+                    </div>
+
+                    <payment-methods
+                      :key="paymentsListKey"
+                      :amount="paymentAmount"
+                      :customer="localCustomer"
+                      :payment-gateways.sync="paymentGateways"
+                      @select-gateway="selectPaymentGateway"
+                      @checkout="checkout"
+                    />
+                  </template>
 
                   <div
                     class="checkout__overlay fade"

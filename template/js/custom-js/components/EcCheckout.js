@@ -218,8 +218,7 @@ export default {
 
     localNotes: {
       get () {
-        const sessionUtm = JSON.parse(window.sessionStorage.getItem('ecomUtm') || '{}') 
-        return this.notes || this.isLpSubscription ? sessionUtm.campaign : ''
+        return this.notes 
       },
       set (notes) {
         this.$emit('update:notes', notes)
@@ -312,6 +311,7 @@ export default {
 
     login (ecomPassport) {
       if (ecomPassport.checkLogin()) {
+        console.log('ahoy')
         this.customerEmail = ecomPassport.getCustomer().main_email
         this.$emit('login', ecomPassport)
       }
