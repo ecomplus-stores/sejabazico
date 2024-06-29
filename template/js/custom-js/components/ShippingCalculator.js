@@ -129,7 +129,7 @@ export default {
     },
 
     bazipassItem () {
-      return this.localShippedItems.every(({ name }) => name && name.includes('Bazipass'))
+      return this.localShippedItems.every(({ name }) => name && name.toLowerCase().includes('bazipass'))
     },
 
     shippingServicesFinal () {
@@ -139,7 +139,7 @@ export default {
       const minutes = date.getMinutes()
       const fifteenHalf = hour === 15 && minutes <= 30
       const isBetweenHours = today >= 1 && today <= 5 && hour >= 8 && (hour < 15 || fifteenHalf) || (today === 6 && hour >= 9 && hour <= 11)
-      console.log(isBetweenHours)
+      console.log('is subs', (this.isSubscription || this.bazipassItem))
       return (this.isSubscription || this.bazipassItem) 
         ? this.shippingServices.filter(service => service.app_id === 1253 && service.service_code === 'bazipass')
         : this.shippingServices.filter(service => {

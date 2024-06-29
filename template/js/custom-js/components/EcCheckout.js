@@ -238,7 +238,7 @@ export default {
     },
 
     bazipassItem () {
-      return Boolean(this.cart.items.find(({ name }) => name && name.includes('Bazipass')))
+      return Boolean(this.cart.items.find(({ name }) => name && name.toLowerCase().includes('bazipass')))
     },
 
     
