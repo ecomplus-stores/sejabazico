@@ -2394,5 +2394,16 @@ div[data-slot="rating"] .skeepers_product__stars {
     .product__sku, .product__buy, .prices__installments, .prices__discount--subscription {
         display: none !important;
     }
+
+    .payment__discount {
+        font-size: 0;
+    }
+
+    .payment__discount::after {
+        font-size: 13px !important;
+        content: 'DESCONTO';
+        text-transform: uppercase;;
+        padding: 10px !important;
+    }
 }
- 
+
