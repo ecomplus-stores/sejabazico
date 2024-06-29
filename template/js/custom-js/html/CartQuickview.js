@@ -84,9 +84,11 @@ export default {
       let bazicasNumber = 0
       if (this.cart.items && this.cart.items.length) {
         this.cart.items.forEach(({ categories, quantity }) => {
-          const hasBazicaCategory = categories.some(({_id}) => _id === '638eb9ba73321213f805aa1c') 
-          if (hasBazicaCategory) {
-            bazicasNumber += quantity
+          if (categories) {
+            const hasBazicaCategory = categories.some(({_id}) => _id === '638eb9ba73321213f805aa1c') 
+            if (hasBazicaCategory) {
+              bazicasNumber += quantity
+            }
           }
         })
       }
