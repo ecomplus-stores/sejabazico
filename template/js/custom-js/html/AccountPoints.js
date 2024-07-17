@@ -47,6 +47,43 @@ export default {
       return []
     },
 
+    historyEntryPoints () {
+      const pointsEntries = this.customer.loyalty_points_entries
+      const allEntries = []
+      if (pointsEntries) {
+        pointsEntries.forEach(entry => {
+          const usedPoints = entry.earned_points - entry.active_points
+          if (entry.earned_points === entry.active_points) {
+            allEntries.push(entry)
+          } else if (entry.active_points === 0) {
+            // verificar se há resgates para inserir
+            allEntries.push({
+              points: 'entrando',
+              ...entry
+            })
+
+            allEntries.push({
+              points: 'saindo',
+              used_points: usedPoints,
+              ...entry
+            })
+          } else {
+            allEntries.push({
+              points: 'entrando',
+              ...entry
+            })
+
+            allEntries.push({
+              points: 'saindo',
+              used_points: usedPoints,
+              ...entry
+            })
+          }
+        })
+      }
+      return allEntries
+    },
+
     totalPoints () {
       if (this.validPointsEntries.length) {
         return this.validPointsEntries.reduce((prev, curr) => (prev + curr.active_points), 0)

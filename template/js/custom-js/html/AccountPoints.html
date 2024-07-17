@@ -8,32 +8,14 @@
   </div>
 
   <ul class="list-group">
-  <li
-      v-if="purchases && purchases.length"
-      v-for="purchase in purchases"
-      class="list-group-item account-points__entry"
-    >
-      <div class="account-points__entry-title">
-        <h5 class="mb-1">
-          Resgate
-        </h5>
-        <small>
-          Pedido:
-          {{ formatDate(purchase.created_at) }}
-        </small>
-      </div>
-
-      <div class="bazipass-info">
-        <b style="padding: 7px; background-color: black; color: #fff; margin-top: 5px; margin-bottom: 5px">- {{ (purchase.amount.discount * 10).toFixed(2) }} Bazicashs</b>
-        <b style="padding: 7px; background-color: var(--success); color: #fff; margin-top: 5px; margin-bottom: 5px"> Débito </b>
-      </div>
-    </li>
+  
     <li
-      v-for="pointsEntry in validPointsEntries"
+      v-for="pointsEntry in historyEntryPoints"
       class="list-group-item account-points__entry"
+      v-if="pointsEntry.earned_points > 0"
     >
       <div class="account-points__entry-title">
-        <h5 class="mb-1" v-if="pointsEntry.active_points >= 5000">
+        <h5 class="mb-1" v-if="pointsEntry.earned_points === 5000 && pointsEntry.points === 'entrando'">
           BaziPass
         </h5>
         <template v-else>
@@ -48,8 +30,8 @@
       </div>
 
       <div class="bazipass-info">
-        <b style="padding: 7px; background-color: black; color: #fff; margin-top: 5px; margin-bottom: 5px">{{ pointsEntry.vencido ? '-' : '+' }} {{ (pointsEntry.active_points).toFixed(2) }} Bazicashs</b>
-        <b :style="`padding: 7px; background-color: ${pointsEntry.vencido ? 'var(--danger);' : 'var(--info);'} color: #fff; margin-top: 5px; margin-bottom: 5px`"> {{ pointsEntry.vencido ? 'Vencido' : 'Crédito' }}  </b>
+        <b style="padding: 7px; background-color: black; color: #fff; margin-top: 5px; margin-bottom: 5px">{{ pointsEntry.points === 'saindo' ? `- ${(pointsEntry.used_points).toFixed(2)}` : `+ ${(pointsEntry.earned_points).toFixed(2)}` }} Bazicashs</b>
+        <b :style="`padding: 7px; background-color: ${pointsEntry.vencido ? 'var(--danger);' : pointsEntry.points === 'entrando' ? 'var(--success);' : 'var(--info);'} color: #fff; margin-top: 5px; margin-bottom: 5px`"> {{ pointsEntry.vencido ? 'Vencido' : pointsEntry.points === 'entrando' ? 'Crédito' : 'Débito' }}  </b>
       </div>
     </li>
   </ul>
