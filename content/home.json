@@ -8,19 +8,19 @@
       "slides": [
         {
           "mask_opacity": 5,
+          "start": "2024-07-23T14:48:32.458Z",
+          "end": "2024-07-23T14:48:32.490Z",
+          "img": "/img/uploads/desktop_marrom.webp",
+          "mobile_img": "/img/uploads/mobile_marrom.webp",
+          "link": "https://www.sejabazico.com.br/novidades"
+        },
+        {
+          "mask_opacity": 5,
           "start": "2024-07-02T14:10:27.207Z",
           "end": "",
           "img": "/img/uploads/mochila_desktop.webp",
           "mobile_img": "/img/uploads/mochila_mobile.webp",
           "link": "https://www.sejabazico.com.br/mochila-work"
-        },
-        {
-          "mask_opacity": 0,
-          "start": "2024-06-27T12:42:51.405Z",
-          "end": "2031-02-27T12:42:33.279Z",
-          "img": "/img/uploads/polo-desktop.webp",
-          "link": "https://www.sejabazico.com.br/novidades",
-          "mobile_img": "/img/uploads/polo-mobile.webp"
         },
         {
           "mask_opacity": 0,
@@ -51,14 +51,6 @@
           "link": "sejabazico.com.br/roupas",
           "content_position": "center_left",
           "content_order": "inside_image"
-        },
-        {
-          "mask_opacity": 5,
-          "start": "2024-07-23T14:48:32.458Z",
-          "end": "2024-07-23T14:48:32.490Z",
-          "img": "/img/uploads/desktop_marrom.webp",
-          "mobile_img": "/img/uploads/mobile_marrom.webp",
-          "link": "https://www.sejabazico.com.br/novidades"
         }
       ]
     },
