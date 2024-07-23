@@ -582,6 +582,21 @@
           }
         }
       ]
+    },
+    {
+      "type": "apx_blockPerCategory",
+      "slug": "Bázica Manga Longa",
+      "list": [
+        {
+          "content": {
+            "title": "Porque nem toda camiseta básica é igual",
+            "subtitle": "Nosso Diferencial",
+            "image_position": "last",
+            "text_align": "left",
+            "body": "Chega de camisetas descartáveis! Pagar caro em peças que não duram só porque elas têm uma logomarca no peito é coisa do passado. **Não é porque a sua camisa não tem estampa que ela precisa ser qualquer uma!**"
+          }
+        }
+      ]
     }
   ]
 }
