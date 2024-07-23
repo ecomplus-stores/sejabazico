@@ -641,6 +641,22 @@
           }
         }
       ]
+    },
+    {
+      "type": "apx_blockPerCategory",
+      "title": "",
+      "slug": " Polo ******",
+      "list": [
+        {
+          "content": {
+            "title": "Ajude-nos a Dar Nome à Nossa Nova Polo!",
+            "subtitle": "O Conforto e Durabilidade que Você Merece",
+            "body": "Essa peça é tão versátil e tão pedida por vocês que não conseguimos dar um nome adequado. Por isso, queremos sua ajuda para batizá-la! Fique ligado nas nossas redes sociais e participe dessa escolha.",
+            "text_align": "left",
+            "image_position": "last"
+          }
+        }
+      ]
     }
   ]
 }
