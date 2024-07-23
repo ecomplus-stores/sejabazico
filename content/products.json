@@ -610,7 +610,17 @@
             "title": "Mais sobre o Produto",
             "body": "A Camisa Bázica Manga Longa é aquela peça coringa que todo homem precisa no guarda-roupa. Seja para arrasar no trabalho ou curtir um rolê despretensioso, ela se adapta a qualquer ocasião. Combinou com jeans? Tá show! Preferiu uma calça de alfaiataria? Tá chique! O design atemporal e sofisticado garante que você vai querer usar essa camisa todos os dias. E a melhor parte? **Ela vai durar muito tempo no seu armário, porque aqui na Bázico, a gente não trabalha com descartáveis.**",
             "text_align": "left",
-            "image_position": "last"
+            "image_position": "last",
+            "subtitle": "Sua Nova Camisa Preferida"
+          }
+        },
+        {
+          "content": {
+            "title": "Dicas de Uso:",
+            "subtitle": "Não que tenha muito como errar",
+            "image_position": "first",
+            "text_align": "left",
+            "body": "* Quer um visual clássico? Vai de camisa branca Bázico com uma calça de alfaiataria. Não tem erro!\n* Tá a fim de um look despojado? A camisa Bázico Manga Longa na cor Verde Militar fica top com uma calça jeans e um tênis.\n* E se a ideia é um visual moderno e elegante, a camisa Marrom é sua melhor amiga para aquelas ocasiões mais formais."
           }
         }
       ]
