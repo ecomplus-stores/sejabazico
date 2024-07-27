@@ -4,8 +4,18 @@
   "sections": [
     {
       "type": "apx_banner-slider",
-      "autoplay": 7000,
+      "autoplay": 0,
       "slides": [
+        {
+          "mask_opacity": 5,
+          "start": "2024-07-27T19:43:01.077Z",
+          "end": "2024-11-01T19:43:01.108Z",
+          "img": "/img/uploads/desktop_pais.webp",
+          "link": "https://www.sejabazico.com.br/roupas",
+          "mobile_img": "/img/uploads/mobile_pais.webp",
+          "content_position": "center_left",
+          "content_order": "inside_image"
+        },
         {
           "mask_opacity": 5,
           "start": "2024-07-23T14:48:32.458Z",
