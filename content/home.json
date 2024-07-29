@@ -61,6 +61,13 @@
           "link": "sejabazico.com.br/roupas",
           "content_position": "center_left",
           "content_order": "inside_image"
+        },
+        {
+          "mask_opacity": 5,
+          "start": "2024-07-29T16:52:57.163Z",
+          "end": "2025-08-15T16:52:57.201Z",
+          "mobile_img": "/img/uploads/mobile_pais-presente_1.webp",
+          "img": "/img/uploads/desktop_pais-presente_1.webp"
         }
       ]
     },
