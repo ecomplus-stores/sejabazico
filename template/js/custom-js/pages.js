@@ -169,7 +169,7 @@ if (window.storefront && window.storefront.context && window.storefront.context.
 
 }
 
-       sessionStorage.setItem('isBazipass', 1);
+       //sessionStorage.setItem('isBazipass', 1);
 
    
 
