@@ -25,7 +25,7 @@
           "link": "https://www.sejabazico.com.br/roupas"
         },
         {
-          "mask_opacity": 5,
+          "mask_opacity": 0,
           "start": "2024-07-23T14:48:32.458Z",
           "end": "2030-04-04T14:48:32.490Z",
           "img": "/img/uploads/desktop_marrom.webp",
