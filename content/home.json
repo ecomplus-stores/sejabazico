@@ -4,10 +4,10 @@
   "sections": [
     {
       "type": "apx_banner-slider",
-      "autoplay": 0,
+      "autoplay": 4000,
       "slides": [
         {
-          "mask_opacity": 5,
+          "mask_opacity": 0,
           "start": "2024-07-27T19:43:01.077Z",
           "end": "2028-03-02T16:55:33.766Z",
           "img": "/img/uploads/desktop_pais-geral.webp",
