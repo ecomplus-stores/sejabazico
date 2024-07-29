@@ -285,5 +285,88 @@ let marketingStripeStyle = ''
 </div>
 </div>
 <script>
-  bazipass =
+  // Função para instanciar o objeto customer no localStorage
+  // function setCustomer() {
+  //     const customer = {
+  //         display_name: "John Doe",
+  //         isBazipass: true,
+  //         loyalty_points_entries: [
+  //             {
+  //                 active_points: 100,
+  //                 valid_thru: "2024-12-31",
+  //                 ratio: 1
+  //             },
+  //             {
+  //                 active_points: 200,
+  //                 valid_thru: null,
+  //                 ratio: 1
+  //             },
+  //             {
+  //                 active_points: 150,
+  //                 valid_thru: "2023-12-31",
+  //                 ratio: 1
+  //             }
+  //         ]
+  //     };
+
+      // Armazenar o objeto customer no localStorage
+    //  localStorage.setItem('customer', JSON.stringify(customer));
+      // Também armazenar o isBazipass no sessionStorage
+     // sessionStorage.setItem('isBazipass', 1);
+ // }
+
+  // Chamar a função para setar o customer
+  setCustomer();
+
+  // Função para calcular os pontos ativos
+  // function getActivePoints(customer) {
+  //     return customer.loyalty_points_entries.reduce((acc, entry) => acc + entry.active_points, 0);
+  // }
+
+  // Pegar o customer do localStorage
+ // const storedCustomer = JSON.parse(localStorage.getItem('customer'));
+
+  // Pegar o valor de activePoints
+  // let activePoints = 0;
+  // if (storedCustomer) {
+  //     activePoints = getActivePoints(storedCustomer);
+  // }
+
+  // Lógica de implementação
+  const isBazipass = Number(window.sessionStorage.getItem('isBazipass'));
+  if (window.checkedBazipassDoc || isBazipass) {
+      document.querySelector('body').classList.add('is-bazipass');
+      document.querySelector('.top-bar').style.background = '#24174a';
+      
+      const customerName = storedCustomer.display_name;
+      const totalPointsMessage = ` ${customerName} tem ${activePoints} pontos ativos`;
+      
+      // Criar novos elementos da lista
+      const ulElement = document.querySelector('.top-bar ul');
+      
+      const welcomeMessage = document.createElement('li');
+      welcomeMessage.innerHTML = `<a class="top-bar__countdown bazipass-greeting" href="/" style="color: white;">${customerName}, bem vindo ao BaziPass!</a>`;
+      
+      const pointsMessage = document.createElement('li');
+      pointsMessage.innerHTML = `<a class="top-bar__countdown bazipass-greeting" href="/" style="color: white;">${totalPointsMessage}</a>`;
+      
+      // Adicionar os novos elementos à lista
+      ulElement.appendChild(welcomeMessage);
+      ulElement.appendChild(pointsMessage);
+      
+
+      document.querySelector('.top-bar__countdown').style.background = '#24174a';
+      const classListNot = document.getElementById('not-bazipass').classList;
+      const classListIs = document.getElementById('is-bazipass').classList;
+      if (document.getElementsByClassName('widget-open-bazipass-container-home_header-text') && document.getElementsByClassName('widget-open-bazipass-container-home_header-text').length) {
+          document.getElementsByClassName('widget-open-bazipass-container-home_header-text')[0].innerHTML = `<a href="/app/#/account/">Verificar saldo</a>`;
+      }
+      if (!(classListIs.contains('show') && classListNot.contains('d-none'))) {
+          console.log('vamo mudar');
+          document.getElementById('not-bazipass').className = 'd-none';
+          document.getElementById('is-bazipass').className = 'show';
+          clearInterval(startUserInterval);
+      }
+  }
 </script>
+
