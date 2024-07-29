@@ -4,33 +4,33 @@
   "sections": [
     {
       "type": "apx_banner-slider",
-      "autoplay": 7000,
+      "autoplay": 0,
       "slides": [
         {
           "mask_opacity": 5,
-          "start": "2024-07-02T14:10:27.207Z",
-          "end": "",
-          "img": "/img/uploads/mochila_desktop.webp",
-          "mobile_img": "/img/uploads/mochila_mobile.webp",
-          "link": "https://www.sejabazico.com.br/mochila-work"
-        },
-        {
-          "mask_opacity": 0,
-          "start": "2024-06-27T12:42:51.405Z",
-          "end": "2031-02-27T12:42:33.279Z",
-          "img": "/img/uploads/polo-desktop.webp",
-          "link": "https://www.sejabazico.com.br/novidades",
-          "mobile_img": "/img/uploads/polo-mobile.webp"
-        },
-        {
-          "mask_opacity": 0,
-          "start": "2024-05-18T17:32:26.423Z",
-          "end": "2024-08-02T17:32:26.447Z",
-          "img": "/img/uploads/provisorio_desktop.webp",
-          "mobile_img": "/img/uploads/provisorio_mobile.webp",
-          "link": "/roupas",
+          "start": "2024-07-27T19:43:01.077Z",
+          "end": "2028-03-02T16:55:33.766Z",
+          "img": "/img/uploads/desktop_pais-geral.webp",
+          "link": "https://www.sejabazico.com.br/roupas",
+          "mobile_img": "/img/uploads/mobile_pais-geral.webp",
           "content_position": "center_left",
           "content_order": "inside_image"
+        },
+        {
+          "mask_opacity": 5,
+          "start": "2024-07-29T16:52:57.163Z",
+          "end": "2025-08-15T16:52:57.201Z",
+          "mobile_img": "/img/uploads/mobile_pais-presente_1.webp",
+          "img": "/img/uploads/desktop_pais-presente_1.webp",
+          "link": "https://www.sejabazico.com.br/roupas"
+        },
+        {
+          "mask_opacity": 5,
+          "start": "2024-07-23T14:48:32.458Z",
+          "end": "2030-04-04T14:48:32.490Z",
+          "img": "/img/uploads/desktop_marrom.webp",
+          "mobile_img": "/img/uploads/mobile_marrom.webp",
+          "link": "https://www.sejabazico.com.br/novidades"
         },
         {
           "mask_opacity": 0,
