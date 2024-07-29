@@ -169,29 +169,42 @@ if (window.storefront && window.storefront.context && window.storefront.context.
 
 }
 
+       sessionStorage.setItem('isBazipass', 1);
+
+   
+
 const startUserInterval = setInterval(() => {
-     const isBazipass = Number(window.sessionStorage.getItem('isBazipass'))/*  || 1 */
-  if (window.checkedBazipassDoc || isBazipass) {
-    document.querySelector('body').classList.add('is-bazipass');
-    document.querySelector('.top-bar').style.background = '#24174a';
-    const customerName = window.ecomPassport && window.ecomPassport.customer && window.ecomPassport.customer.display_name;
-    const customerGreeting =  `${customerName}, você tem ${activePoints} pontos ativos `;
-    $('.top-bar ul li:last-child a').replaceWith(`<a class="top-bar__countdown" style="" href="/">${customerGreeting}</a>`)
-    
-    document.querySelector('.top-bar__countdown').style.background = '#24174a';
-    const classListNot = document.getElementById('not-bazipass').classList 
-    const classListIs = document.getElementById('is-bazipass').classList 
-    if (document.getElementsByClassName('widget-open-bazipass-container-home_header-text') && document.getElementsByClassName('widget-open-bazipass-container-home_header-text').length) {
-      document.getElementsByClassName('widget-open-bazipass-container-home_header-text')[0].innerHTML = `<a href="/app/#/account/">Verificar saldo</a>`
+    const isBazipass = Number(window.sessionStorage.getItem('isBazipass'))/*  || 1 */
+    if (window.checkedBazipassDoc || isBazipass) {
+      document.querySelector('body').classList.add('is-bazipass');
+      document.querySelector('.top-bar').style.background = '#24174a';
+      const customerName = window.ecomPassport && window.ecomPassport.customer && window.ecomPassport.customer.display_name;
+      const lastActivePoints = window.ecomPassport &&
+      window.ecomPassport.customer &&
+      window.ecomPassport.customer.loyalty_points_entries &&
+      window.ecomPassport.customer.loyalty_points_entries.length > 0 &&
+      window.ecomPassport.customer.loyalty_points_entries[window.ecomPassport.customer.loyalty_points_entries.length - 1].active_points;
+
+      const customerGreeting =  `${customerName}, você tem ${lastActivePoints} bazicashs. Aproveite agora! `;
+      $('.top-bar ul li:last-child a').replaceWith(`<a class="top-bar__countdown" style="" href="/pages/produtos-bazicash">${customerGreeting}</a>`)
+
+      const bemvindo =  `${customerName}, bem vindo ao BaziPass! `;
+      $('.top-bar ul li:first-child a').replaceWith(`<a class="top-bar__countdown" style="" href="/">${bemvindo}</a>`)
+  
+      document.querySelector('.top-bar__countdown').style.background = '#24174a';
+      const classListNot = document.getElementById('not-bazipass').classList 
+      const classListIs = document.getElementById('is-bazipass').classList 
+      if (document.getElementsByClassName('widget-open-bazipass-container-home_header-text') && document.getElementsByClassName('widget-open-bazipass-container-home_header-text').length) {
+        document.getElementsByClassName('widget-open-bazipass-container-home_header-text')[0].innerHTML = `<a href="/app/#/account/">Verificar saldo</a>`
+      }
+      if (!(classListIs.contains('show') && classListNot.contains('d-none'))) {
+        console.log('vamo mudar')
+        document.getElementById('not-bazipass').className = 'd-none'
+        document.getElementById('is-bazipass').className = 'show'
+        clearInterval(startUserInterval)
+      }
     }
-    if (!(classListIs.contains('show') && classListNot.contains('d-none'))) {
-      console.log('vamo mudar')
-      document.getElementById('not-bazipass').className = 'd-none'
-      document.getElementById('is-bazipass').className = 'show'
-      clearInterval(startUserInterval)
-    }
-  }
-}, 1000);
+  }, 1000);
 
 if (!window.checkedBazipassDoc) {
     startUserInterval

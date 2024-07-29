@@ -243,9 +243,13 @@ body{font-size:var(--body);color:#000}
     width: 15px;
 }
 
-.top-bar{background:#000;
-position:fixed;
-z-index: 999;}
+.top-bar {
+    background:#000;
+    position:sticky;
+    top: 62px;
+    z-index: 800;
+}
+
 .top-bar *{
     height: 34px;     
     width: 100%;
