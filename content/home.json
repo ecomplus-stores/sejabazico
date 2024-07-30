@@ -51,6 +51,14 @@
           "link": "sejabazico.com.br/roupas",
           "content_position": "center_left",
           "content_order": "inside_image"
+        },
+        {
+          "mask_opacity": 5,
+          "start": "2024-07-30T12:06:36.624Z",
+          "end": "2027-09-17T12:09:40.957Z",
+          "mobile_img": "/img/uploads/mobile_lancamentos.webp",
+          "img": "/img/uploads/desktop_lancamentos.webp",
+          "link": "https://www.sejabazico.com.br/novidades"
         }
       ]
     },
