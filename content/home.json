@@ -167,15 +167,15 @@
       "container": "container-fluid",
       "products": [
         "669512f0f4e6d85ab2d1d0e4",
-        "669e6340f4e6d85ab2da8a3d",
+        "669e570bf4e6d85ab2da6ca8",
         "669e6a44f4e6d85ab2da9d41",
         "668eba80f4e6d85ab2cc3266",
-        "669e570bf4e6d85ab2da6ca8",
-        "669e6183f4e6d85ab2da8499",
+        "669e6340f4e6d85ab2da8a3d",
         "669e71cef4e6d85ab2daaf89",
+        "668ebc67f4e6d85ab2cc360a",
+        "669e6183f4e6d85ab2da8499",
         "669e5572f4e6d85ab2da67f7",
-        "669e8e74f4e6d85ab2dadf13",
-        "668ebc67f4e6d85ab2cc360a"
+        "669e8e74f4e6d85ab2dadf13"
       ],
       "carrossel_dots_md": "Sim",
       "carrossel_arrows_md": "Sim",
@@ -220,15 +220,13 @@
       "carrossel_sm": "Sim",
       "container": "container-fluid",
       "products": [
-        "64637452a0e875411e8f6b00",
-        "645187af4bd2e929c1e9b2f6",
-        "636eacab73321213f8d6f799",
-        "636eacc473321213f8d6f815",
-        "656f9b362cd6b65959ce4152",
-        "643950574bd2e929c1cf91c9",
-        "656f86d92cd6b65959ce215a",
-        "652d79772cd6b659597c6913",
-        "636ead3773321213f8d6f9a2"
+        "649342c75e60690370439ddb",
+        "645a5ea64bd2e929c1f3ca92",
+        "668ea990f4e6d85ab2cc1112",
+        "669fc954f4e6d85ab2dc12b4",
+        "636ead2673321213f8d6f960",
+        "636ead3573321213f8d6f99b",
+        "655514d82cd6b65959a96106"
       ],
       "carrossel_dots_md": "Sim",
       "carrossel_arrows_md": "Não",
