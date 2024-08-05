@@ -19,6 +19,7 @@ import ABackdrop from '@ecomplus/storefront-components/src/ABackdrop.vue'
 import APrices from '@ecomplus/storefront-components/src/APrices.vue'
 import CartItem from '@ecomplus/storefront-components/src/CartItem.vue'
 import ShippingCalculator from '@ecomplus/storefront-components/src/ShippingCalculator.vue'
+import ecomPassport from '@ecomplus/passport-client'
 
 export default {
   name: 'CartQuickview',
@@ -59,7 +60,8 @@ export default {
 
   data () {
     return {
-      selectedShippingPrice: 0
+      selectedShippingPrice: 0,
+      isBazipass: false
     }
   },
 
@@ -82,6 +84,10 @@ export default {
 
     canBuyBazipass () {
       let bazicasNumber = 0
+      const buyer = this.ecomPassport && this.ecomPassport.customer
+      this.isBazipass = buyer && 
+        buyer.doc_number &&
+        window.checkedBazipassDoc === buyer.doc_number
       if (this.cart.items && this.cart.items.length) {
         this.cart.items.forEach(({ categories, quantity }) => {
           if (categories) {
@@ -92,7 +98,7 @@ export default {
           }
         })
       }
-      return bazicasNumber >= 5
+      return bazicasNumber >= 5 && !this.isBazipass
     },
 
     economic () {
