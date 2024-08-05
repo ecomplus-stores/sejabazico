@@ -158,7 +158,11 @@ export default {
               return service
             } else if (!this.isBazicashFirstRescue && service.service_code === 'BAZICASH-0') {
               return service
+            } else {
+              return null
             }
+          } else if (service && service.service_code.includes('BAZICASH-')) {
+            return null
           }
           if (!isBetweenHours) {
             return service.service_code !== 'express'
