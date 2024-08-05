@@ -16,6 +16,7 @@ import { modules } from '@ecomplus/client'
 import sortApps from '@ecomplus/storefront-components/src/js/helpers/sort-apps'
 import CleaveInput from 'vue-cleave-component'
 import ShippingLine from '@ecomplus/storefront-components/src/ShippingLine.vue'
+import ecomPassport from '@ecomplus/passport-client'
 
 const localStorage = typeof window === 'object' && window.localStorage
 const zipStorageKey = 'shipping-to-zip'
@@ -99,6 +100,7 @@ export default {
       selectedService: null,
       hasPaidOption: false,
       freeFromValue: null,
+      isBazipass: false,
       isScheduled: false,
       retryTimer: null,
       isWaiting: false,
@@ -118,8 +120,16 @@ export default {
         : { blocks: [30] }
     },
 
+    customerData () {
+      return this.ecomPassport && this.ecomPassport.customer
+    },
+
     isAracaju () {
       return this.localZipCode >= 49000000 && this.localZipCode <= 49099999
+    },
+
+    isBazicashFirstRescue () {
+      return this.customerData && this.customerData.orders && this.customerData.orders.length && this.customerData.orders.some(({payment_method_label}) => payment_method_label === "Bazicash")
     },
 
     freeFromPercentage () {
@@ -143,6 +153,13 @@ export default {
       return (this.isSubscription || this.bazipassItem) 
         ? this.shippingServices.filter(service => service.app_id === 1253 && service.service_code === 'bazipass')
         : this.shippingServices.filter(service => {
+          if (this.isBazipass && service && service.service_code.includes('BAZICASH-')) {
+            if (this.isBazicashFirstRescue && service.service_code === 'BAZICASH-1') {
+              return service
+            } else if (!this.isBazicashFirstRescue && service.service_code === 'BAZICASH-0') {
+              return service
+            }
+          }
           if (!isBetweenHours) {
             return service.service_code !== 'express'
           } else {
@@ -396,6 +413,13 @@ export default {
   },
 
   created () {
+    const checkBazipass = () => {
+      const buyer = this.ecomPassport && this.ecomPassport.customer
+      this.isBazipass = buyer.doc_number &&
+        window.checkedBazipassDoc === buyer.doc_number
+    }
+    window.addEventListener('bazipassCheck', checkBazipass)
+    checkBazipass()
     if (!this.zipCode && localStorage) {
       const storedZip = localStorage.getItem(zipStorageKey)
       if (storedZip) {
