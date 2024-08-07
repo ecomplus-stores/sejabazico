@@ -71,29 +71,29 @@
       "carrossel_sm": "Sim",
       "container": "container-fluid",
       "products": [
-        "636eac9a73321213f8d6f75a",
-        "636eacaa73321213f8d6f794",
-        "636eacb373321213f8d6f7c9",
-        "643879f14bd2e929c1cedf5b",
-        "636eacba73321213f8d6f7e9",
-        "636eacbc73321213f8d6f7f3",
-        "64934a5a5e6069037043b51d",
-        "669e5572f4e6d85ab2da67f7",
-        "64999c4f5e6069037048f127"
+        "636eacc573321213f8d6f81b",
+        "636ead3b73321213f8d6f9b4",
+        "636ead1173321213f8d6f916",
+        "636ead0c73321213f8d6f900",
+        "64934b245e6069037043b7e2",
+        "636ead1373321213f8d6f91b",
+        "636eac9773321213f8d6f74b",
+        "6493401d5e606903704397c6",
+        "65d5f19e87ab487fbfc12b78",
+        "636ead3073321213f8d6f988"
       ],
       "carrossel_dots_md": "Sim",
-      "carrossel_arrows_md": "Sim",
+      "carrossel_arrows_md": "Não",
       "carrossel_dots_sm": "Sim",
       "carrossel_arrows_sm": "Não",
       "padding_sm": "px-1",
-      "num_col_md": "4",
-      "padding": "px-md-2",
+      "num_col_md": "5",
+      "padding": "px-md-0",
       "num_col_sm": "2",
-      "title": "mais vendidos",
+      "title": "Sua nova camisa preferida",
       "type": "apx_productList_A",
-      "description": "os 10 itens que nossos clientes mais curtem",
-      "btn_link": "/top-10",
-      "list": "description_last",
+      "description": "🚨🚨 Cuidado com o aquele pensamento \"depois eu olho direitinho\". As coisas acabam, e acabam rápido. 🚨🚨",
+      "list": "description_first",
       "carrossel_md": "Sim"
     },
     {
@@ -136,7 +136,8 @@
           "img": "/img/uploads/banner.grid-4-.webp",
           "link": "https://www.sejabazico.com.br/bazica-long"
         }
-      ]
+      ],
+      "width_mobile": false
     },
     {
       "type": "apx_banner-slider",
@@ -153,6 +154,57 @@
           "mobile_img": "/img/uploads/branca-mobile-.webp"
         }
       ]
+    },
+    {
+      "carrossel_sm": "Sim",
+      "container": "container-fluid",
+      "products": [
+        "636eac9a73321213f8d6f75a",
+        "636eacaa73321213f8d6f794",
+        "636eacb373321213f8d6f7c9",
+        "643879f14bd2e929c1cedf5b",
+        "636eacba73321213f8d6f7e9",
+        "636eacbc73321213f8d6f7f3",
+        "64934a5a5e6069037043b51d",
+        "669e5572f4e6d85ab2da67f7",
+        "64999c4f5e6069037048f127"
+      ],
+      "carrossel_dots_md": "Sim",
+      "carrossel_arrows_md": "Sim",
+      "carrossel_dots_sm": "Sim",
+      "carrossel_arrows_sm": "Não",
+      "padding_sm": "px-1",
+      "num_col_md": "4",
+      "padding": "px-md-2",
+      "num_col_sm": "2",
+      "title": "mais vendidos",
+      "type": "apx_productList_A",
+      "description": "os 10 itens que nossos clientes mais curtem",
+      "btn_link": "/top-10",
+      "list": "description_last",
+      "carrossel_md": "Sim"
+    },
+    {
+      "type": "apx_banners-grid",
+      "banners": [
+        {
+          "mask_opacity": 0,
+          "img": "/img/uploads/programa-de-indicacao.webp",
+          "link": "https://www.sejabazico.com.br/pages/programa-de-indicacao"
+        },
+        {
+          "mask_opacity": 5,
+          "img": "/img/uploads/top-10.webp",
+          "link": "https://www.sejabazico.com.br/top-10"
+        },
+        {
+          "mask_opacity": 5,
+          "img": "/img/uploads/bazipass.webp",
+          "link": "https://bazipass.sejabazico.com.br/"
+        }
+      ],
+      "padding": "px-2",
+      "container": "container-fluid"
     },
     {
       "carrossel_sm": "Sim",
@@ -184,54 +236,6 @@
       "description": "Lançamentos e Reposições: Chegaram Faz Pouco, Vem Conferir!",
       "btn_link": "/bazicas",
       "list": "description_last",
-      "carrossel_md": "Sim"
-    },
-    {
-      "type": "apx_banners-grid",
-      "banners": [
-        {
-          "mask_opacity": 0,
-          "img": "/img/uploads/programa-de-indicacao.webp",
-          "link": "https://www.sejabazico.com.br/pages/programa-de-indicacao"
-        },
-        {
-          "mask_opacity": 5,
-          "img": "/img/uploads/top-10.webp",
-          "link": "https://www.sejabazico.com.br/top-10"
-        },
-        {
-          "mask_opacity": 5,
-          "img": "/img/uploads/bazipass.webp",
-          "link": "https://bazipass.sejabazico.com.br/"
-        }
-      ],
-      "padding": "px-2",
-      "container": "container-fluid"
-    },
-    {
-      "carrossel_sm": "Sim",
-      "container": "container-fluid",
-      "products": [
-        "649342c75e60690370439ddb",
-        "645a5ea64bd2e929c1f3ca92",
-        "668ea990f4e6d85ab2cc1112",
-        "669fc954f4e6d85ab2dc12b4",
-        "636ead2673321213f8d6f960",
-        "636ead3573321213f8d6f99b",
-        "655514d82cd6b65959a96106"
-      ],
-      "carrossel_dots_md": "Sim",
-      "carrossel_arrows_md": "Não",
-      "carrossel_dots_sm": "Sim",
-      "carrossel_arrows_sm": "Não",
-      "padding_sm": "px-1",
-      "num_col_md": "5",
-      "padding": "px-md-0",
-      "num_col_sm": "2",
-      "title": "Sua nova camisa preferida",
-      "type": "apx_productList_A",
-      "description": "🚨🚨 Cuidado com o aquele pensamento \"depois eu olho direitinho\". As coisas acabam, e acabam rápido. 🚨🚨",
-      "list": "description_first",
       "carrossel_md": "Sim"
     },
     {
