@@ -17,6 +17,7 @@ import sortApps from '@ecomplus/storefront-components/src/js/helpers/sort-apps'
 import CleaveInput from 'vue-cleave-component'
 import ShippingLine from '@ecomplus/storefront-components/src/ShippingLine.vue'
 import ecomPassport from '@ecomplus/passport-client'
+import ecomCart from '@ecomplus/shopping-cart'
 
 const localStorage = typeof window === 'object' && window.localStorage
 const zipStorageKey = 'shipping-to-zip'
@@ -100,7 +101,7 @@ export default {
       selectedService: null,
       hasPaidOption: false,
       freeFromValue: null,
-      isBazipass: false,
+      isBazipass: true,
       isScheduled: false,
       retryTimer: null,
       isWaiting: false,
@@ -121,7 +122,7 @@ export default {
     },
 
     customerData () {
-      return this.ecomPassport && this.ecomPassport.customer
+      return ecomPassport && ecomPassport.customer
     },
 
     isAracaju () {
@@ -139,7 +140,11 @@ export default {
     },
 
     bazipassItem () {
-      return this.localShippedItems.every(({ name }) => name && name.toLowerCase().includes('bazipass'))
+      return ecomCart && ecomCart.data && ecomCart.data.items && ecomCart.data.items.length && ecomCart.data.items.every(({ name }) => name && name.toLowerCase().includes('bazipass'))
+    },
+
+    bazicashItem () {
+      return ecomCart && ecomCart.data && ecomCart.data.items && ecomCart.data.items.length && ecomCart.data.items.every(({ flags }) => flags && flags.includes('bazicash'))
     },
 
     shippingServicesFinal () {
@@ -153,7 +158,7 @@ export default {
       return (this.isSubscription || this.bazipassItem) 
         ? this.shippingServices.filter(service => service.app_id === 1253 && service.service_code === 'bazipass')
         : this.shippingServices.filter(service => {
-          if (this.isBazipass && service && service.service_code.includes('BAZICASH-')) {
+          if ((this.isBazipass && this.bazicashItem) && service && service.service_code.includes('BAZICASH-')) {
             if (this.isBazicashFirstRescue && service.service_code === 'BAZICASH-1') {
               return service
             } else if (!this.isBazicashFirstRescue && service.service_code === 'BAZICASH-0') {
@@ -418,9 +423,9 @@ export default {
 
   created () {
     const checkBazipass = () => {
-      const buyer = this.ecomPassport && this.ecomPassport.customer
-      this.isBazipass = buyer.doc_number &&
-        window.checkedBazipassDoc === buyer.doc_number
+      const buyer = ecomPassport && ecomPassport.customer
+      this.isBazipass = /* buyer.doc_number &&
+        window.checkedBazipassDoc === buyer.doc_number */ true
     }
     window.addEventListener('bazipassCheck', checkBazipass)
     checkBazipass()
