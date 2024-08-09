@@ -51,6 +51,14 @@
           "link": "sejabazico.com.br/roupas",
           "content_position": "center_left",
           "content_order": "inside_image"
+        },
+        {
+          "mask_opacity": 5,
+          "start": "2024-08-09T14:00:13.240Z",
+          "end": "2030-03-01T14:01:42.176Z",
+          "img": "/img/uploads/desktop_oferta-gola-v.jpg",
+          "mobile_img": "/img/uploads/mobile_oferta-gola-v.jpg",
+          "link": "https://www.sejabazico.com.br/bazica-gola-v"
         }
       ]
     },
