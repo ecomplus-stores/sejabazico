@@ -7,6 +7,14 @@
       "autoplay": 4000,
       "slides": [
         {
+          "mask_opacity": 5,
+          "start": "2024-08-09T14:00:13.240Z",
+          "end": "2030-03-01T14:01:42.176Z",
+          "img": "/img/uploads/desktop_oferta-gola-v.jpg",
+          "mobile_img": "/img/uploads/mobile_oferta-gola-v.jpg",
+          "link": "https://www.sejabazico.com.br/bazica-gola-v"
+        },
+        {
           "mask_opacity": 0,
           "start": "2024-07-27T19:43:01.077Z",
           "end": "2028-03-02T16:55:33.766Z",
@@ -51,14 +59,6 @@
           "link": "sejabazico.com.br/roupas",
           "content_position": "center_left",
           "content_order": "inside_image"
-        },
-        {
-          "mask_opacity": 5,
-          "start": "2024-08-09T14:00:13.240Z",
-          "end": "2030-03-01T14:01:42.176Z",
-          "img": "/img/uploads/desktop_oferta-gola-v.jpg",
-          "mobile_img": "/img/uploads/mobile_oferta-gola-v.jpg",
-          "link": "https://www.sejabazico.com.br/bazica-gola-v"
         }
       ]
     },
