@@ -178,18 +178,18 @@ const startUserInterval = setInterval(() => {
     if (window.checkedBazipassDoc || isBazipass) {
       document.querySelector('body').classList.add('is-bazipass');
       document.querySelector('.top-bar').style.background = '#24174a';
-      const customerName = window.ecomPassport && window.ecomPassport.customer && window.ecomPassport.customer.display_name;
-      const lastActivePoints = window.ecomPassport &&
-      window.ecomPassport.customer &&
-      window.ecomPassport.customer.loyalty_points_entries &&
-      window.ecomPassport.customer.loyalty_points_entries.length > 0 &&
-      window.ecomPassport.customer.loyalty_points_entries[window.ecomPassport.customer.loyalty_points_entries.length - 1].active_points;
+      const customerData = window.ecomPassport && window.ecomPassport.customer;
+      const customerName = customerData && customerData.display_name;
+      const validPoints = customerData && Array.isArray(customerData.loyalty_points_entries)
+      ? customerData.loyalty_points_entries.reduce((sum, entry) => sum + entry.active_points, 0)
+      : 0;
 
-      const customerGreeting =  `${customerName}, você tem ${lastActivePoints} bazicashs. Aproveite agora! `;
+
+      const customerGreeting =  `${customerName}, você tem ${validPoints} bazicashs. Aproveite agora! `;
       $('.top-bar ul li:last-child a').replaceWith(`<a class="top-bar__countdown" style="" href="/pages/produtos-bazicash">${customerGreeting}</a>`)
 
       const bemvindo =  `${customerName}, bem vindo ao BaziPass! `;
-      $('.top-bar ul li:first-child a').replaceWith(`<a class="top-bar__countdown" style="" href="/">${bemvindo}</a>`)
+      $('.top-bar ul li:first-child a').replaceWith(`<a class="top-bar__countdown" style="" href="/top-10">${bemvindo}</a>`)
   
       document.querySelector('.top-bar__countdown').style.background = '#24174a';
       const classListNot = document.getElementById('not-bazipass').classList 
