@@ -8,37 +8,11 @@
       "slides": [
         {
           "mask_opacity": 5,
-          "start": "2024-08-09T14:00:13.240Z",
-          "end": "2030-03-01T14:01:42.176Z",
-          "img": "/img/uploads/desktop_oferta-gola-v.jpg",
-          "mobile_img": "/img/uploads/mobile_oferta-gola-v.jpg",
-          "link": "https://www.sejabazico.com.br/bazica-gola-v"
-        },
-        {
-          "mask_opacity": 0,
-          "start": "2024-07-27T19:43:01.077Z",
-          "end": "2028-03-02T16:55:33.766Z",
-          "img": "/img/uploads/desktop_pais-geral.webp",
-          "link": "https://www.sejabazico.com.br/roupas",
-          "mobile_img": "/img/uploads/mobile_pais-geral.webp",
-          "content_position": "center_left",
-          "content_order": "inside_image"
-        },
-        {
-          "mask_opacity": 5,
           "start": "2024-07-30T12:06:36.624Z",
           "end": "2027-09-17T12:09:40.957Z",
           "mobile_img": "/img/uploads/mobile_lancamentos.webp",
           "img": "/img/uploads/desktop_lancamentos.webp",
           "link": "https://www.sejabazico.com.br/novidades"
-        },
-        {
-          "mask_opacity": 5,
-          "start": "2024-07-29T16:52:57.163Z",
-          "end": "2025-08-15T16:52:57.201Z",
-          "mobile_img": "/img/uploads/mobile_pais-presente_1.webp",
-          "img": "/img/uploads/desktop_pais-presente_1.webp",
-          "link": "https://www.sejabazico.com.br/roupas"
         },
         {
           "mask_opacity": 0,
