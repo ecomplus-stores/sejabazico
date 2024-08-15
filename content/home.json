@@ -4,32 +4,14 @@
   "sections": [
     {
       "type": "apx_banner-slider",
-      "autoplay": 0,
+      "autoplay": 4000,
       "slides": [
         {
           "mask_opacity": 5,
-          "start": "2024-07-27T19:43:01.077Z",
-          "end": "2028-03-02T16:55:33.766Z",
-          "img": "/img/uploads/desktop_pais-geral.webp",
-          "link": "https://www.sejabazico.com.br/roupas",
-          "mobile_img": "/img/uploads/mobile_pais-geral.webp",
-          "content_position": "center_left",
-          "content_order": "inside_image"
-        },
-        {
-          "mask_opacity": 5,
-          "start": "2024-07-29T16:52:57.163Z",
-          "end": "2025-08-15T16:52:57.201Z",
-          "mobile_img": "/img/uploads/mobile_pais-presente_1.webp",
-          "img": "/img/uploads/desktop_pais-presente_1.webp",
-          "link": "https://www.sejabazico.com.br/roupas"
-        },
-        {
-          "mask_opacity": 5,
-          "start": "2024-07-23T14:48:32.458Z",
-          "end": "2030-04-04T14:48:32.490Z",
-          "img": "/img/uploads/desktop_marrom.webp",
-          "mobile_img": "/img/uploads/mobile_marrom.webp",
+          "start": "2024-07-30T12:06:36.624Z",
+          "end": "2027-09-17T12:09:40.957Z",
+          "mobile_img": "/img/uploads/mobile_lancamentos.webp",
+          "img": "/img/uploads/desktop_lancamentos.webp",
           "link": "https://www.sejabazico.com.br/novidades"
         },
         {
@@ -62,8 +44,8 @@
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/banner-tarja-2024.webp",
-          "mobile_img": "/img/uploads/tarja-2024-desktop-.webp"
+          "img": "/img/uploads/banner-tarja-pais_webp.webp",
+          "mobile_img": "/img/uploads/tarja-pais-_mobile_webp.webp"
         }
       ]
     },
@@ -72,15 +54,14 @@
       "container": "container-fluid",
       "products": [
         "636eac9a73321213f8d6f75a",
-        "636eacba73321213f8d6f7e9",
-        "64999c4f5e6069037048f127",
-        "636eacbc73321213f8d6f7f3",
-        "666472e0f4e6d85ab2a49273",
-        "66743ef7f4e6d85ab2b2c85e",
-        "652d79152cd6b659597c6803",
+        "636eacaa73321213f8d6f794",
         "636eacb373321213f8d6f7c9",
         "643879f14bd2e929c1cedf5b",
-        "636ead1673321213f8d6f929"
+        "636eacba73321213f8d6f7e9",
+        "636eacbc73321213f8d6f7f3",
+        "64934a5a5e6069037043b51d",
+        "669e5572f4e6d85ab2da67f7",
+        "64999c4f5e6069037048f127"
       ],
       "carrossel_dots_md": "Sim",
       "carrossel_arrows_md": "Sim",
@@ -137,7 +118,37 @@
           "img": "/img/uploads/banner.grid-4-.webp",
           "link": "https://www.sejabazico.com.br/bazica-long"
         }
-      ]
+      ],
+      "width_mobile": false
+    },
+    {
+      "carrossel_sm": "Sim",
+      "container": "container-fluid",
+      "products": [
+        "636eacc573321213f8d6f81b",
+        "636ead3b73321213f8d6f9b4",
+        "636ead1173321213f8d6f916",
+        "636ead0c73321213f8d6f900",
+        "64934b245e6069037043b7e2",
+        "636ead1373321213f8d6f91b",
+        "636eac9773321213f8d6f74b",
+        "6493401d5e606903704397c6",
+        "65d5f19e87ab487fbfc12b78",
+        "636ead3073321213f8d6f988"
+      ],
+      "carrossel_dots_md": "Sim",
+      "carrossel_arrows_md": "Não",
+      "carrossel_dots_sm": "Sim",
+      "carrossel_arrows_sm": "Não",
+      "padding_sm": "px-1",
+      "num_col_md": "5",
+      "padding": "px-md-0",
+      "num_col_sm": "2",
+      "title": "A nova Gola V preferida do seu pai!",
+      "type": "apx_productList_A",
+      "description": "🚨🚨 Aproveite nossa oferta: compre 2, leve 3 nas Golas Vs até 11/08 às 23:59! 🚨🚨 🚨🚨",
+      "list": "description_first",
+      "carrossel_md": "Sim"
     },
     {
       "type": "apx_banner-slider",
@@ -154,36 +165,6 @@
           "mobile_img": "/img/uploads/branca-mobile-.webp"
         }
       ]
-    },
-    {
-      "carrossel_sm": "Sim",
-      "container": "container-fluid",
-      "products": [
-        "662fa659ee85900185f01127",
-        "663d0f6af4e6d85ab27edbb8",
-        "663d0f6af4e6d85ab27edbb8",
-        "663d0a40f4e6d85ab27ed422",
-        "663d1207f4e6d85ab27edeb4",
-        "663d1367f4e6d85ab27ee01b",
-        "663be885f4e6d85ab27df212",
-        "663bea25f4e6d85ab27df3a6"
-      ],
-      "carrossel_dots_md": "Sim",
-      "carrossel_arrows_md": "Sim",
-      "padding_md": "px-md-1",
-      "carrossel_dots_sm": "Sim",
-      "carrossel_arrows_sm": "Não",
-      "padding_sm": "px-1",
-      "num_col_md": "4",
-      "btn_text": "Ver Todas",
-      "padding": "px-md-0",
-      "num_col_sm": "2",
-      "title": "Novidades",
-      "type": "apx_productList_A",
-      "description": "Lançamentos e Reposições: Chegaram Faz Pouco, Vem Conferir!",
-      "btn_link": "/bazicas",
-      "list": "description_last",
-      "carrossel_md": "Sim"
     },
     {
       "type": "apx_banners-grid",
@@ -211,28 +192,32 @@
       "carrossel_sm": "Sim",
       "container": "container-fluid",
       "products": [
-        "64637452a0e875411e8f6b00",
-        "645187af4bd2e929c1e9b2f6",
-        "636eacab73321213f8d6f799",
-        "636eacc473321213f8d6f815",
-        "656f9b362cd6b65959ce4152",
-        "643950574bd2e929c1cf91c9",
-        "656f86d92cd6b65959ce215a",
-        "652d79772cd6b659597c6913",
-        "636ead3773321213f8d6f9a2"
+        "669512f0f4e6d85ab2d1d0e4",
+        "669e570bf4e6d85ab2da6ca8",
+        "669e6a44f4e6d85ab2da9d41",
+        "668eba80f4e6d85ab2cc3266",
+        "669e6340f4e6d85ab2da8a3d",
+        "669e71cef4e6d85ab2daaf89",
+        "668ebc67f4e6d85ab2cc360a",
+        "669e6183f4e6d85ab2da8499",
+        "669e5572f4e6d85ab2da67f7",
+        "669e8e74f4e6d85ab2dadf13"
       ],
       "carrossel_dots_md": "Sim",
-      "carrossel_arrows_md": "Não",
+      "carrossel_arrows_md": "Sim",
+      "padding_md": "px-md-1",
       "carrossel_dots_sm": "Sim",
       "carrossel_arrows_sm": "Não",
       "padding_sm": "px-1",
-      "num_col_md": "5",
+      "num_col_md": "4",
+      "btn_text": "Ver Todas",
       "padding": "px-md-0",
       "num_col_sm": "2",
-      "title": "Sua nova camisa preferida",
+      "title": "Novidades",
       "type": "apx_productList_A",
-      "description": "🚨🚨 Cuidado com o aquele pensamento \"depois eu olho direitinho\". As coisas acabam, e acabam rápido. 🚨🚨",
-      "list": "description_first",
+      "description": "Lançamentos e Reposições: Chegaram Faz Pouco, Vem Conferir!",
+      "btn_link": "/bazicas",
+      "list": "description_last",
       "carrossel_md": "Sim"
     },
     {

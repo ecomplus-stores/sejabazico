@@ -67,20 +67,26 @@
         },
         {
           "item": {
-            "title": "Cuecas",
-            "url": "/cuecas"
-          }
-        },
-        {
-          "item": {
             "title": "Bázica Feminina",
             "url": "/bazica-feminina"
           }
         },
         {
           "item": {
+            "title": "Bázica Manga Longa",
+            "url": "https://www.sejabazico.com.br/bazica-manga-longa"
+          }
+        },
+        {
+          "item": {
             "title": "Bázica Kids",
             "url": "https://sejabazico.com.br/bazica-kids"
+          }
+        },
+        {
+          "item": {
+            "title": "Cuecas",
+            "url": "/cuecas"
           }
         },
         {
