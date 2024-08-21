@@ -1,6 +1,6 @@
 import ecomPassport from '@ecomplus/passport-client'
 
-setInterval(() => {
+const checkBazipassInterval = setInterval(() => {
   if (!window.checkedBazipassDoc) return
   document.querySelector('body').classList.add('is-bazipass')
   const customerName = ecomPassport.getCustomerName() || 'Olá'
@@ -35,4 +35,5 @@ setInterval(() => {
       <a href="/app/#/account/">Verificar saldo</a>
     `
   }
+  clearInterval(checkBazipassInterval)
 }, 400)
