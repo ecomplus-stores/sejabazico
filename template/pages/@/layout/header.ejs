@@ -235,7 +235,7 @@ let marketingStripeStyle = ''
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
             <% if (apx_header.stripe_slider) { %>
-              <% apx_header.stripe_slider.forEach(({ text, url })=> { %>
+              <% apx_header.stripe_slider.forEach(({ text, url }, i)=> { %>
                 <li class="glide__slide">
                 <% if (text) { %>
                   <% if (url) { %>
@@ -243,6 +243,11 @@ let marketingStripeStyle = ''
                       class="top-bar__countdown"
                       style="<%= marketingStripeStyle %>"
                       href="<%= url %>"
+                      <% if (i === 0) { %>
+                        data-bazipass-greetings
+                      <% } else if (i === 1) { %>
+                        data-bazipass-points
+                      <% } %>
                     >
                       <%- text %>
                     </a>

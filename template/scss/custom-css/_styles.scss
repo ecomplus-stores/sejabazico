@@ -2291,11 +2291,12 @@ body #storefront-app>div>h1{
     padding-left: 0 !important;
   }
 
-  .is-bazipass {
-    .top-bar, .top-bar__countdown {
-        background: #24174a !important;
-      }
-  } 
+.is-bazipass {
+  .top-bar,
+  .top-bar__countdown {
+    background: #24174a !important;
+  }
+}
 
 @media(max-width: 767px) {
     .widget-open-bazipass.widget-open-bazipass-container-bottom {
