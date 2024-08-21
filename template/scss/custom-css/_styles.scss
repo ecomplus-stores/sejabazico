@@ -243,8 +243,12 @@ body{font-size:var(--body);color:#000}
     width: 15px;
 }
 
-.top-bar{background:#000;}
-.top-bar *{
+.top-bar{
+    background:#000;
+    position: relative;
+    z-index: -1;
+}
+.top-bar * {
     font-size:13px;
     line-height:50px;
     padding:0;
