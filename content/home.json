@@ -4,8 +4,18 @@
   "sections": [
     {
       "type": "apx_banner-slider",
-      "autoplay": 4000,
+      "autoplay": 3000,
       "slides": [
+        {
+          "mask_opacity": 0,
+          "start": "2024-08-26T17:29:48.768Z",
+          "end": "2024-10-12T17:29:48.791Z",
+          "img": "/img/uploads/vinho_desktop.webp",
+          "link": "/novidades",
+          "mobile_img": "/img/uploads/vinho_mobile.webp",
+          "content_order": "inside_image",
+          "content_position": "center_left"
+        },
         {
           "mask_opacity": 5,
           "start": "2024-07-30T12:06:36.624Z",
