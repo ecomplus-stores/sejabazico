@@ -60,26 +60,6 @@
       ]
     },
     {
-      "type": "apx_banners-grid",
-      "container": "container-fluid",
-      "padding": "px-0",
-      "width_mobile": true,
-      "banners": [
-        {
-          "mask_opacity": 0,
-          "img": "/img/uploads/banner-tarja-air.webp",
-          "mobile_img": "/img/uploads/tarja-air-_mobile_.webp",
-          "link": "https://www.sejabazico.com.br/search?categories[]=Roupas&filters[]=tecido:Air+(Super+leve)"
-        },
-        {
-          "mask_opacity": 0,
-          "img": "/img/uploads/banner-tarja-powerful.webp",
-          "link": "https://www.sejabazico.com.br/search?categories[]=Roupas&filters[]=tecido:Powerful+(Bem+encorpada)",
-          "mobile_img": "/img/uploads/tarja-powerful-_mobile_.webp"
-        }
-      ]
-    },
-    {
       "carrossel_sm": "Sim",
       "container": "container-fluid",
       "products": [
@@ -109,6 +89,49 @@
       "carrossel_md": "Sim"
     },
     {
+      "type": "apx_banners-grid",
+      "container": "container-fluid",
+      "padding": "px-0",
+      "width_mobile": true,
+      "banners": [
+        {
+          "mask_opacity": 0,
+          "img": "/img/uploads/banner-tarja-air.webp",
+          "mobile_img": "/img/uploads/tarja-air-_mobile_.webp",
+          "link": "https://www.sejabazico.com.br/search?categories[]=Roupas&filters[]=tecido:Air+(Super+leve)"
+        },
+        {
+          "mask_opacity": 0,
+          "img": "/img/uploads/banner-tarja-powerful.webp",
+          "link": "https://www.sejabazico.com.br/search?categories[]=Roupas&filters[]=tecido:Powerful+(Bem+encorpada)",
+          "mobile_img": "/img/uploads/tarja-powerful-_mobile_.webp"
+        }
+      ]
+    },
+    {
+      "type": "apx_banners-grid",
+      "container": "container-fluid",
+      "padding": "px-2",
+      "banners": [
+        {
+          "mask_opacity": 5,
+          "img": "/img/uploads/banner.grid-1-.webp",
+          "link": "https://www.sejabazico.com.br/bazica-gola-c"
+        },
+        {
+          "mask_opacity": 5,
+          "img": "/img/uploads/banner.grid-2-.webp",
+          "link": "https://www.sejabazico.com.br/bazica-gola-v"
+        },
+        {
+          "mask_opacity": 5,
+          "img": "/img/uploads/banner.grid-4-.webp",
+          "link": "https://www.sejabazico.com.br/bazica-long"
+        }
+      ],
+      "width_mobile": false
+    },
+    {
       "carrossel_sm": "Sim",
       "container": "container-fluid",
       "products": [
@@ -136,29 +159,6 @@
       "btn_link": "/novidades",
       "list": "description_last",
       "carrossel_md": "Sim"
-    },
-    {
-      "type": "apx_banners-grid",
-      "container": "container-fluid",
-      "padding": "px-2",
-      "banners": [
-        {
-          "mask_opacity": 5,
-          "img": "/img/uploads/banner.grid-1-.webp",
-          "link": "https://www.sejabazico.com.br/bazica-gola-c"
-        },
-        {
-          "mask_opacity": 5,
-          "img": "/img/uploads/banner.grid-2-.webp",
-          "link": "https://www.sejabazico.com.br/bazica-gola-v"
-        },
-        {
-          "mask_opacity": 5,
-          "img": "/img/uploads/banner.grid-4-.webp",
-          "link": "https://www.sejabazico.com.br/bazica-long"
-        }
-      ],
-      "width_mobile": false
     },
     {
       "type": "apx_banner-slider",
