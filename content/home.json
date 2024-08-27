@@ -54,7 +54,8 @@
         {
           "start": "",
           "end": "2029-07-05T12:49:35.935Z",
-          "img": "/img/uploads/banner-tarja-2024.webp"
+          "img": "/img/uploads/banner-tarja-2024.webp",
+          "mobile_img": "/img/uploads/tarja-2024-desktop-.webp"
         }
       ]
     },
