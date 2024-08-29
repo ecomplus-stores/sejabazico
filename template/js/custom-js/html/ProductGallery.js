@@ -254,7 +254,10 @@ export default {
         infinite:false,
         autoplay:false,
         slidesToShow: 1,
-        lazyLoad:true
+        lazyLoad:true,
+        swipe: true,
+        touchMove: true,
+        swipeToSlide: true
     });
 
     $('.isMobile #page-products .bz_gallery-item').each(function(){

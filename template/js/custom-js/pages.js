@@ -50,6 +50,9 @@ $('.apx_product-list').each(function(){
         sm.settings.slidesToShow = oObj.attr('data-num_col_sm');
         sm.settings.slidesToScrol = oObj.attr('data-num_col_sm');
         sm.settings.infinite = true;
+        sm.settings.swipe = true;  // Habilita o gesto de swipe
+        sm.settings.touchMove = true;  // Permite mover o carrossel ao arrastar com o toque
+        sm.settings.swipeToSlide = true;  // Garante que o usuário possa deslizar e parar em qualquer slide
         sm.settings.dots = oObj.attr('data-carrossel_dots_sm') == "Sim" ? true : false;
         sm.settings.arrows = oObj.attr('data-carrossel_arrows_sm') == "Sim" ? true : false;
         if(sm.settings.arrows){
