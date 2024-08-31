@@ -86,6 +86,11 @@ const apx_props = _.cms('apx_props') || {}
             <% } %>
           <% } %>
           <!-- Custom additional code on bottom of images gallery -->
+          <% if (_.state.short_description) { %>
+            <p class="product__info mt-3 lead short-description">
+              <%= _.state.short_description %>
+            </p>
+          <% } %>
         </div>
 
         <div class="col col-md-4  px-md-5 product--side">
@@ -288,11 +293,7 @@ const apx_props = _.cms('apx_props') || {}
               </div>
             </div>
             
-            <% if (_.state.short_description) { %>
-              <p class="product__info mt-3 lead">
-                <%= _.state.short_description %>
-              </p>
-            <% } %>
+          
           </div>
         </div>
       </div>
