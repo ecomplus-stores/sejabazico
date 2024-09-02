@@ -502,7 +502,8 @@
             "subtitle": "É só devolver ou trocar! Simples e sem burocracia",
             "body": "Nossa intenção é que você fique 100% satisfeito, e faremos o possível e o impossível para isso. A cada compra que você faz aqui na Bázico, você tem direito a uma troca gratuitamente. Basta que a compra tenha sido feita nos últimos 30 dias e entre em contato com o nosso time através do e-mail ou WhatsApp.",
             "text_align": "center",
-            "image_position": "first"
+            "image_position": "first",
+            "image": "/img/uploads/troca.webp"
           }
         }
       ]
