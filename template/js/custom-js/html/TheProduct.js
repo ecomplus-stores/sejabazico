@@ -454,7 +454,7 @@ export default {
     } else {
       this.fetchProduct()
     }
-    if (isBazicashPage) {
+    if (window.isBazicashPage) {
       this.bazicashPrice = getPrice(this.body) / (window.bazicashRatio || 0.1)
     }
   },
