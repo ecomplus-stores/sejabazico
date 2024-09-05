@@ -10,7 +10,8 @@ import {
 
 import {
   i18n,
-  formatMoney
+  formatMoney,
+  price as getPrice
 } from '@ecomplus/utils'
 
 import ecomCart from '@ecomplus/shopping-cart'
@@ -19,7 +20,6 @@ import ABackdrop from '@ecomplus/storefront-components/src/ABackdrop.vue'
 import APrices from '@ecomplus/storefront-components/src/APrices.vue'
 import CartItem from '@ecomplus/storefront-components/src/CartItem.vue'
 import ShippingCalculator from '@ecomplus/storefront-components/src/ShippingCalculator.vue'
-import ecomPassport from '@ecomplus/passport-client'
 
 export default {
   name: 'CartQuickview',
@@ -85,13 +85,13 @@ export default {
     canBuyBazipass () {
       let bazicasNumber = 0
       const buyer = this.ecomPassport && this.ecomPassport.customer
-      this.isBazipass = buyer && 
+      this.isBazipass = buyer &&
         buyer.doc_number &&
         window.checkedBazipassDoc === buyer.doc_number
       if (this.cart.items && this.cart.items.length) {
         this.cart.items.forEach(({ categories, quantity }) => {
           if (categories) {
-            const hasBazicaCategory = categories.some(({_id}) => _id === '638eb9ba73321213f805aa1c') 
+            const hasBazicaCategory = categories.some(({ _id }) => _id === '638eb9ba73321213f805aa1c')
             if (hasBazicaCategory) {
               bazicasNumber += quantity
             }
@@ -113,7 +113,7 @@ export default {
       let bazicashPrice = 0
       this.cart.items.forEach(item => {
         if (item.flags.includes('bazicash')) {
-          bazicashPrice += window.bazicashPrices[item._id]
+          bazicashPrice += (getPrice(item) / (window.bazicashRatio || 0.1))
         }
       })
       console.log('bazicash price is', bazicashPrice)
@@ -135,7 +135,7 @@ export default {
       this.selectedShippingPrice = service.shipping_line
         ? service.shipping_line.total_price
         : 0
-    },
+    }
   },
 
   created () {

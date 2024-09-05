@@ -136,7 +136,6 @@ export default {
       loyaltyPointsApplied: {},
       loyaltyPointsAmount: 0,
       hasMoreOffers: false,
-      hasBazicashPrices: Boolean(window.bazicashPrices),
       availableBazicash: 0
     }
   },
@@ -218,7 +217,7 @@ export default {
 
     localNotes: {
       get () {
-        return this.notes 
+        return this.notes
       },
       set (notes) {
         this.$emit('update:notes', notes)
@@ -240,8 +239,6 @@ export default {
     bazipassItem () {
       return Boolean(this.cart.items.find(({ name }) => name && name.toLowerCase().includes('bazipass')))
     },
-
-    
 
     shippingAddress () {
       const { addresses } = this.customer
@@ -284,12 +281,9 @@ export default {
     },
 
     bazicashPoints () {
-      if (!this.hasBazicashPrices && !window.bazicashPrices) {
-        return 0
-      }
       return this.cart.items.reduce((subtotal, item) => {
-        if (item.flags && item.flags.includes('bazicash') && window.bazicashPrices) {
-          subtotal += (item.quantity * window.bazicashPrices[item.product_id])
+        if (item.flags && item.flags.includes('bazicash')) {
+          subtotal += ((item.quantity * price(item)) / (window.bazicashRatio || 0.1))
         }
         return subtotal
       }, 0)
@@ -353,7 +347,7 @@ export default {
     },
 
     selectPaymentGateway (gateway) {
-      const eventLayer = window.dataLayer.find(({event}) => event === 'eec.checkout')
+      const eventLayer = window.dataLayer.find(({ event }) => event === 'eec.checkout')
       window.dataLayer.push({
         event: 'add_payment_info',
         ecommerce: {
@@ -371,7 +365,6 @@ export default {
 
     checkout (transaction) {
       if (this.loyaltyPointsAmount || this.bazicashAmount) {
-
         for (let i = 0; i < this.paymentGateways.length; i++) {
           if (this.paymentGateways[i].payment_method.code === 'loyalty_points' && this.paymentGateway.payment_method.code !== 'loyalty_points') {
             const pointsAmountPart = (this.loyaltyPointsAmount + this.bazicashAmount) / this.amount.total
@@ -388,9 +381,9 @@ export default {
               amount_part: pointsAmountPart
             }])
           } else if (this.paymentGateways[i].payment_method.code === 'loyalty_points' && this.paymentGateway.payment_method.code === 'loyalty_points') {
-            const loyaltyPointsApplied = { 
+            const loyaltyPointsApplied = {
               p0_pontos: this.bazicashPoints
-             }
+            }
             return this.$emit('checkout', [{
               ...transaction,
               loyalty_points_applied: loyaltyPointsApplied,
@@ -459,8 +452,5 @@ export default {
         })
       })
     })
-    window.addEventListener('bazicashPrices', () => {
-      this.hasBazicashPrices = true
-    }, { once: true })
   }
 }

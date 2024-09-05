@@ -454,11 +454,9 @@ export default {
     } else {
       this.fetchProduct()
     }
-    const setBazicashPrice = () => {
-      this.bazicashPrice = window.bazicashPrices[this.body._id || this.productId]
+    if (window.isBazicashPage) {
+      this.bazicashPrice = getPrice(this.body) / (window.bazicashRatio || 0.1)
     }
-    window.addEventListener('bazicashPrices', setBazicashPrice, { once: true })
-    if (window.bazicashPrices) setBazicashPrice()
   },
 
   mounted () {

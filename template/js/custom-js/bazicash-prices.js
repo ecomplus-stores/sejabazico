@@ -5,21 +5,7 @@ import { debounce } from 'perfect-debounce'
 export default (isCheckout = false) => {
   window.isBazicashPage = /^\/pages\/.*bazicash.*/.test(window.location.pathname) ||
     window.location.search.includes('?bazicash')
-  if (isCheckout || window.isBazicashPage) {
-    const fetch = () => {
-      window.axios.get('https://us-central1-app-bazicash.cloudfunctions.net/app/product-points')
-        .then(({ data }) => {
-          window.bazicashPrices = data
-          window.dispatchEvent(new Event('bazicashPrices'))
-        })
-        .catch(console.error)
-    }
-    if (typeof window.requestIdleCallback === 'function') {
-      setTimeout(() => window.requestIdleCallback(fetch), 300)
-    } else {
-      setTimeout(fetch, 600)
-    }
-  }
+  window.bazicashRatio = 0.1
   if (window.isBazicashPage && !isCheckout) {
     ecomCart.on('addItem', ({ item }) => {
       if (!item.flags) item.flags = []

@@ -122,7 +122,7 @@ export default {
         if (Array.isArray(customizations) && customizations.length) {
           const custom = customizations.find(customization => customization.grid_id === 'e_presente')
           if (Object.keys(custom).length) {
-            return value || custom.option && custom.option.text
+            return value || (custom.option && custom.option.text)
           }
           return null
         }
@@ -256,11 +256,7 @@ export default {
   created () {
     this.updateInputType()
     if (window.isBazicashPage || (this.item.flags && this.item.flags.includes('bazicash'))) {
-      const setBazicashPrice = () => {
-        this.bazicashPrice = window.bazicashPrices[this.item.product_id]
-      }
-      window.addEventListener('bazicashPrices', setBazicashPrice, { once: true })
-      if (window.bazicashPrices) setBazicashPrice()
+      this.bazicashPrice = getPrice(this.item) / (window.bazicashRatio || 0.1)
     }
   }
 }
