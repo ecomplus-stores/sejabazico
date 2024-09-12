@@ -201,6 +201,7 @@ export default {
 
     localDiscountCoupon: {
       get () {
+        if (this.discountCoupon === 'BAZICASH') return ''
         return this.discountCoupon
       },
       set (couponCode) {
@@ -435,6 +436,22 @@ export default {
     paymentsListKey: {
       handler () {
         this.paymentGateways = window.ecomPaymentGateways || []
+      },
+      immediate: true
+    },
+
+    loyaltyPointsAmount: {
+      handler () {
+        if (this.loyaltyPointsAmount || this.bazicashAmount) {
+          this.$emit('update:discount-coupon', 'BAZICASH')
+          this.$emit('set-discount-rule', {
+            label: 'BAZICASH',
+            extra_discount: {
+              value: 0.01,
+              flags: ['COUPON']
+            }
+          })
+        }
       },
       immediate: true
     }

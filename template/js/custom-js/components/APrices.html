@@ -66,7 +66,7 @@
 
     <div
       key="installments-bazipass"
-      v-if="!canShowBazipass"
+      v-if="!canShowBazipass && installmentsNumber > 1"
       class="prices__installments bazipass-price"
     >
       <small v-if="isLiteral">
