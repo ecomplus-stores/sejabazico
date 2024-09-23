@@ -212,7 +212,7 @@ export default {
     paymentAmount () {
       return {
         ...this.amount,
-        total: this.amount.total - this.loyaltyPointsAmount - this.bazicashAmount
+        total: Math.max(this.amount.total - this.loyaltyPointsAmount - this.bazicashAmount, 0)
       }
     },
 
