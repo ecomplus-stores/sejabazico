@@ -7,7 +7,6 @@ import {
   i19proceed,
   i19selectedOffers
 } from '@ecomplus/i18n'
-
 import {
   i18n,
   name,
@@ -15,7 +14,7 @@ import {
   price,
   img
 } from '@ecomplus/utils'
-
+import { store } from '@ecomplus/client'
 import ecomCart from '@ecomplus/shopping-cart'
 import scrollToElement from '#components/js/helpers/scroll-to-element'
 import baseModulesRequestData from '@ecomplus/storefront-app/src/lib/base-modules-request-data'
@@ -29,7 +28,6 @@ import PaymentMethods from '@ecomplus/storefront-app/src/components/PaymentMetho
 import AccountForm from '#components/AccountForm.vue'
 import AccountAddresses from '#components/AccountAddresses.vue'
 import EcSummary from '@ecomplus/storefront-app/src/components/EcSummary.vue'
-
 import {
   Bag,
   BackToCart,
@@ -136,7 +134,8 @@ export default {
       loyaltyPointsApplied: {},
       loyaltyPointsAmount: 0,
       hasMoreOffers: false,
-      availableBazicash: 0
+      availableBazicash: 0,
+      loadingTaxItem: false
     }
   },
 
@@ -173,6 +172,13 @@ export default {
 
     cart () {
       return this.ecomCart.data
+    },
+
+    shippedItems () {
+      if (!this.cart.items) return []
+      return this.cart.items.filter((item) => {
+        return item.product_id !== this.taxItemId
+      })
     },
 
     isLpSubscription () {
@@ -233,10 +239,6 @@ export default {
       }
     },
 
-    isBazipass () {
-      return this.amount.discount >= 130
-    },
-
     bazipassItem () {
       return Boolean(this.cart.items.find(({ name }) => name && name.toLowerCase().includes('bazipass')))
     },
@@ -288,6 +290,10 @@ export default {
         }
         return subtotal
       }, 0)
+    },
+
+    taxItemId () {
+      return window.TAX_ITEM_ID
     }
   },
 
@@ -366,31 +372,27 @@ export default {
 
     checkout (transaction) {
       if (this.loyaltyPointsAmount || this.bazicashAmount) {
-        for (let i = 0; i < this.paymentGateways.length; i++) {
-          if (this.paymentGateways[i].payment_method.code === 'loyalty_points' && this.paymentGateway.payment_method.code !== 'loyalty_points') {
-            const pointsAmountPart = (this.loyaltyPointsAmount + this.bazicashAmount) / this.amount.total
-            const loyaltyPointsApplied = { ...this.loyaltyPointsApplied }
-            if (loyaltyPointsApplied.p0_pontos) {
-              loyaltyPointsApplied.p0_pontos += this.bazicashPoints
-            }
-            return this.$emit('checkout', [{
-              ...transaction,
-              amount_part: 1 - pointsAmountPart
-            }, {
-              ...this.paymentGateways[i],
-              loyalty_points_applied: this.loyaltyPointsApplied,
-              amount_part: pointsAmountPart
-            }])
-          } else if (this.paymentGateways[i].payment_method.code === 'loyalty_points' && this.paymentGateway.payment_method.code === 'loyalty_points') {
-            const loyaltyPointsApplied = {
-              p0_pontos: this.bazicashPoints
-            }
-            return this.$emit('checkout', [{
-              ...transaction,
-              loyalty_points_applied: loyaltyPointsApplied,
-              amount: this.bazicashAmount
-            }])
+        const pointsPaymentGateway = this.paymentGateways.find((gateway) => {
+          return gateway.payment_method.code === 'loyalty_points'
+        })
+        if (pointsPaymentGateway) {
+          const totalPointsAmount = this.loyaltyPointsAmount + this.bazicashAmount
+          const pointsAmountPart = totalPointsAmount / this.amount.total
+          const loyaltyPointsApplied = {
+            p0_pontos: 0,
+            ...this.loyaltyPointsApplied
           }
+          if (this.bazicashPoints) {
+            loyaltyPointsApplied.p0_pontos += this.bazicashPoints
+          }
+          return this.$emit('checkout', [{
+            ...transaction,
+            amount_part: 1 - pointsAmountPart
+          }, {
+            ...pointsPaymentGateway,
+            loyalty_points_applied: loyaltyPointsApplied,
+            amount_part: pointsAmountPart
+          }])
         }
       }
       this.$emit('checkout', transaction)
@@ -451,6 +453,63 @@ export default {
               flags: ['COUPON']
             }
           })
+        }
+      },
+      immediate: true
+    },
+
+    shippingAddress: {
+      handler (address) {
+        if (!this.cart.items) return
+        const subtotal = this.shippedItems.reduce((acc, item) => {
+          acc += (price(item) * item.quantity)
+          return acc
+        }, 0)
+        let taxItem = this.cart.items.find((item) => {
+          return item.product_id === this.taxItemId
+        })
+        if (!taxItem && subtotal - this.bazicashAmount - this.loyaltyPointsAmount < 1) {
+          this.loadingTaxItem = true
+          store({ url: `/products/${this.taxItemId}.json` })
+            .then(({ data }) => {
+              taxItem = ecomCart.addProduct(data)
+            })
+            .catch(console.error)
+            .finally(() => {
+              this.loadingTaxItem = false
+            })
+        }
+        if (taxItem && address) {
+          const variation = taxItem.variations
+            .sort((a, b) => {
+              return a.price - b.price
+            }).find(({ name }) => {
+              if (name.includes('/')) {
+                name = name.split('/')[1].trim()
+              }
+              if (name === address.city) return true
+              if (name === 'Bahia') return address.province_code === 'BA'
+              if (name === 'Sergipe') return address.province_code === 'SE'
+              if (name === 'Nordeste') {
+                switch (address.province_code) {
+                  case 'AL':
+                  case 'CE':
+                  case 'MA':
+                  case 'PB':
+                  case 'PN':
+                  case 'PI':
+                  case 'RN':
+                    return true
+                }
+              }
+              return name === 'Brasil'
+            })
+          if (variation) {
+            taxItem.variation_id = variation._id
+            taxItem.final_price = variation.price
+            taxItem.price = variation.price
+            this.ecomCart.fixItem(taxItem)
+          }
         }
       },
       immediate: true

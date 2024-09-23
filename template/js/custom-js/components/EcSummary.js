@@ -86,6 +86,18 @@ export default {
 
     buyerPhone () {
       return getPhone(this.buyer)
+    },
+
+    taxItemId () {
+      return window.TAX_ITEM_ID
+    },
+
+    taxValue () {
+      const taxItem = this.items.find((item) => {
+        return item.product_id === this.taxItemId
+      })
+      if (taxItem) return getPrice(taxItem)
+      return 0
     }
   },
 

@@ -87,10 +87,10 @@
                     </div>
 
                     <shipping-calculator
-                      v-else-if="cart.items.length"
+                      v-else-if="cart.items.length && !loadingTaxItem"
                       :key="`shipTo${localZipCode}`"
                       :can-select-services="true"
-                      :shipped-items="cart.items"
+                      :shipped-items="shippedItems"
                       :zip-code="localZipCode"
                       :is-subscription="bazipassItem"
                       v-show="!bazipassItem"
@@ -173,6 +173,7 @@
                     </div>
 
                     <payment-methods
+                      v-if="!loadingTaxItem"
                       :key="paymentsListKey"
                       :amount="paymentAmount"
                       :customer="localCustomer"
