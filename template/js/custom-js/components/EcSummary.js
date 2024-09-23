@@ -27,8 +27,6 @@ import APicture from '#components/APicture.vue'
 import APrices from '#components/APrices.vue'
 import ItemCustomizations from '#components/ItemCustomizations.vue'
 
-const taxItemId = window.TAX_ITEM_ID
-
 export default {
   name: 'EcSummary',
 
@@ -88,18 +86,6 @@ export default {
 
     buyerPhone () {
       return getPhone(this.buyer)
-    },
-
-    taxItemId () {
-      return window.TAX_ITEM_ID
-    },
-
-    taxValue () {
-      const taxItem = this.items.find((item) => {
-        return item.product_id === this.taxItemId
-      })
-      if (taxItem) return getPrice(taxItem)
-      return 0
     }
   },
 

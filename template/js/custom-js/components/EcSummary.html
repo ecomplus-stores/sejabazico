@@ -11,7 +11,7 @@
         <div
           class="summary__item"
           v-for="item in items"
-          v-if="item.quantity > 0 && item.product_id !== taxItemId"
+          v-if="item.quantity > 0"
           :key="item._id"
         >
           <a-picture
@@ -58,14 +58,7 @@
       <div class="summary__amount">
         <div class="summary__amount__row">
           <span>{{ i19subtotal }}</span>
-          <div>{{ formatMoney(amount.subtotal - taxValue) }}</div>
-        </div>
-        <div
-          v-if="taxValue > 0.01"
-          class="summary__amount__row"
-        >
-          <span>Taxa de entregas - resgate</span>
-          <div>{{ formatMoney(taxValue) }}</div>
+          <div>{{ formatMoney(amount.subtotal) }}</div>
         </div>
   
         <div class="summary__amount__row">

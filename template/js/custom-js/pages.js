@@ -6,7 +6,6 @@ import EcomSearch from '@ecomplus/search-engine'
 import './quick-buy'
 import loadBazicashPrices from './bazicash-prices'
 import './bazipass-greetings'
-import './clear-tax-item'
 import ecomCart from '@ecomplus/shopping-cart'
 
 loadBazicashPrices()
