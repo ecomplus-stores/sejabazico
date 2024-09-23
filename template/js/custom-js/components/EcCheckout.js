@@ -7,7 +7,6 @@ import {
   i19proceed,
   i19selectedOffers
 } from '@ecomplus/i18n'
-
 import {
   i18n,
   name,
@@ -15,7 +14,7 @@ import {
   price,
   img
 } from '@ecomplus/utils'
-
+import { store } from '@ecomplus/client'
 import ecomCart from '@ecomplus/shopping-cart'
 import scrollToElement from '#components/js/helpers/scroll-to-element'
 import baseModulesRequestData from '@ecomplus/storefront-app/src/lib/base-modules-request-data'
@@ -29,7 +28,6 @@ import PaymentMethods from '@ecomplus/storefront-app/src/components/PaymentMetho
 import AccountForm from '#components/AccountForm.vue'
 import AccountAddresses from '#components/AccountAddresses.vue'
 import EcSummary from '@ecomplus/storefront-app/src/components/EcSummary.vue'
-
 import {
   Bag,
   BackToCart,
@@ -136,7 +134,8 @@ export default {
       loyaltyPointsApplied: {},
       loyaltyPointsAmount: 0,
       hasMoreOffers: false,
-      availableBazicash: 0
+      availableBazicash: 0,
+      loadingTaxItem: false
     }
   },
 
@@ -173,6 +172,13 @@ export default {
 
     cart () {
       return this.ecomCart.data
+    },
+
+    shippedItems () {
+      if (!this.cart.items) return []
+      return this.cart.items.filter((item) => {
+        return item.product_id !== this.taxItemId
+      })
     },
 
     isLpSubscription () {
@@ -212,7 +218,7 @@ export default {
     paymentAmount () {
       return {
         ...this.amount,
-        total: this.amount.total - this.loyaltyPointsAmount - this.bazicashAmount
+        total: Math.max(this.amount.total - this.loyaltyPointsAmount - this.bazicashAmount, 0)
       }
     },
 
@@ -231,10 +237,6 @@ export default {
       } else {
         return Math.min(this.enabledCheckoutStep, this.toCheckoutStep)
       }
-    },
-
-    isBazipass () {
-      return this.amount.discount >= 130
     },
 
     bazipassItem () {
@@ -288,6 +290,10 @@ export default {
         }
         return subtotal
       }, 0)
+    },
+
+    taxItemId () {
+      return window.TAX_ITEM_ID
     }
   },
 
@@ -451,6 +457,63 @@ export default {
               flags: ['COUPON']
             }
           })
+        }
+      },
+      immediate: true
+    },
+
+    shippingAddress: {
+      handler (address) {
+        if (!this.cart.items) return
+        const subtotal = this.shippedItems.reduce((acc, item) => {
+          acc += (price(item) * item.quantity)
+          return acc
+        }, 0)
+        let taxItem = this.cart.items.find((item) => {
+          return item.product_id === this.taxItemId
+        })
+        if (!taxItem && subtotal - this.bazicashAmount - this.loyaltyPointsAmount < 1) {
+          this.loadingTaxItem = true
+          store({ url: `/products/${this.taxItemId}.json` })
+            .then(({ data }) => {
+              taxItem = ecomCart.addProduct(data)
+            })
+            .catch(console.error)
+            .finally(() => {
+              this.loadingTaxItem = false
+            })
+        }
+        if (taxItem && address) {
+          const variation = taxItem.variations
+            .sort((a, b) => {
+              return a.price - b.price
+            }).find(({ name }) => {
+              if (name.includes('/')) {
+                name = name.split('/')[1].trim()
+              }
+              if (name === address.city) return true
+              if (name === 'Bahia') return address.province_code === 'BA'
+              if (name === 'Sergipe') return address.province_code === 'SE'
+              if (name === 'Nordeste') {
+                switch (address.province_code) {
+                  case 'AL':
+                  case 'CE':
+                  case 'MA':
+                  case 'PB':
+                  case 'PN':
+                  case 'PI':
+                  case 'RN':
+                    return true
+                }
+              }
+              return name === 'Brasil'
+            })
+          if (variation) {
+            taxItem.variation_id = variation._id
+            taxItem.final_price = variation.price
+            taxItem.price = variation.price
+            this.ecomCart.fixItem(taxItem)
+          }
         }
       },
       immediate: true
