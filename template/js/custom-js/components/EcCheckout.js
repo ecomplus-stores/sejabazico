@@ -453,6 +453,9 @@ export default {
               flags: ['COUPON']
             }
           })
+        } else if (this.discountCoupon === 'BAZICASH') {
+          this.$emit('update:discount-coupon', '')
+          this.$emit('set-discount-rule', {})
         }
       },
       immediate: true

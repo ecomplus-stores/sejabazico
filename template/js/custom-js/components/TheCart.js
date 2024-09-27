@@ -135,6 +135,9 @@ export default {
   mounted () {
     this.$nextTick(() => {
       this.canApplyDiscount = !this.localZipCode
+      if (this.discountCoupon === 'BAZICASH') {
+        this.localDiscountCoupon = ''
+      }
     })
     const { ecomCart } = this
     const getNumItems = () => ecomCart.data.items.reduce((numItems, { flags, quantity }) => {
