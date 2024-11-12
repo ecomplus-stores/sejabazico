@@ -730,9 +730,18 @@
           "content": {
             "title": "benefícios da Oferta:",
             "subtitle": "só vantagens para você aproveitar.",
-            "image_position": "first",
+            "image_position": "last",
             "text_align": "left",
             "body": "* **Oferta imperdível**: Aproveite o melhor da Black Friday com preços exclusivos.\n* **Escolha sua Bázica Surpresa**: Long ou Gola V, você decide qual combina mais com você!\n* **Estilo e conforto garantidos**: Ambas as peças são feitas com Algodão Egípcio, garantindo durabilidade e conforto o dia todo."
+          }
+        },
+        {
+          "content": {
+            "title": "como usar a Bázica Long e a Bázica Gola V no seu visual:",
+            "subtitle": "inspire-se com essas combinações",
+            "image_position": "first",
+            "text_align": "left",
+            "body": "A Bázica Long é perfeita para um visual mais alongado e fluido. Combine-a com jeans ou bermuda para um look casual, ou use com calça cargo ou de moletom para um estilo urbano. Também fica ótima em camadas, aparecendo sob jaquetas ou sobrecamisas.\n\nA Bázica Gola V oferece um toque elegante e sofisticado. Combine com uma calça chino e mocassim para um visual minimalista, ou com jeans slim e blazer para um look mais refinado. Também funciona bem em camadas, com um suéter ou cardigan, destacando o decote de forma sutil."
           }
         }
       ]
