@@ -711,6 +711,22 @@
     {
       "type": "custom-html",
       "html": "<script type=\"text/javascript\">\n    (function(c,l,a,r,i,t,y){\n        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};\n        t=l.createElement(r);t.async=1;t.src=\"https://www.clarity.ms/tag/\"+i;\n        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);\n    })(window, document, \"clarity\", \"script\", \"nop63v6fa0\");\n</script>"
+    },
+    {
+      "type": "apx_blockPerCategory",
+      "title": "Bázica Surpresa",
+      "slug": "Bázica Surpresa",
+      "list": [
+        {
+          "content": {
+            "title": "o que é a Bázica Surpresa?",
+            "subtitle": "descubra o que está por trás dessa oferta limitada e especial!",
+            "body": "A Bázica Surpresa é a oportunidade de garantir uma peça da Bázico que vai elevar o seu estilo, com a qualidade e o conforto que você já conhece. E o melhor? Você escolhe entre as **duas opções de modelo** que mais combinam com seu estilo:\n\n* **Bázica Long**: Com 3 cm a mais de comprimento, perfeita para quem adora um visual mais alongado e moderno, com acabamento a laser nas mangas, gola e barra para um toque diferenciado.\n* **Bázica Gola V**: A escolha ideal para quem busca uma peça elegante, com a abertura da gola V perfeita para valorizar o visual de forma sutil e sofisticada.",
+            "image_position": "first",
+            "text_align": "left"
+          }
+        }
+      ]
     }
   ]
 }
