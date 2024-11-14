@@ -7,42 +7,11 @@
       "autoplay": 3000,
       "slides": [
         {
-          "mask_opacity": 0,
-          "start": "2024-08-26T17:29:48.768Z",
-          "end": "2024-10-12T17:29:48.791Z",
-          "img": "/img/uploads/vinhodesktop.webp",
-          "link": "/novidades",
-          "mobile_img": "/img/uploads/vinho_mobile.webp",
-          "content_order": "inside_image",
-          "content_position": "center_left"
-        },
-        {
           "mask_opacity": 5,
-          "start": "2024-07-30T12:06:36.624Z",
-          "end": "2027-09-17T12:09:40.957Z",
-          "mobile_img": "/img/uploads/mobile_lancamentos.webp",
-          "img": "/img/uploads/desktop_lancamentos.webp",
-          "link": "https://www.sejabazico.com.br/novidades"
-        },
-        {
-          "mask_opacity": 0,
-          "start": "2024-01-03T11:40:21.960Z",
-          "end": "2029-07-12T12:10:35.434Z",
-          "img": "/img/uploads/bazipass-setembro-desktop.webp",
-          "mobile_img": "/img/uploads/bazipass-setembro-mobile.webp",
-          "link": "https://bazipass.sejabazico.com.br/",
-          "content_position": "center_left",
-          "content_order": "inside_image"
-        },
-        {
-          "mask_opacity": 0,
-          "start": "2024-06-14T13:10:28.616Z",
-          "end": "2024-12-14T13:10:28.638Z",
-          "img": "/img/uploads/frete-desktop-.webp",
-          "mobile_img": "/img/uploads/frete-mobile--1.webp",
-          "link": "sejabazico.com.br/roupas",
-          "content_position": "center_left",
-          "content_order": "inside_image"
+          "start": "2024-11-14T12:01:21.261Z",
+          "end": "2024-11-14T12:01:21.270Z",
+          "img": "/img/uploads/bazipass-slider-desktop.jpg",
+          "mobile_img": "/img/uploads/bazipass-slider-mobile.jpg"
         }
       ]
     },
