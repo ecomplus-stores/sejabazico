@@ -17,6 +17,20 @@
       "enabled": true
     },
     {
+      "type": "banner-slider",
+      "autoplay": 9000,
+      "full_width": false,
+      "slides": [
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/bazipass-faixa-desktop-.jpg",
+          "mobile_img": "/img/uploads/bazipass-faixa-mobile-.jpg",
+          "link": "https://bazipass.sejabazico.com.br/"
+        }
+      ]
+    },
+    {
       "type": "apx_testimonials",
       "title": "o que dizem por ai",
       "description": "relatos de alguns dos nossos mais de 5 mil clientes",
