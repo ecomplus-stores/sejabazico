@@ -7,9 +7,9 @@
       "autoplay": 3000,
       "slides": [
         {
-          "mask_opacity": 5,
-          "start": "2024-11-14T12:01:21.261Z",
-          "end": "2024-11-14T12:01:21.270Z",
+          "mask_opacity": 0,
+          "start": "2024-11-14T12:18:14.565Z",
+          "end": "2026-04-04T12:01:21.270Z",
           "img": "/img/uploads/bazipass-slider-desktop.jpg",
           "mobile_img": "/img/uploads/bazipass-slider-mobile.jpg",
           "link": "https://bazipass.sejabazico.com.br/"
