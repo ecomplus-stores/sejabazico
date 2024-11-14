@@ -82,7 +82,13 @@ export default {
       return this.cart.subtotal + this.selectedShippingPrice
     },
 
+    hasBaziPassItem () {
+      return Boolean(this.cart.items &&
+        this.cart.items.find(({ sku }) => sku === '77777'))
+    },
+
     canBuyBazipass () {
+      if (this.hasBaziPassItem) return false
       let bazicasNumber = 0
       const buyer = this.ecomPassport && this.ecomPassport.customer
       this.isBazipass = buyer &&

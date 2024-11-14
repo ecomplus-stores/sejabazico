@@ -97,6 +97,7 @@
                 <a-prices
                   :product="{ price: total }"
                   :is-literal="true"
+                  :can-show-bazipass="!hasBaziPassItem"
                 />
               </div>
             </div>
@@ -110,8 +111,7 @@
             >
               <i class="i-check mr-1"></i>
               <strong> Economize {{ formatMoney(economic) }} </strong>
-              <br>Compre Bazipass 
-              
+              <br>Compre BaziPass 
             </a-link>
   
             <a-link
