@@ -385,14 +385,21 @@ export default {
           if (this.bazicashPoints) {
             loyaltyPointsApplied.p0_pontos += this.bazicashPoints
           }
-          return this.$emit('checkout', [{
-            ...transaction,
-            amount_part: 1 - pointsAmountPart
-          }, {
-            ...pointsPaymentGateway,
-            loyalty_points_applied: loyaltyPointsApplied,
-            amount_part: pointsAmountPart
-          }])
+          const transactions = []
+          if (1 - pointsAmountPart > 0) {
+            transactions.push({
+              ...transaction,
+              amount_part: 1 - pointsAmountPart
+            })
+          }
+          if (pointsAmountPart > 0) {
+            transactions.push({
+              ...pointsPaymentGateway,
+              loyalty_points_applied: loyaltyPointsApplied,
+              amount_part: transactions.length ? pointsAmountPart : undefined
+            })
+          }
+          return this.$emit('checkout', transactions)
         }
       }
       this.$emit('checkout', transaction)
@@ -471,7 +478,11 @@ export default {
         let taxItem = this.cart.items.find((item) => {
           return item.product_id === this.taxItemId
         })
-        if (!taxItem && subtotal - this.bazicashAmount - this.loyaltyPointsAmount < 1) {
+        if (
+          !taxItem &&
+          this.bazicashAmount < 680 &&
+          subtotal - this.bazicashAmount - this.loyaltyPointsAmount < 1
+        ) {
           this.loadingTaxItem = true
           store({ url: `/products/${this.taxItemId}.json` })
             .then(({ data }) => {
