@@ -71,6 +71,10 @@
         },
         {
           "mask_opacity": 5,
+          "img": "/img/uploads/bazipass.png"
+        },
+        {
+          "mask_opacity": 5,
           "img": "/img/uploads/gola-v-.png",
           "link": "https://www.sejabazico.com.br/bazica-feminina-gola-v"
         }
