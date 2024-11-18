@@ -1,0 +1,153 @@
+{
+  "title": "Comzê",
+  "body": ".",
+  "meta_title": "As melhores camisas básicas femininas",
+  "meta_description": "Camisas Básicas de algodão egípcio que não desbotam, não encolhem e duram 7x mais que a média do mercado",
+  "sections": [
+    {
+      "type": "apx_banner-slider",
+      "autoplay": 9000,
+      "slides": [
+        {
+          "mask_opacity": 5,
+          "start": "2024-11-18T12:20:22.956Z",
+          "end": "2024-11-18T12:20:22.966Z",
+          "img": "/img/uploads/bazipass-slider-desktop.jpg",
+          "mobile_img": "/img/uploads/bazipass-slider-mobile.jpg",
+          "link": "https://bazipass.sejabazico.com.br/"
+        }
+      ]
+    },
+    {
+      "type": "banner-slider",
+      "autoplay": 9000,
+      "full_width": false,
+      "slides": [
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/banner-tarja-desktop-.jpg",
+          "mobile_img": "/img/uploads/tarja-mobile-.jpg"
+        }
+      ]
+    },
+    {
+      "carrossel_sm": "Sim",
+      "container": "container-fluid",
+      "products": [
+        "65326cae2cd6b6595982bd6c",
+        "65326d9c2cd6b6595982bf16",
+        "654cd3fc2cd6b659599ec89a",
+        "65326e6d2cd6b6595982c152",
+        "647500a3a0e875411ea29697",
+        "6474ffefa0e875411ea29517",
+        "6616d1380fc534303df75807",
+        "669e6e24f4e6d85ab2daa7e7",
+        "65326dfc2cd6b6595982bfc2",
+        "65326e6d2cd6b6595982c152"
+      ],
+      "carrossel_dots_md": "Sim",
+      "carrossel_arrows_md": "Sim",
+      "carrossel_dots_sm": "Sim",
+      "carrossel_arrows_sm": "Não",
+      "padding_sm": "px-1",
+      "num_col_md": "4",
+      "padding": "px-md-2",
+      "num_col_sm": "2",
+      "title": "mais vendidas",
+      "type": "apx_productList_A",
+      "description": "top 10 Comzê: as peças mais desejadas por aqui",
+      "btn_link": "",
+      "list": "description_last",
+      "carrossel_md": "Sim"
+    },
+    {
+      "type": "apx_banners-grid",
+      "banners": [
+        {
+          "mask_opacity": 5,
+          "img": "/img/uploads/gola-c-.png",
+          "link": "https://www.sejabazico.com.br/bazica-feminina-gola-c"
+        },
+        {
+          "mask_opacity": 5,
+          "img": "/img/uploads/gola-v-.png",
+          "link": "https://www.sejabazico.com.br/bazica-feminina-gola-v"
+        }
+      ],
+      "container": "container-fluid",
+      "width_mobile": false,
+      "padding": "px-2"
+    },
+    {
+      "type": "apx_faq",
+      "questions": [
+        {
+          "question": {
+            "title": "Como tirar dúvidas sobre o tamanho da minha Bázica?",
+            "response": "Basta usar o nosso provador virtual, ele vai te indicar o tamanho perfeito para o seu corpo!<br>Caso ainda fique com dúvidas, você pode solicitar uma análisepersonalizada pelo nosso WhatsApp!"
+          }
+        },
+        {
+          "question": {
+            "title": "Qual a diferença entre Bázico e Comzê?",
+            "response": "Sim, Bázico e Comzê são da mesma família! A diferença é que a Comzê é focada nas Bázicas femininas e outros produtos voltados para o público feminino. Já a Bázico é para todos os públicos, trazendo peças essenciais para todo mundo. "
+          }
+        },
+        {
+          "question": {
+            "title": "Qual a composição das Bázicas?",
+            "response": "Nossas Bázicas são feitas com uma das matérias primas mais nobres do mundo, que é o algodão egípcio! Além disso, possuem um pequeno teor de elastano, que confere mais mobilidade as nossas peças.<br>Importante ressaltar que nossas camisetas não desbotam, não encolhem e não esticam!"
+          }
+        },
+        {
+          "question": {
+            "title": "Posso trocar se a camisa não ficar boa?",
+            "response": "Com certeza! Sem complicações, super rápido e sem custo na primeira troca!<br>Queremos você 100% satisfeito! Basta solicitar a troca pelo nosso e-mail (suporte@sejabazico.com.br) ou WhatsApp!"
+          }
+        },
+        {
+          "question": {
+            "title": "Quais são as formas de pagamento?",
+            "response": "Nós aceitamos PIX e cartões de crédito em até 5x sem juros!"
+          }
+        },
+        {
+          "question": {
+            "title": "Qual o valor do frete?",
+            "response": "Temos frete grátis para compras acima de R$299,00 para todo Brasil! (Com exceção dos estados da região Norte).<br>Para compras abaixo desse valor você pode consultar inserindo o seu CEP na hora finalizar sua compra!"
+          }
+        },
+        {
+          "question": {
+            "title": "Qual a diferença entre a Air e a Powerful?",
+            "response": "Todas as nossas Bázicas são compostas por algodão egípcio e elastano.<br>A diferença é que a Air possui 7% de elastano, então passa uma sensação de leveza, parece que você não está usando nada! E a powerful, por possuir 10% de elastano, é mais encorpada, então ela abraça e modela mais o seu corpo!"
+          }
+        },
+        {
+          "question": {
+            "title": "O que é Bazicash?",
+            "response": "É o modelo de cashback da Bázico! Em todas as suas compras você acumula Bazicash, que são pontos que funcionam como uma moeda virtual.<br>Juntando Bazicash você consegue trocar por descontos, produtos exclusivos e Bázicas em nosso site!<br> Para te situar melhor, com 999 Bazicash você consegue trocar por uma Bázica!"
+          }
+        },
+        {
+          "question": {
+            "title": "Como faço para consultar meu saldo de Bazicash?",
+            "response": "No canto direito do site tem um botão com uma moeda dourada, ao clicar nele vai aparecer um campo para inserir o seu CPF; você pode consultar quantos pontos você tem a resgatar os prêmios disponíveis: descontos, produtos exclusivos e Bázicas"
+          }
+        }
+      ],
+      "title": "Perguntas frequentes",
+      "description": "o que normalmente querem saber",
+      "list": "description_first"
+    },
+    {
+      "type": "apx_newsletter",
+      "title": "Assine nossa Newsletter",
+      "description": "Não fique de fora dos lançamentos, reposições, novidades e receba conhecimentos bázicos que todo homem precisa saber!",
+      "list": "description_last",
+      "btn_text": "Assinar",
+      "input_placeholder": "seumelhoremail@email.com"
+    }
+  ]
+}
