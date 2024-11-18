@@ -17,10 +17,8 @@
       ]
     },
     {
-      "type": "banner-slider",
-      "autoplay": 10000,
-      "full_width": true,
-      "slides": [
+      "type": "banners-grid",
+      "banners": [
         {
           "start": "",
           "end": "",
