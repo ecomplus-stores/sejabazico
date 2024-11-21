@@ -1,15 +1,11 @@
 {
   "stripe_slider": [
     {
-      "text": "<p>Se tá no carrinho dos caras, tem motivo. <strong>Vem com a gente!</strong></p>",
-      "url": "https://www.sejabazico.com.br/top-10"
-    },
-    {
       "text": "Sedex com 50% OFF para todo o Brasil!",
       "url": "/"
     },
     {
-      "text": "Outlet Bázico - Bázicas com 25% de desconto.",
+      "text": "Outlet Black Bázico - Bázicas com + 20% de desconto ",
       "url": "https://www.sejabazico.com.br/outlet"
     }
   ],
