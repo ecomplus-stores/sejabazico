@@ -112,7 +112,7 @@ export default {
     },
 
     isActive () {
-      return this.body.available && (this.body.visible || this.isBazicashOnly) && this.isInStock
+      return this.body.available && this.isInStock
     },
 
     discount () {
