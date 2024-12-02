@@ -171,14 +171,11 @@
       "carrossel_sm": "Sim",
       "container": "container-fluid",
       "products": [
-        "65326d9c2cd6b6595982bf16",
-        "669511d1f4e6d85ab2d1ce39",
-        "6474ffefa0e875411ea29517",
-        "66f4693f9e4b2e07f51a073d",
-        "636eacba73321213f8d6f7e9",
-        "636eacba73321213f8d6f7e9",
-        "636eac9a73321213f8d6f75a",
-        "656f9b362cd6b65959ce4152"
+        "636eac9873321213f8d6f752",
+        "66ba4ab986679971c641bc1f",
+        "655514d82cd6b65959a96106",
+        "636eac9773321213f8d6f74b",
+        "636ead2473321213f8d6f95a"
       ],
       "carrossel_dots_md": "Sim",
       "carrossel_arrows_md": "Não",
@@ -188,10 +185,10 @@
       "num_col_md": "5",
       "padding": "px-md-0",
       "num_col_sm": "2",
-      "title": "novidades ",
+      "title": "tá todo mundo levando, falta você.",
       "type": "apx_productList_A",
-      "description": "Lançamentos e Reposições: Chegaram Faz Pouco, Vem Conferir!",
-      "list": "description_first",
+      "description": "",
+      "list": "description_last",
       "carrossel_md": "Sim"
     },
     {
