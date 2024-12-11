@@ -771,6 +771,15 @@
         },
         {
           "content": {
+            "title": "Material Premium",
+            "subtitle": "Frescor do linho, suavidade da viscose e mobilidade do elastano: o trio perfeito para o seu conforto.",
+            "body": "Feita com uma combinação impecável:\n\n* **Linho natural (30%)**: Textura nobre e toque rústico, que garantem frescor e respirabilidade.\n* **Viscose (68%)**: Adiciona suavidade e fluidez, proporcionando um caimento que acompanha o corpo.\n* **Elastano (2%)**: Oferece mobilidade e durabilidade sem comprometer o estilo.",
+            "text_align": "left",
+            "image_position": "last"
+          }
+        },
+        {
+          "content": {
             "title": "e se eu não curtir?",
             "subtitle": "é só devolver ou trocar! Simples e sem burocracia.",
             "image_position": "last",
