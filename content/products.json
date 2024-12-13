@@ -824,6 +824,22 @@
     {
       "type": "custom-html",
       "html": "<script type=\"text/javascript\">\n    (function(c,l,a,r,i,t,y){\n        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};\n        t=l.createElement(r);t.async=1;t.src=\"https://www.clarity.ms/tag/\"+i;\n        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);\n    })(window, document, \"clarity\", \"script\", \"nop63v6fa0\");\n</script>"
+    },
+    {
+      "type": "apx_blockPerCategory",
+      "title": "Bázica Social",
+      "slug": "Bázica Social",
+      "list": [
+        {
+          "content": {
+            "title": "O Toque de Estilo Que Você Merece",
+            "subtitle": "",
+            "body": "A Bázica Social foi criada para quem não abre mão de estar bem vestido sem perder o conforto. Feita com uma mistura de algodão, poliamida e elastano, ela oferece o caimento perfeito e flexibilidade para se mover com facilidade, seja no trabalho ou em eventos formais. Sofisticação e liberdade de movimento, tudo em uma única peça.",
+            "image_position": "last",
+            "text_align": "left"
+          }
+        }
+      ]
     }
   ]
 }
