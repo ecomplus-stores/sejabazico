@@ -157,7 +157,7 @@ export default {
     },
 
     isBaziPassClub () {
-      return window.location.pathname === '/bazipass'
+      return window.location.pathname.startsWith('/bazipass')
     },
 
     productQuantity () {

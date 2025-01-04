@@ -255,7 +255,7 @@ const apx_props = _.cms('apx_props') || {}
                 </div>
 
                 <div class="product__buy">
-                  <% if (_.state.slug !== 'bazipass') { %>
+                  <% if (!_.state.slug.startsWith('bazipass')) { %>
                     <div class="apx_quantity_selector">
                       <button type="button"><i class="fas fa-chevron-down"></i></button>
                       <input type="tel" name="form-control apx_quantity-selector__input"/>
@@ -274,7 +274,7 @@ const apx_props = _.cms('apx_props') || {}
                       <div data-slot="buy-button-content">
                         <% if (_.state.kit_composition && _.state.kit_composition.length) { %>
                           Adicionar Kit ao Carrinho
-                        <% } else if (_.state.slug === 'bazipass') { %>
+                        <% } else if (_.state.slug.startsWith('bazipass')) { %>
                           Comprar BaziPass
                         <% } else { %> 
                           <!-- <% let buyText %>
