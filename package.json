@@ -48,7 +48,7 @@
     "perfect-debounce": "^1.0.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.29.3",
+    "browser-sync": "^3.0.3",
     "standard": "^17.1.2"
   }
 }
