@@ -86,7 +86,7 @@ export default {
       return Boolean(this.cart.items &&
         this.cart.items.find(({ sku, name }) => {
           return (name && name.toLowerCase().includes('bazipass')) ||
-            sku === '77777' || sku === '88888'
+            (sku && sku.startsWith('7777'))
         }))
     },
 
