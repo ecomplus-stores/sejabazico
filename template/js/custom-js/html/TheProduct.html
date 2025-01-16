@@ -144,7 +144,7 @@
                   :is-literal="true"
                   :is-big="true"
                   @fix-price="price => fixedPrice = price"
-                  :canShowBazipass="isBaziPassClub ? false : true"
+                  :canShowBazipass="canShowBazipassPrice"
                 />
                 <slot
                   name="discount-tag"

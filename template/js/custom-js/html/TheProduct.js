@@ -160,6 +160,14 @@ export default {
       return window.location.pathname.startsWith('/bazipass')
     },
 
+    isPromoBundle () {
+      return this.body.sku === '99263'
+    },
+
+    canShowBazipassPrice () {
+      return !this.isBaziPassClub && !this.isPromoBundle
+    },
+
     productQuantity () {
       if (this.selectedVariation.quantity) {
         return this.selectedVariation.quantity
