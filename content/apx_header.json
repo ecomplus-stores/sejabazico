@@ -43,6 +43,12 @@
         },
         {
           "item": {
+            "title": "Polos",
+            "url": "/polos"
+          }
+        },
+        {
+          "item": {
             "title": "Camisas",
             "url": "/camisas"
           }
@@ -73,20 +79,14 @@
         },
         {
           "item": {
-            "title": "Polos",
-            "url": "/polos"
+            "title": "Kids",
+            "url": "/kids"
           }
         },
         {
           "item": {
             "title": "Acessórios",
             "url": "/acessorios"
-          }
-        },
-        {
-          "item": {
-            "title": "Kids",
-            "url": "/kids"
           }
         }
       ]
