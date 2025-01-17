@@ -58,6 +58,12 @@
             "title": "Camisas",
             "url": "/camisas"
           }
+        },
+        {
+          "item": {
+            "title": "Calças",
+            "url": "/calcas"
+          }
         }
       ]
     },
