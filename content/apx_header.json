@@ -76,6 +76,12 @@
             "title": "Femininas",
             "url": "/femininas"
           }
+        },
+        {
+          "item": {
+            "title": "Kids",
+            "url": "/kids"
+          }
         }
       ]
     },
