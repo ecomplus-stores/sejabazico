@@ -52,6 +52,12 @@
             "title": "Sports",
             "url": "/sports"
           }
+        },
+        {
+          "item": {
+            "title": "Camisas",
+            "url": "/camisas"
+          }
         }
       ]
     },
