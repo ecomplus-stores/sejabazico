@@ -76,6 +76,12 @@
             "title": "Polos",
             "url": "/polos"
           }
+        },
+        {
+          "item": {
+            "title": "Acessórios",
+            "url": "/acessorios"
+          }
         }
       ]
     },
