@@ -82,6 +82,12 @@
             "title": "Kids",
             "url": "/kids"
           }
+        },
+        {
+          "item": {
+            "title": "Acessórios",
+            "url": "/acessorios"
+          }
         }
       ]
     },
