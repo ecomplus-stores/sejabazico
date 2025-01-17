@@ -46,6 +46,12 @@
             "title": "Shorts",
             "url": "/shorts"
           }
+        },
+        {
+          "item": {
+            "title": "Sports",
+            "url": "/sports"
+          }
         }
       ]
     },
