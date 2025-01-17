@@ -70,6 +70,12 @@
             "title": "Femininas",
             "url": "/femininas"
           }
+        },
+        {
+          "item": {
+            "title": "Polos",
+            "url": "/polos"
+          }
         }
       ]
     },
