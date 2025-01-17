@@ -64,6 +64,12 @@
             "title": "Calças",
             "url": "/calcas"
           }
+        },
+        {
+          "item": {
+            "title": "Polos",
+            "url": "/polos"
+          }
         }
       ]
     },
