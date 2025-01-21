@@ -71,7 +71,13 @@
         {
           "item": {
             "title": "Bázica Gola C",
-            "url": "bazica-gola-c"
+            "url": "/bazica-gola-c"
+          }
+        },
+        {
+          "item": {
+            "title": "Bázica Gola V",
+            "url": "/bazica-gola-v"
           }
         }
       ]
