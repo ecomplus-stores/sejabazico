@@ -127,6 +127,12 @@
             "title": "Short Bázico",
             "url": "/short-bazico"
           }
+        },
+        {
+          "item": {
+            "title": "Swim Short",
+            "url": "/swim-short"
+          }
         }
       ]
     },
