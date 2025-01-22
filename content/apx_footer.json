@@ -157,6 +157,12 @@
             "title": "Cuecas",
             "url": "/cuecas"
           }
+        },
+        {
+          "item": {
+            "title": "Porta Cartão",
+            "url": "/porta-cartao"
+          }
         }
       ]
     },
