@@ -100,6 +100,12 @@
         },
         {
           "item": {
+            "title": "Bázica Sport",
+            "url": "/bazica-sport"
+          }
+        },
+        {
+          "item": {
             "title": "Bázica Polo Powerful",
             "url": "/polo-powerful"
           }
@@ -144,12 +150,6 @@
           "item": {
             "title": "Calça Linho Class",
             "url": "/calca-linho-class"
-          }
-        },
-        {
-          "item": {
-            "title": "Bázica Sport",
-            "url": "/bazica-sport"
           }
         }
       ]
