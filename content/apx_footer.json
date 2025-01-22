@@ -112,6 +112,12 @@
         },
         {
           "item": {
+            "title": "Bázica Social",
+            "url": "/bazica-social"
+          }
+        },
+        {
+          "item": {
             "title": "Bázica Vicentti",
             "url": "/bazica-vicentti"
           }
