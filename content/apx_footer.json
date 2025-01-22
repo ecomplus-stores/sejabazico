@@ -94,6 +94,12 @@
         },
         {
           "item": {
+            "title": "Bázica Manga Longa",
+            "url": "/bazica-manga-longa"
+          }
+        },
+        {
+          "item": {
             "title": "Bázica Polo Powerful",
             "url": "/polo-powerful"
           }
@@ -108,12 +114,6 @@
           "item": {
             "title": "Bázica Vicentti",
             "url": "/bazica-vicentti"
-          }
-        },
-        {
-          "item": {
-            "title": "Bázica Manga Longa",
-            "url": "/bazica-manga-longa"
           }
         }
       ]
