@@ -13,8 +13,8 @@
           "img": "/img/uploads/regular-e-marfim-_desktop_.webp",
           "link": "/novidades",
           "mobile_img": "/img/uploads/regular-e-marfim-_mobile_.webp",
-          "content_order": "before_image",
-          "content_position": "center_center"
+          "content_order": null,
+          "content_position": null
         },
         {
           "mask_opacity": 0,
