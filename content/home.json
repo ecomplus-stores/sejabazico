@@ -31,16 +31,16 @@
       "carrossel_sm": "Sim",
       "container": "container-fluid",
       "products": [
-        "636eac9a73321213f8d6f75a",
         "636eacba73321213f8d6f7e9",
+        "636eac9a73321213f8d6f75a",
         "6762d1d6a0c96d5393d8b3e1",
-        "6762dff7a0c96d5393d8d988",
-        "676dcd8da0c96d5393e8bbdd",
-        "6759bc71a0c96d5393cb7ead",
         "636eacb373321213f8d6f7c9",
-        "676dd035a0c96d5393e8c043",
+        "643879f14bd2e929c1cedf5b",
+        "645a5ff34bd2e929c1f3ce22",
+        "676dd0b3a0c96d5393e8c122",
+        "669511d1f4e6d85ab2d1ce39",
         "636eacbc73321213f8d6f7f3",
-        "636eacab73321213f8d6f799"
+        "6751b932a0c96d5393c1c865"
       ],
       "carrossel_dots_md": "Sim",
       "carrossel_arrows_md": "Sim",
