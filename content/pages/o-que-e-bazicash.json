@@ -6,8 +6,8 @@
   "sections": [
     {
       "type": "responsive-banner",
-      "img": "/img/uploads/pagina-bazicash-_desk_.webp",
-      "mobile_img": "/img/uploads/pagina-bazicash-_mob_.webp",
+      "img": "/img/uploads/bz-_desktop_.webp",
+      "mobile_img": "/img/uploads/bz-_mobile__11zon.webp",
       "full_banner_responsive": true
     }
   ]
