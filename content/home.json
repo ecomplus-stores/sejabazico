@@ -7,14 +7,11 @@
       "autoplay": 0,
       "slides": [
         {
-          "mask_opacity": 0,
-          "start": "2025-02-03T20:03:58.330Z",
-          "end": "2025-06-06T20:03:58.339Z",
-          "img": "/img/uploads/regular-e-marfim-_desktop_.webp",
-          "link": "/novidades",
-          "mobile_img": "/img/uploads/regular-e-marfim-_mobile_.webp",
-          "content_order": null,
-          "content_position": null
+          "mask_opacity": 5,
+          "start": "2025-04-01T16:44:18.703Z",
+          "end": "2025-04-01T16:44:18.711Z",
+          "img": "/img/uploads/calc-a-desktop.jpg",
+          "mobile_img": "/img/uploads/calc-a-mobile.jpg"
         }
       ]
     },
