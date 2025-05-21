@@ -29,6 +29,12 @@
         },
         {
           "item": {
+            "title": "Bázica Regular",
+            "url": "https://www.sejabazico.com.br/bazica-regular"
+          }
+        },
+        {
+          "item": {
             "title": "Bázica Manga Longa",
             "url": "/bazica-manga-longa"
           }
@@ -97,12 +103,6 @@
           "item": {
             "title": "Porta Cartão",
             "url": "/porta-cartao"
-          }
-        },
-        {
-          "item": {
-            "title": "Bázica Regular",
-            "url": "https://www.sejabazico.com.br/bazica-regular"
           }
         }
       ]
