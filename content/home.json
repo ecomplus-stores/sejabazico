@@ -8,6 +8,14 @@
       "slides": [
         {
           "mask_opacity": 5,
+          "start": "2025-06-16T18:26:01.723Z",
+          "end": "2025-12-19T18:24:02.523Z",
+          "img": "/img/uploads/lancamentos-julho-desktop.webp",
+          "mobile_img": "/img/uploads/lancamentos-julho-mobile.webp",
+          "link": "http://sejabazico.com.br/lancamentos"
+        },
+        {
+          "mask_opacity": 5,
           "start": "2025-08-13T16:40:19.288Z",
           "end": "2026-03-06T16:40:19.313Z",
           "img": "/img/uploads/banner-bone-desktop-1-.webp",
@@ -15,14 +23,6 @@
           "link": "https://www.sejabazico.com.br/bone-bazico-classic",
           "content_order": "inside_image",
           "content_position": "center_center"
-        },
-        {
-          "mask_opacity": 5,
-          "start": "2025-06-16T18:26:01.723Z",
-          "end": "2025-12-19T18:24:02.523Z",
-          "img": "/img/uploads/lancamentos-julho-desktop.webp",
-          "mobile_img": "/img/uploads/lancamentos-julho-mobile.webp",
-          "link": "http://sejabazico.com.br/lancamentos"
         }
       ]
     },
